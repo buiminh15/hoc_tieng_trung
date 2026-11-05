@@ -1,0 +1,210 @@
+import type { Lesson } from './types'
+
+export const lesson8: Lesson = {
+  id: 8,
+  title: 'Táo một cân bao nhiêu tiền',
+  hanzi: '苹果一斤多少钱',
+  pinyin: 'Píngguǒ yì jīn duōshao qián',
+  vi: 'Táo một cân bao nhiêu tiền',
+  intro: 'Mua trái cây và mặc cả: hỏi giá, nói số lượng, tính tiền, thối tiền; tiền Trung Quốc (块 毛 分); trợ từ 吧; số 2 đọc là 两; trọng âm của từ.',
+  dialogue: [
+    { who: 'A', scene: '(买水果 – Mua trái cây)', hanzi: '你买什么？', pinyin: 'Nǐ mǎi shénme?', vi: 'Bạn mua gì?' },
+    { who: 'B', hanzi: '我买水果。苹果一斤多少钱？', pinyin: 'Wǒ mǎi shuǐguǒ. Píngguǒ yì jīn duōshao qián?', vi: 'Tôi mua trái cây. Táo một cân bao nhiêu tiền?' },
+    { who: 'A', hanzi: '三块。', pinyin: 'Sān kuài.', vi: 'Ba đồng.' },
+    { who: 'B', hanzi: '三块？太贵了，两块五吧。', pinyin: 'Sān kuài? Tài guì le, liǎng kuài wǔ ba.', vi: 'Ba đồng? Đắt quá, hai đồng rưỡi nhé.' },
+    { who: 'A', hanzi: '你要几斤？', pinyin: 'Nǐ yào jǐ jīn?', vi: 'Bạn lấy mấy cân?' },
+    { who: 'B', hanzi: '我买五斤。', pinyin: 'Wǒ mǎi wǔ jīn.', vi: 'Tôi mua năm cân.' },
+    { who: 'A', hanzi: '还要别的吗？', pinyin: 'Hái yào biéde ma?', vi: 'Còn lấy gì khác không?' },
+    { who: 'B', hanzi: '橘子怎么卖？', pinyin: 'Júzi zěnme mài?', vi: 'Quýt bán thế nào?' },
+    { who: 'A', hanzi: '两块。', pinyin: 'Liǎng kuài.', vi: 'Hai đồng.' },
+    { who: 'B', hanzi: '要两斤。一共多少钱？', pinyin: 'Yào liǎng jīn. Yígòng duōshao qián?', vi: 'Lấy hai cân. Tổng cộng bao nhiêu tiền?' },
+    { who: 'A', hanzi: '一共十六块五（毛）。你给十六块吧。', pinyin: 'Yígòng shíliù kuài wǔ (máo). Nǐ gěi shíliù kuài ba.', vi: 'Tổng cộng 16 đồng 5 hào. Bạn đưa 16 đồng thôi nhé.' },
+    { who: 'B', hanzi: '给你钱。', pinyin: 'Gěi nǐ qián.', vi: 'Đưa tiền cho bạn.' },
+    { who: 'A', hanzi: '这是五十，找您三十四块。', pinyin: 'Zhè shì wǔshí, zhǎo nín sānshísì kuài.', vi: 'Đây là 50, thối lại ông/bà 34 đồng.' },
+  ],
+  dialogueTip: 'Hỏi giá: <b>…多少钱?</b> hoặc <b>…怎么卖?</b>. Mặc cả: <b>太贵了，两块五吧</b>. Số 2 đứng trước lượng từ đọc là <b>两 liǎng</b> (两块, 两斤), không dùng 二. Tổng cộng: <b>一共…</b>. Thối tiền: <b>找您…</b>.',
+  slowSay: '苹果一斤多少钱',
+  vocab: [
+    { hanzi: '买', pinyin: 'mǎi', pos: 'động từ', meaning: 'mua', han_viet: 'mãi' },
+    { hanzi: '水果', pinyin: 'shuǐguǒ', pos: 'danh từ', meaning: 'trái cây, hoa quả', han_viet: 'thủy quả' },
+    { hanzi: '苹果', pinyin: 'píngguǒ', pos: 'danh từ', meaning: 'táo', han_viet: 'bình quả' },
+    { hanzi: '斤', pinyin: 'jīn', pos: 'lượng từ', meaning: 'cân (500 gam)', han_viet: 'cân' },
+    { hanzi: '公斤', pinyin: 'gōngjīn', pos: 'lượng từ', meaning: 'ki-lô-gam (1 公斤 = 2 斤)', han_viet: 'công cân' },
+    { hanzi: '贵', pinyin: 'guì', pos: 'tính từ', meaning: 'đắt', han_viet: 'quý' },
+    { hanzi: '了', pinyin: 'le', pos: 'trợ từ', meaning: 'trợ từ ngữ khí (太…了: quá…)', han_viet: 'liễu' },
+    { hanzi: '吧', pinyin: 'ba', pos: 'trợ từ', meaning: 'nhé, đi (đề nghị, thương lượng)', han_viet: '' },
+    { hanzi: '多少', pinyin: 'duōshao', pos: 'đại từ', meaning: 'bao nhiêu', han_viet: 'đa thiểu' },
+    { hanzi: '多', pinyin: 'duō', pos: 'tính từ', meaning: 'nhiều', han_viet: 'đa' },
+    { hanzi: '少', pinyin: 'shǎo', pos: 'tính từ', meaning: 'ít', han_viet: 'thiểu' },
+    { hanzi: '块', pinyin: 'kuài', pos: 'lượng từ', meaning: 'đồng (đơn vị tiền, khẩu ngữ)', han_viet: 'khối' },
+    { hanzi: '元', pinyin: 'yuán', pos: 'lượng từ', meaning: 'đồng (đơn vị tiền, văn viết)', han_viet: 'nguyên' },
+    { hanzi: '毛', pinyin: 'máo', pos: 'lượng từ', meaning: 'hào, bằng 1/10 đồng (khẩu ngữ)', han_viet: 'mao' },
+    { hanzi: '角', pinyin: 'jiǎo', pos: 'lượng từ', meaning: 'hào, bằng 1/10 đồng (văn viết)', han_viet: 'giác' },
+    { hanzi: '分', pinyin: 'fēn', pos: 'lượng từ', meaning: 'xu, bằng 1/100 đồng', han_viet: 'phân' },
+    { hanzi: '还', pinyin: 'hái', pos: 'phó từ', meaning: 'còn, vẫn, thêm', han_viet: 'hoàn' },
+    { hanzi: '别的', pinyin: 'biéde', pos: 'đại từ', meaning: 'cái khác, thứ khác', han_viet: 'biệt đích' },
+    { hanzi: '橘子', pinyin: 'júzi', pos: 'danh từ', meaning: 'quýt, cam', han_viet: 'quất tử' },
+    { hanzi: '怎么', pinyin: 'zěnme', pos: 'đại từ', meaning: 'thế nào, làm sao', han_viet: 'chẩm ma' },
+    { hanzi: '卖', pinyin: 'mài', pos: 'động từ', meaning: 'bán', han_viet: 'mại' },
+    { hanzi: '两', pinyin: 'liǎng', pos: 'số từ', meaning: 'hai (đứng trước lượng từ)', han_viet: 'lưỡng' },
+    { hanzi: '一共', pinyin: 'yígòng', pos: 'phó từ', meaning: 'tổng cộng', han_viet: 'nhất cộng' },
+    { hanzi: '给', pinyin: 'gěi', pos: 'động từ', meaning: 'đưa, cho', han_viet: 'cấp' },
+    { hanzi: '找', pinyin: 'zhǎo', pos: 'động từ', meaning: 'thối (tiền thừa); tìm', han_viet: 'trảo' },
+  ],
+  sections: [
+    {
+      kind: 'examples', label: 'Trọng âm của từ (2)', title: 'Trọng âm của từ (词重音 2)',
+      intro: 'Từ có ba âm tiết trở lên thường có trọng âm ở ÂM TIẾT CUỐI: đọc rõ và hơi nhấn âm tiết sau cùng, các âm tiết trước đọc nhẹ hơn. Sách đánh dấu bằng một chấm dưới âm tiết được nhấn.',
+      groups: [
+        { label: 'Trọng âm ở âm tiết cuối', items: [['图书馆', 'túshūguǎn', 'thư viện · nhấn: guǎn'], ['留学生', 'liúxuéshēng', 'lưu học sinh · nhấn: shēng'], ['飞机场', 'fēijīchǎng', 'sân bay · nhấn: chǎng'], ['火车站', 'huǒchēzhàn', 'ga tàu hoả · nhấn: zhàn']] },
+      ],
+    },
+  ],
+  notes: [
+    {
+      title: 'Trợ từ 吧 (đề nghị, thương lượng)',
+      body: '吧 đứng cuối câu để diễn đạt yêu cầu, đề nghị hoặc thương lượng nhẹ nhàng, gần "nhé", "đi". 太贵了，两块五吧。(Đắt quá, hai đồng rưỡi nhé.) 你给十六块吧。(Bạn đưa 16 đồng thôi nhé.) Khác với 吗 hỏi có/không: 吧 không làm câu thành câu hỏi mà làm giọng mềm hơn.',
+      say: '两块五吧',
+    },
+    {
+      title: 'Số 2 trước lượng từ: 两 + lượng từ',
+      body: 'Khi số 2 đứng trước lượng từ thì dùng 两 (liǎng), không dùng 二: 两个馒头, 两个人, 两块, 两斤. Chữ 二 vẫn dùng khi đếm số, đọc số, và trong số thứ tự như 二十, 星期二. Sách ghi dấu * cho cách nói sai: *二个馒头.',
+      say: '两个馒头',
+    },
+    {
+      title: 'Tiền Trung Quốc: 块, 毛, 分 và cách đọc giá',
+      body: 'Có ba đơn vị: 块 (còn viết 元), 毛 (còn viết 角), 分. 1 块 = 10 毛 = 100 分. Khi nói thường dùng 块, 毛. Khi đọc giá có thể bỏ đơn vị cuối: 三块五 = 3 đồng 5 hào (3,5 đồng), 十六块五 = 16,5 đồng. Số 2 trước 块 đọc là 两: 两块五 = 2,5 đồng.',
+      say: '三块五',
+    },
+    {
+      title: 'Hỏi giá và tính tiền',
+      body: 'Hỏi giá: 苹果一斤多少钱? (táo một cân bao nhiêu tiền?) hoặc 橘子怎么卖? (quýt bán thế nào?). Hỏi tổng: 一共多少钱? Người bán đáp bằng giá, người mua đưa tiền (给你钱), người bán thối lại (找您三十四块). 斤 là cân Trung Quốc (500 gam), 公斤 là ki-lô-gam (1 公斤 = 2 斤).',
+      say: '一共多少钱',
+    },
+    {
+      title: 'Ngữ pháp: 太……了',
+      body: '太 + tính từ + 了 diễn tả mức độ quá cao, thường là chê hoặc than: 太贵了 (đắt quá), 太酸了 (chua quá), 太累了 (mệt quá). Trong bài, 太贵了 là lời mở đầu để mặc cả giá.',
+      say: '太贵了',
+    },
+    {
+      title: 'Đọc số từ 11 đến 99',
+      body: 'Từ 11 đến 19: 十 + số lẻ (十六 = 16). Từ 20 trở lên: số chục + 十 + số lẻ (二十二 = 22, 三十四 = 34, 五十 = 50). Cách đọc này rất đều, nên chỉ cần thuộc 一 đến 十 là đọc được đến 99.',
+      say: '三十四',
+    },
+    {
+      title: 'Ngữ pháp: 还 + động từ, 给 và 找',
+      body: '还 + động từ nghĩa là "còn, thêm": 还要别的吗? (còn lấy gì khác không?), 还买吗? 给 là đưa: 你给十六块吧, 给你钱. 找 trong ngữ cảnh mua bán nghĩa là thối tiền thừa: 找您三十四块.',
+      say: '还要别的吗',
+    },
+    {
+      title: 'Trọng âm của từ (2)',
+      body: 'Từ ba âm tiết trở lên thường nhấn ở âm tiết cuối: túshūguǎn, liúxuéshēng, fēijīchǎng, huǒchēzhàn. Luyện bằng cách đọc to, âm cuối rõ và kéo dài hơn một chút.',
+      say: '图书馆',
+    },
+  ],
+  sentences: [
+    { parts: ['你', '买', '什么'], pinyin: 'Nǐ mǎi shénme?', vi: 'Bạn mua gì?' },
+    { parts: ['我', '买', '水果'], pinyin: 'Wǒ mǎi shuǐguǒ.', vi: 'Tôi mua trái cây.' },
+    { parts: ['苹果', '一', '斤', '多少', '钱'], pinyin: 'Píngguǒ yì jīn duōshao qián?', vi: 'Táo một cân bao nhiêu tiền?' },
+    { parts: ['三', '块'], pinyin: 'Sān kuài.', vi: 'Ba đồng.' },
+    { parts: ['太', '贵', '了'], pinyin: 'Tài guì le.', vi: 'Đắt quá.' },
+    { parts: ['两', '块', '五', '吧'], pinyin: 'Liǎng kuài wǔ ba.', vi: 'Hai đồng rưỡi nhé.' },
+    { parts: ['你', '要', '几', '斤'], pinyin: 'Nǐ yào jǐ jīn?', vi: 'Bạn lấy mấy cân?' },
+    { parts: ['我', '买', '五', '斤'], pinyin: 'Wǒ mǎi wǔ jīn.', vi: 'Tôi mua năm cân.' },
+    { parts: ['还', '要', '别的', '吗'], pinyin: 'Hái yào biéde ma?', vi: 'Còn lấy gì khác không?' },
+    { parts: ['橘子', '怎么', '卖'], pinyin: 'Júzi zěnme mài?', vi: 'Quýt bán thế nào?' },
+    { parts: ['一共', '多少', '钱'], pinyin: 'Yígòng duōshao qián?', vi: 'Tổng cộng bao nhiêu tiền?' },
+    { parts: ['你', '给', '十六', '块', '吧'], pinyin: 'Nǐ gěi shíliù kuài ba.', vi: 'Bạn đưa 16 đồng thôi nhé.' },
+    { parts: ['给', '你', '钱'], pinyin: 'Gěi nǐ qián.', vi: 'Đưa tiền cho bạn.' },
+    { parts: ['找', '您', '三十四', '块'], pinyin: 'Zhǎo nín sānshísì kuài.', vi: 'Thối lại ông/bà 34 đồng.' },
+  ],
+  writeChars: ['元', '毛', '分', '斤', '多', '少', '还', '买', '卖', '吧', '两', '别', '给', '找'],
+  drills: [
+    {
+      title: 'Phân biệt âm và thanh điệu', hint: 'Đọc từng từ, chú ý thanh điệu và âm đầu.',
+      items: [
+        { h: '担心', p: 'dānxīn' }, { h: '谈心', p: 'tán xīn' }, { h: '池塘', p: 'chítáng' }, { h: '食堂', p: 'shítáng' },
+        { h: '头等', p: 'tóudēng' }, { h: '头疼', p: 'tóu téng' }, { h: '动词', p: 'dòngcí' }, { h: '同事', p: 'tóngshì' },
+        ...['shū', 'běn', 'zhǐ', 'bǐ', 'dāo', 'huà', 'zì', 'bào', 'xìn', 'xié', 'wà', 'mào', 'biǎo'].map(s => ({ p: s, syl: s.normalize('NFD').replace(/[̀-ͯ]/g, '') })),
+      ],
+    },
+    {
+      title: 'Phối hợp thanh điệu (声调搭配)', hint: 'Đọc to từng từ, giữ đúng thanh của từng âm tiết.',
+      items: [
+        { h: '北京', p: 'Běijīng' }, { h: '每天', p: 'měi tiān' }, { h: '好吃', p: 'hǎochī' }, { h: '晚餐', p: 'wǎncān' },
+        { h: '以前', p: 'yǐqián' }, { h: '语言', p: 'yǔyán' }, { h: '可能', p: 'kěnéng' }, { h: '旅行', p: 'lǚxíng' },
+        { h: '辅导', p: 'fǔdǎo' }, { h: '洗澡', p: 'xǐzǎo' }, { h: '口语', p: 'kǒuyǔ' }, { h: '可以', p: 'kěyǐ' },
+        { h: '彩色', p: 'cǎisè' }, { h: '好看', p: 'hǎokàn' }, { h: '怎样', p: 'zěnyàng' }, { h: '午饭', p: 'wǔfàn' },
+        { h: '母亲', p: 'mǔqin' }, { h: '喜欢', p: 'xǐhuan' }, { h: '姐姐', p: 'jiějie' }, { h: '眼睛', p: 'yǎnjing' },
+      ],
+    },
+    {
+      title: 'Vần 儿 hoá (儿化韵)', hint: 'Cuốn nhẹ đầu lưỡi ở cuối âm tiết.',
+      items: [
+        { h: '小孩儿', p: 'xiǎoháir' }, { h: '好玩儿', p: 'hǎowánr' }, { h: '没事儿', p: 'méi shìr' }, { h: '聊天儿', p: 'liáotiānr' },
+        { h: '一点儿', p: 'yìdiǎnr' }, { h: '一下儿', p: 'yíxiàr' }, { h: '一会儿', p: 'yíhuìr' }, { h: '一块儿', p: 'yíkuàir' },
+        { h: '有点儿', p: 'yǒudiǎnr' }, { h: '唱歌儿', p: 'chàng gēr' }, { h: '眼镜儿', p: 'yǎnjìngr' }, { h: '名牌儿', p: 'míngpáir' },
+        { h: '去哪儿', p: 'qù nǎr' }, { h: '去那儿', p: 'qù nàr' }, { h: '在哪儿', p: 'zài nǎr' }, { h: '在这儿', p: 'zài zhèr' },
+      ],
+    },
+    {
+      title: 'Thanh nhẹ (轻声)', hint: 'Âm tiết sau đọc nhẹ và ngắn.',
+      items: [
+        { h: '高的', p: 'gāo de' }, { h: '低的', p: 'dī de' }, { h: '男的', p: 'nán de' }, { h: '女的', p: 'nǚ de' },
+        { h: '白的', p: 'bái de' }, { h: '红的', p: 'hóng de' }, { h: '绿的', p: 'lǜ de' }, { h: '热闹', p: 'rènao' },
+        { h: '月亮', p: 'yuèliang' }, { h: '本子', p: 'běnzi' }, { h: '饺子', p: 'jiǎozi' }, { h: '桌子', p: 'zhuōzi' },
+      ],
+    },
+    {
+      title: 'Đọc liền nhiều âm tiết (多音节连读)', hint: 'Từ ba âm tiết trở lên: nhấn âm cuối.',
+      items: [
+        { h: '留学生', p: 'liúxuéshēng' }, { h: '图书馆', p: 'túshūguǎn' }, { h: '飞机场', p: 'fēijīchǎng' },
+        { h: '火车站', p: 'huǒchēzhàn' }, { h: '出租车', p: 'chūzūchē' }, { h: '大使馆', p: 'dàshǐguǎn' },
+        { h: '足球场', p: 'zúqiúchǎng' }, { h: '电影院', p: 'diànyǐngyuàn' }, { h: '运动会', p: 'yùndònghuì' },
+        { h: '太极拳', p: 'tàijíquán' }, { h: '化妆品', p: 'huàzhuāngpǐn' }, { h: '小吃店', p: 'xiǎochīdiàn' },
+      ],
+    },
+    {
+      title: 'Mẫu 太……了', hint: 'Diễn tả mức độ quá cao.',
+      items: [
+        { h: '太贵了', p: 'tài guì le' }, { h: '太酸了', p: 'tài suān le' }, { h: '太辣了', p: 'tài là le' },
+        { h: '太甜了', p: 'tài tián le' }, { h: '太咸了', p: 'tài xián le' }, { h: '太油了', p: 'tài yóu le' },
+        { h: '太胖了', p: 'tài pàng le' }, { h: '太远了', p: 'tài yuǎn le' }, { h: '太累了', p: 'tài lèi le' },
+        { h: '太困了', p: 'tài kùn le' }, { h: '太冷了', p: 'tài lěng le' }, { h: '太热了', p: 'tài rè le' },
+      ],
+    },
+    {
+      title: 'Nhận đọc (认读)', hint: 'Đọc cả cụm. Bấm để nghe đáp án.',
+      items: [
+        { h: '买苹果', p: 'mǎi píngguǒ' }, { h: '买馒头', p: 'mǎi mántou' }, { h: '买饺子', p: 'mǎi jiǎozi' }, { h: '买米饭', p: 'mǎi mǐfàn' }, { h: '买包子', p: 'mǎi bāozi' },
+        { h: '多少钱', p: 'duōshao qián' }, { h: '多少斤', p: 'duōshao jīn' }, { h: '多少人', p: 'duōshao rén' }, { h: '多少学生', p: 'duōshao xuésheng' }, { h: '多少老师', p: 'duōshao lǎoshī' },
+        { h: '还买吗', p: 'hái mǎi ma' }, { h: '还要吗', p: 'hái yào ma' }, { h: '还去吗', p: 'hái qù ma' }, { h: '还吃吗', p: 'hái chī ma' }, { h: '还喝吗', p: 'hái hē ma' },
+        { h: '还买', p: 'hái mǎi' }, { h: '还要', p: 'hái yào' }, { h: '还去', p: 'hái qù' }, { h: '还吃', p: 'hái chī' }, { h: '还喝', p: 'hái hē' },
+      ],
+    },
+    {
+      title: 'Tên các loại trái cây (看图)', hint: 'Sách có hình 6 loại trái cây. Học tên từng loại.',
+      items: [
+        { h: '香蕉', p: 'xiāngjiāo', m: 'chuối' }, { h: '葡萄', p: 'pútao', m: 'nho' }, { h: '西瓜', p: 'xīguā', m: 'dưa hấu' },
+        { h: '梨', p: 'lí', m: 'lê' }, { h: '桃', p: 'táo', m: 'đào' }, { h: '草莓', p: 'cǎoméi', m: 'dâu tây' },
+      ],
+    },
+    {
+      title: 'Luyện đọc giá tiền (bổ sung)', hint: 'Phần này không có trong sách, thêm để luyện số và tiền. Chú ý 两 trước 块.',
+      items: [
+        { h: '两块', p: 'liǎng kuài', m: '2 đồng' }, { h: '两块五', p: 'liǎng kuài wǔ', m: '2,5 đồng' }, { h: '三块五', p: 'sān kuài wǔ', m: '3,5 đồng' },
+        { h: '十六块五', p: 'shíliù kuài wǔ', m: '16,5 đồng' }, { h: '二十二块', p: 'èrshí’èr kuài', m: '22 đồng' }, { h: '三十四块', p: 'sānshísì kuài', m: '34 đồng' },
+        { h: '五十块', p: 'wǔshí kuài', m: '50 đồng' }, { h: '九毛', p: 'jiǔ máo', m: '9 hào' },
+      ],
+    },
+  ],
+  qa: [
+    {
+      title: 'Hoàn thành hội thoại (完成会话)',
+      items: [
+        { q: '(1) A: Nǐ mǎi shénme?   B: ______ .   A: Nǐ mǎi duōshao?   B: ______ .   A: Hái yào biéde ma?   B: ______ , ______ ?   A: Yígòng ______ .', hint: 'Ví dụ: B: Wǒ mǎi píngguǒ. (我买苹果。) · B: Wǒ mǎi liǎng jīn. (我买两斤。) · B: Yào. Júzi zěnme mài? (要。橘子怎么卖?) · A: Yígòng … kuài. (一共…块。)' },
+        { q: '(2) A: ______ ?   B: Wǒ mǎi júzi. Yì jīn duōshao qián?   A: ______ .   B: Wǒ mǎi wǔ jīn. Yígòng duōshao qián?   A: ______ . ______ ?   B: Bú yào. Xièxie!', hint: 'A: Nǐ mǎi shénme? (你买什么?) · A: Liǎng kuài. (两块。) · A: Yígòng shí kuài. (一共十块。) · A: Hái yào biéde ma? (还要别的吗?)' },
+      ],
+    },
+  ],
+}

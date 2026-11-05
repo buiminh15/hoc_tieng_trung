@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+/*
+ * Mực & ngọc.
+ * Giấy tuyên xanh sương, mực xanh đen, ngọc làm màu chính, vàng đồng để nhấn,
+ * đỏ con dấu CHỈ dùng cho con dấu và nét bút chấm bài.
+ */
+@theme {
+  --font-sans: "Be Vietnam Pro", "Noto Sans", "Noto Serif SC", system-ui, sans-serif;
+  --font-hanzi: "Noto Serif SC", "Songti SC", "SimSun", serif;
+
+  --color-surface: #fbfdfb;
+  --color-accent: #0f7b6c;
+  --color-accent-fg: #0b6b5d;
+  --color-accent-soft: #dcefe9;
+  --color-accent-soft2: #bfe2d8;
+  --color-gold: #d99a1e;
+  --color-seal: #c4402f;
+  --color-ink: #12202a;
+
+  /* Bóng đổ cứng như bản khắc gỗ, thay cho bóng mờ xám chung chung */
+  --card-shadow: 3px 3px 0 0 color-mix(in oklab, var(--color-ink) 16%, transparent);
+  --card-shadow-hover: 5px 5px 0 0 color-mix(in oklab, var(--color-ink) 18%, transparent);
+  --radius-xl: 0.625rem;
+  --radius-lg: 0.5rem;
+}
+
+:root {
+  --color-slate-50: #e9f0ec;
+  --color-slate-100: #dde7e2;
+  --color-slate-200: #c9d7d0;
+  --color-slate-400: #7d9494;
+  --color-slate-500: #53686a;
+  --color-slate-800: #1e3037;
+  --color-slate-900: #12202a;
+  --color-amber-50: #fbf1d6;
+  --color-ink: #12202a;
+  --wash: radial-gradient(1200px 500px at 85% -10%, rgb(15 123 108 / 0.10), transparent 60%),
+    radial-gradient(900px 400px at -10% 110%, rgb(217 154 30 / 0.08), transparent 60%);
+}
+
+.dark {
+  color-scheme: dark;
+  --color-surface: #13222a;
+  --color-accent: #12877a;
+  --color-accent-fg: #55d6be;
+  --color-accent-soft: #143a35;
+  --color-accent-soft2: #1d544b;
+  --color-gold: #f0c560;
+  --color-seal: #ee6a58;
+  --color-ink: #e7f0ec;
+  --color-slate-50: #0b151b;
+  --color-slate-100: #1c2f38;
+  --color-slate-200: #26404b;
+  --color-slate-400: #8fa9ae;
+  --color-slate-500: #9db5b9;
+  --color-slate-800: #2e4752;
+  --color-slate-900: #e7f0ec;
+  --color-amber-50: #33290f;
+  --color-green-100: #14432f;
+  --color-rose-100: #4a2328;
+  --card-shadow: 3px 3px 0 0 rgb(0 0 0 / 0.45);
+  --card-shadow-hover: 5px 5px 0 0 rgb(0 0 0 / 0.5);
+  --wash: radial-gradient(1200px 500px at 85% -10%, rgb(85 214 190 / 0.08), transparent 60%),
+    radial-gradient(900px 400px at -10% 110%, rgb(240 197 96 / 0.05), transparent 60%);
+}
+
+@layer base {
+  html { font-size: 17px; }
+  body {
+    background: var(--color-slate-50) var(--wash) fixed;
+    color: var(--color-slate-900);
+    line-height: 1.6;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  *, ::before, ::after { border-color: var(--color-slate-200); }
+  input[type='text'], input:not([type]), input[type='password'], select, textarea { background: var(--color-surface); border-radius: 0.375rem; transition: border-color 0.15s, box-shadow 0.15s; }
+  input[type='text']:focus, input:not([type]):focus, input[type='password']:focus, select:focus, textarea:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-accent) 22%, transparent); }
+  input[type='checkbox'] { accent-color: var(--color-accent); }
+  * { scrollbar-width: thin; scrollbar-color: var(--color-slate-200) transparent; }
+  button { cursor: pointer; transition: transform 0.12s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, color 0.15s ease; }
+  button:active:not(:disabled) { transform: translateY(1px) scale(0.99); }
+  :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+  ::selection { background: color-mix(in oklab, var(--color-gold) 45%, transparent); }
+}
+
+/* Thẻ nội dung: viền mực mảnh + bóng cứng. Dùng chung cho mọi khối có class "shadow". */
+@layer components {
+  /* Ô bấm được: nhấc lên khi rê chuột, ấn xuống khi bấm (như con dấu) */
+  .tile { transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease; }
+  .tile:hover { transform: translate(-1px, -1px); box-shadow: var(--card-shadow-hover); }
+  .tile:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 0 color-mix(in oklab, var(--color-ink) 20%, transparent); }
+  .hz { font-family: var(--font-hanzi); }
+  .py { letter-spacing: 0.02em; }
+  .rule { border-top: 2px solid var(--color-slate-900); }
+}
+
+/* Không nằm trong @layer để thắng utility `shadow` của Tailwind */
+.shadow { box-shadow: var(--card-shadow); border: 1px solid var(--color-slate-200); }
+.tile:hover.shadow { box-shadow: var(--card-shadow-hover); }
+
+/* ---------- Chuyển động ---------- */
+
+/* Chuyển trang: một lần mờ-hiện nhẹ, không phải mỗi khối một hiệu ứng */
+@keyframes page-in { from { opacity: 0; transform: translateY(6px); } }
+.page-in { animation: page-in 0.28s ease-out; }
+
+/* Nét bút đỏ chấm bài: vẽ ra khi trả lời */
+.pen { position: absolute; inset: -6px; width: calc(100% + 12px); height: calc(100% + 12px); fill: none; stroke: var(--color-seal); stroke-width: 2.8; stroke-linecap: round; stroke-linejoin: round; pointer-events: none; overflow: visible; }
+.pen path { stroke-dasharray: 130; animation: pen-draw 0.42s ease-out; }
+.pen path.pen-2 { animation-delay: 0.2s; animation-fill-mode: backwards; }
+@keyframes pen-draw { from { stroke-dashoffset: 130; } }
+
+/* Con dấu đóng xuống giấy */
+@keyframes stamp { 0% { transform: scale(2.2) rotate(-14deg); opacity: 0; } 55% { transform: scale(0.94) rotate(-6deg); opacity: 1; } 75% { transform: scale(1.04) rotate(-4deg); } 100% { transform: scale(1) rotate(-5deg); opacity: 1; } }
+.stamp { animation: stamp 0.55s cubic-bezier(0.2, 0.9, 0.3, 1) backwards; transform: rotate(-5deg); }
+
+/* Sai: rung nhẹ */
+@keyframes shake { 20%, 60% { transform: translateX(-5px); } 40%, 80% { transform: translateX(5px); } }
+.shake { animation: shake 0.35s ease-in-out; }
+
+/* Đáp án đúng: sáng lên một nhịp */
+@keyframes pop { 0% { transform: scale(0.97); } 50% { transform: scale(1.025); } 100% { transform: scale(1); } }
+.pop { animation: pop 0.3s ease-out; }
+
+/* Thẻ lật 3D */
+.flip { perspective: 1200px; }
+.flip-inner { display: grid; transition: transform 0.6s cubic-bezier(0.3, 0.7, 0.2, 1); transform-style: preserve-3d; }
+.flip-inner.is-back { transform: rotateY(180deg); }
+.flip-face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.flip-back { transform: rotateY(180deg); }
+
+/* Đường thanh điệu tự vẽ */
+.tone-line { stroke-dasharray: 160; stroke-dashoffset: 0; }
+.tone-card:hover .tone-line, .tone-card:focus-within .tone-line, .tone-line.replay { animation: tone-draw 0.8s ease-out; }
+@keyframes tone-draw { from { stroke-dashoffset: 160; } }
+
+/* Thanh tiến độ đầy dần */
+.bar { transition: width 0.7s cubic-bezier(0.3, 0.7, 0.2, 1); }
+
+/* Gạch chân mực chạy dưới tiêu đề */
+@keyframes ink-run { from { transform: scaleX(0); } }
+.ink-under { position: relative; display: inline-block; }
+.ink-under::after { content: ""; position: absolute; left: 0; right: 0; bottom: -0.1em; height: 0.28em; background: var(--color-gold); opacity: 0.55; border-radius: 2px; transform-origin: left; animation: ink-run 0.7s 0.15s cubic-bezier(0.3, 0.7, 0.2, 1) backwards; z-index: -1; }
+
+/* Vòng sáng nhấp nháy cho nút phát âm đang đọc */
+@keyframes ring { from { box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-accent) 55%, transparent); } to { box-shadow: 0 0 0 12px transparent; } }
+.ring { animation: ring 0.9s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after { transition: none !important; animation: none !important; }
+}
