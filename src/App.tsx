@@ -11,6 +11,8 @@ import Lesson from './pages/Lesson'
 import PinyinPage from './pages/PinyinPage'
 import Practice from './pages/Practice'
 import Exam from './pages/Exam'
+import HskList from './pages/HskList'
+import HskExam from './pages/HskExam'
 import Sound from './pages/Sound'
 import { useTheme } from './lib/theme'
 
@@ -42,6 +44,7 @@ export default function App() {
     ['/', 'Giáo trình', pathname === '/' || pathname.startsWith('/books')],
     ['/practice', 'Luyện tập', pathname.startsWith('/practice')],
     ['/exam', 'Thi thử', pathname.startsWith('/exam')],
+    ['/hsk', 'Đề HSK', pathname.startsWith('/hsk')],
     ['/pinyin', 'Pinyin', pathname.startsWith('/pinyin')],
     ['/review', 'Ôn tập', pathname.startsWith('/review')],
     ['/words', 'Từ vựng', pathname.startsWith('/words')],
@@ -79,6 +82,8 @@ export default function App() {
         <Route path="/books/:bookId/lessons/:id" element={<Lesson />} />
         <Route path="/practice" element={<Practice />} />
         <Route path="/exam" element={<Exam />} />
+        <Route path="/hsk" element={<HskList />} />
+        <Route path="/hsk/:id" element={<HskExam />} />
         <Route path="/sound" element={<Sound />} />
         <Route path="/pinyin" element={<PinyinPage />} />
         <Route path="/review" element={<Review />} />

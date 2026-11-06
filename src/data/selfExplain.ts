@@ -127,6 +127,55 @@ export const SELF_EXPLAIN: Record<string, Topic[]> = {
     { id: 'zenme', prompt: 'Giải thích cách hỏi cách thức bằng 怎么 + động từ', note: 'Hỏi cách thức: 怎么 + động từ' },
     { id: 'ne-hoi', prompt: 'Giải thích 呢 ở cuối câu hỏi làm giọng mềm đi như thế nào', note: 'Trợ từ 呢 trong câu hỏi: làm giọng mềm' },
   ],
+  '2-18': [
+    { id: 'nho-giup', prompt: 'Giải thích cách nhờ giúp đỡ bằng 顺便替我…, 帮我…, 行吗?', note: 'Nhờ giúp đỡ: 顺便替我买几张邮票吧' },
+    { id: 'lien-dong', prompt: 'Giải thích câu liên động và hai dạng chính của nó', note: 'Câu liên động (连动句)' },
+    { id: 'thu-tu', prompt: 'Giải thích thứ tự các động từ trong câu liên động', note: 'Trật tự trong câu liên động' },
+    { id: 'ti-bang-gei', prompt: 'Giải thích khác nhau giữa 替, 帮 và 给', note: 'Làm thay và giúp: 替, 帮, 给' },
+    { id: 'logic', prompt: 'Giải thích trọng âm logic: nhấn phần nào khi trả lời các câu hỏi khác nhau', note: 'Trọng âm logic (逻辑重音)' },
+  ],
+  '2-19': [
+    { id: 'tien-te', prompt: 'Giải thích cách đọc số tiền với 块, 毛, 分 và khi nào thêm 钱', note: 'Đơn vị tiền tệ: 元, 角, 分 (块, 毛, 分)' },
+    { id: 'tai-le', prompt: 'Giải thích mẫu 太…了 khi chê và khi khen', note: '太……了 (1): chê quá mức; (2): khen' },
+    { id: 'lap', prompt: 'Giải thích cách lặp động từ (试试, 看一看, 预习预习) và ý nghĩa', note: 'Động từ lặp (动词重叠): V V' },
+    { id: 'you-you', prompt: 'Giải thích cấu trúc 又…又…', note: '又……又…… : vừa… vừa…' },
+    { id: 'yidianr', prompt: 'Giải thích khác nhau giữa 一点儿 và 有(一)点儿', note: '一点儿 và 有(一)点儿' },
+  ],
+  '2-20': [
+    { id: 'shu', prompt: 'Giải thích cách nói tuổi con giáp với 属 và hỏi 属什么的', note: 'Tuổi con giáp: 属狗' },
+    { id: 'jiu', prompt: 'Giải thích 就 trong 就在我的房间 mang ý gì', note: '就 nhấn mạnh: 就在我的房间' },
+    { id: 'danh-tu', prompt: 'Giải thích câu vị ngữ danh từ và vì sao không dùng 是', note: 'Câu vị ngữ danh từ (名词谓语句)' },
+    { id: 'nam-thang', prompt: 'Giải thích cách đọc năm, tháng, ngày và thứ tự khi nói ngày', note: 'Năm, tháng, ngày (年、月、日)' },
+    { id: 'ngu-dieu', prompt: 'Giải thích cách hỏi chỉ bằng giọng nghi vấn, không dùng 吗', note: 'Câu hỏi bằng giọng nghi vấn (怎么问 6)' },
+  ],
+  '2-21': [
+    { id: 'nar', prompt: 'Giải thích vì sao nói 去朋友那儿 chứ không nói 去朋友', note: 'Đến chỗ ai: 去朋友那儿, 来我这儿' },
+    { id: 'men', prompt: 'Giải thích hậu tố 们 và khi nào không thêm 们', note: 'Hậu tố 们 (同学们)' },
+    { id: 'gio', prompt: 'Giải thích cách nói giờ với 点, 刻, 半, 差', note: 'Biểu đạt giờ giấc (1): giờ chính, 刻, 半, 差' },
+    { id: 'thu-tu', prompt: 'Giải thích thứ tự biểu đạt thời gian và vai trò của từ chỉ thời gian trong câu', note: 'Biểu đạt giờ giấc (2): thứ tự và vai trò trong câu' },
+    { id: 'truoc-noi', prompt: 'Giải thích vì sao thời gian đứng trước nơi chốn trong câu', note: 'Thời gian đứng trước nơi chốn' },
+  ],
+  '2-22': [
+    { id: 'a-bien-am', prompt: 'Giải thích 啊 biến âm theo âm cuối của chữ đứng trước', note: '你喜欢看京剧? 是啊: biến âm của 啊' },
+    { id: 'yiqian', prompt: 'Giải thích cách dùng 以前 và 以后, một mình và sau cụm từ', note: '以前 và 以后' },
+    { id: 'dui', prompt: 'Giải thích giới từ 对 trong 对…感兴趣', note: 'Giới từ 对: 我对书法感兴趣' },
+    { id: 'kiem-ngu', prompt: 'Giải thích câu kiêm ngữ với 请, 叫, 让', note: 'Câu kiêm ngữ (兼语句)' },
+    { id: 'hoi-so-thich', prompt: 'Giải thích cách hỏi và nói về sở thích', note: 'Hỏi sở thích và thể hiện hứng thú' },
+  ],
+  '2-23': [
+    { id: 'phuong-vi', prompt: 'Giải thích từ chỉ phương vị (东边, 里边…) và khi nào thêm 的', note: 'Phương vị từ và 的; bỏ 边' },
+    { id: 'zai', prompt: 'Giải thích câu 在 chỉ vị trí của người hoặc vật', note: 'Câu tồn tại (1): 在 chỉ vị trí' },
+    { id: 'you', prompt: 'Giải thích câu 有 chỉ nơi có người hoặc vật', note: 'Câu tồn tại (2): 有 chỉ nơi có người, vật' },
+    { id: 'shi', prompt: 'Giải thích câu 是 khi muốn biết cụ thể ở đó là gì', note: 'Câu tồn tại (3): 是 khi muốn biết cụ thể' },
+    { id: 'li-cong-wang', prompt: 'Giải thích khác nhau giữa 离, 从 và 往', note: 'Giới từ 离, 从, 往' },
+  ],
+  '2-24': [
+    { id: 'zai', prompt: 'Giải thích phó từ 再 và hành động lặp lại chưa xảy ra', note: 'Hỏi bằng 能不能再说一遍; trạng từ 再' },
+    { id: 'cong-dao', prompt: 'Giải thích cấu trúc 从…到… chỉ thời gian', note: '从……到……: từ… đến…' },
+    { id: 'nang-nguyen', prompt: 'Giải thích động từ năng nguyện và cách hỏi chính phản', note: 'Động từ năng nguyện (能愿动词)' },
+    { id: 'yao', prompt: 'Giải thích 要 và vì sao phủ định là 不想 hoặc 不愿意', note: '要: muốn, phải; phủ định 不想 hoặc 不愿意' },
+    { id: 'neng-keyi', prompt: 'Giải thích 能 và 可以: khả năng và sự cho phép', note: '能 / 可以: có thể, được phép' },
+  ],
 }
 
 export const topicsOf = (book: number, id: number): Topic[] => SELF_EXPLAIN[`${book}-${id}`] ?? []

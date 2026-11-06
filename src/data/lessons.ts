@@ -15,6 +15,13 @@ import { lesson14 } from './lesson14'
 import { lesson15 } from './lesson15'
 import { lesson16 } from './lesson16'
 import { lesson17 } from './lesson17'
+import { lesson18 } from './lesson18'
+import { lesson19 } from './lesson19'
+import { lesson20 } from './lesson20'
+import { lesson21 } from './lesson21'
+import { lesson22 } from './lesson22'
+import { lesson23 } from './lesson23'
+import { lesson24 } from './lesson24'
 import type { Lesson } from './types'
 
 const initialPairs = (rows: string[][]) => rows.flat().map(s => ({ p: s, syl: s }))
@@ -55,7 +62,7 @@ export const lesson1: Lesson = {
 /** Nội dung bài đã soạn, theo quyển. Thêm bài mới: tạo file dữ liệu rồi thêm vào đây. */
 export const bookLessons: Record<number, Lesson[]> = {
   1: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15],
-  2: [lesson16, lesson17],
+  2: [lesson16, lesson17, lesson18, lesson19, lesson20, lesson21, lesson22, lesson23, lesson24],
 }
 
 export const getLesson = (book: number, id: number) => bookLessons[book]?.find(l => l.id === id)

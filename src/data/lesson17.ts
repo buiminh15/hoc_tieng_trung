@@ -145,7 +145,7 @@ export const lesson17: Lesson = {
     { parts: ['玛丽', '给', '我', '一', '本', '英文', '杂志'], pinyin: 'Mǎlì gěi wǒ yì běn Yīngwén zázhì.', vi: 'Mary đưa cho tôi một quyển tạp chí tiếng Anh.' },
     { parts: ['我', '问', '老师', '一', '个', '问题'], pinyin: 'Wǒ wèn lǎoshī yí ge wèntí.', vi: 'Tôi hỏi thầy một câu hỏi.' },
   ],
-  writeChars: ['舍', '正', '录', '教', '乐', '事', '想'],
+  writeChars: ['舍', '正', '录', '教', '乐', '事', '想', '坐', '挤', '门', '课', '合', '力', '化'],
   drills: [
     {
       title: 'Phân biệt âm và thanh điệu', hint: 'Đọc từng cặp, chú ý thanh điệu và âm đầu.',
