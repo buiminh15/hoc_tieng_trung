@@ -176,6 +176,13 @@ export const SELF_EXPLAIN: Record<string, Topic[]> = {
     { id: 'yao', prompt: 'Giải thích 要 và vì sao phủ định là 不想 hoặc 不愿意', note: '要: muốn, phải; phủ định 不想 hoặc 不愿意' },
     { id: 'neng-keyi', prompt: 'Giải thích 能 và 可以: khả năng và sự cho phép', note: '能 / 可以: có thể, được phép' },
   ],
+  '2-25': [
+    { id: 'nali', prompt: 'Giải thích 哪里 là lời khiêm tốn khi được khen', note: '哪里: lời khiêm tốn khi được khen' },
+    { id: 'hai-keyi', prompt: 'Giải thích 还 trong 打得还可以 diễn tả mức độ nào', note: '打得还可以: 还 chỉ mức tạm ổn' },
+    { id: 'bo-ngu', prompt: 'Giải thích bổ ngữ trạng thái V + 得 + tính từ dùng để làm gì', note: 'Bổ ngữ trạng thái (状态补语) (1)' },
+    { id: 'phu-dinh', prompt: 'Giải thích dạng phủ định và câu hỏi chính phản của bổ ngữ trạng thái', note: 'Dạng phủ định và hỏi chính phản' },
+    { id: 'tan-ngu', prompt: 'Giải thích cấu trúc bổ ngữ trạng thái khi động từ có tân ngữ', note: 'Khi động từ có tân ngữ' },
+  ],
 }
 
 export const topicsOf = (book: number, id: number): Topic[] => SELF_EXPLAIN[`${book}-${id}`] ?? []

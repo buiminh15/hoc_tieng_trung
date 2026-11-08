@@ -1,0 +1,293 @@
+import type { Lesson } from './types'
+
+const T = '老师 lǎoshī'
+const L = '罗兰 Luólán'
+const K = '麦克 Màikè'
+
+/** Quyển 2, Bài 25. */
+export const lesson25: Lesson = {
+  id: 25,
+  title: 'Cô ấy học rất tốt',
+  hanzi: '她学得很好',
+  pinyin: 'Tā xué de hěn hǎo',
+  vi: 'Cô ấy học rất tốt',
+  intro: 'Bổ ngữ trạng thái (V + 得 + tính từ) để nhận xét việc làm tốt hay chưa; câu khiêm tốn 哪里; 还可以; 怎么 + 得 + 这么 + tính từ; trọng âm bổ ngữ trạng thái.',
+  dialogue: [
+    { who: 'A', name: T, scene: '(一) 她学得很好 – Cô ấy học rất tốt', hanzi: '罗兰，电视台想请留学生表演一个汉语节目，你愿意去吗？', pinyin: 'Luólán, diànshìtái xiǎng qǐng liúxuéshēng biǎoyǎn yí ge Hànyǔ jiémù, nǐ yuànyì qù ma?', vi: 'La Lan, đài truyền hình muốn mời lưu học sinh biểu diễn một tiết mục tiếng Hán, em có muốn đi không?' },
+    { who: 'B', name: L, hanzi: '老师，我不想去。', pinyin: 'Lǎoshī, wǒ bù xiǎng qù.', vi: 'Thưa thầy, em không muốn đi.' },
+    { who: 'A', name: T, hanzi: '为什么？', pinyin: 'Wèi shénme?', vi: 'Vì sao?' },
+    { who: 'B', name: L, hanzi: '我汉语说得不好，也不会表演。', pinyin: 'Wǒ Hànyǔ shuō de bù hǎo, yě bú huì biǎoyǎn.', vi: 'Em nói tiếng Hán chưa tốt, cũng không biết biểu diễn.' },
+    { who: 'A', name: T, hanzi: '你学得不错，有很大进步，汉语水平提高得很快。', pinyin: 'Nǐ xué de búcuò, yǒu hěn dà jìnbù, Hànyǔ shuǐpíng tígāo de hěn kuài.', vi: 'Em học khá lắm, tiến bộ rất nhiều, trình độ tiếng Hán nâng lên rất nhanh.' },
+    { who: 'B', name: L, hanzi: '哪里，我发音发得不准，说得也不流利。让玛丽去吧。她汉语学得很好，说得很流利。玛丽还会唱京剧。', pinyin: 'Nǎli, wǒ fā yīn fā de bù zhǔn, shuō de yě bù liúlì. Ràng Mǎlì qù ba. Tā Hànyǔ xué de hěn hǎo, shuō de hěn liúlì. Mǎlì hái huì chàng jīngjù.', vi: 'Dạ đâu có, em phát âm chưa chuẩn, nói cũng chưa lưu loát. Để Mary đi đi ạ. Bạn ấy học tiếng Hán rất tốt, nói rất lưu loát. Mary còn biết hát kinh kịch.' },
+    { who: 'A', name: T, hanzi: '是吗？她京剧唱得怎么样？', pinyin: 'Shì ma? Tā jīngjù chàng de zěnmeyàng?', vi: 'Thế à? Bạn ấy hát kinh kịch thế nào?' },
+    { who: 'B', name: L, hanzi: '王老师说她唱得不错。', pinyin: 'Wáng lǎoshī shuō tā chàng de búcuò.', vi: 'Thầy Vương nói bạn ấy hát khá.' },
+    { who: 'A', name: T, hanzi: '她怎么学得这么好？', pinyin: 'Tā zěnme xué de zhème hǎo?', vi: 'Sao bạn ấy học được giỏi như vậy?' },
+    { who: 'B', name: L, hanzi: '她非常努力，也很认真。', pinyin: 'Tā fēicháng nǔlì, yě hěn rènzhēn.', vi: 'Bạn ấy rất chăm chỉ, cũng rất nghiêm túc.' },
+    { who: 'A', name: K, scene: '(二) 她每天都起得很早 – Mỗi ngày cô ấy dậy rất sớm (trên sân tập của trường, Mary đang đánh thái cực quyền)', hanzi: '老师，您看她太极拳打得怎么样？', pinyin: 'Lǎoshī, nín kàn tā tàijíquán dǎ de zěnmeyàng?', vi: 'Thưa thầy, thầy thấy bạn ấy đánh thái cực quyền thế nào?' },
+    { who: 'B', name: T, hanzi: '打得不错。', pinyin: 'Dǎ de búcuò.', vi: 'Đánh khá.' },
+    { who: 'A', name: K, hanzi: '为学太极拳，她每天都起得很早。', pinyin: 'Wèi xué tàijíquán, tā měi tiān dōu qǐ de hěn zǎo.', vi: 'Để học thái cực quyền, mỗi ngày bạn ấy dậy rất sớm.' },
+    { who: 'B', name: T, hanzi: '麦克，你喜欢什么运动？', pinyin: 'Màikè, nǐ xǐhuan shénme yùndòng?', vi: 'Mike, em thích môn thể thao nào?' },
+    { who: 'A', name: K, hanzi: '我喜欢跑步、打篮球。', pinyin: 'Wǒ xǐhuan pǎobù, dǎ lánqiú.', vi: 'Em thích chạy bộ, chơi bóng rổ.' },
+    { who: 'B', name: T, hanzi: '刚才我看你跑得很快。你篮球打得怎么样？', pinyin: 'Gāngcái wǒ kàn nǐ pǎo de hěn kuài. Nǐ lánqiú dǎ de zěnmeyàng?', vi: 'Vừa rồi thầy thấy em chạy rất nhanh. Em chơi bóng rổ thế nào?' },
+    { who: 'A', name: K, hanzi: '打得还可以。老师，您每天都来锻炼吗？', pinyin: 'Dǎ de hái kěyǐ. Lǎoshī, nín měi tiān dōu lái duànliàn ma?', vi: 'Cũng tạm được ạ. Thầy ngày nào cũng đến tập ạ?' },
+    { who: 'B', name: T, hanzi: '对，我每天都坚持锻炼。你呢？', pinyin: 'Duì, wǒ měi tiān dōu jiānchí duànliàn. Nǐ ne?', vi: 'Đúng, mỗi ngày thầy đều kiên trì tập. Còn em?' },
+    { who: 'A', name: K, hanzi: '我不常锻炼，因为我晚上常常睡得很晚，早上起得也很晚。', pinyin: 'Wǒ bù cháng duànliàn, yīnwèi wǒ wǎnshang chángcháng shuì de hěn wǎn, zǎoshang qǐ de yě hěn wǎn.', vi: 'Em không hay tập, vì buổi tối em thường ngủ rất muộn, buổi sáng cũng dậy rất muộn.' },
+  ],
+  dialogueTip: 'Bổ ngữ trạng thái: <b>V + 得 + (很) + tính từ</b> (起得很早, 唱得不错). Có tân ngữ thì lặp động từ: <b>唱京剧唱得…</b> hoặc bỏ động từ đầu: <b>京剧唱得…</b>. Khiêm tốn khi được khen: <b>哪里，哪里</b>. <b>还可以</b> = cũng tạm. <b>怎么…得这么好?</b> = sao lại… giỏi thế?',
+  slowSay: '她学得很好',
+  vocab: [
+    { hanzi: '电视台', pinyin: 'diànshìtái', pos: 'danh từ', meaning: 'đài truyền hình', han_viet: 'điện thị đài' },
+    { hanzi: '台', pinyin: 'tái', pos: 'danh từ', meaning: 'đài, trạm', han_viet: 'đài' },
+    { hanzi: '表演', pinyin: 'biǎoyǎn', pos: 'động từ', meaning: 'biểu diễn', han_viet: 'biểu diễn' },
+    { hanzi: '节目', pinyin: 'jiémù', pos: 'danh từ', meaning: 'tiết mục, chương trình', han_viet: 'tiết mục' },
+    { hanzi: '愿意', pinyin: 'yuànyì', pos: 'năng nguyện', meaning: 'bằng lòng, muốn', han_viet: 'nguyện ý' },
+    { hanzi: '为什么', pinyin: 'wèi shénme', pos: 'cụm', meaning: 'vì sao', han_viet: 'vị thập ma' },
+    { hanzi: '得', pinyin: 'de', pos: 'trợ từ', meaning: 'dùng sau động/tính từ để nối bổ ngữ', han_viet: 'đắc' },
+    { hanzi: '不错', pinyin: 'búcuò', pos: 'tính từ', meaning: 'khá tốt, không tệ', han_viet: 'bất thác' },
+    { hanzi: '错', pinyin: 'cuò', pos: 'tính từ', meaning: 'sai', han_viet: 'thác' },
+    { hanzi: '进步', pinyin: 'jìnbù', pos: 'động từ', meaning: 'tiến bộ', han_viet: 'tiến bộ' },
+    { hanzi: '水平', pinyin: 'shuǐpíng', pos: 'danh từ', meaning: 'trình độ', han_viet: 'thủy bình' },
+    { hanzi: '提高', pinyin: 'tígāo', pos: 'động từ', meaning: 'nâng cao', han_viet: 'đề cao' },
+    { hanzi: '快', pinyin: 'kuài', pos: 'tính từ', meaning: 'nhanh', han_viet: 'khoái' },
+    { hanzi: '哪里', pinyin: 'nǎli', pos: 'đại từ', meaning: 'đâu có (lời khiêm tốn khi được khen)', han_viet: 'ná lý' },
+    { hanzi: '准', pinyin: 'zhǔn', pos: 'tính từ', meaning: 'chuẩn, chính xác', han_viet: 'chuẩn' },
+    { hanzi: '流利', pinyin: 'liúlì', pos: 'tính từ', meaning: 'lưu loát', han_viet: 'lưu lợi' },
+    { hanzi: '努力', pinyin: 'nǔlì', pos: 'tính từ', meaning: 'cố gắng, chăm chỉ', han_viet: 'nỗ lực' },
+    { hanzi: '认真', pinyin: 'rènzhēn', pos: 'tính từ', meaning: 'nghiêm túc, chăm chú', han_viet: 'nhận chân' },
+    { hanzi: '看', pinyin: 'kàn', pos: 'động từ', meaning: 'xem, thấy (cho rằng)', han_viet: 'khán' },
+    { hanzi: '为', pinyin: 'wèi', pos: 'giới từ', meaning: 'vì, để', han_viet: 'vị' },
+    { hanzi: '这么', pinyin: 'zhème', pos: 'đại từ', meaning: 'như thế này, đến vậy', han_viet: '' },
+    { hanzi: '那么', pinyin: 'nàme', pos: 'đại từ', meaning: 'như thế kia', han_viet: '' },
+    { hanzi: '早', pinyin: 'zǎo', pos: 'tính từ', meaning: 'sớm', han_viet: 'tảo' },
+    { hanzi: '运动', pinyin: 'yùndòng', pos: 'động/danh từ', meaning: 'vận động, thể thao', han_viet: 'vận động' },
+    { hanzi: '跑步', pinyin: 'pǎo bù', pos: 'động từ', meaning: 'chạy bộ', han_viet: 'bào bộ' },
+    { hanzi: '跑', pinyin: 'pǎo', pos: 'động từ', meaning: 'chạy', han_viet: 'bào' },
+    { hanzi: '篮球', pinyin: 'lánqiú', pos: 'danh từ', meaning: 'bóng rổ', han_viet: 'lam cầu' },
+    { hanzi: '球', pinyin: 'qiú', pos: 'danh từ', meaning: 'quả bóng', han_viet: 'cầu' },
+    { hanzi: '刚才', pinyin: 'gāngcái', pos: 'danh từ', meaning: 'vừa nãy', han_viet: 'cương tài' },
+    { hanzi: '可以', pinyin: 'kěyǐ', pos: 'tính từ', meaning: 'khá được, tạm ổn', han_viet: 'khả dĩ' },
+    { hanzi: '坚持', pinyin: 'jiānchí', pos: 'động từ', meaning: 'kiên trì', han_viet: 'kiên trì' },
+    { hanzi: '因为', pinyin: 'yīnwèi', pos: 'liên từ', meaning: 'bởi vì', han_viet: 'nhân vị' },
+    { hanzi: '晚', pinyin: 'wǎn', pos: 'tính từ', meaning: 'muộn', han_viet: 'vãn' },
+  ],
+  sections: [
+    {
+      kind: 'examples', label: 'Trọng âm: bổ ngữ trạng thái', title: 'Trọng âm của câu (句重音): bổ ngữ trạng thái',
+      intro: 'Trong câu có bổ ngữ trạng thái, bổ ngữ (tính từ sau 得) được nhấn. Dấu ’ đặt trước phần được nhấn.',
+      groups: [
+        { label: 'Nhấn bổ ngữ (tính từ)', items: [['老师说得很’清楚。', 'lǎoshī shuō de hěn ’qīngchu', 'nhấn: qīngchu'], ['她教得很’好。', 'tā jiāo de hěn ’hǎo', 'nhấn: hǎo'], ['麦克跑步跑得很’快。', 'Màikè pǎo bù pǎo de hěn ’kuài', 'nhấn: kuài']] },
+      ],
+    },
+  ],
+  notes: [
+    {
+      title: '哪里: lời khiêm tốn khi được khen',
+      body: '哪里 là lời nói khách sáo đáp lại khi được người khác khen. Cũng có thể nói 哪里，哪里。Ý "dạ đâu có, em chưa giỏi như vậy". Ví dụ: A: 你汉语说得真好! B: 哪里，哪里。',
+      say: '哪里，哪里',
+    },
+    {
+      title: '你看她太极拳打得怎么样? (看 = cho rằng)',
+      body: '看 trong câu này nghĩa là "cho rằng, thấy". 你看她太极拳打得怎么样? = Bạn thấy cô ấy đánh thái cực quyền thế nào? Dùng để hỏi nhận xét của người nghe.',
+      say: '你看她太极拳打得怎么样',
+    },
+    {
+      title: '打得还可以: 还 chỉ mức tạm ổn',
+      body: '还 ở đây diễn đạt mức độ chấp nhận được, tạm ổn, thường đứng trước tính từ và nghiêng về nghĩa tốt. 他汉语说得还可以。这个房子还不错。爸爸妈妈身体还好。',
+      say: '打得还可以',
+    },
+    {
+      title: 'Bổ ngữ trạng thái (状态补语) (1)',
+      body: 'Bổ ngữ trạng thái là bổ ngữ nối sau động từ bằng 得. Thành phần này thường là tính từ hoặc cụm tính từ, phía trước thường có 很. Chức năng chính: mô tả, phán đoán, đánh giá kết quả, mức độ, trạng thái. Hành động hoặc trạng thái được đánh giá thường xảy ra hằng ngày, đã xảy ra hoặc đang diễn ra.',
+      say: '她起得很早',
+    },
+    {
+      title: 'Dạng khẳng định: V + 得 + (很) + tính từ',
+      body: 'Khẳng định: động từ + 得 + (很) + tính từ. A: 你每天起得早不早? B: 我每天起得很早。A: 她太极拳打得怎么样? B: 打得很不错。A: 她说汉语说得好吗? B: 说得很好。他喝啤酒喝得很多。',
+      say: '我每天起得很早',
+    },
+    {
+      title: 'Dạng phủ định và hỏi chính phản',
+      body: 'Phủ định: động từ + 得 + 不 + tính từ. A: 你星期天起得早吗? B: 不早。(我星期天起得不早。) A: 你汉语说得怎么样? B: 我汉语说得不好。Hỏi chính phản: động từ + 得 + tính từ + 不 + tính từ: 你今天起得早不早? 她汉语说得好不好?',
+      say: '她汉语说得好不好',
+    },
+    {
+      title: 'Khi động từ có tân ngữ',
+      body: 'Khi động từ có tân ngữ, cấu trúc: động từ + tân ngữ + động từ + 得 + (很) + tính từ. 他打太极拳打得很好。她说汉语说得很好。Trong giao tiếp thực tế, động từ đầu thường được lược bỏ, thành câu chủ vị: 他太极拳打得很好。她汉语说得很流利。',
+      say: '他打太极拳打得很好',
+    },
+    {
+      title: 'Trọng âm: bổ ngữ trạng thái',
+      body: 'Câu có bổ ngữ trạng thái thì bổ ngữ (tính từ) được nhấn: 老师说得很’清楚。她教得很’好。麦克跑步跑得很’快。',
+      say: '老师说得很清楚',
+    },
+    {
+      title: 'Hỏi lý do và so sánh mức độ: 怎么…这么…',
+      body: '她怎么学得这么好? Dùng 怎么 + động từ + 得 + 这么 + tính từ để ngạc nhiên về mức độ cao ngoài dự đoán. 这么 (như thế này, vị trí gần), 那么 (như thế kia, vị trí xa). 为 (vì, để): 为学太极拳，她每天都起得很早。因为 (bởi vì) nêu nguyên nhân: 我不常锻炼，因为我晚上睡得很晚。',
+      say: '她怎么学得这么好',
+    },
+  ],
+  sentences: [
+    { parts: ['电视台', '想', '请', '留学生', '表演', '一', '个', '汉语', '节目'], pinyin: 'Diànshìtái xiǎng qǐng liúxuéshēng biǎoyǎn yí ge Hànyǔ jiémù.', vi: 'Đài truyền hình muốn mời lưu học sinh biểu diễn một tiết mục tiếng Hán.' },
+    { parts: ['你', '愿意', '去', '吗'], pinyin: 'Nǐ yuànyì qù ma?', vi: 'Em có muốn đi không?' },
+    { parts: ['我', '汉语', '说', '得', '不', '好'], pinyin: 'Wǒ Hànyǔ shuō de bù hǎo.', vi: 'Tiếng Hán của em nói chưa tốt.' },
+    { parts: ['你', '学', '得', '不错'], pinyin: 'Nǐ xué de búcuò.', vi: 'Em học khá lắm.' },
+    { parts: ['汉语', '水平', '提高', '得', '很', '快'], pinyin: 'Hànyǔ shuǐpíng tígāo de hěn kuài.', vi: 'Trình độ tiếng Hán nâng lên rất nhanh.' },
+    { parts: ['我', '发音', '发', '得', '不', '准'], pinyin: 'Wǒ fāyīn fā de bù zhǔn.', vi: 'Em phát âm chưa chuẩn.' },
+    { parts: ['她', '汉语', '学', '得', '很', '好'], pinyin: 'Tā Hànyǔ xué de hěn hǎo.', vi: 'Bạn ấy học tiếng Hán rất tốt.' },
+    { parts: ['她', '说', '得', '很', '流利'], pinyin: 'Tā shuō de hěn liúlì.', vi: 'Bạn ấy nói rất lưu loát.' },
+    { parts: ['她', '京剧', '唱', '得', '怎么样'], pinyin: 'Tā jīngjù chàng de zěnmeyàng?', vi: 'Bạn ấy hát kinh kịch thế nào?' },
+    { parts: ['她', '怎么', '学', '得', '这么', '好'], pinyin: 'Tā zěnme xué de zhème hǎo?', vi: 'Sao bạn ấy học giỏi như vậy?' },
+    { parts: ['她', '非常', '努力', '也', '很', '认真'], pinyin: 'Tā fēicháng nǔlì, yě hěn rènzhēn.', vi: 'Bạn ấy rất chăm chỉ, cũng rất nghiêm túc.' },
+    { parts: ['您', '看', '她', '太极拳', '打', '得', '怎么样'], pinyin: 'Nín kàn tā tàijíquán dǎ de zěnmeyàng?', vi: 'Thầy thấy bạn ấy đánh thái cực quyền thế nào?' },
+    { parts: ['她', '每天', '都', '起', '得', '很', '早'], pinyin: 'Tā měi tiān dōu qǐ de hěn zǎo.', vi: 'Mỗi ngày bạn ấy dậy rất sớm.' },
+    { parts: ['你', '喜欢', '什么', '运动'], pinyin: 'Nǐ xǐhuan shénme yùndòng?', vi: 'Em thích môn thể thao nào?' },
+    { parts: ['我', '喜欢', '跑步', '打', '篮球'], pinyin: 'Wǒ xǐhuan pǎobù, dǎ lánqiú.', vi: 'Em thích chạy bộ, chơi bóng rổ.' },
+    { parts: ['我', '看', '你', '跑', '得', '很', '快'], pinyin: 'Wǒ kàn nǐ pǎo de hěn kuài.', vi: 'Thầy thấy em chạy rất nhanh.' },
+    { parts: ['打', '得', '还', '可以'], pinyin: 'Dǎ de hái kěyǐ.', vi: 'Đánh cũng tạm được.' },
+    { parts: ['我', '每天', '都', '坚持', '锻炼'], pinyin: 'Wǒ měi tiān dōu jiānchí duànliàn.', vi: 'Mỗi ngày tôi đều kiên trì tập luyện.' },
+    { parts: ['我', '晚上', '睡', '得', '很', '晚'], pinyin: 'Wǒ wǎnshang shuì de hěn wǎn.', vi: 'Buổi tối tôi ngủ rất muộn.' },
+  ],
+  writeChars: ['为', '步', '平', '坚', '持', '错', '认', '真', '运', '动', '跑', '得', '才', '目', '愿', '因'],
+  drills: [
+    {
+      title: 'Phân biệt âm và thanh điệu', hint: 'Đọc từng cặp, chú ý thanh điệu và âm đầu.',
+      items: [
+        { h: '流利', p: 'liúlì' }, { h: '努力', p: 'nǔlì' }, { h: '表演', p: 'biǎoyǎn' }, { h: '表扬', p: 'biǎoyáng' },
+        { h: '节目', p: 'jiémù' }, { h: '觉悟', p: 'juéwù' }, { h: '进步', p: 'jìnbù' }, { h: '幸福', p: 'xìngfú' },
+        { h: '哪里', p: 'nǎli' }, { h: '那里', p: 'nàli' }, { h: '跑步', p: 'pǎo bù' }, { h: '抱负', p: 'bàofù' },
+      ],
+    },
+    {
+      title: 'Đọc liền nhiều âm tiết (多音节连读): thành ngữ', hint: 'Bốn chữ, đọc chậm rồi tăng tốc.',
+      items: [
+        { h: '世上无难事', p: 'shì shàng wú nán shì', m: 'trên đời không việc gì khó' }, { h: '只怕有心人', p: 'zhǐ pà yǒu xīn rén', m: 'chỉ sợ người có lòng' },
+        { h: '欲穷千里目', p: 'yù qióng qiān lǐ mù', m: 'muốn nhìn xa ngàn dặm' }, { h: '更上一层楼', p: 'gèng shàng yì céng lóu', m: 'lên thêm một tầng lầu' },
+      ],
+    },
+    {
+      title: 'Đọc to các cụm từ (朗读): 为, 坚持, 这么, 得', hint: 'Cụm với 为, 坚持, 这么 / 怎么这么 và bổ ngữ trạng thái.',
+      items: [
+        { h: '为学习汉语', p: 'wèi xuéxí Hànyǔ' }, { h: '为练习书法', p: 'wèi liànxí shūfǎ' }, { h: '为练习打太极拳', p: 'wèi liànxí dǎ tàijíquán' },
+        { h: '坚持学习', p: 'jiānchí xuéxí' }, { h: '坚持锻炼', p: 'jiānchí duànliàn' }, { h: '坚持练习', p: 'jiānchí liànxí' },
+        { h: '这么便宜', p: 'zhème piányi' }, { h: '这么容易', p: 'zhème róngyì' }, { h: '这么难', p: 'zhème nán' }, { h: '这么努力', p: 'zhème nǔlì' },
+        { h: '怎么这么便宜', p: 'zěnme zhème piányi' }, { h: '怎么这么难', p: 'zěnme zhème nán' }, { h: '怎么这么容易', p: 'zěnme zhème róngyì' }, { h: '怎么这么努力', p: 'zěnme zhème nǔlì' },
+        { h: '学得怎么样', p: 'xué de zěnmeyàng' }, { h: '说得怎么样', p: 'shuō de zěnmeyàng' }, { h: '写得怎么样', p: 'xiě de zěnmeyàng' }, { h: '唱得怎么样', p: 'chàng de zěnmeyàng' },
+        { h: '读得快', p: 'dú de kuài' }, { h: '打得很好', p: 'dǎ de hěn hǎo' }, { h: '做得很对', p: 'zuò de hěn duì' }, { h: '表演得很好', p: 'biǎoyǎn de hěn hǎo' },
+        { h: '说得很流利', p: 'shuō de hěn liúlì' }, { h: '唱得很好', p: 'chàng de hěn hǎo' }, { h: '写得很快', p: 'xiě de hěn kuài' }, { h: '学得很认真', p: 'xué de hěn rènzhēn' },
+        { h: '说得对不对', p: 'shuō de duì bu duì' }, { h: '唱得好不好', p: 'chàng de hǎo bu hǎo' }, { h: '起得早不早', p: 'qǐ de zǎo bu zǎo' }, { h: '睡得晚不晚', p: 'shuì de wǎn bu wǎn' },
+        { h: '说得不对', p: 'shuō de bú duì' }, { h: '唱得不好', p: 'chàng de bù hǎo' }, { h: '起得不早', p: 'qǐ de bù zǎo' }, { h: '睡得不晚', p: 'shuì de bù wǎn' },
+      ],
+    },
+    {
+      title: 'Từ bổ sung (补充生词)', hint: 'Dùng trong các bài thực hành và thực hành nói.',
+      items: [
+        { h: '行', p: 'xíng', m: 'giỏi, có năng lực' }, { h: '文章', p: 'wénzhāng', m: 'bài viết' }, { h: '摄影', p: 'shèyǐng', m: 'nhiếp ảnh, chụp ảnh' },
+      ],
+    },
+    {
+      title: 'Thay thế: 她学得好吗? 她学得很好', hint: 'Thay cặp động từ - tính từ.',
+      items: [
+        { h: '起得早', p: 'qǐ de zǎo' }, { h: '睡得晚', p: 'shuì de wǎn' }, { h: '喝得多', p: 'hē de duō' },
+        { h: '打得好', p: 'dǎ de hǎo' }, { h: '跑得快', p: 'pǎo de kuài' }, { h: '说得流利', p: 'shuō de liúlì' },
+      ],
+    },
+    {
+      title: 'Thay thế: 他(说)汉语说得好不好? 说得很好', hint: 'Câu hỏi chính phản có tân ngữ.',
+      items: [
+        { h: '发音发得准不准', p: 'fā yīn fā de zhǔn bu zhǔn' }, { h: '打篮球打得好不好', p: 'dǎ lánqiú dǎ de hǎo bu hǎo' }, { h: '做练习做得认真不认真', p: 'zuò liànxí zuò de rènzhēn bu rènzhēn' },
+        { h: '说汉语说得流利不流利', p: 'shuō Hànyǔ shuō de liúlì bu liúlì' }, { h: '写汉字写得快不快', p: 'xiě Hànzì xiě de kuài bu kuài' }, { h: '唱歌唱得好不好', p: 'chàng gē chàng de hǎo bu hǎo' },
+      ],
+    },
+    {
+      title: 'Thay thế: 你汉字写得怎么样? 写得不太好', hint: 'Thay đối tượng, động từ và tính từ.',
+      items: [
+        { h: '歌 唱 好', p: 'gē chàng hǎo' }, { h: '汉语 说 流利', p: 'Hànyǔ shuō liúlì' }, { h: '音 发 准', p: 'yīn fā zhǔn' },
+        { h: '声调 说 对', p: 'shēngdiào shuō duì' }, { h: '太极拳 打 好', p: 'tàijíquán dǎ hǎo' }, { h: '课文 读 流利', p: 'kèwén dú liúlì' },
+      ],
+    },
+    {
+      title: 'Thay thế: 她怎么学得这么好? 说得这么流利', hint: 'Thay bổ ngữ.',
+      items: [
+        { h: '说得这么流利', p: 'shuō de zhème liúlì' }, { h: '来得这么早', p: 'lái de zhème zǎo' }, { h: '打得这么好', p: 'dǎ de zhème hǎo' },
+        { h: '跑得这么快', p: 'pǎo de zhème kuài' }, { h: '写得这么好', p: 'xiě de zhème hǎo' }, { h: '到得这么晚', p: 'dào de zhème wǎn' },
+      ],
+    },
+    {
+      title: 'Thực hành nói (成段表达)', hint: 'Từ bổ sung: 行, 文章, 摄影. Đọc to cả hai đoạn.',
+      items: [
+        { h: '今天办公室的李老师来找我，他说，电视台想请留学生去表演汉语节目，问我愿不愿意去。我说，我不行。我汉语说得不太好，很多音发得不准，也不会表演节目。我对老师说，玛丽行，玛丽学得很好，她汉语说得很流利，还会唱京剧，听王老师说，她京剧唱得很不错。你让玛丽去吧，老师问我玛丽愿意去吗？我说，你跟她谈谈，我想她可能愿意。', p: 'Jīntiān bàngōngshì de Lǐ lǎoshī lái zhǎo wǒ, tā shuō, diànshìtái xiǎng qǐng liúxuéshēng qù biǎoyǎn Hànyǔ jiémù, wèn wǒ yuàn bu yuànyì qù. Wǒ shuō, wǒ bù xíng. Wǒ Hànyǔ shuō de bú tài hǎo, hěn duō yīn fā de bù zhǔn, yě bú huì biǎoyǎn jiémù. Wǒ duì lǎoshī shuō, Mǎlì xíng, Mǎlì xué de hěn hǎo, tā Hànyǔ shuō de hěn liúlì, hái huì chàng jīngjù, tīng Wáng lǎoshī shuō, tā jīngjù chàng de hěn búcuò. Nǐ ràng Mǎlì qù ba, lǎoshī wèn wǒ Mǎlì yuànyì qù ma? Wǒ shuō, nǐ gēn tā tántan, wǒ xiǎng tā kěnéng yuànyì.' },
+        { h: '今天上课的时候，老师问大家，毕业后打算做什么工作。同学们都说了自己的打算。爱德华文章写得不错，还喜欢摄影，照相照得很好，他想当一个记者。李美淑觉得在学校工作很有意思，想当个老师。玛丽想当律师。麦克汉语学得很好，他打算当翻译。山本想到父亲的公司工作。罗兰对秘书工作很感兴趣，她希望能去大使馆当秘书。', p: 'Jīntiān shàng kè de shíhou, lǎoshī wèn dàjiā, bì yè hòu dǎsuan zuò shénme gōngzuò. Tóngxuémen dōu shuō le zìjǐ de dǎsuan. Àidéhuá wénzhāng xiě de búcuò, hái xǐhuan shèyǐng, zhàoxiàng zhào de hěn hǎo, tā xiǎng dāng yí ge jìzhě. Lǐ Měishū juéde zài xuéxiào gōngzuò hěn yǒu yìsi, xiǎng dāng ge lǎoshī. Mǎlì xiǎng dāng lǜshī. Màikè Hànyǔ xué de hěn hǎo, tā dǎsuan dāng fānyì. Shānběn xiǎng dào fùqin de gōngsī gōngzuò. Luólán duì mìshū gōngzuò hěn gǎn xìngqù, tā xīwàng néng qù dàshǐguǎn dāng mìshū.' },
+      ],
+    },
+  ],
+  qa: [
+    {
+      title: 'Chọn từ điền vào chỗ trống (选词填空)',
+      items: [
+        { q: 'Từ cho sẵn: 怎么 说 努力 快 打 为 表演 都', hint: 'Mỗi từ dùng một lần.' },
+        { q: '(1) 她汉语 ______ 得很流利。', hint: '说' },
+        { q: '(2) 她 ______ 学得这么好?', hint: '怎么' },
+        { q: '(3) 她非常 ______ ，每天都起得很早，睡得很晚。', hint: '努力' },
+        { q: '(4) 你最近进步很 ______ 。', hint: '快' },
+        { q: '(5) 她太极拳 ______ 得怎么样?', hint: '打' },
+        { q: '(6) 他们班汉语节目 ______ 得非常好。', hint: '表演' },
+        { q: '(7) 我每天 ______ 坚持锻炼。', hint: '都' },
+        { q: '(8) ______ 学习汉语，她要去中国。', hint: '为' },
+      ],
+    },
+    {
+      title: 'Sắp xếp từ thành câu (组句)',
+      items: [
+        { q: '(1) 他 都 早上 得 起 很 每天 早 →', hint: '他每天早上都起得很早。' },
+        { q: '(2) 他 跑步 非常 跑 快 得 →', hint: '他跑步跑得非常快。' },
+        { q: '(3) 中文 玛丽 歌 不错 得 唱 很 →', hint: '玛丽中文歌唱得很不错。' },
+        { q: '(4) 得 汉字 写 她 很 好 →', hint: '她汉字写得很好。' },
+        { q: '(5) 我 不太 太极拳 好 得 打 →', hint: '我太极拳打得不太好。' },
+        { q: '(6) 她 发 音 准 得 很 →', hint: '她发音发得很准。' },
+      ],
+    },
+    {
+      title: 'Điền tính từ thích hợp (在空格里填入适当的形容词)',
+      items: [
+        { q: 'Ví dụ: 昨天我们在公园玩得很高兴。', hint: 'Mẫu của sách.' },
+        { q: '(1) 他汉语说得很 ______ 。', hint: '流利 / 好' },
+        { q: '(2) 你太极拳打得不 ______ 。', hint: '好 / 错' },
+        { q: '(3) 这个音你发得不 ______ 。', hint: '准' },
+        { q: '(4) 他汉字写得很 ______ 。', hint: '好 / 快' },
+        { q: '(5) 你今天的练习做得很 ______ 。', hint: '认真 / 好' },
+        { q: '(6) 麦克跑步跑得很 ______ 。', hint: '快' },
+        { q: '(7) 她每天都来得很 ______ 。', hint: '早' },
+        { q: '(8) 这个句子他翻译得不 ______ 。', hint: '对 / 好' },
+      ],
+    },
+    {
+      title: 'Hoàn thành hội thoại (完成会话)',
+      items: [
+        { q: 'Ví dụ: A: 你们学得快不快? B: 我们学得不快。', hint: 'Mẫu: hỏi chính phản có bổ ngữ.' },
+        { q: '(1) A: ______ ?   B: 她汉语说得不太好。', hint: '她汉语说得好不好?' },
+        { q: '(2) A: ______ ?   B: 她跑得不快。', hint: '她跑得快不快?' },
+        { q: '(3) A: ______ ?   B: 他这个句子翻译得不对。', hint: '他这个句子翻译得对不对?' },
+        { q: '(4) A: ______ ?   B: 他昨天酒喝得不太多。', hint: '他昨天酒喝得多不多?' },
+        { q: '(5) A: ______ ?   B: 我今天起得不早。', hint: '你今天起得早不早?' },
+        { q: '(6) A: ______ ?   B: 我英语说得不流利。', hint: '你英语说得流利不流利?' },
+      ],
+    },
+    {
+      title: 'Sửa câu sai (改错句)',
+      items: [
+        { q: '(1) 我说汉语不很流利。', hint: '我汉语说得不太流利。' },
+        { q: '(2) 麦克跑步得非常快。', hint: '麦克跑步跑得非常快。' },
+        { q: '(3) 她每天吃饭得很少。', hint: '她每天吃饭吃得很少。' },
+        { q: '(4) 田芳学习很努力，她英语说不错。', hint: '田芳学习很努力，她英语说得不错。' },
+        { q: '(5) 她每天起床得很早。', hint: '她每天起床起得很早。 / 她每天起得很早。' },
+        { q: '(6) 老师说话得比较快。', hint: '老师说话说得比较快。' },
+      ],
+    },
+    {
+      title: 'Xem hình nói chuyện (看图说话)',
+      items: [
+        { q: 'Sách có 5 cặp hình so sánh: 起床 (早 / 晚), 来教室 (早 / 晚), 喝啤酒 (多 / 少), 吃饺子 (多 / 少), 写汉字 (好 / 不好).', hint: 'Ví dụ: 她起得很早，他起得很晚。 · 他喝啤酒喝得很多，他喝得很少。 · 他写汉字写得很好，他写得不好。' },
+      ],
+    },
+  ],
+}

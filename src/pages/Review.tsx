@@ -53,7 +53,7 @@ export default function Review() {
   })
 
   if (isLoading) return <p className="text-slate-500">Đang tải…</p>
-  if (loadErr) return <p className="rounded-lg border-l-4 border-gold bg-amber-50 p-4">Không tải được dữ liệu: {(loadErr as Error).message}. Kiểm tra đã bật Anonymous sign-ins trong Supabase chưa.</p>
+  if (loadErr) return <p className="rounded-lg border-l-4 border-gold bg-amber-50 p-4">Không tải được dữ liệu: {(loadErr as Error).message}. Hãy thử đăng nhập lại.</p>
   if (!cur) return (
     <div>
     <div className="mx-auto max-w-md space-y-3 py-10 text-center">

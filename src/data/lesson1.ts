@@ -93,8 +93,8 @@ export const lesson1: LessonCore = {
     { who: 'B', hanzi: '你好！', pinyin: 'Nǐ hǎo!', vi: 'Xin chào!' },
   ],
   vocab: [
-    { hanzi: '你', pinyin: 'nǐ', pos: 'đại từ', meaning: 'bạn, anh, chị (ngôi 2 số ít)', han_viet: 'nễ' },
-    { hanzi: '好', pinyin: 'hǎo', pos: 'tính từ', meaning: 'tốt, khỏe', han_viet: 'hảo' },
+    { hanzi: '你', parts: '亻 (bộ nhân đứng) + 尔 (nhĩ)', pinyin: 'nǐ', pos: 'đại từ', meaning: 'bạn, anh, chị (ngôi 2 số ít)', han_viet: 'nễ' },
+    { hanzi: '好', parts: '女 (bộ nữ) + 子 (bộ tử)', pinyin: 'hǎo', pos: 'tính từ', meaning: 'tốt, khỏe', han_viet: 'hảo' },
     { hanzi: '你好', pinyin: 'nǐ hǎo', pos: 'cụm', meaning: 'xin chào', han_viet: 'nễ hảo' },
     { hanzi: '一', pinyin: 'yī', pos: 'số từ', meaning: 'một', han_viet: 'nhất' },
     { hanzi: '五', pinyin: 'wǔ', pos: 'số từ', meaning: 'năm', han_viet: 'ngũ' },

@@ -55,3 +55,12 @@ export function speakSyllable(syl: string, tone?: number) {
   }
   speak(syl, 0.7)
 }
+
+let clip: HTMLAudioElement | null = null
+/** Phát file ghi âm giọng thật; lỗi thì dùng giọng máy đọc `fallback`. */
+export function playClip(url: string, fallback?: string) {
+  if (hasSpeech) speechSynthesis.cancel()
+  clip?.pause()
+  clip = new Audio(url)
+  clip.play().catch(() => { if (fallback) speakSyllable(fallback) })
+}

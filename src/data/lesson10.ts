@@ -5,6 +5,7 @@ const Z = '职员 zhíyuán'
 
 export const lesson10: Lesson = {
   id: 10,
+  dialogueAudio: '/audio/ppt/l10-baikhoa.mp3',
   title: 'Anh ấy ở đâu',
   hanzi: '他住哪儿',
   pinyin: 'Tā zhù nǎr',

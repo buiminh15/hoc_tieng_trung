@@ -4,9 +4,13 @@ export interface Vocab {
   pos: string
   meaning: string
   han_viet: string
+  /** Cấu tạo chữ (bộ thủ), lấy từ bài giảng PowerPoint */
+  parts?: string
 }
 
-export interface Sound { s: string; tip: string; aspirated?: boolean; say?: string }
+export interface Sound { s: string; tip: string; aspirated?: boolean; say?: string; /** Mô tả kỹ thuật (vị trí, cách phát âm) */ tech?: string; /** File ghi âm giọng thật */ audio?: string }
+
+export interface StrokeRule { title: string; body: string; example: string; img: string }
 
 export type PhonSection =
   | { kind: 'sounds'; label: string; title: string; list: Sound[]; note?: string }
@@ -45,4 +49,9 @@ export interface Lesson extends LessonCore {
   sentences?: Sentence[]
   dialogueTip?: string
   slowSay?: string
+  /** Quy tắc viết chữ Hán (hiện ở tab Tập viết) */
+  strokeRules?: StrokeRule[]
+  strokesImg?: string
+  /** File ghi âm đọc cả bài khóa (giọng thật) */
+  dialogueAudio?: string
 }

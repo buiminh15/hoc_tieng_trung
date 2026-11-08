@@ -14,32 +14,33 @@ export const lesson2: Lesson = {
     { who: 'B', hanzi: '不太难。', pinyin: 'Bú tài nán.', vi: 'Không khó lắm.' },
   ],
   dialogueTip: 'Cấu trúc cần nhớ: <b>Chủ ngữ + tính từ + 吗?</b> để hỏi có/không (你忙吗?). Trả lời: <b>很 + tính từ</b> (rất…) hoặc <b>不太 + tính từ</b> (không… lắm). Chú ý "不" đứng trước thanh 4 (太 tài) thì đọc thành <b>bú</b>.',
+  dialogueAudio: '/audio/ppt/l2-baikhoa.mp3',
   slowSay: '汉语不太难',
   vocab: [
-    { hanzi: '忙', pinyin: 'máng', pos: 'tính từ', meaning: 'bận', han_viet: 'mang' },
+    { hanzi: '忙', parts: '忄 (bộ tâm đứng) + 亡 (vong)', pinyin: 'máng', pos: 'tính từ', meaning: 'bận', han_viet: 'mang' },
     { hanzi: '吗', pinyin: 'ma', pos: 'trợ từ', meaning: 'trợ từ nghi vấn cuối câu (… không?)', han_viet: '' },
-    { hanzi: '很', pinyin: 'hěn', pos: 'phó từ', meaning: 'rất', han_viet: 'ngận' },
-    { hanzi: '汉语', pinyin: 'Hànyǔ', pos: 'danh từ', meaning: 'tiếng Hán, tiếng Trung', han_viet: 'Hán ngữ' },
-    { hanzi: '难', pinyin: 'nán', pos: 'tính từ', meaning: 'khó', han_viet: 'nan' },
+    { hanzi: '很', parts: '彳 (bộ xích) + 艮 (cấn)', pinyin: 'hěn', pos: 'phó từ', meaning: 'rất', han_viet: 'ngận' },
+    { hanzi: '汉语', parts: '汉 = 氵 (chấm thủy) + 又 (hựu); 语 = 讠 (bộ ngôn) + 吾 (五 ngũ + 口 khẩu)', pinyin: 'Hànyǔ', pos: 'danh từ', meaning: 'tiếng Hán, tiếng Trung', han_viet: 'Hán ngữ' },
+    { hanzi: '难', parts: '又 (hựu) + 隹 (chuy, chim đuôi ngắn)', pinyin: 'nán', pos: 'tính từ', meaning: 'khó', han_viet: 'nan' },
     { hanzi: '太', pinyin: 'tài', pos: 'phó từ', meaning: 'quá, lắm', han_viet: 'thái' },
     { hanzi: '爸爸', pinyin: 'bàba', pos: 'danh từ', meaning: 'bố, ba', han_viet: '' },
     { hanzi: '妈妈', pinyin: 'māma', pos: 'danh từ', meaning: 'mẹ', han_viet: '' },
     { hanzi: '他', pinyin: 'tā', pos: 'đại từ', meaning: 'anh ấy, ông ấy, nó (nam)', han_viet: 'tha' },
     { hanzi: '她', pinyin: 'tā', pos: 'đại từ', meaning: 'chị ấy, bà ấy, cô ấy (nữ)', han_viet: 'tha' },
-    { hanzi: '男', pinyin: 'nán', pos: 'tính từ', meaning: 'nam, đàn ông', han_viet: 'nam' },
+    { hanzi: '男', parts: '田 (bộ điền) + 力 (lực)', pinyin: 'nán', pos: 'tính từ', meaning: 'nam, đàn ông', han_viet: 'nam' },
     { hanzi: '哥哥', pinyin: 'gēge', pos: 'danh từ', meaning: 'anh trai', han_viet: 'ca ca' },
     { hanzi: '弟弟', pinyin: 'dìdi', pos: 'danh từ', meaning: 'em trai', han_viet: 'đệ đệ' },
-    { hanzi: '妹妹', pinyin: 'mèimei', pos: 'danh từ', meaning: 'em gái', han_viet: 'muội muội' },
+    { hanzi: '妹妹', parts: '妹 = 女 (nữ) + 未 (vị, chưa)', pinyin: 'mèimei', pos: 'danh từ', meaning: 'em gái', han_viet: 'muội muội' },
   ],
   sections: [
     {
       kind: 'sounds', label: 'Vận mẫu mũi', title: 'Vận mẫu có âm mũi – bấm để nghe',
       list: [
-        { s: 'an', say: 'an', tip: 'Gần như "an" tiếng Việt. Kết thúc bằng "n": đầu lưỡi chạm lợi trên (vần mũi trước).' },
-        { s: 'en', say: 'en', tip: 'Gần như "ân/ơn": e đọc là [ə] (ơ). Kết thúc bằng "n" (đầu lưỡi chạm lợi trên).' },
-        { s: 'ang', say: 'ang', tip: 'Gần như "ang" tiếng Việt, a đọc ở phía sau miệng. Kết thúc bằng "ng": cuống lưỡi chạm ngạc mềm, KHÔNG chạm lợi (vần mũi sau).' },
-        { s: 'eng', say: 'deng', tip: 'Gần như "âng/ơng": e đọc là [ə] rồi kết thúc "ng" (vần mũi sau).' },
-        { s: 'ong', say: 'dong', tip: 'Gần như "ung": o đọc là [ʊ] (u ngắn) rồi kết thúc "ng" (vần mũi sau). Đừng đọc thành "ong" tiếng Việt!' },
+        { s: 'an', audio: '/audio/ppt/an.mp3', say: 'an', tip: 'Gần như "an" tiếng Việt. Kết thúc bằng "n": đầu lưỡi chạm lợi trên (vần mũi trước).' },
+        { s: 'en', audio: '/audio/ppt/en.mp3', say: 'en', tip: 'Gần như "ân/ơn": e đọc là [ə] (ơ). Kết thúc bằng "n" (đầu lưỡi chạm lợi trên).' },
+        { s: 'ang', audio: '/audio/ppt/ang.mp3', say: 'ang', tip: 'Gần như "ang" tiếng Việt, a đọc ở phía sau miệng. Kết thúc bằng "ng": cuống lưỡi chạm ngạc mềm, KHÔNG chạm lợi (vần mũi sau).' },
+        { s: 'eng', audio: '/audio/ppt/eng.mp3', say: 'deng', tip: 'Gần như "âng/ơng": e đọc là [ə] rồi kết thúc "ng" (vần mũi sau).' },
+        { s: 'ong', audio: '/audio/ppt/ong.mp3', say: 'dong', tip: 'Gần như "ung": o đọc là [ʊ] (u ngắn) rồi kết thúc "ng" (vần mũi sau). Đừng đọc thành "ong" tiếng Việt!' },
       ],
       note: 'Mẹo phân biệt: vần có "n" (an, en) → đầu lưỡi chạm lợi trên; vần có "ng" (ang, eng, ong) → lưỡi lùi sau, miệng mở, không chạm lợi.',
     },
@@ -109,8 +110,18 @@ export const lesson2: Lesson = {
     },
     {
       title: 'Mẹo: 他 và 她, 男 và 难',
-      body: '他 (anh ấy) và 她 (chị ấy) đọc giống hệt nhau là tā, chỉ khác chữ viết (bộ 亻 người, bộ 女 nữ). 男 (nam) và 难 (khó) cùng đọc nán nên chỉ phân biệt bằng chữ Hán và ngữ cảnh.',
+      body: '他 (anh ấy) và 她 (chị ấy) đọc giống hệt nhau là tā, 它 (tā) chỉ đồ vật, con vật cũng vậy, chỉ khác chữ viết (bộ 亻 người, bộ 女 nữ). 男 (nam) và 难 (khó) cùng đọc nán nên chỉ phân biệt bằng chữ Hán và ngữ cảnh.',
       say: '他',
+    },
+    {
+      title: 'Mở rộng: 太 + tính từ và các cụm với 妈妈',
+      body: '太 + tính từ = quá, lắm: 太好 (tốt quá), 太难 (khó quá), 太大 (to quá), 太忙 (bận quá). Từ chỉ người thân có thể thêm định ngữ: 好妈妈 (người mẹ tốt), 我妈妈 (mẹ tôi). Ghi nhớ: 太…了 diễn tả mức độ cao, còn 不太 + tính từ nghĩa là "không… lắm".',
+      say: '太好',
+    },
+    {
+      title: 'Biến điệu của 不 (học sớm để nói 不太难)',
+      body: '不 đứng một mình hoặc trước thanh 1, 2, 3 vẫn đọc bù: 不难 bù nán, 不喝 bù hē, 不好 bù hǎo, 不高 bù gāo, 不来 bù lái, 不小 bù xiǎo. Trước thanh 4 thì đọc bú: 不去 bú qù, 不是 bú shì, 不太 bú tài. Bài 3 sẽ học kỹ quy tắc này.',
+      say: '不去',
     },
   ],
   sentences: [
@@ -158,8 +169,28 @@ export const lesson2: Lesson = {
         { h: '难吗', p: 'nán ma' }, { h: '很好', p: 'hěn hǎo' }, { h: '很忙', p: 'hěn máng' }, { h: '很大', p: 'hěn dà' }, { h: '很难', p: 'hěn nán' },
       ],
     },
+    {
+      title: 'Nhận biết chữ Hán (từ bài giảng)', hint: 'Đọc to rồi nghe đáp án.',
+      items: [
+        { h: '爸爸', p: 'bàba' }, { h: '妈妈', p: 'māma' }, { h: '好吗', p: 'hǎo ma' }, { h: '忙吗', p: 'máng ma' }, { h: '大妈', p: 'dàmā', m: 'bác gái' },
+        { h: '难吗', p: 'nán ma' }, { h: '很好', p: 'hěn hǎo' }, { h: '很忙', p: 'hěn máng' }, { h: '很大', p: 'hěn dà' }, { h: '很难', p: 'hěn nán' },
+      ],
+    },
+    {
+      title: 'Đọc câu (từ bài giảng)', hint: 'Sáu câu cơ bản của bài.',
+      items: [
+        { h: '哥哥很忙。', p: 'Gēge hěn máng.' }, { h: '你忙吗？', p: 'Nǐ máng ma?' }, { h: '汉语很难。', p: 'Hànyǔ hěn nán.' },
+        { h: '汉语不太难。', p: 'Hànyǔ bú tài nán.' }, { h: '爸爸好吗？', p: 'Bàba hǎo ma?' }, { h: '他忙吗？', p: 'Tā máng ma?' },
+      ],
+    },
   ],
   qa: [
+    {
+      title: 'Dịch hội thoại sang tiếng Trung (翻译成中文)',
+      items: [
+        { q: 'A: Xin chào. B: Xin chào. A: Bạn khỏe không? B: Tôi rất khỏe, bạn bận không? A: Tôi không bận lắm.', hint: 'A: 你好！B: 你好！A: 你好吗？B: 我很好，你忙吗？A: 我不太忙。' },
+      ],
+    },
     {
       title: 'Trả lời câu hỏi (回答问题)',
       items: [

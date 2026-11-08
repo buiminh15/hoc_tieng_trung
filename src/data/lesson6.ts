@@ -115,6 +115,11 @@ export const lesson6: Lesson = {
       say: '这是谁的书',
     },
     {
+      title: 'Mở rộng 的 (từ bài giảng): tính từ + 的, 的字词组, 是…的',
+      body: '① Tính từ hai âm tiết, cụm tính từ hoặc tính từ lặp làm định ngữ thì thêm 的: 美丽的风景 (phong cảnh đẹp), 很好的人 (người rất tốt), 红红的书包 (cặp màu hồng hồng). ② Thêm 的 sau danh từ/tính từ/động từ thì có thể bỏ danh từ trung tâm khi đã rõ nghĩa: 这本杂志是中文的 (= 中文的杂志), 她的书包是红的 (= 红的书包). ③ Mẫu 是…的 nhấn mạnh thời gian, nơi chốn, phương thức của việc đã xảy ra: 我是坐火车来的 (tôi đến bằng tàu hỏa). Mẫu ③ chưa cần nắm chắc ở Bài 6, sẽ gặp lại sau.',
+      say: '这本杂志是中文的',
+    },
+    {
       title: '…语 và …文',
       body: '语 chỉ ngôn ngữ nói (汉语 tiếng Hán, 英语 tiếng Anh) và dùng khi nói về năng lực, môn học: 学习汉语. 文 chỉ ngôn ngữ viết, văn tự (中文, 英文) và hay dùng cho sách báo, tài liệu: 中文书 (sách tiếng Trung), 英文杂志 (tạp chí tiếng Anh).',
       say: '英文杂志',

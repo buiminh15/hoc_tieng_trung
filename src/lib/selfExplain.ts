@@ -7,18 +7,16 @@ const KEY = 'user_id,lesson_key,topic_id'
 
 /** Gợi ý theo loại lỗi Supabase trả về. */
 export function hintFor(message: string): string {
-  if (/row-level security/i.test(message)) return 'Chưa có phiên đăng nhập hợp lệ. Vào Supabase → Authentication → Sign In / Providers, bật "Allow anonymous sign-ins", rồi tải lại trang.'
+  if (/row-level security/i.test(message)) return 'Chưa có phiên đăng nhập hợp lệ. Hãy đăng nhập lại rồi thử lại.'
   if (/relation|does not exist|schema cache/i.test(message)) return 'Có vẻ bảng chưa được tạo. Chạy file supabase/self_explain.sql trong Supabase (SQL Editor).'
   return ''
 }
 
-/** Id người dùng hiện tại. Chưa có phiên thì thử đăng nhập ẩn danh; không được thì báo rõ nguyên nhân. */
+/** Id người dùng hiện tại; chưa đăng nhập thì báo lỗi. */
 async function userId(): Promise<string> {
   const { data } = await supabase.auth.getSession()
-  if (data.session?.user) return data.session.user.id
-  const { data: anon, error } = await supabase.auth.signInAnonymously()
-  if (error || !anon.user) throw new Error(`Chưa có phiên đăng nhập (${error?.message ?? 'không rõ lý do'})`)
-  return anon.user.id
+  if (!data.session?.user) throw new Error('Chưa đăng nhập')
+  return data.session.user.id
 }
 
 /** Bài viết và đánh giá đã lưu của một bài. */

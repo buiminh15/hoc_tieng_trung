@@ -8,6 +8,7 @@ const L = '李昌浩 Lǐ Chānghào'
 
 export const lesson11: Lesson = {
   id: 11,
+  dialogueAudio: '/audio/ppt/l11-baikhoa.mp3',
   title: 'Chúng tôi đều là lưu học sinh',
   hanzi: '我们都是留学生',
   pinyin: 'Wǒmen dōu shì liúxuéshēng',
@@ -83,6 +84,11 @@ export const lesson11: Lesson = {
       title: 'Xin giới thiệu: 我先介绍一下儿',
       body: '我先介绍一下儿 nghĩa là "xin cho tôi giới thiệu một chút trước". 先 là "trước, trước hết", 一下儿 đứng sau động từ làm lời nói nhẹ nhàng, gần "một chút, thử xem". Dùng để mở đầu khi giới thiệu hai người với nhau.',
       say: '我先介绍一下儿',
+    },
+    {
+      title: 'Mở rộng: 我来介绍一下儿 và 首先',
+      body: 'Ngoài 我先介绍一下儿, còn nói 我来介绍一下儿 ("để tôi giới thiệu một chút"). Tự giới thiệu: 我来介绍一下儿我自己 (自己 zìjǐ = bản thân mình). 先 còn gặp trong 首先 (shǒuxiān) = trước tiên, đầu tiên.',
+      say: '我来介绍一下儿我自己',
     },
     {
       title: 'Giới thiệu người: 这位是…, 这是…',
@@ -183,7 +189,7 @@ export const lesson11: Lesson = {
     {
       title: 'Từ bổ sung: nghề nghiệp (补充生词)', hint: 'Dùng để thay thế vào mẫu 你是…吗? / 她也是…',
       items: [
-        { h: '大夫', p: 'dàifu', m: 'bác sĩ' }, { h: '护士', p: 'hùshi', m: 'y tá' }, { h: '经理', p: 'jīnglǐ', m: 'giám đốc' },
+        { h: '大夫', p: 'dàifu', m: 'bác sĩ' }, { h: '医生', p: 'yīshēng', m: 'bác sĩ (cách nói chung)' }, { h: '护士', p: 'hùshi', m: 'y tá' }, { h: '经理', p: 'jīnglǐ', m: 'giám đốc' },
         { h: '律师', p: 'lǜshī', m: 'luật sư' }, { h: '记者', p: 'jìzhě', m: 'phóng viên' }, { h: '意大利', p: 'Yìdàlì', m: 'nước Ý' },
       ],
     },

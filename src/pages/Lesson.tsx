@@ -6,7 +6,7 @@ import { getLesson } from '../data/lessons'
 import { getBook } from '../data/books'
 import { lessonKey, useProgress } from '../lib/progress'
 import type { Drill, Lesson as LessonT, PhonSection } from '../data/types'
-import { speak, speakSyllable } from '../lib/tts'
+import { playClip, speak, speakSyllable } from '../lib/tts'
 import { addVocabToDeck } from '../lib/srs'
 import { SpeakBtn, ToneShape } from '../components/Speak'
 import StrokeWriter from '../components/StrokeWriter'
@@ -66,7 +66,12 @@ function LessonView({ book, lesson }: { book: number; lesson: LessonT }) {
       {tab === 'vocab' && <VocabTab lesson={lesson} />}
       {tab === 'phon' && <PhoneticsTab lesson={lesson} />}
       {tab === 'notes' && <NotesTab lesson={lesson} />}
-      {tab === 'write' && <Card title="Tập viết chữ Hán"><WritePractice chars={lesson.writeChars} /></Card>}
+      {tab === 'write' && (
+        <div className="space-y-6">
+          {lesson.strokeRules && <StrokeRules lesson={lesson} />}
+          <Card title="Tập viết chữ Hán"><WritePractice chars={lesson.writeChars} /></Card>
+        </div>
+      )}
       {tab === 'explain' && <ExplainTab book={book} lesson={lesson} />}
       {tab === 'practice' && <PracticeTab book={book} lesson={lesson} />}
       <div className="flex justify-between">
@@ -75,6 +80,31 @@ function LessonView({ book, lesson }: { book: number; lesson: LessonT }) {
       </div>
       {tab === 'practice' && <LessonFooter book={book} lesson={lesson} />}
     </div>
+  )
+}
+
+function StrokeRules({ lesson }: { lesson: LessonT }) {
+  return (
+    <Card title="Tám quy tắc viết chữ Hán">
+      {lesson.strokesImg && (
+        <figure className="mx-auto max-w-xs">
+          <img src={lesson.strokesImg} alt="Tám nét cơ bản của chữ Hán" className="w-full rounded-lg border bg-white" loading="lazy" />
+          <figcaption className="mt-1 text-center text-xs text-slate-500">Tám nét cơ bản: 横 ngang, 竖 sổ, 撇 phẩy, 捺 mác, 点 chấm, 提 hất, 弯 cong, 钩 móc</figcaption>
+        </figure>
+      )}
+      <ol className="grid gap-3 sm:grid-cols-2">
+        {lesson.strokeRules!.map((r, i) => (
+          <li key={r.title} className="flex gap-3 rounded-lg border bg-surface p-3">
+            <img src={r.img} alt={`Ví dụ chữ ${r.example}`} className="size-24 shrink-0 rounded border bg-white" loading="lazy" />
+            <div className="min-w-0">
+              <div className="font-extrabold"><span className="hz mr-1 text-accent-fg">{i + 1}.</span>{r.title}</div>
+              <p className="text-sm text-slate-500">{r.body}</p>
+              <p className="hz mt-1 text-lg font-bold">{r.example}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </Card>
   )
 }
 
@@ -111,6 +141,12 @@ function TextTab({ lesson }: { lesson: LessonT }) {
           )
         })}
       </div>
+      {lesson.dialogueAudio && (
+        <div className="rounded-lg border bg-surface p-3">
+          <p className="mb-1 text-sm font-semibold">🎧 Nghe cả bài khóa (giọng thật)</p>
+          <audio controls preload="none" src={lesson.dialogueAudio} className="w-full" />
+        </div>
+      )}
       {lesson.dialogueTip && <p className="rounded-lg border-l-4 border-gold bg-amber-50 p-3 text-sm" dangerouslySetInnerHTML={{ __html: '💡 ' + lesson.dialogueTip }} />}
       <div className="flex flex-wrap gap-2">
         <button className="tile shadow rounded-lg bg-surface px-3 py-2 text-sm font-semibold" onClick={() => speak(lesson.slowSay ?? lesson.dialogue[0].hanzi, 0.6)}>🐢 Nghe chậm</button>
@@ -148,6 +184,7 @@ function VocabTab({ lesson }: { lesson: LessonT }) {
         ))}
       </ul>
       <div>
+        {lesson.vocab.find(v => v.hanzi === focus)?.parts && <p className="mb-2 rounded border-l-4 border-gold bg-amber-50 p-2 text-sm"><b>Cấu tạo "{focus}":</b> {lesson.vocab.find(v => v.hanzi === focus)!.parts}</p>}
         <p className="mb-1 text-sm text-slate-500">Thứ tự nét của "{focus}" (bấm vào chữ để xem lại):</p>
         <div className="flex flex-wrap gap-2">{[...focus].map((c, i) => <StrokeWriter key={focus + c + i} char={c} />)}</div>
       </div>
@@ -198,11 +235,18 @@ function SoundList({ sec }: { sec: Extract<PhonSection, { kind: 'sounds' }> }) {
     <Card title={sec.title}>
       <div className="flex flex-wrap gap-2">
         {sec.list.map(x => (
-          <button key={x.s} onClick={() => { setCur(x); speakSyllable(x.say ?? initialsSay[x.s] ?? x.s) }}
+          <button key={x.s} onClick={() => { setCur(x); const say = x.say ?? initialsSay[x.s] ?? x.s; if (x.audio) playClip(x.audio, say); else speakSyllable(say) }}
             className={`h-14 min-w-14 rounded-lg border px-2 text-2xl font-bold ${cur.s === x.s ? 'bg-accent text-white' : 'bg-surface hover:bg-accent-soft'} ${x.aspirated ? 'ring-2 ring-gold' : ''}`}>{x.s}</button>
         ))}
       </div>
-      <div className="rounded-lg bg-slate-50 p-3"><b className="text-2xl">{cur.s}</b><p className="mt-1">{cur.tip}</p></div>
+      <div className="space-y-2 rounded-lg bg-slate-50 p-3">
+        <div className="flex items-center gap-3">
+          <b className="py text-3xl">{cur.s}</b>
+          {cur.audio && <button type="button" onClick={() => playClip(cur.audio!, cur.say ?? cur.s)} className="tile rounded-full border bg-surface px-3 py-1 text-sm font-semibold">🔊 Giọng thật</button>}
+        </div>
+        <p>{cur.tip}</p>
+        {cur.tech && <p className="rounded border-l-4 border-accent bg-surface p-2 text-sm"><b>Cách phát âm:</b> {cur.tech}</p>}
+      </div>
       {sec.note && <p className="text-sm text-slate-500">{sec.note}</p>}
     </Card>
   )

@@ -12,36 +12,27 @@ import PinyinPage from './pages/PinyinPage'
 import Practice from './pages/Practice'
 import Exam from './pages/Exam'
 import HskList from './pages/HskList'
+import { GrammarList, GrammarTopicPage } from './pages/Grammar'
 import HskExam from './pages/HskExam'
 import Sound from './pages/Sound'
 import { useTheme } from './lib/theme'
 
-// Bật lại = true để yêu cầu đăng nhập email/mật khẩu
-const REQUIRE_LOGIN = false
-
 export default function App() {
   const [session, setSession] = useState<Session | null | undefined>(undefined)
-  const [authErr, setAuthErr] = useState('')
   const { theme, toggle } = useTheme()
   const { pathname } = useLocation()
   useEffect(() => {
-    supabase.auth.getSession().then(async ({ data }) => {
-      if (!data.session && !REQUIRE_LOGIN) {
-        // Tạm tắt đăng nhập: dùng tài khoản ẩn danh (RLS vẫn cần auth.uid())
-        const { data: anon, error } = await supabase.auth.signInAnonymously()
-        if (error) setAuthErr(error.message)
-        setSession(anon.session)
-      } else setSession(data.session)
-    })
+    supabase.auth.getSession().then(({ data }) => setSession(data.session))
     const { data } = supabase.auth.onAuthStateChange((_e, s) => setSession(s))
     return () => data.subscription.unsubscribe()
   }, [])
 
   if (session === undefined) return null
-  if (!session && REQUIRE_LOGIN) return <Login />
+  if (!session) return <Login />
 
   const nav: [string, string, boolean][] = [
     ['/', 'Giáo trình', pathname === '/' || pathname.startsWith('/books')],
+    ['/grammar', 'Ngữ pháp', pathname.startsWith('/grammar')],
     ['/practice', 'Luyện tập', pathname.startsWith('/practice')],
     ['/exam', 'Thi thử', pathname.startsWith('/exam')],
     ['/hsk', 'Đề HSK', pathname.startsWith('/hsk')],
@@ -66,15 +57,10 @@ export default function App() {
             ))}
           </div>
           <button className="grid size-9 place-items-center rounded-full text-lg hover:bg-slate-100" title="Đổi giao diện sáng/tối" aria-label="Đổi giao diện sáng/tối" onClick={toggle}>{theme === 'dark' ? '☀️' : '🌙'}</button>
-          {REQUIRE_LOGIN && <button className="text-sm text-slate-500" onClick={() => supabase.auth.signOut()}>Thoát</button>}
+          <button className="text-sm text-slate-500 hover:text-slate-900" onClick={() => supabase.auth.signOut()}>Thoát</button>
         </nav>
       </header>
       <main className="mx-auto max-w-4xl space-y-4 px-4 pb-20 pt-6">
-      {authErr && (
-        <p className="rounded bg-amber-50 p-3 text-sm">
-          ⚠️ Chưa lưu được dữ liệu: {authErr}. Vào Supabase → Authentication → Sign In / Providers → bật <b>Allow anonymous sign-ins</b>, rồi tải lại trang.
-        </p>
-      )}
       <div key={pathname} className="page-in">
       <Routes>
         <Route path="/" element={<Library />} />
@@ -82,6 +68,8 @@ export default function App() {
         <Route path="/books/:bookId/lessons/:id" element={<Lesson />} />
         <Route path="/practice" element={<Practice />} />
         <Route path="/exam" element={<Exam />} />
+        <Route path="/grammar" element={<GrammarList />} />
+        <Route path="/grammar/:id" element={<GrammarTopicPage />} />
         <Route path="/hsk" element={<HskList />} />
         <Route path="/hsk/:id" element={<HskExam />} />
         <Route path="/sound" element={<Sound />} />
