@@ -183,6 +183,48 @@ export const SELF_EXPLAIN: Record<string, Topic[]> = {
     { id: 'phu-dinh', prompt: 'Giải thích dạng phủ định và câu hỏi chính phản của bổ ngữ trạng thái', note: 'Dạng phủ định và hỏi chính phản' },
     { id: 'tan-ngu', prompt: 'Giải thích cấu trúc bổ ngữ trạng thái khi động từ có tân ngữ', note: 'Khi động từ có tân ngữ' },
   ],
+  '2-26': [
+    { id: 'le-1', prompt: 'Giải thích trợ từ ngữ khí 了 cuối câu diễn tả gì (việc đã xảy ra, trạng thái thay đổi)', note: 'Trợ từ ngữ khí 了 (1)' },
+    { id: 'le-meiyou', prompt: 'Giải thích cách hỏi và trả lời bằng …了没有?', note: 'Hỏi chính phản với 了: …了没有?' },
+    { id: 'hai-mei', prompt: 'Giải thích 还没(有)……呢 nghĩa là gì', note: '还没(有)……呢: chưa, sắp sửa' },
+    { id: 'bu-le', prompt: 'Giải thích khi nào không dùng 了 (phủ định 没, hành động thường xuyên)', note: 'Khi nào KHÔNG dùng 了' },
+    { id: 'zai-you', prompt: 'Giải thích khác nhau giữa 再 và 又', note: '再 và 又: lặp lại' },
+    { id: 'bushi-ma', prompt: 'Giải thích câu hỏi tu từ 不是……吗', note: '你不是要上托福班吗? (不是……吗: câu hỏi tu từ)' },
+  ],
+  '2-27': [
+    { id: 'v-le', prompt: 'Giải thích V + 了 diễn tả động tác hoàn thành, so với 了 cuối câu', note: 'Động tác hoàn thành: động từ + 了' },
+    { id: 'tan-ngu', prompt: 'Giải thích khi nào tân ngữ cần số lượng từ hoặc phải có thêm 了 cuối câu', note: 'V + 了 khi có tân ngữ' },
+    { id: 'lien-dong', prompt: 'Giải thích vì sao động từ đầu trong câu liên động không thêm 了', note: 'Câu liên động: động từ đầu không có 了' },
+    { id: 'phu-dinh', prompt: 'Giải thích dạng hỏi chính phản và phủ định của V + 了', note: 'Hỏi chính phản và phủ định của V + 了' },
+    { id: 'yinwei', prompt: 'Giải thích cấu trúc 因为……所以……', note: '因为……所以……: vì … nên …' },
+    { id: 'jiu', prompt: 'Giải thích 就 trong 就吃了一些鱼 nghĩa là gì', note: '就吃了一些鱼和牛肉: 就 = chỉ' },
+  ],
+  '2-28': [
+    { id: 'xiao-le', prompt: 'Giải thích 形容词 + 了 + 点儿 (như 贵了点儿) hàm ý gì', note: '客厅面积小了点儿: tính từ + 了 + (一)点儿' },
+    { id: 'haishi', prompt: 'Giải thích 还是 trong 我还是想要… nghĩa là "nên… thì hơn"', note: '我还是想要……的: 还是 = vẫn nên, thì hơn' },
+    { id: 'jiu-cai-1', prompt: 'Giải thích 就 và 才 khi nói việc sắp xảy ra và vừa mới xảy ra', note: '就 và 才 (1): sắp xảy ra / vừa mới xảy ra' },
+    { id: 'jiu-cai-2', prompt: 'Giải thích 就 (sớm, nhanh, dễ) khác 才 (muộn, chậm, khó) thế nào', note: '就 và 才 (2): sớm, nhanh, dễ ↔ muộn, chậm, khó' },
+    { id: 'yaoshi', prompt: 'Giải thích cấu trúc 要是……就……', note: '要是……(的话)，就……: nếu … thì …' },
+    { id: 'suiran', prompt: 'Giải thích cấu trúc 虽然……但是……', note: '虽然……但是……: tuy … nhưng …' },
+  ],
+  '2-29': [
+    { id: 'jieguo-1', prompt: 'Giải thích bổ ngữ kết quả là gì và cho ví dụ với 完, 懂, 对, 错', note: 'Bổ ngữ kết quả (结果补语): cấu trúc khẳng định' },
+    { id: 'jieguo-2', prompt: 'Giải thích dạng phủ định và hỏi chính phản của bổ ngữ kết quả', note: 'Bổ ngữ kết quả: phủ định và hỏi chính phản' },
+    { id: 'jieguo-3', prompt: 'Giải thích vị trí của tân ngữ và của 了 khi có bổ ngữ kết quả', note: 'Bổ ngữ kết quả: vị trí của tân ngữ và của 了' },
+    { id: 'shang', prompt: 'Giải thích bổ ngữ kết quả 上 diễn tả điều gì', note: 'Bổ ngữ kết quả 上' },
+    { id: 'cheng', prompt: 'Giải thích bổ ngữ kết quả 成 (thành, biến thành)', note: 'Bổ ngữ kết quả 成' },
+    { id: 'dao', prompt: 'Giải thích ba cách dùng của bổ ngữ kết quả 到', note: 'Bổ ngữ kết quả 到' },
+    { id: 'zhuwei-de', prompt: 'Giải thích vì sao cụm chủ vị làm định ngữ phải thêm 的', note: 'Cụm chủ vị làm định ngữ (主谓词组作定语)' },
+  ],
+  '2-30': [
+    { id: 'dui', prompt: 'Giải thích giới từ 对 trong 对这儿的生活已经习惯了', note: '对这儿的生活已经习惯了: giới từ 对' },
+    { id: 'hao', prompt: 'Giải thích phó từ 好 trong 好几年 nhấn mạnh điều gì', note: '练了好几年了: phó từ 好 nhấn mạnh số lượng nhiều' },
+    { id: 'shiliang-1', prompt: 'Giải thích bổ ngữ thời lượng khi động từ không có tân ngữ', note: 'Bổ ngữ thời lượng (时量补语): động từ không có tân ngữ' },
+    { id: 'shiliang-2', prompt: 'Giải thích bổ ngữ thời lượng khi động từ có tân ngữ hoặc là động từ ly hợp', note: 'Bổ ngữ thời lượng: có tân ngữ hoặc động từ ly hợp' },
+    { id: 'le-le', prompt: 'Giải thích sự khác nhau giữa 学了一年 và 学了一年了', note: 'Sau động từ có 了, cuối câu còn 了: động tác vẫn tiếp diễn' },
+    { id: 'gaishu', prompt: 'Giải thích ba cách biểu đạt con số ước chừng', note: 'Cách biểu đạt con số ước chừng (概数)' },
+    { id: 'lihe', prompt: 'Giải thích động từ ly hợp và cách dùng bổ ngữ thời lượng với chúng', note: 'Động từ ly hợp (离合动词)' },
+  ],
 }
 
 export const topicsOf = (book: number, id: number): Topic[] => SELF_EXPLAIN[`${book}-${id}`] ?? []

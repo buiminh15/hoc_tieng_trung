@@ -23,6 +23,11 @@ import { lesson22 } from './lesson22'
 import { lesson23 } from './lesson23'
 import { lesson24 } from './lesson24'
 import { lesson25 } from './lesson25'
+import { lesson26 } from './lesson26'
+import { lesson27 } from './lesson27'
+import { lesson28 } from './lesson28'
+import { lesson29 } from './lesson29'
+import { lesson30 } from './lesson30'
 import type { Lesson } from './types'
 
 const INIT_TECH: Record<string, [string, string]> = {
@@ -112,7 +117,7 @@ export const lesson1: Lesson = {
 /** Nội dung bài đã soạn, theo quyển. Thêm bài mới: tạo file dữ liệu rồi thêm vào đây. */
 export const bookLessons: Record<number, Lesson[]> = {
   1: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15],
-  2: [lesson16, lesson17, lesson18, lesson19, lesson20, lesson21, lesson22, lesson23, lesson24, lesson25],
+  2: [lesson16, lesson17, lesson18, lesson19, lesson20, lesson21, lesson22, lesson23, lesson24, lesson25, lesson26, lesson27, lesson28, lesson29, lesson30],
 }
 
 export const getLesson = (book: number, id: number) => bookLessons[book]?.find(l => l.id === id)
