@@ -36,6 +36,13 @@ import { hskStd1Lesson5 } from './hskstd/lesson5'
 import { hskStd1Lesson6 } from './hskstd/lesson6'
 import { hskStd1Lesson7 } from './hskstd/lesson7'
 import { hskStd1Lesson8 } from './hskstd/lesson8'
+import { hskStd1Lesson9 } from './hskstd/lesson9'
+import { hskStd1Lesson10 } from './hskstd/lesson10'
+import { hskStd1Lesson11 } from './hskstd/lesson11'
+import { hskStd1Lesson12 } from './hskstd/lesson12'
+import { hskStd1Lesson13 } from './hskstd/lesson13'
+import { hskStd1Lesson14 } from './hskstd/lesson14'
+import { hskStd1Lesson15 } from './hskstd/lesson15'
 import { HSK_STD_ID } from './books'
 import type { Lesson } from './types'
 
@@ -126,7 +133,7 @@ export const lesson1: Lesson = {
 /** Nội dung bài đã soạn, theo quyển. Thêm bài mới: tạo file dữ liệu rồi thêm vào đây. */
 export const bookLessons: Record<number, Lesson[]> = {
   1: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15],
-  [HSK_STD_ID]: [hskStd1Lesson1, hskStd1Lesson2, hskStd1Lesson3, hskStd1Lesson4, hskStd1Lesson5, hskStd1Lesson6, hskStd1Lesson7, hskStd1Lesson8],
+  [HSK_STD_ID]: [hskStd1Lesson1, hskStd1Lesson2, hskStd1Lesson3, hskStd1Lesson4, hskStd1Lesson5, hskStd1Lesson6, hskStd1Lesson7, hskStd1Lesson8, hskStd1Lesson9, hskStd1Lesson10, hskStd1Lesson11, hskStd1Lesson12, hskStd1Lesson13, hskStd1Lesson14, hskStd1Lesson15],
   2: [lesson16, lesson17, lesson18, lesson19, lesson20, lesson21, lesson22, lesson23, lesson24, lesson25, lesson26, lesson27, lesson28, lesson29, lesson30],
 }
 
