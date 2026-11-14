@@ -48,6 +48,9 @@ import { hskStd2Lesson2 } from './hskstd2/lesson2'
 import { hskStd2Lesson3 } from './hskstd2/lesson3'
 import { hskStd2Lesson4 } from './hskstd2/lesson4'
 import { hskStd2Lesson5 } from './hskstd2/lesson5'
+import { hskStd2Lesson6 } from './hskstd2/lesson6'
+import { hskStd2Lesson7 } from './hskstd2/lesson7'
+import { hskStd2Lesson8 } from './hskstd2/lesson8'
 import { HSK_STD_ID, HSK_STD2_ID } from './books'
 import type { Lesson } from './types'
 
@@ -139,7 +142,7 @@ export const lesson1: Lesson = {
 export const bookLessons: Record<number, Lesson[]> = {
   1: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15],
   [HSK_STD_ID]: [hskStd1Lesson1, hskStd1Lesson2, hskStd1Lesson3, hskStd1Lesson4, hskStd1Lesson5, hskStd1Lesson6, hskStd1Lesson7, hskStd1Lesson8, hskStd1Lesson9, hskStd1Lesson10, hskStd1Lesson11, hskStd1Lesson12, hskStd1Lesson13, hskStd1Lesson14, hskStd1Lesson15],
-  [HSK_STD2_ID]: [hskStd2Lesson1, hskStd2Lesson2, hskStd2Lesson3, hskStd2Lesson4, hskStd2Lesson5],
+  [HSK_STD2_ID]: [hskStd2Lesson1, hskStd2Lesson2, hskStd2Lesson3, hskStd2Lesson4, hskStd2Lesson5, hskStd2Lesson6, hskStd2Lesson7, hskStd2Lesson8],
   2: [lesson16, lesson17, lesson18, lesson19, lesson20, lesson21, lesson22, lesson23, lesson24, lesson25, lesson26, lesson27, lesson28, lesson29, lesson30],
 }
 
