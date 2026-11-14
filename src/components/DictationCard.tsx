@@ -30,10 +30,12 @@ export default function DictationCard({ d }: { d: Dictation }) {
     <section className="page-in space-y-4 pt-1">
       <h2 className="rule pt-3 text-xl font-extrabold">{d.title}</h2>
       <p className="max-w-2xl text-sm text-slate-500">{d.hint}</p>
-      <div className="rounded-lg border bg-surface p-3">
-        <p className="mb-1 text-sm font-semibold">🎧 {d.clip.label}</p>
-        <audio controls preload="none" src={d.clip.src} className="w-full" />
-      </div>
+      {d.clip && (
+        <div className="rounded-lg border bg-surface p-3">
+          <p className="mb-1 text-sm font-semibold">🎧 {d.clip.label}</p>
+          <audio controls preload="none" src={d.clip.src} className="w-full" />
+        </div>
+      )}
 
       <ol className="grid gap-2 sm:grid-cols-2">
         {d.items.map((it, i) => {
@@ -42,7 +44,7 @@ export default function DictationCard({ d }: { d: Dictation }) {
           return (
             <li key={i} className={`flex items-center gap-2 rounded-lg border p-2 ${show ? (v === 'bad' ? 'border-seal/60 bg-rose-100' : 'border-accent bg-accent-soft') : 'bg-surface'}`}>
               <span className="w-6 shrink-0 text-center text-sm font-bold text-slate-500">{i + 1}</span>
-              <span className="py w-16 shrink-0 text-lg font-semibold">{it.prompt.replace('＿', '＿')}</span>
+              <span className={`py shrink-0 text-lg font-semibold ${it.prompt.length > 6 ? 'min-w-0 max-w-[55%]' : 'w-16'}`}>{it.prompt.replace('＿', '＿')}</span>
               <input
                 value={vals[i]} onChange={e => { const n = vals.slice(); n[i] = e.target.value; setVals(n); setChecked(false) }}
                 className="min-w-0 flex-1 rounded border px-2 py-1 text-lg" autoComplete="off" autoCapitalize="off" spellCheck={false}

@@ -29,7 +29,8 @@ export interface Drill { title: string; hint?: string; items: DrillItem[]; clip?
 export interface Dictation {
   title: string
   hint: string
-  clip: Clip
+  /** Không có file nghe thì đây là bài đọc/nối chữ, chấm bằng đáp án chữ cái */
+  clip?: Clip
   /** true: chỉ chấp nhận khi có thanh điệu (gõ dấu hoặc gõ số 1-4) */
   needTone?: boolean
   items: { prompt: string; answer: string; accept?: string[]; gloss?: string }[]
