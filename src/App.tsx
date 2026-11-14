@@ -3,6 +3,7 @@ import { NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import type { Session } from '@supabase/supabase-js'
 import { supabase } from './lib/supabase'
 import Login from './components/Login'
+import ConfirmDialog from './components/ConfirmDialog'
 import Words from './pages/Words'
 import Review from './pages/Review'
 import Library from './pages/Library'
@@ -15,10 +16,13 @@ import HskList from './pages/HskList'
 import { GrammarList, GrammarTopicPage } from './pages/Grammar'
 import HskExam from './pages/HskExam'
 import Sound from './pages/Sound'
+import Hsk21List from './pages/Hsk21List'
+import Hsk21Day from './pages/Hsk21Day'
 import { useTheme } from './lib/theme'
 
 export default function App() {
   const [session, setSession] = useState<Session | null | undefined>(undefined)
+  const [confirmOut, setConfirmOut] = useState(false)
   const { theme, toggle } = useTheme()
   const { pathname } = useLocation()
   useEffect(() => {
@@ -33,6 +37,7 @@ export default function App() {
   const nav: [string, string, boolean][] = [
     ['/', 'Giáo trình', pathname === '/' || pathname.startsWith('/books')],
     ['/grammar', 'Ngữ pháp', pathname.startsWith('/grammar')],
+    ['/hsk21', '21 ngày', pathname.startsWith('/hsk21')],
     ['/practice', 'Luyện tập', pathname.startsWith('/practice')],
     ['/exam', 'Thi thử', pathname.startsWith('/exam')],
     ['/hsk', 'Đề HSK', pathname.startsWith('/hsk')],
@@ -57,9 +62,9 @@ export default function App() {
             ))}
           </div>
           <button className="grid size-9 place-items-center rounded-full text-lg hover:bg-slate-100" title="Đổi giao diện sáng/tối" aria-label="Đổi giao diện sáng/tối" onClick={toggle}>{theme === 'dark' ? '☀️' : '🌙'}</button>
-          <button className="text-sm text-slate-500 hover:text-slate-900" onClick={() => supabase.auth.signOut()}>Thoát</button>
-        </nav>
-      </header>
+          <button className="text-sm text-slate-500 hover:text-slate-900" onClick={() => setConfirmOut(true)}>Thoát</button>
+        </nav>      </header>
+      <ConfirmDialog open={confirmOut} danger title="Đăng xuất?" message="Bạn có chắc muốn đăng xuất khỏi tài khoản?" confirmText="Đăng xuất" onCancel={() => setConfirmOut(false)} onConfirm={() => { setConfirmOut(false); supabase.auth.signOut() }} />
       <main className="mx-auto max-w-4xl space-y-4 px-4 pb-20 pt-6">
       <div key={pathname} className="page-in">
       <Routes>
@@ -70,6 +75,8 @@ export default function App() {
         <Route path="/exam" element={<Exam />} />
         <Route path="/grammar" element={<GrammarList />} />
         <Route path="/grammar/:id" element={<GrammarTopicPage />} />
+        <Route path="/hsk21" element={<Hsk21List />} />
+        <Route path="/hsk21/:day" element={<Hsk21Day />} />
         <Route path="/hsk" element={<HskList />} />
         <Route path="/hsk/:id" element={<HskExam />} />
         <Route path="/sound" element={<Sound />} />

@@ -1,5 +1,6 @@
 import PinyinChart from '../components/PinyinChart'
 import { allLessons } from '../data/lessons'
+import { bookLabel } from '../data/books'
 
 export default function PinyinPage() {
   return (
@@ -11,7 +12,7 @@ export default function PinyinPage() {
       {allLessons.flatMap(({ book, lesson: l }) => l.sections.filter(s => s.kind === 'chart').map(s => (
         s.kind === 'chart' && (
           <section key={book + '-' + l.id + s.title} className="space-y-3">
-            <h2 className="rule pt-3 text-lg font-extrabold">{s.title.replace(/ – bấm ô để nghe/, '')} <span className="text-sm font-normal text-slate-500">· Quyển {book}, Bài {l.id}</span></h2>
+            <h2 className="rule pt-3 text-lg font-extrabold">{s.title.replace(/ – bấm ô để nghe/, '')} <span className="text-sm font-normal text-slate-500">· {bookLabel(book)}, Bài {l.id}</span></h2>
             {s.note && <p className="text-sm text-slate-500">{s.note}</p>}
             <PinyinChart cols={s.cols} rows={s.rows} />
           </section>

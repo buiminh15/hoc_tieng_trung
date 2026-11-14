@@ -1,3 +1,4 @@
+import { bookLabel } from '../data/books'
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
@@ -117,7 +118,7 @@ export function StuckTopics() {
           <li key={r.lesson_key + r.topic_id} className="flex items-center gap-3 py-3">
             <div className="min-w-0 flex-1">
               <div className="font-semibold">{f!.topic.prompt}</div>
-              <div className="text-xs text-slate-500">Quyển {f!.book}, Bài {f!.lesson.id}: <span className="hz">{f!.lesson.hanzi}</span></div>
+              <div className="text-xs text-slate-500">{bookLabel(f!.book)}, Bài {f!.lesson.id}: <span className="hz">{f!.lesson.hanzi}</span></div>
             </div>
             <Link to={`/books/${f!.book}/lessons/${f!.lesson.id}?tab=explain`} className="tile shrink-0 rounded-lg border bg-surface px-3 py-1.5 text-sm font-semibold hover:bg-accent-soft">Làm lại</Link>
           </li>

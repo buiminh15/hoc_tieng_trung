@@ -5,6 +5,7 @@ import { MODES, MODE_INFO, availableModes, isCorrect, makeQuestions, promptClass
 import OrderInput from '../components/OrderInput'
 import Choices from '../components/Choices'
 import Stamp from '../components/Stamp'
+import ConfirmDialog from '../components/ConfirmDialog'
 import { speak } from '../lib/tts'
 
 const GLYPH: Record<Mode, string> = { listen: '听', meaning: '义', reverse: '字', tone: '调', type: '拼', order: '句', dialog: '话', sentence: '耳' }
@@ -53,6 +54,7 @@ function Quiz({ mode, lesson, onExit }: { mode: Mode; lesson: string | null; onE
   const [score, setScore] = useState(0)
   const [picked, setPicked] = useState<string | null>(null)
   const [text, setText] = useState('')
+  const [confirmExit, setConfirmExit] = useState(false)
   const q = qs[i]
 
   if (!q) {
@@ -80,7 +82,8 @@ function Quiz({ mode, lesson, onExit }: { mode: Mode; lesson: string | null; onE
 
   return (
     <div className="mx-auto max-w-md space-y-4 rounded-xl bg-surface p-6 text-center shadow">
-      <div className="flex justify-between text-sm text-slate-500"><button onClick={onExit}>← Thoát</button><span>Câu {i + 1}/{qs.length} · Điểm {score}</span></div>
+      <ConfirmDialog open={confirmExit} danger title="Thoát bài làm?" message="Tiến độ bài làm hiện tại sẽ bị mất." confirmText="Thoát" cancelText="Làm tiếp" onCancel={() => setConfirmExit(false)} onConfirm={onExit} />
+      <div className="flex justify-between text-sm text-slate-500"><button onClick={() => setConfirmExit(true)}>← Thoát</button><span>Câu {i + 1}/{qs.length} · Điểm {score}</span></div>
       <div className="h-1.5 overflow-hidden rounded-full bg-slate-100"><div className="bar h-full bg-accent" style={{ width: `${(i / qs.length) * 100}%` }} /></div>
       <div className="cursor-pointer" onClick={() => q.speakText && speak(q.speakText)}>
         <div className={promptClass(q)}>{q.prompt}</div>

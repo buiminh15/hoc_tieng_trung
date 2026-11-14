@@ -12,15 +12,28 @@ export interface Sound { s: string; tip: string; aspirated?: boolean; say?: stri
 
 export interface StrokeRule { title: string; body: string; example: string; img: string }
 
+/** Đoạn ghi âm giọng thật kèm nhãn, hiện thành trình phát ở đầu mục. */
+export interface Clip { label: string; src: string }
+
 export type PhonSection =
-  | { kind: 'sounds'; label: string; title: string; list: Sound[]; note?: string }
-  | { kind: 'chart'; label: string; title: string; cols: string[]; rows: Record<string, string[]>; note?: string }
-  | { kind: 'tones'; label: string }
-  | { kind: 'examples'; label: string; title: string; intro: string; groups: { label: string; items: [string, string, string][] }[] }
+  | { kind: 'sounds'; label: string; title: string; list: Sound[]; note?: string; clip?: Clip }
+  | { kind: 'chart'; label: string; title: string; cols: string[]; rows: Record<string, string[]>; note?: string; clip?: Clip }
+  | { kind: 'tones'; label: string; clip?: Clip }
+  | { kind: 'examples'; label: string; title: string; intro: string; groups: { label: string; items: [string, string, string][] }[]; clip?: Clip }
 
 /** Mục đọc luyện: bấm để nghe. Có h (chữ Hán) thì đọc chữ Hán, không thì đọc âm tiết syl. */
 export interface DrillItem { h?: string; p: string; m?: string; syl?: string }
-export interface Drill { title: string; hint?: string; items: DrillItem[] }
+export interface Drill { title: string; hint?: string; items: DrillItem[]; clip?: Clip }
+
+/** Bài nghe chép (sách bài tập): nghe file, điền phần còn thiếu, chấm ngay. `accept` là các cách viết khác cũng được tính đúng. */
+export interface Dictation {
+  title: string
+  hint: string
+  clip: Clip
+  /** true: chỉ chấp nhận khi có thanh điệu (gõ dấu hoặc gõ số 1-4) */
+  needTone?: boolean
+  items: { prompt: string; answer: string; accept?: string[]; gloss?: string }[]
+}
 
 export interface QA { title: string; items: { q: string; hint: string }[] }
 
@@ -54,4 +67,8 @@ export interface Lesson extends LessonCore {
   strokesImg?: string
   /** File ghi âm đọc cả bài khóa (giọng thật) */
   dialogueAudio?: string
+  /** Nhiều đoạn ghi âm cho bài khóa gồm nhiều hội thoại nhỏ */
+  dialogueClips?: Clip[]
+  /** Bài nghe chép lấy từ sách bài tập */
+  dictations?: Dictation[]
 }

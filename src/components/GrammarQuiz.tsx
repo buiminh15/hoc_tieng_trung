@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import Choices from './Choices'
 import OrderInput from './OrderInput'
 import Stamp from './Stamp'
+import ConfirmDialog from './ConfirmDialog'
 import type { Exercise } from '../data/grammar'
 import { shuffle } from '../lib/questions'
 
@@ -24,6 +25,7 @@ export default function GrammarQuiz({ items, onDone, onExit }: { items: Exercise
   const [picked, setPicked] = useState<string | null>(null)
   const [text, setText] = useState('')
   const [reported, setReported] = useState(false)
+  const [confirmExit, setConfirmExit] = useState(false)
   const q = qs[i]
 
   if (!q) {
@@ -50,7 +52,8 @@ export default function GrammarQuiz({ items, onDone, onExit }: { items: Exercise
 
   return (
     <div className="mx-auto max-w-md space-y-4 rounded-xl bg-surface p-6 text-center shadow">
-      <div className="flex justify-between text-sm text-slate-500"><button onClick={onExit}>← Thoát</button><span>Câu {i + 1}/{qs.length} · Điểm {score}</span></div>
+      <ConfirmDialog open={confirmExit} danger title="Thoát bài làm?" message="Tiến độ bài làm hiện tại sẽ bị mất." confirmText="Thoát" cancelText="Làm tiếp" onCancel={() => setConfirmExit(false)} onConfirm={onExit} />
+      <div className="flex justify-between text-sm text-slate-500"><button onClick={() => setConfirmExit(true)}>← Thoát</button><span>Câu {i + 1}/{qs.length} · Điểm {score}</span></div>
       <div className="h-1.5 overflow-hidden rounded-full bg-slate-100"><div className="bar h-full bg-accent" style={{ width: `${(i / qs.length) * 100}%` }} /></div>
       <div>
         <p className="text-lg font-semibold">{prompt}</p>

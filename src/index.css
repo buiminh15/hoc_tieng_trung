@@ -106,6 +106,17 @@
 @keyframes page-in { from { opacity: 0; transform: translateY(6px); } }
 .page-in { animation: page-in 0.28s ease-out; }
 
+/* Bảng ghi nhớ (板书) trong sách "21 ngày": bảng mực tối, chữ phấn, nhấn vàng đồng */
+.board { background: linear-gradient(160deg, #0f2a2f, #12202a 60%, #0d1f26); border: 1px solid rgb(255 255 255 / 0.08); }
+.board .ps { transform: rotate(-0.6deg); box-shadow: 2px 2px 0 0 rgb(0 0 0 / 0.35); }
+.dark .board .ps { background: #33290f; color: #e7f0ec; }
+
+/* Hộp thoại xác nhận */
+@keyframes dialog-fade { from { opacity: 0; } }
+@keyframes dialog-pop { from { opacity: 0; transform: translateY(8px) scale(0.96); } }
+.dialog-backdrop { animation: dialog-fade 0.15s ease-out; }
+.dialog-card { animation: dialog-pop 0.2s ease-out; }
+
 /* Nét bút đỏ chấm bài: vẽ ra khi trả lời */
 .pen { position: absolute; inset: -6px; width: calc(100% + 12px); height: calc(100% + 12px); fill: none; stroke: var(--color-seal); stroke-width: 2.8; stroke-linecap: round; stroke-linejoin: round; pointer-events: none; overflow: visible; }
 .pen path { stroke-dasharray: 130; animation: pen-draw 0.42s ease-out; }

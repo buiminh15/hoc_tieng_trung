@@ -3,9 +3,9 @@ import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { toneExamples, tones } from '../data/lesson1'
 import { MODE_INFO, availableModes, scopeFor } from '../lib/questions'
 import { getLesson } from '../data/lessons'
-import { getBook } from '../data/books'
+import { bookLabel, getBook } from '../data/books'
 import { lessonKey, useProgress } from '../lib/progress'
-import type { Drill, Lesson as LessonT, PhonSection } from '../data/types'
+import type { Clip, Drill, Lesson as LessonT, PhonSection } from '../data/types'
 import { playClip, speak, speakSyllable } from '../lib/tts'
 import { addVocabToDeck } from '../lib/srs'
 import { SpeakBtn, ToneShape } from '../components/Speak'
@@ -15,6 +15,7 @@ import Tabs from '../components/Tabs'
 import { ExplainTab } from '../components/SelfExplain'
 import PinyinChart from '../components/PinyinChart'
 import WritePractice from '../components/WritePractice'
+import DictationCard from '../components/DictationCard'
 
 const TABS = [
   ['text', '课文 Bài khóa'],
@@ -47,14 +48,14 @@ function LessonView({ book, lesson }: { book: number; lesson: LessonT }) {
     <div className="space-y-4">
       <nav className="flex flex-wrap items-center gap-1 text-sm text-slate-500">
         <Link to="/" className="hover:underline">Thư viện</Link>›
-        <Link to={`/books/${book}`} className="hover:underline">Quyển {book}</Link>›
+        <Link to={`/books/${book}`} className="hover:underline">{bookLabel(book)}</Link>›
         <span className="text-slate-900">Bài {lesson.id}</span>
       </nav>
       <header className="relative overflow-hidden rounded-lg p-5 text-white shadow sm:p-7" style={{ background: 'linear-gradient(145deg,#0d2b30,#124c47 70%,#176a5b)' }}>
         <span aria-hidden className="hz pointer-events-none absolute -right-4 -top-10 select-none text-[11rem] font-black leading-none text-white/[0.07]">{[...lesson.hanzi][0]}</span>
         <div className="relative flex items-start justify-between gap-4">
           <div className="min-w-0">
-            <p className="text-sm font-semibold text-white/70">Quyển {book} · Bài {lesson.id}</p>
+            <p className="text-sm font-semibold text-white/70">{bookLabel(book)} · Bài {lesson.id}</p>
             <h1 className="hz mt-1 text-4xl font-black leading-tight tracking-tight sm:text-5xl">{lesson.hanzi}</h1>
             <p className="mt-2 text-white/85"><span className="py font-semibold text-[#f0c560]">{lesson.pinyin}</span> · {lesson.title}</p>
           </div>
@@ -108,6 +109,15 @@ function StrokeRules({ lesson }: { lesson: LessonT }) {
   )
 }
 
+function ClipPlayer({ clip }: { clip: Clip }) {
+  return (
+    <div className="rounded-lg border bg-surface p-3">
+      <p className="mb-1 text-sm font-semibold">🎧 {clip.label}</p>
+      <audio controls preload="none" src={clip.src} className="w-full" />
+    </div>
+  )
+}
+
 const Card = ({ children, title }: { children: React.ReactNode; title?: string }) => (
   <section className="page-in space-y-4 pt-1">{title && <h2 className="rule pt-3 text-xl font-extrabold">{title}</h2>}{children}</section>
 )
@@ -147,6 +157,7 @@ function TextTab({ lesson }: { lesson: LessonT }) {
           <audio controls preload="none" src={lesson.dialogueAudio} className="w-full" />
         </div>
       )}
+      {lesson.dialogueClips?.map(c => <ClipPlayer key={c.src} clip={c} />)}
       {lesson.dialogueTip && <p className="rounded-lg border-l-4 border-gold bg-amber-50 p-3 text-sm" dangerouslySetInnerHTML={{ __html: '💡 ' + lesson.dialogueTip }} />}
       <div className="flex flex-wrap gap-2">
         <button className="tile shadow rounded-lg bg-surface px-3 py-2 text-sm font-semibold" onClick={() => speak(lesson.slowSay ?? lesson.dialogue[0].hanzi, 0.6)}>🐢 Nghe chậm</button>
@@ -200,6 +211,7 @@ function PhoneticsTab({ lesson }: { lesson: LessonT }) {
       <div className="flex flex-wrap gap-2">
         {lesson.sections.map((s, k) => <button key={s.label} onClick={() => setI(k)} className={`rounded-full px-4 py-1 text-sm ${i === k ? 'bg-slate-800 text-white' : 'bg-surface shadow'}`}>{s.label}</button>)}
       </div>
+      {sec.clip && <ClipPlayer key={sec.clip.src + i} clip={sec.clip} />}
       <Section key={i} sec={sec} />
     </div>
   )
@@ -300,6 +312,7 @@ function DrillCard({ d }: { d: Drill }) {
   return (
     <Card title={d.title}>
       {d.hint && <p className="text-sm text-slate-500">{d.hint}</p>}
+      {d.clip && <ClipPlayer clip={d.clip} />}
       <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
         {d.items.map((it, i) => (
           <button key={i} onClick={() => it.h ? speak(it.h, 0.7) : it.syl && speakSyllable(it.syl)} className="tile rounded-lg border bg-surface p-2 text-center hover:bg-accent-soft">
@@ -352,6 +365,7 @@ function PracticeTab({ book, lesson }: { book: number; lesson: LessonT }) {
         </div>
       </Card>
       {lesson.drills.map(d => <DrillCard key={d.title} d={d} />)}
+      {lesson.dictations?.map(d => <DictationCard key={d.title} d={d} />)}
       {lesson.qa?.map(g => (
         <Card key={g.title} title={g.title}>
           <ul className="space-y-2">

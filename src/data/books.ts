@@ -1,3 +1,6 @@
+/** Mã quyển của Giáo trình chuẩn HSK 1 (các quyển 1-6 là bộ Hán ngữ). */
+export const HSK_STD_ID = 7
+
 export interface LessonStub { id: number; hanzi: string; pinyin: string; vi: string }
 export interface Book { id: number; title: string; lessons: LessonStub[] }
 
@@ -38,11 +41,34 @@ const book2: LessonStub[] = [
   { id: 30, hanzi: '我来了两个多月了', pinyin: 'Wǒ lái le liǎng ge duō yuè le', vi: 'Tôi đến được hơn hai tháng rồi' },
 ]
 
+// Giáo trình chuẩn HSK 1 (标准教程 1, 姜丽萍): 15 bài, mục lục lấy từ sách.
+const hskStd1: LessonStub[] = [
+  { id: 1, hanzi: '你好！', pinyin: 'Nǐ hǎo!', vi: 'Chào anh!' },
+  { id: 2, hanzi: '谢谢你！', pinyin: 'Xièxie nǐ!', vi: 'Cảm ơn anh!' },
+  { id: 3, hanzi: '你叫什么名字？', pinyin: 'Nǐ jiào shénme míngzi?', vi: 'Cô tên gì?' },
+  { id: 4, hanzi: '她是我的汉语老师。', pinyin: 'Tā shì wǒ de Hànyǔ lǎoshī.', vi: 'Cô ấy là cô giáo dạy tôi tiếng Trung Quốc.' },
+  { id: 5, hanzi: '她女儿今年二十岁。', pinyin: "Tā nǚ'ér jīnnián èrshí suì.", vi: 'Con gái của cô ấy năm nay 20 tuổi.' },
+  { id: 6, hanzi: '我会说汉语。', pinyin: 'Wǒ huì shuō Hànyǔ.', vi: 'Tôi biết nói tiếng Trung Quốc.' },
+  { id: 7, hanzi: '今天几号？', pinyin: 'Jīntiān jǐ hào?', vi: 'Hôm nay là ngày mấy?' },
+  { id: 8, hanzi: '我想喝茶。', pinyin: 'Wǒ xiǎng hē chá.', vi: 'Tôi muốn uống trà.' },
+  { id: 9, hanzi: '你儿子在哪儿工作？', pinyin: 'Nǐ érzi zài nǎr gōngzuò?', vi: 'Con trai anh làm việc ở đâu?' },
+  { id: 10, hanzi: '我能坐这儿吗？', pinyin: 'Wǒ néng zuò zhèr ma?', vi: 'Tôi có thể ngồi ở đây được không?' },
+  { id: 11, hanzi: '现在几点？', pinyin: 'Xiànzài jǐ diǎn?', vi: 'Bây giờ là mấy giờ?' },
+  { id: 12, hanzi: '明天天气怎么样？', pinyin: 'Míngtiān tiānqì zěnmeyàng?', vi: 'Ngày mai thời tiết thế nào?' },
+  { id: 13, hanzi: '他在学做中国菜呢。', pinyin: 'Tā zài xué zuò Zhōngguó cài ne.', vi: 'Anh ấy đang học nấu món ăn Trung Quốc.' },
+  { id: 14, hanzi: '她买了不少衣服。', pinyin: 'Tā mǎi le bù shǎo yīfu.', vi: 'Cô ấy đã mua nhiều quần áo.' },
+  { id: 15, hanzi: '我是坐飞机来的。', pinyin: 'Wǒ shì zuò fēijī lái de.', vi: 'Tôi đáp máy bay bay đến đây.' },
+]
+
 // Quyển 3-6: chưa có mục lục (chưa có file sách), sẽ bổ sung khi có.
 export const books: Book[] = [
   { id: 1, title: 'Quyển 1', lessons: book1 },
   { id: 2, title: 'Quyển 2', lessons: book2 },
   ...[3, 4, 5, 6].map(id => ({ id, title: `Quyển ${id}`, lessons: [] as LessonStub[] })),
+  { id: HSK_STD_ID, title: 'Giáo trình chuẩn HSK 1', lessons: hskStd1 },
 ]
 
 export const getBook = (id: number) => books.find(b => b.id === id)
+
+/** Tên quyển để hiện trên giao diện: "Quyển 1" hoặc "Giáo trình chuẩn HSK 1". */
+export const bookLabel = (id: number) => getBook(id)?.title ?? `Quyển ${id}`
