@@ -58,7 +58,10 @@ import { hskStd2Lesson12 } from './hskstd2/lesson12'
 import { hskStd2Lesson13 } from './hskstd2/lesson13'
 import { hskStd2Lesson14 } from './hskstd2/lesson14'
 import { hskStd2Lesson15 } from './hskstd2/lesson15'
-import { HSK_STD_ID, HSK_STD2_ID } from './books'
+import { hskStd3Lesson1 } from './hskstd3/lesson1'
+import { hskStd3Lesson2 } from './hskstd3/lesson2'
+import { hskStd3Lesson3 } from './hskstd3/lesson3'
+import { HSK_STD_ID, HSK_STD2_ID, HSK_STD3_ID } from './books'
 import type { Lesson } from './types'
 
 const INIT_TECH: Record<string, [string, string]> = {
@@ -149,6 +152,7 @@ export const lesson1: Lesson = {
 export const bookLessons: Record<number, Lesson[]> = {
   1: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15],
   [HSK_STD_ID]: [hskStd1Lesson1, hskStd1Lesson2, hskStd1Lesson3, hskStd1Lesson4, hskStd1Lesson5, hskStd1Lesson6, hskStd1Lesson7, hskStd1Lesson8, hskStd1Lesson9, hskStd1Lesson10, hskStd1Lesson11, hskStd1Lesson12, hskStd1Lesson13, hskStd1Lesson14, hskStd1Lesson15],
+  [HSK_STD3_ID]: [hskStd3Lesson1, hskStd3Lesson2, hskStd3Lesson3],
   [HSK_STD2_ID]: [hskStd2Lesson1, hskStd2Lesson2, hskStd2Lesson3, hskStd2Lesson4, hskStd2Lesson5, hskStd2Lesson6, hskStd2Lesson7, hskStd2Lesson8, hskStd2Lesson9, hskStd2Lesson10, hskStd2Lesson11, hskStd2Lesson12, hskStd2Lesson13, hskStd2Lesson14, hskStd2Lesson15],
   2: [lesson16, lesson17, lesson18, lesson19, lesson20, lesson21, lesson22, lesson23, lesson24, lesson25, lesson26, lesson27, lesson28, lesson29, lesson30],
 }

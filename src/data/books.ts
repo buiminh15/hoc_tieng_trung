@@ -2,6 +2,8 @@
 export const HSK_STD_ID = 7
 /** Mã quyển của Giáo trình chuẩn HSK 2. */
 export const HSK_STD2_ID = 8
+/** Mã quyển của Giáo trình chuẩn HSK 3. */
+export const HSK_STD3_ID = 9
 
 export interface LessonStub { id: number; hanzi: string; pinyin: string; vi: string }
 export interface Book { id: number; title: string; lessons: LessonStub[] }
@@ -81,6 +83,30 @@ const hskStd2: LessonStub[] = [
   { id: 15, hanzi: '新年就要到了', pinyin: 'Xīnnián jiù yào dào le', vi: 'Năm mới sắp đến rồi' },
 ]
 
+// Giáo trình chuẩn HSK 3: 20 bài, mục lục lấy từ sách giáo viên; tên tiếng Việt theo sách giáo khoa (bài 1–3) hoặc app dịch.
+const hskStd3: LessonStub[] = [
+  { id: 1, hanzi: '周末你有什么打算？', pinyin: 'Zhōumò nǐ yǒu shénme dǎsuàn?', vi: 'Anh dự định làm gì vào cuối tuần vậy?' },
+  { id: 2, hanzi: '他什么时候回来？', pinyin: 'Tā shénme shíhou huílai?', vi: 'Khi nào anh ấy quay về?' },
+  { id: 3, hanzi: '桌子上放着很多饮料。', pinyin: 'Zhuōzi shang fàngzhe hěn duō yǐnliào.', vi: 'Trên bàn có rất nhiều thức uống.' },
+  { id: 4, hanzi: '她总是笑着跟客人说话。', pinyin: 'Tā zǒngshì xiàozhe gēn kèrén shuō huà.', vi: 'Cô ấy luôn mỉm cười nói chuyện với khách' },
+  { id: 5, hanzi: '我最近越来越胖了。', pinyin: 'Wǒ zuìjìn yuè lái yuè pàng le.', vi: 'Dạo này tôi ngày càng béo' },
+  { id: 6, hanzi: '怎么突然找不到了？', pinyin: 'Zěnme tūrán zhǎo bu dào le?', vi: 'Sao tự nhiên lại không tìm thấy?' },
+  { id: 7, hanzi: '我跟她都认识五年了。', pinyin: 'Wǒ gēn tā dōu rènshi wǔ nián le.', vi: 'Tôi và cô ấy đã quen nhau năm năm rồi' },
+  { id: 8, hanzi: '你去哪儿我就去哪儿。', pinyin: 'Nǐ qù nǎr wǒ jiù qù nǎr.', vi: 'Bạn đi đâu tôi đi đó' },
+  { id: 9, hanzi: '她的汉语说得跟中国人一样好。', pinyin: 'Tā de Hànyǔ shuō de gēn Zhōngguó rén yíyàng hǎo.', vi: 'Cô ấy nói tiếng Hán giỏi như người Trung Quốc' },
+  { id: 10, hanzi: '数学比历史难多了。', pinyin: 'Shùxué bǐ lìshǐ nán duō le.', vi: 'Toán khó hơn sử nhiều' },
+  { id: 11, hanzi: '别忘了把空调关了。', pinyin: 'Bié wàng le bǎ kōngtiáo guān le.', vi: 'Đừng quên tắt điều hòa' },
+  { id: 12, hanzi: '把重要的东西放在我这儿吧。', pinyin: 'Bǎ zhòngyào de dōngxi fàng zài wǒ zhèr ba.', vi: 'Để đồ quan trọng ở chỗ tôi đi' },
+  { id: 13, hanzi: '我是走回来的。', pinyin: 'Wǒ shì zǒu huílai de.', vi: 'Tôi đi bộ về' },
+  { id: 14, hanzi: '你把水果拿过来。', pinyin: 'Nǐ bǎ shuǐguǒ ná guolai.', vi: 'Bạn mang hoa quả lại đây' },
+  { id: 15, hanzi: '其他都没什么问题。', pinyin: 'Qítā dōu méi shénme wèntí.', vi: 'Những cái khác đều không có vấn đề gì' },
+  { id: 16, hanzi: '我现在累得下了班就想睡觉。', pinyin: 'Wǒ xiànzài lèi de xià le bān jiù xiǎng shuì jiào.', vi: 'Giờ tôi mệt đến mức tan làm là muốn ngủ' },
+  { id: 17, hanzi: '谁都有办法看好你的"病"。', pinyin: 'Shéi dōu yǒu bànfǎ kànhǎo nǐ de "bìng".', vi: 'Ai cũng có cách chữa khỏi "bệnh" của bạn' },
+  { id: 18, hanzi: '我相信他们会同意的。', pinyin: 'Wǒ xiāngxìn tāmen huì tóngyì de.', vi: 'Tôi tin họ sẽ đồng ý' },
+  { id: 19, hanzi: '你没看出来吗？', pinyin: 'Nǐ méi kàn chulai ma?', vi: 'Bạn không nhận ra sao?' },
+  { id: 20, hanzi: '我被他影响了。', pinyin: 'Wǒ bèi tā yǐngxiǎng le.', vi: 'Tôi bị anh ấy ảnh hưởng' },
+]
+
 // Quyển 3-6: chưa có mục lục (chưa có file sách), sẽ bổ sung khi có.
 export const books: Book[] = [
   { id: 1, title: 'Quyển 1', lessons: book1 },
@@ -88,6 +114,7 @@ export const books: Book[] = [
   ...[3, 4, 5, 6].map(id => ({ id, title: `Quyển ${id}`, lessons: [] as LessonStub[] })),
   { id: HSK_STD_ID, title: 'Giáo trình chuẩn HSK 1', lessons: hskStd1 },
   { id: HSK_STD2_ID, title: 'Giáo trình chuẩn HSK 2', lessons: hskStd2 },
+  { id: HSK_STD3_ID, title: 'Giáo trình chuẩn HSK 3', lessons: hskStd3 },
 ]
 
 export const getBook = (id: number) => books.find(b => b.id === id)
