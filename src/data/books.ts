@@ -109,7 +109,7 @@ const hskStd3: LessonStub[] = [
   { id: 20, hanzi: '我被他影响了。', pinyin: 'Wǒ bèi tā yǐngxiǎng le.', vi: 'Tôi bị anh ấy ảnh hưởng' },
 ]
 
-// Giáo trình chuẩn HSK 4 (Thượng, bài 1–10): bài 1–10; tên tiếng Việt theo sách giáo khoa.
+// Giáo trình chuẩn HSK 4 (Thượng, bài 1–16): bài 1–16; tên tiếng Việt theo sách giáo khoa.
 const hskStd4: LessonStub[] = [
   { id: 1, hanzi: '简单的爱情', pinyin: 'Jiǎndān de àiqíng', vi: 'Tình yêu đơn giản' },
   { id: 2, hanzi: '真正的朋友', pinyin: 'Zhēnzhèng de péngyou', vi: 'Người bạn chân chính' },
@@ -121,6 +121,12 @@ const hskStd4: LessonStub[] = [
   { id: 8, hanzi: '生活中不缺少美', pinyin: 'Shēnghuó zhōng bù quēshǎo měi', vi: 'Cuộc sống không thiếu cái đẹp' },
   { id: 9, hanzi: '阳光总在风雨后', pinyin: 'Yángguāng zǒng zài fēngyǔ hòu', vi: 'Sau cơn mưa trời lại sáng' },
   { id: 10, hanzi: '幸福的标准', pinyin: 'Xìngfú de biāozhǔn', vi: 'Tiêu chuẩn của hạnh phúc' },
+  { id: 11, hanzi: '读书好，读好书，好读书', pinyin: 'Dú shū hǎo, dú hǎo shū, hào dú shū', vi: 'Đọc sách có lợi, đọc sách hay, thích đọc sách' },
+  { id: 12, hanzi: '用心发现世界', pinyin: 'Yòngxīn fāxiàn shìjiè', vi: 'Dụng tâm khám phá thế giới' },
+  { id: 13, hanzi: '喝着茶看京剧', pinyin: 'Hēzhe chá kàn jīngjù', vi: 'Uống trà trong lúc xem Kinh kịch' },
+  { id: 14, hanzi: '保护地球母亲', pinyin: 'Bǎohù dìqiú mǔqīn', vi: 'Bảo vệ Mẹ Trái đất' },
+  { id: 15, hanzi: '教育孩子的艺术', pinyin: 'Jiàoyù háizi de yìshù', vi: 'Nghệ thuật giáo dục con cái' },
+  { id: 16, hanzi: '生活可以更美好', pinyin: 'Shēnghuó kěyǐ gèng měihǎo', vi: 'Cuộc sống có thể tốt đẹp hơn' },
 ]
 
 // Quyển 3-6: chưa có mục lục (chưa có file sách), sẽ bổ sung khi có.
