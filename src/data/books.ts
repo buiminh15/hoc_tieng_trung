@@ -4,6 +4,8 @@ export const HSK_STD_ID = 7
 export const HSK_STD2_ID = 8
 /** Mã quyển của Giáo trình chuẩn HSK 3. */
 export const HSK_STD3_ID = 9
+/** Mã quyển của Giáo trình chuẩn HSK 4 (Thượng). */
+export const HSK_STD4_ID = 10
 
 export interface LessonStub { id: number; hanzi: string; pinyin: string; vi: string }
 export interface Book { id: number; title: string; lessons: LessonStub[] }
@@ -107,6 +109,20 @@ const hskStd3: LessonStub[] = [
   { id: 20, hanzi: '我被他影响了。', pinyin: 'Wǒ bèi tā yǐngxiǎng le.', vi: 'Tôi bị anh ấy ảnh hưởng' },
 ]
 
+// Giáo trình chuẩn HSK 4 (Thượng, bài 1–10): bài 1–10; tên tiếng Việt theo sách giáo khoa.
+const hskStd4: LessonStub[] = [
+  { id: 1, hanzi: '简单的爱情', pinyin: 'Jiǎndān de àiqíng', vi: 'Tình yêu đơn giản' },
+  { id: 2, hanzi: '真正的朋友', pinyin: 'Zhēnzhèng de péngyou', vi: 'Người bạn chân chính' },
+  { id: 3, hanzi: '经理对我印象不错', pinyin: 'Jīnglǐ duì wǒ yìnxiàng búcuò', vi: 'Giám đốc có ấn tượng tốt về tôi' },
+  { id: 4, hanzi: '不要太着急赚钱', pinyin: 'Búyào tài zháojí zhuàn qián', vi: 'Đừng quá nôn nóng kiếm tiền' },
+  { id: 5, hanzi: '只买对的，不买贵的', pinyin: 'Zhǐ mǎi duì de, bù mǎi guì de', vi: 'Chỉ mua đồ đúng, không mua đồ đắt' },
+  { id: 6, hanzi: '一分钱一分货', pinyin: 'Yì fēn qián yì fēn huò', vi: 'Tiền nào của nấy' },
+  { id: 7, hanzi: '最好的医生是自己', pinyin: 'Zuì hǎo de yīshēng shì zìjǐ', vi: 'Bác sĩ tốt nhất là bản thân' },
+  { id: 8, hanzi: '生活中不缺少美', pinyin: 'Shēnghuó zhōng bù quēshǎo měi', vi: 'Cuộc sống không thiếu cái đẹp' },
+  { id: 9, hanzi: '阳光总在风雨后', pinyin: 'Yángguāng zǒng zài fēngyǔ hòu', vi: 'Sau cơn mưa trời lại sáng' },
+  { id: 10, hanzi: '幸福的标准', pinyin: 'Xìngfú de biāozhǔn', vi: 'Tiêu chuẩn của hạnh phúc' },
+]
+
 // Quyển 3-6: chưa có mục lục (chưa có file sách), sẽ bổ sung khi có.
 export const books: Book[] = [
   { id: 1, title: 'Quyển 1', lessons: book1 },
@@ -115,6 +131,7 @@ export const books: Book[] = [
   { id: HSK_STD_ID, title: 'Giáo trình chuẩn HSK 1', lessons: hskStd1 },
   { id: HSK_STD2_ID, title: 'Giáo trình chuẩn HSK 2', lessons: hskStd2 },
   { id: HSK_STD3_ID, title: 'Giáo trình chuẩn HSK 3', lessons: hskStd3 },
+  { id: HSK_STD4_ID, title: 'Giáo trình chuẩn HSK 4', lessons: hskStd4 },
 ]
 
 export const getBook = (id: number) => books.find(b => b.id === id)
