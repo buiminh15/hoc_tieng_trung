@@ -94,6 +94,10 @@ import { hskStd4Lesson13 } from './hskstd4/lesson13'
 import { hskStd4Lesson14 } from './hskstd4/lesson14'
 import { hskStd4Lesson15 } from './hskstd4/lesson15'
 import { hskStd4Lesson16 } from './hskstd4/lesson16'
+import { hskStd4Lesson17 } from './hskstd4/lesson17'
+import { hskStd4Lesson18 } from './hskstd4/lesson18'
+import { hskStd4Lesson19 } from './hskstd4/lesson19'
+import { hskStd4Lesson20 } from './hskstd4/lesson20'
 import { HSK_STD_ID, HSK_STD2_ID, HSK_STD3_ID, HSK_STD4_ID } from './books'
 import type { Lesson } from './types'
 
@@ -186,7 +190,7 @@ export const bookLessons: Record<number, Lesson[]> = {
   1: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15],
   [HSK_STD_ID]: [hskStd1Lesson1, hskStd1Lesson2, hskStd1Lesson3, hskStd1Lesson4, hskStd1Lesson5, hskStd1Lesson6, hskStd1Lesson7, hskStd1Lesson8, hskStd1Lesson9, hskStd1Lesson10, hskStd1Lesson11, hskStd1Lesson12, hskStd1Lesson13, hskStd1Lesson14, hskStd1Lesson15],
   [HSK_STD3_ID]: [hskStd3Lesson1, hskStd3Lesson2, hskStd3Lesson3, hskStd3Lesson4, hskStd3Lesson5, hskStd3Lesson6, hskStd3Lesson7, hskStd3Lesson8, hskStd3Lesson9, hskStd3Lesson10, hskStd3Lesson11, hskStd3Lesson12, hskStd3Lesson13, hskStd3Lesson14, hskStd3Lesson15, hskStd3Lesson16, hskStd3Lesson17, hskStd3Lesson18, hskStd3Lesson19, hskStd3Lesson20],
-  [HSK_STD4_ID]: [hskStd4Lesson1, hskStd4Lesson2, hskStd4Lesson3, hskStd4Lesson4, hskStd4Lesson5, hskStd4Lesson6, hskStd4Lesson7, hskStd4Lesson8, hskStd4Lesson9, hskStd4Lesson10, hskStd4Lesson11, hskStd4Lesson12, hskStd4Lesson13, hskStd4Lesson14, hskStd4Lesson15, hskStd4Lesson16],
+  [HSK_STD4_ID]: [hskStd4Lesson1, hskStd4Lesson2, hskStd4Lesson3, hskStd4Lesson4, hskStd4Lesson5, hskStd4Lesson6, hskStd4Lesson7, hskStd4Lesson8, hskStd4Lesson9, hskStd4Lesson10, hskStd4Lesson11, hskStd4Lesson12, hskStd4Lesson13, hskStd4Lesson14, hskStd4Lesson15, hskStd4Lesson16, hskStd4Lesson17, hskStd4Lesson18, hskStd4Lesson19, hskStd4Lesson20],
   [HSK_STD2_ID]: [hskStd2Lesson1, hskStd2Lesson2, hskStd2Lesson3, hskStd2Lesson4, hskStd2Lesson5, hskStd2Lesson6, hskStd2Lesson7, hskStd2Lesson8, hskStd2Lesson9, hskStd2Lesson10, hskStd2Lesson11, hskStd2Lesson12, hskStd2Lesson13, hskStd2Lesson14, hskStd2Lesson15],
   2: [lesson16, lesson17, lesson18, lesson19, lesson20, lesson21, lesson22, lesson23, lesson24, lesson25, lesson26, lesson27, lesson28, lesson29, lesson30],
 }

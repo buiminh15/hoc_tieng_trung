@@ -109,7 +109,7 @@ const hskStd3: LessonStub[] = [
   { id: 20, hanzi: '我被他影响了。', pinyin: 'Wǒ bèi tā yǐngxiǎng le.', vi: 'Tôi bị anh ấy ảnh hưởng' },
 ]
 
-// Giáo trình chuẩn HSK 4 (Thượng, bài 1–16): bài 1–16; tên tiếng Việt theo sách giáo khoa.
+// Giáo trình chuẩn HSK 4 (Thượng, bài 1–20): bài 1–20; tên tiếng Việt theo sách giáo khoa.
 const hskStd4: LessonStub[] = [
   { id: 1, hanzi: '简单的爱情', pinyin: 'Jiǎndān de àiqíng', vi: 'Tình yêu đơn giản' },
   { id: 2, hanzi: '真正的朋友', pinyin: 'Zhēnzhèng de péngyou', vi: 'Người bạn chân chính' },
@@ -127,6 +127,10 @@ const hskStd4: LessonStub[] = [
   { id: 14, hanzi: '保护地球母亲', pinyin: 'Bǎohù dìqiú mǔqīn', vi: 'Bảo vệ Mẹ Trái đất' },
   { id: 15, hanzi: '教育孩子的艺术', pinyin: 'Jiàoyù háizi de yìshù', vi: 'Nghệ thuật giáo dục con cái' },
   { id: 16, hanzi: '生活可以更美好', pinyin: 'Shēnghuó kěyǐ gèng měihǎo', vi: 'Cuộc sống có thể tốt đẹp hơn' },
+  { id: 17, hanzi: '人与自然', pinyin: 'Rén yǔ zìrán', vi: 'Con người và thiên nhiên' },
+  { id: 18, hanzi: '科技与世界', pinyin: 'Kējì yǔ shìjiè', vi: 'Khoa học công nghệ và thế giới' },
+  { id: 19, hanzi: '生活的味道', pinyin: 'Shēnghuó de wèidào', vi: 'Hương vị của cuộc sống' },
+  { id: 20, hanzi: '路上的风景', pinyin: 'Lù shang de fēngjǐng', vi: 'Quang cảnh dọc đường' },
 ]
 
 // Quyển 3-6: chưa có mục lục (chưa có file sách), sẽ bổ sung khi có.
