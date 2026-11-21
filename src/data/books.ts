@@ -6,6 +6,8 @@ export const HSK_STD2_ID = 8
 export const HSK_STD3_ID = 9
 /** Mã quyển của Giáo trình chuẩn HSK 4 (Thượng). */
 export const HSK_STD4_ID = 10
+/** Mã quyển của Giáo trình chuẩn HSK 5 (Thượng). */
+export const HSK_STD5_ID = 11
 
 export interface LessonStub { id: number; hanzi: string; pinyin: string; vi: string }
 export interface Book { id: number; title: string; lessons: LessonStub[] }
@@ -133,6 +135,30 @@ const hskStd4: LessonStub[] = [
   { id: 20, hanzi: '路上的风景', pinyin: 'Lù shang de fēngjǐng', vi: 'Quang cảnh dọc đường' },
 ]
 
+// Giáo trình chuẩn HSK 5 (Thượng): bài 1–20 (không có file nghe).
+const hskStd5: LessonStub[] = [
+  { id: 1, hanzi: '爱的细节', pinyin: 'Ài de xìjié', vi: 'Những điều nhỏ nhặt trong tình yêu' },
+  { id: 2, hanzi: '留串钥匙给父母', pinyin: 'Liú chuàn yàoshi gěi fùmǔ', vi: 'Để chùm chìa khóa cho bố mẹ' },
+  { id: 3, hanzi: '人生有选择，一切可改变', pinyin: 'Rénshēng yǒu xuǎnzé, yíqiè kě gǎibiàn', vi: 'Đời người có lựa chọn, mọi thứ có thể đổi thay' },
+  { id: 4, hanzi: '子路背米', pinyin: 'Zǐlù bēi mǐ', vi: 'Tử Lộ vác gạo' },
+  { id: 5, hanzi: '济南的泉水', pinyin: 'Jǐnán de quánshuǐ', vi: 'Nước suối Tế Nam' },
+  { id: 6, hanzi: '除夕的由来', pinyin: 'Chúxī de yóulái', vi: 'Nguồn gốc đêm giao thừa' },
+  { id: 7, hanzi: '成语故事两则', pinyin: 'Chéngyǔ gùshi liǎng zé', vi: 'Hai câu chuyện thành ngữ' },
+  { id: 8, hanzi: '“朝三暮四”的古今义', pinyin: 'Zhāosān-mùsì de gǔjīn yì', vi: 'Thành ngữ "Sáng ba chiều bốn" xưa và nay' },
+  { id: 9, hanzi: '别样鲁迅', pinyin: 'Biéyàng Lǔ Xùn', vi: 'Một Lỗ Tấn khác' },
+  { id: 10, hanzi: '争论的奇迹', pinyin: 'Zhēnglùn de qíjì', vi: 'Kỳ tích của cuộc tranh luận' },
+  { id: 11, hanzi: '闹钟的危害', pinyin: 'Nàozhōng de wēihài', vi: 'Tác hại của đồng hồ báo thức' },
+  { id: 12, hanzi: '海外用户玩儿微信', pinyin: 'Hǎiwài yònghù wánr Wēixìn', vi: 'Người dùng WeChat ở nước ngoài' },
+  { id: 13, hanzi: '锯掉生活的“筐底”', pinyin: 'Jùdiào shēnghuó de "kuāngdǐ"', vi: 'Cưa bỏ "đáy giỏ" của cuộc sống' },
+  { id: 14, hanzi: '北京的四合院', pinyin: 'Běijīng de sìhéyuàn', vi: 'Tứ hợp viện Bắc Kinh' },
+  { id: 15, hanzi: '纸上谈兵', pinyin: 'Zhǐshàng tán bīng', vi: 'Đánh trận trên giấy' },
+  { id: 16, hanzi: '体重与节食', pinyin: 'Tǐzhòng yǔ jiéshí', vi: 'Cân nặng và ăn kiêng' },
+  { id: 17, hanzi: '在最美好的时刻离开', pinyin: 'Zài zuì měihǎo de shíkè líkāi', vi: 'Rời đi vào thời khắc đẹp nhất' },
+  { id: 18, hanzi: '抽象艺术美不美？', pinyin: 'Chōuxiàng yìshù měi bu měi', vi: 'Nghệ thuật trừu tượng đẹp hay xấu?' },
+  { id: 19, hanzi: '家乡的萝卜饼', pinyin: 'Jiāxiāng de luóbo bǐng', vi: 'Bánh củ cải quê nhà' },
+  { id: 20, hanzi: '小人书摊', pinyin: 'Xiǎorénshū tān', vi: 'Quầy truyện tranh' },
+]
+
 // Quyển 3-6: chưa có mục lục (chưa có file sách), sẽ bổ sung khi có.
 export const books: Book[] = [
   { id: 1, title: 'Quyển 1', lessons: book1 },
@@ -142,6 +168,7 @@ export const books: Book[] = [
   { id: HSK_STD2_ID, title: 'Giáo trình chuẩn HSK 2', lessons: hskStd2 },
   { id: HSK_STD3_ID, title: 'Giáo trình chuẩn HSK 3', lessons: hskStd3 },
   { id: HSK_STD4_ID, title: 'Giáo trình chuẩn HSK 4', lessons: hskStd4 },
+  { id: HSK_STD5_ID, title: 'Giáo trình chuẩn HSK 5', lessons: hskStd5 },
 ]
 
 export const getBook = (id: number) => books.find(b => b.id === id)
