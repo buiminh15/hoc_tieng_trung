@@ -1,0 +1,110 @@
+import type { Lesson } from '../types'
+
+/** Giáo trình chuẩn HSK 6 (Thượng), Bài 2: 父母之爱. Nghĩa từ mới và ngữ pháp theo sách; dịch bài khóa do app thêm. Không có file nghe. Đáp án theo HSK6-BH-T1-DA. */
+
+export const hskStd6Lesson2: Lesson = {
+  id: 2,
+  title: "Tình yêu của cha mẹ",
+  hanzi: "父母之爱",
+  pinyin: "Fùmǔ zhī ài",
+  vi: "Tình yêu của cha mẹ",
+  intro: "Cô sinh viên xa nhà hiểu ra tình thương cha mẹ giấu sau lời lạnh nhạt. Học 恨不得, 顿时, 不由得 và so sánh 体谅 – 原谅.",
+
+  dialogue: [
+    { who: 'A', name: '课文', hanzi: "我从小生活在一个有爱的家庭，父母感情和睦，很少吵架，他们对我态度和蔼，说话和气，目光中都充满着慈祥。他们和我身边所有父母一样，给我很多宠爱，我也和身边所有的孩子一样，在跨进大学校门之前，从没有离开过家，独立自主的能力就更甭提了。脱离父母，独立生活对我具有巨大的诱惑，让我无比向往。", pinyin: "", vi: "Tôi từ nhỏ sống trong gia đình đầy yêu thương, cha mẹ hòa thuận, ít cãi nhau, họ đối với tôi ôn hòa, nói chuyện nhã nhặn, ánh mắt đầy hiền từ. Họ giống mọi bậc cha mẹ quanh tôi, cưng chiều tôi nhiều, tôi cũng như mọi đứa trẻ quanh mình, trước khi bước vào cổng đại học chưa từng rời nhà, khả năng tự lập tự chủ càng khỏi nói. Rời cha mẹ, sống độc lập có sức hấp dẫn to lớn với tôi, khiến tôi vô cùng khao khát.", scene: "Gia đình êm ấm" },
+    { who: 'A', name: '课文', hanzi: "几年以后，我终于在别的城市上了大学。第一次离开家，心里的孤独感一下子跑了出来。记得刚开学的时候，宿舍里的同学一给家里打电话就哭鼻子，每到节假日，大家更是片刻不停地往家赶。有同学回趟家要坐一夜的火车，这也阻挡不了大家回家的步伐。回家的快乐和被亲情包围的幸福感染了我，我也恨不得马上飞到父母跟前，与他们团圆。", pinyin: "", vi: "Mấy năm sau, tôi cuối cùng vào đại học ở thành phố khác. Lần đầu rời nhà, cảm giác cô đơn bỗng ùa ra. Nhớ lúc mới khai giảng, bạn cùng phòng hễ gọi điện về nhà là khóc nhè, mỗi dịp lễ nghỉ ai nấy càng không ngừng chút nào chạy về nhà. Có bạn về một chuyến phải đi tàu cả đêm, cũng không cản được bước chân về nhà. Niềm vui về nhà và hạnh phúc được tình thân bao quanh lây sang tôi, tôi cũng ước gì bay ngay đến bên cha mẹ để đoàn tụ.", scene: "Nhớ nhà" },
+    { who: 'A', name: '课文', hanzi: "假期终于要到了，我给父母打电话，告诉他们我准备回家。母亲却说，近来他们比较忙，要没什么事，就甭回来了，在学校看看书，或找份兼职做做。母亲的话使我酝酿已久的恋家情绪刹那间就没有了，我无法理解父母的反常，心中暗暗埋怨父母不体谅我。无精打采了几天之后，我不得不开始规划怎样熬过漫长的假期。", pinyin: "", vi: "Kỳ nghỉ cuối cùng sắp đến, tôi gọi cho cha mẹ báo định về nhà. Mẹ lại nói dạo này họ khá bận, nếu không có việc gì thì khỏi về, ở trường đọc sách hoặc tìm việc làm thêm. Lời mẹ khiến nỗi nhớ nhà tôi ấp ủ đã lâu tan biến trong chớp mắt, tôi không hiểu sự khác thường của cha mẹ, thầm oán trách họ không thông cảm cho tôi. Sau mấy ngày thẫn thờ, tôi buộc phải bắt đầu lên kế hoạch chịu đựng kỳ nghỉ dài đằng đẵng.", scene: "Lời của mẹ" },
+    { who: 'A', name: '课文', hanzi: "假期的校园寂静得很，我在图书馆看书，给杂志社写稿件，发现在难得的寂静中工作是那么美好。", pinyin: "", vi: "Khuôn viên kỳ nghỉ yên ắng, tôi đọc sách ở thư viện, viết bài cho tòa soạn tạp chí, phát hiện làm việc trong sự tĩnh lặng hiếm có thật tuyệt.", scene: "Kỳ nghỉ ở trường" },
+    { who: 'A', name: '课文', hanzi: "大学三年级，我回了趟家。母亲第一眼看到我时，脸上满是心疼，但瞬间那种情绪就被她掩饰起来，我心中飞快地闪过一丝疑惑：他们在隐瞒什么呢？", pinyin: "", vi: "Năm ba đại học, tôi về nhà một chuyến. Lần đầu mẹ nhìn thấy tôi, mặt đầy xót xa, nhưng trong chớp mắt cảm xúc ấy bị bà che giấu, trong lòng tôi lóe lên một tia nghi hoặc: họ đang giấu điều gì?", scene: "Nghi hoặc" },
+    { who: 'A', name: '课文', hanzi: "那晚，我躺下怎么也睡不着，半夜听到母亲还在跟父亲唠叨：“孩子比在家时瘦多了，肯定是吃苦了，可她的变化还是挺让咱们欣慰的。”接着是父亲的声音：“总有一天她会明白的，不吃苦，怎么长本事？社会不需要只会享福的人。”", pinyin: "", vi: "Đêm đó, tôi nằm mãi không ngủ được, nửa đêm nghe mẹ vẫn lải nhải với cha: \"Con gầy hơn nhiều so với lúc ở nhà, chắc chắn chịu khổ rồi, nhưng sự thay đổi của con vẫn khiến mình yên lòng.\" Rồi đến giọng cha: \"Sẽ có ngày nó hiểu, không chịu khổ sao có bản lĩnh? Xã hội không cần người chỉ biết hưởng phúc.\"", scene: "Nghe lén" },
+    { who: 'A', name: '课文', hanzi: "我悄悄走出卧室，看到灯光下父母不舍的目光、头上新增的白发和眼角越来越深的皱纹，顿时什么都明白了，不由得热泪盈眶。", pinyin: "", vi: "Tôi lặng lẽ bước ra khỏi phòng ngủ, thấy dưới ánh đèn ánh mắt không nỡ của cha mẹ, mái tóc bạc mới thêm và nếp nhăn đuôi mắt ngày một sâu, chợt hiểu ra tất cả, không kìm được nước mắt rưng rưng.", scene: "Hiểu ra" },
+  ],
+  dialogueTip: "<b>恨不得</b>. <b>顿时</b>. <b>不由得</b>. <b>体谅</b>/<b>原谅</b>.",
+  slowSay: "父母之爱",
+
+  vocab: [
+    { hanzi: "和蔼", pinyin: "hé'ǎi", pos: "tính từ", meaning: "hòa nhã", han_viet: '' },
+    { hanzi: "和气", pinyin: "héqi", pos: "tính từ", meaning: "điềm đạm", han_viet: '' },
+    { hanzi: "目光", pinyin: "mùguāng", pos: "danh từ", meaning: "ánh mắt", han_viet: '' },
+    { hanzi: "慈祥", pinyin: "cíxiáng", pos: "tính từ", meaning: "hiền từ", han_viet: '' },
+    { hanzi: "跨", pinyin: "kuà", pos: "động từ", meaning: "bước", han_viet: '' },
+    { hanzi: "自主", pinyin: "zìzhǔ", pos: "động từ", meaning: "tự chủ", han_viet: '' },
+    { hanzi: "甭", pinyin: "béng", pos: "phó từ", meaning: "không cần", han_viet: '' },
+    { hanzi: "脱离", pinyin: "tuōlí", pos: "động từ", meaning: "thoát khỏi", han_viet: '' },
+    { hanzi: "诱惑", pinyin: "yòuhuò", pos: "động từ", meaning: "mê hoặc", han_viet: '' },
+    { hanzi: "无比", pinyin: "wúbǐ", pos: "động từ", meaning: "vô cùng", han_viet: '' },
+    { hanzi: "向往", pinyin: "xiàngwǎng", pos: "động từ", meaning: "khao khát", han_viet: '' },
+    { hanzi: "孤独", pinyin: "gūdú", pos: "tính từ", meaning: "cô đơn", han_viet: '' },
+    { hanzi: "哭鼻子", pinyin: "kū bízi", pos: "động từ", meaning: "khóc nhè", han_viet: '' },
+    { hanzi: "片刻", pinyin: "piànkè", pos: "danh từ", meaning: "phút chốc", han_viet: '' },
+    { hanzi: "步伐", pinyin: "bùfá", pos: "danh từ", meaning: "nhịp bước", han_viet: '' },
+    { hanzi: "包围", pinyin: "bāowéi", pos: "động từ", meaning: "bao vây", han_viet: '' },
+    { hanzi: "感染", pinyin: "gǎnrǎn", pos: "động từ", meaning: "lây lan", han_viet: '' },
+    { hanzi: "恨不得", pinyin: "hènbude", pos: "động từ", meaning: "ước gì", han_viet: '' },
+    { hanzi: "跟前", pinyin: "gēnqián", pos: "danh từ", meaning: "bên cạnh", han_viet: '' },
+    { hanzi: "团圆", pinyin: "tuányuán", pos: "động từ", meaning: "đoàn tụ", han_viet: '' },
+    { hanzi: "近来", pinyin: "jìnlái", pos: "danh từ", meaning: "dạo này", han_viet: '' },
+    { hanzi: "酝酿", pinyin: "yùnniàng", pos: "động từ", meaning: "ấp ủ", han_viet: '' },
+    { hanzi: "刹那", pinyin: "chànà", pos: "danh từ", meaning: "chớp mắt", han_viet: '' },
+    { hanzi: "反常", pinyin: "fǎncháng", pos: "tính từ", meaning: "khác thường", han_viet: '' },
+    { hanzi: "埋怨", pinyin: "mányuàn", pos: "động từ", meaning: "oán trách", han_viet: '' },
+    { hanzi: "体谅", pinyin: "tǐliàng", pos: "động từ", meaning: "thông cảm", han_viet: '' },
+    { hanzi: "无精打采", pinyin: "wújīng-dǎcǎi", pos: "thành ngữ", meaning: "thẫn thờ", han_viet: '' },
+    { hanzi: "规划", pinyin: "guīhuà", pos: "động từ", meaning: "lập kế hoạch", han_viet: '' },
+    { hanzi: "熬", pinyin: "áo", pos: "động từ", meaning: "chịu đựng", han_viet: '' },
+    { hanzi: "漫长", pinyin: "màncháng", pos: "tính từ", meaning: "dài đằng đẵng", han_viet: '' },
+    { hanzi: "寂静", pinyin: "jìjìng", pos: "tính từ", meaning: "vắng vẻ", han_viet: '' },
+    { hanzi: "稿件", pinyin: "gǎojiàn", pos: "danh từ", meaning: "bài viết", han_viet: '' },
+    { hanzi: "难得", pinyin: "nándé", pos: "tính từ", meaning: "hiếm có", han_viet: '' },
+    { hanzi: "心疼", pinyin: "xīnténg", pos: "động từ", meaning: "đau lòng", han_viet: '' },
+    { hanzi: "掩饰", pinyin: "yǎnshì", pos: "động từ", meaning: "che đậy", han_viet: '' },
+    { hanzi: "隐瞒", pinyin: "yǐnmán", pos: "động từ", meaning: "giấu giếm", han_viet: '' },
+    { hanzi: "唠叨", pinyin: "láodao", pos: "động từ", meaning: "lải nhải", han_viet: '' },
+    { hanzi: "吃苦", pinyin: "chī kǔ", pos: "động từ", meaning: "chịu khổ", han_viet: '' },
+    { hanzi: "欣慰", pinyin: "xīnwèi", pos: "tính từ", meaning: "vui mừng yên tâm", han_viet: '' },
+    { hanzi: "本事", pinyin: "běnshi", pos: "danh từ", meaning: "bản lĩnh", han_viet: '' },
+    { hanzi: "皱纹", pinyin: "zhòuwén", pos: "danh từ", meaning: "nếp nhăn", han_viet: '' },
+    { hanzi: "顿时", pinyin: "dùnshí", pos: "phó từ", meaning: "chợt", han_viet: '' },
+    { hanzi: "不由得", pinyin: "bùyóude", pos: "phó từ", meaning: "không kìm được", han_viet: '' },
+    { hanzi: "热泪盈眶", pinyin: "rèlèi yíng kuàng", pos: "thành ngữ", meaning: "nước mắt rưng rưng", han_viet: '' },
+  ],
+
+  sections: [
+    { kind: 'examples', label: "恨不得", title: "恨不得 (ước gì)", intro: "恨不得: động từ, tha thiết mong làm được việc gì, thường dùng cho việc thực tế không làm được.", groups: [{ label: 'Ví dụ', items: [["他累坏了，恨不得一下子倒在床上，睡上三天三夜。", "Tā lèi huài le, hènbude yíxiàzi dǎo zài chuáng shang, shuì shàng sān tiān sān yè.", "Anh mệt quá, chỉ muốn đổ vật xuống giường ngủ ba ngày ba đêm."], ["回家的快乐和被亲情包围的幸福感染了我，我也恨不得马上飞到父母跟前，与他们团圆。", "Huíjiā de kuàilè hé bèi qīnqíng bāowéi de xìngfú gǎnrǎnle wǒ, wǒ yě hènbude mǎshàng fēi dào fùmǔ gēnqián, yǔ tāmen tuányuán.", "Niềm vui về nhà và hạnh phúc được tình thân bao quanh lây sang tôi, tôi cũng ước bay ngay đến bên cha mẹ đoàn tụ."]] }] },
+    { kind: 'examples', label: "顿时", title: "顿时 (chợt, ngay lập tức)", intro: "顿时: phó từ, hành động xảy ra ngay trong một tình huống hoặc liền sau việc gì; dùng nhiều trong văn viết.", groups: [{ label: 'Ví dụ', items: [["大家拿出手机看了看，居然都快没电了，两个女生顿时急哭了起来。", "Dàjiā ná chū shǒujī kànle kàn, jūrán dōu kuài méi diàn le, liǎng ge nǚshēng dùnshí jí kū le qǐlái.", "Mọi người lấy điện thoại ra xem, thế mà đều sắp hết pin, hai cô gái lập tức sốt ruột bật khóc."], ["听了医生的话，顿时，他的心里又燃起了希望。", "Tīngle yīshēng de huà, dùnshí, tā de xīnli yòu ránqǐle xīwàng.", "Nghe lời bác sĩ, trong lòng anh chợt bừng lên hy vọng."]] }] },
+    { kind: 'examples', label: "不由得", title: "不由得 (không kìm được)", intro: "不由得: phó từ, không kiềm chế được bản thân; thường dùng 不由得 + cụm động từ / chủ vị.", groups: [{ label: 'Ví dụ', items: [["李朋带病上场参加比赛了，我不由得有些担心。", "Lǐ Péng dài bìng shàngchǎng cānjiā bǐsài le, wǒ bùyóude yǒuxiē dānxīn.", "Lý Bằng mang bệnh ra thi đấu, tôi không khỏi lo."], ["书中描写的情景，让我不由得回想起和圆圆谈恋爱时的幸福和快乐。", "Shū zhōng miáoxiě de qíngjǐng, ràng wǒ bùyóude huíxiǎng qǐ hé Yuányuan tán liàn'ài shí de xìngfú hé kuàilè.", "Cảnh trong sách khiến tôi không kìm được nhớ lại hạnh phúc khi yêu Viên Viên."]] }] },
+    { kind: 'examples', label: "体谅 – 原谅", title: "So sánh 体谅 và 原谅", intro: "Cả hai đều là động từ có nghĩa thông cảm, tha thứ nhưng thường không thay nhau. 体谅: đặt mình vào vị trí người khác để thông cảm, có thể thêm 很/非常 và lặp lại; 原谅: tha thứ sai sót, không trách phạt, thường không thêm phó từ và không lặp.", groups: [{ label: 'Ví dụ', items: [["我的家离公司很远，孩子又小，老板很体谅我，允许我晚半个小时上班。", "Wǒ de jiā lí gōngsī hěn yuǎn, háizi yòu xiǎo, lǎobǎn hěn tǐliàng wǒ, yǔnxǔ wǒ wǎn bàn ge xiǎoshí shàng bān.", "Nhà tôi xa công ty, con còn nhỏ, sếp rất thông cảm cho tôi, cho đi làm muộn nửa tiếng."], ["昨天我没写完作业，是因为我病了，所以老师原谅了我。", "Zuótiān wǒ méi xiěwán zuòyè, shì yīnwèi wǒ bìng le, suǒyǐ lǎoshī yuánliàngle wǒ.", "Hôm qua tôi chưa làm xong bài vì bị bệnh nên cô giáo tha cho tôi."]] }] },
+  ],
+
+  notes: [
+    { title: "恨不得", body: "Ước gì.", say: "恨不得马上飞到父母跟前" },
+    { title: "顿时", body: "Chợt.", say: "顿时什么都明白了" },
+    { title: "不由得", body: "Không kìm được.", say: "不由得热泪盈眶" },
+  ],
+
+  writeChars: ["孤", "独", "团", "圆", "酝", "酿", "隐", "瞒"],
+
+  drills: [],
+
+  qa: [{ title: 'Hoạt động (运用)', items: [{"q": "你离开家时有什么感受？", "hint": "……"}, {"q": "父母的话为什么与心里想的不同？", "hint": "……"}] }],
+
+  sentences: [],
+
+  dictations: [
+    { title: "Giáo trình 做一做 / 练习 3", hint: 'Gõ chữ Hán theo đáp án sách.', items: [
+      { prompt: "妈妈，（ ）我吧，我不是故意的，下次一定不这样了。", answer: "原谅", gloss: "tha thứ" },
+      { prompt: "他太不（ ）我了，我又要工作又要做家务，他还批评我干得慢。", answer: "体谅", gloss: "thông cảm" },
+      { prompt: "小丽是个善良的女孩，很能（ ）别人。", answer: "体谅", gloss: "thông cảm" },
+      { prompt: "虽然这次我（ ）了他，但他并没有就此改正自己的错误。", answer: "原谅", gloss: "tha thứ" },
+      { prompt: "最近我的朋友小李有些（ ），每天都（ ）的。", answer: "反常", gloss: "khác thường" },
+      { prompt: "每天都无精打采的。(无精打采)", answer: "无精打采", gloss: "thẫn thờ" },
+      { prompt: "我（ ）地担心起他来。 (不由得)", answer: "不由得", gloss: "không kìm được" },
+      { prompt: "如果你遇到了什么困难，千万别（ ），告诉我。", answer: "隐瞒", gloss: "giấu giếm" },
+      { prompt: "小李感动得（ ）。", answer: "热泪盈眶", gloss: "nước mắt rưng rưng" },
+      { prompt: "（ ）公司的事情比较多，我酝酿已久的旅行也只能放弃了。", answer: "近来", gloss: "dạo này" },
+      { prompt: "我（ ）已久的旅行也只能放弃了。", answer: "酝酿", gloss: "ấp ủ" },
+      { prompt: "心中暗暗（ ）老板太不体谅员工了。", answer: "埋怨", gloss: "oán trách" },
+      { prompt: "那些不满的情绪（ ）消失了。", answer: "顿时", gloss: "chợt" },
+    ] },
+  ],
+}

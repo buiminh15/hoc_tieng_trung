@@ -8,6 +8,8 @@ export const HSK_STD3_ID = 9
 export const HSK_STD4_ID = 10
 /** Mã quyển của Giáo trình chuẩn HSK 5 (Thượng). */
 export const HSK_STD5_ID = 11
+/** Mã quyển của Giáo trình chuẩn HSK 6 (Thượng). */
+export const HSK_STD6_ID = 12
 
 export interface LessonStub { id: number; hanzi: string; pinyin: string; vi: string }
 export interface Book { id: number; title: string; lessons: LessonStub[] }
@@ -111,7 +113,7 @@ const hskStd3: LessonStub[] = [
   { id: 20, hanzi: '我被他影响了。', pinyin: 'Wǒ bèi tā yǐngxiǎng le.', vi: 'Tôi bị anh ấy ảnh hưởng' },
 ]
 
-// Giáo trình chuẩn HSK 4 (Thượng, bài 1–20): bài 1–20; tên tiếng Việt theo sách giáo khoa.
+// Giáo trình chuẩn HSK 4 (Thượng, bài 1–30): bài 1–30; tên tiếng Việt theo sách giáo khoa.
 const hskStd4: LessonStub[] = [
   { id: 1, hanzi: '简单的爱情', pinyin: 'Jiǎndān de àiqíng', vi: 'Tình yêu đơn giản' },
   { id: 2, hanzi: '真正的朋友', pinyin: 'Zhēnzhèng de péngyou', vi: 'Người bạn chân chính' },
@@ -135,7 +137,15 @@ const hskStd4: LessonStub[] = [
   { id: 20, hanzi: '路上的风景', pinyin: 'Lù shang de fēngjǐng', vi: 'Quang cảnh dọc đường' },
 ]
 
-// Giáo trình chuẩn HSK 5 (Thượng): bài 1–20 (không có file nghe).
+// Giáo trình chuẩn HSK 5 (Thượng): bài 1–30 (không có file nghe).
+// Giáo trình chuẩn HSK 6 (Thượng): bài 1–3 (không có file nghe).
+const hskStd6: LessonStub[] = [
+  { id: 1, hanzi: '孩子给我们的启示', pinyin: 'Háizi gěi wǒmen de qǐshì', vi: 'Điều con trẻ gợi ý cho chúng ta' },
+  { id: 2, hanzi: '父母之爱', pinyin: 'Fùmǔ zhī ài', vi: 'Tình yêu của cha mẹ' },
+  { id: 3, hanzi: '一盒月饼', pinyin: 'Yì hé yuèbǐng', vi: 'Một hộp bánh Trung thu' },
+]
+
+// Giáo trình chuẩn HSK 5 (Thượng): bài 1–30 (không có file nghe).
 const hskStd5: LessonStub[] = [
   { id: 1, hanzi: '爱的细节', pinyin: 'Ài de xìjié', vi: 'Những điều nhỏ nhặt trong tình yêu' },
   { id: 2, hanzi: '留串钥匙给父母', pinyin: 'Liú chuàn yàoshi gěi fùmǔ', vi: 'Để chùm chìa khóa cho bố mẹ' },
@@ -157,6 +167,16 @@ const hskStd5: LessonStub[] = [
   { id: 18, hanzi: '抽象艺术美不美？', pinyin: 'Chōuxiàng yìshù měi bu měi', vi: 'Nghệ thuật trừu tượng đẹp hay xấu?' },
   { id: 19, hanzi: '家乡的萝卜饼', pinyin: 'Jiāxiāng de luóbo bǐng', vi: 'Bánh củ cải quê nhà' },
   { id: 20, hanzi: '小人书摊', pinyin: 'Xiǎorénshū tān', vi: 'Quầy truyện tranh' },
+  { id: 21, hanzi: '汉字叔叔：一个美国人的汉字情缘', pinyin: 'Hànzì shūshu', vi: 'Chú Hán tự: tình yêu chữ Hán của một người Mỹ' },
+  { id: 22, hanzi: '阅读与思考', pinyin: 'Yuèdú yǔ sīkǎo', vi: 'Đọc và suy nghĩ' },
+  { id: 23, hanzi: '放手', pinyin: 'Fàngshǒu', vi: 'Buông tay' },
+  { id: 24, hanzi: '支教行动', pinyin: 'Zhījiào xíngdòng', vi: 'Hoạt động dạy học tình nguyện' },
+  { id: 25, hanzi: '给自己加满水', pinyin: 'Gěi zìjǐ jiāmǎn shuǐ', vi: 'Bơm nước vào tàu' },
+  { id: 26, hanzi: '你属于哪一种“忙”？', pinyin: 'Nǐ shǔyú nǎ yì zhǒng "máng"?', vi: 'Bạn thuộc nhóm người "bận rộn" nào?' },
+  { id: 27, hanzi: '下棋', pinyin: 'Xià qí', vi: 'Đánh cờ' },
+  { id: 28, hanzi: '最受欢迎的毕业生', pinyin: 'Zuì shòu huānyíng de bìyèshēng', vi: 'Người tốt nghiệp được hoan nghênh nhất' },
+  { id: 29, hanzi: '培养对手', pinyin: 'Péiyǎng duìshǒu', vi: 'Đào tạo đối thủ' },
+  { id: 30, hanzi: '竞争让市场更高效', pinyin: 'Jìngzhēng ràng shìchǎng gèng gāoxiào', vi: 'Cạnh tranh khiến thị trường phát triển' },
 ]
 
 // Quyển 3-6: chưa có mục lục (chưa có file sách), sẽ bổ sung khi có.
@@ -169,6 +189,7 @@ export const books: Book[] = [
   { id: HSK_STD3_ID, title: 'Giáo trình chuẩn HSK 3', lessons: hskStd3 },
   { id: HSK_STD4_ID, title: 'Giáo trình chuẩn HSK 4', lessons: hskStd4 },
   { id: HSK_STD5_ID, title: 'Giáo trình chuẩn HSK 5', lessons: hskStd5 },
+  { id: HSK_STD6_ID, title: 'Giáo trình chuẩn HSK 6', lessons: hskStd6 },
 ]
 
 export const getBook = (id: number) => books.find(b => b.id === id)

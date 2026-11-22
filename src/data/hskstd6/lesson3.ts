@@ -1,0 +1,113 @@
+import type { Lesson } from '../types'
+
+/** Giáo trình chuẩn HSK 6 (Thượng), Bài 3: 一盒月饼. Nghĩa từ mới và ngữ pháp theo sách; dịch bài khóa do app thêm. Không có file nghe. Đáp án theo HSK6-BH-T1-DA. */
+
+export const hskStd6Lesson3: Lesson = {
+  id: 3,
+  title: "Một hộp bánh Trung thu",
+  hanzi: "一盒月饼",
+  pinyin: "Yì hé yuèbǐng",
+  vi: "Một hộp bánh Trung thu",
+  intro: "Người thợ may xa quê nhờ gửi hộ hộp bánh cho con gái. Học 番, 过于, 着呢 và so sánh 起码 – 至少.",
+
+  dialogue: [
+    { who: 'A', name: '课文', hanzi: "清晨上班，走到公司楼下，迎面站着一位农民工模样的男人，他打量了我一番，到嘴边的话又不说了。我停住脚步，疑惑地问：“您有事吗？”他搓着手，迟疑地说：“有件事想拜托你。”", pinyin: "", vi: "Sáng sớm đi làm, đến dưới công ty, trước mặt có người đàn ông dáng công nhân nhập cư, ông nhìn tôi một lượt, lời đến miệng lại thôi. Tôi dừng bước, hỏi nghi hoặc: \"Bác có việc gì?\" Ông xoa tay, ngập ngừng: \"Có việc muốn nhờ cậu.\"", scene: "Người lạ" },
+    { who: 'A', name: '课文', hanzi: "“您说吧，只要能帮的，我一定帮。”这回轮到我打量他了：饱经沧桑的脸上流露出朴实；一双过于操劳的大手；胡须起码一个星期没刮了；南方口音。", pinyin: "", vi: "\"Bác cứ nói, chỉ cần giúp được tôi nhất định giúp.\" Lần này đến lượt tôi quan sát ông: gương mặt từng trải gió sương lộ vẻ chất phác; đôi bàn tay to làm lụng quá vất vả; râu ít nhất một tuần chưa cạo; giọng miền Nam.", scene: "Quan sát" },
+    { who: 'A', name: '课文', hanzi: "果然，他来自南方的一个乡镇，原先是裁缝，现在在我们旁边的港口干活。他女儿在上海，中秋节快到了，要给他寄盒月饼，可他白天在工地，地址没法写，想请我帮他代收一下。", pinyin: "", vi: "Quả nhiên, ông đến từ một thị trấn miền Nam, trước là thợ may, nay làm ở bến cảng cạnh chỗ chúng tôi. Con gái ông ở Thượng Hải, sắp Trung thu, muốn gửi cho ông hộp bánh, nhưng ban ngày ông ở công trường, không có địa chỉ để viết, muốn nhờ tôi nhận hộ.", scene: "Nhờ vả" },
+    { who: 'A', name: '课文', hanzi: "“这个忙好帮，您不怕我把收到的月饼给吃了？”我半开玩笑地说。他笑着说：“不会，你和我女儿一样，斯斯文文的，一看就读过书，心眼儿好，守信誉，怎么会欺骗我呢？”他说女儿念了硕士，有学位，在一家一流的公司上班，是个主管，还有助手，怎么也算得上是公司的骨干。”说起女儿，他满脸的骄傲。", pinyin: "", vi: "\"Việc này dễ giúp, bác không sợ tôi ăn mất bánh nhận được sao?\" tôi nửa đùa. Ông cười: \"Không đâu, cậu cũng như con gái tôi, nho nhã, nhìn là biết có học, tốt bụng, giữ chữ tín, sao lại lừa tôi?\" Ông nói con gái học thạc sĩ, có học vị, làm ở công ty hạng nhất, là quản lý, lại có trợ lý, sao cũng xem như cốt cán của công ty. Nhắc đến con gái, ông đầy mặt tự hào.", scene: "Niềm tự hào" },
+    { who: 'A', name: '课文', hanzi: "我记下了他的电话，给了他一张我的名片。他小心翼翼地收起来，满怀喜悦地走了。", pinyin: "", vi: "Tôi ghi số điện thoại của ông, đưa ông một tấm danh thiếp. Ông thận trọng cất đi, đầy vui mừng bước đi.", scene: "Trao danh thiếp" },
+    { who: 'A', name: '课文', hanzi: "第三天中午，我收到了一个重重的包裹，发件人叫“张心悦”。我马上拨打张师傅的电话，却无人接听，给他发短信，他也不回，直到下班，仍旧没有音信。", pinyin: "", vi: "Trưa ngày thứ ba, tôi nhận được một gói nặng, người gửi tên \"Trương Tâm Duyệt\". Tôi lập tức gọi cho bác Trương nhưng không ai nghe, nhắn tin cũng không hồi âm, đến khi tan làm vẫn chưa có tin.", scene: "Gói hàng" },
+    { who: 'A', name: '课文', hanzi: "我心里隐约有些不安，抱着包裹就往工地跑，找了一位工人，请他帮忙找张师傅。一会儿，浑身汗水的张师傅来了。他见了我又是道歉又是感谢，说今天特别忙，手机没电了都不知道。说着就要拆包裹，非要请我吃月饼不可。我说家里什么馅儿的月饼都有，还是赶快给女儿打电话吧。", pinyin: "", vi: "Trong lòng tôi mơ hồ bất an, ôm gói chạy ra công trường, tìm một công nhân nhờ gọi bác Trương. Lát sau bác Trương mồ hôi đầm đìa đến. Ông thấy tôi vừa xin lỗi vừa cảm ơn, nói hôm nay đặc biệt bận, điện thoại hết pin cũng không biết. Nói rồi định mở gói, nhất định mời tôi ăn bánh. Tôi nói nhà tôi bánh nhân gì cũng có, hãy mau gọi cho con gái đi.", scene: "Tìm bác Trương" },
+    { who: 'A', name: '课文', hanzi: "电话通了，张师傅满脸慈爱，笑得别提多灿烂了：“心心，月饼爸爸收到了，……我身体好着呢，别惦记，好好工作，别给爸爸丢人啊……”讲完电话，张师傅还没忘了向我炫耀他的女儿，“要面子着呢，从来没有辜负过我的期望。”", pinyin: "", vi: "Điện thoại thông, bác Trương mặt đầy từ ái, cười rạng rỡ vô cùng: \"Tâm Tâm, bánh bố nhận được rồi, ... bố khỏe lắm, đừng lo, làm việc cho tốt, đừng làm bố mất mặt nhé...\" Nói xong, bác còn không quên khoe con gái với tôi: \"Nó sĩ diện lắm, chưa bao giờ phụ lòng mong đợi của tôi.\"", scene: "Cuộc gọi" },
+    { who: 'A', name: '课文', hanzi: "看得出，女儿是他的幸福。", pinyin: "", vi: "Có thể thấy, con gái là hạnh phúc của ông.", scene: "Hạnh phúc" },
+  ],
+  dialogueTip: "<b>番</b>. <b>过于</b>. <b>着呢</b>. <b>起码</b>/<b>至少</b>.",
+  slowSay: "一盒月饼",
+
+  vocab: [
+    { hanzi: "月饼", pinyin: "yuèbǐng", pos: "danh từ", meaning: "bánh Trung thu", han_viet: '' },
+    { hanzi: "清晨", pinyin: "qīngchén", pos: "danh từ", meaning: "sáng sớm", han_viet: '' },
+    { hanzi: "迎面", pinyin: "yíngmiàn", pos: "phó từ", meaning: "trước mặt", han_viet: '' },
+    { hanzi: "模样", pinyin: "múyàng", pos: "danh từ", meaning: "vẻ bề ngoài", han_viet: '' },
+    { hanzi: "打量", pinyin: "dǎliang", pos: "động từ", meaning: "quan sát", han_viet: '' },
+    { hanzi: "番", pinyin: "fān", pos: "lượng từ", meaning: "lượt, hồi", han_viet: '' },
+    { hanzi: "搓", pinyin: "cuō", pos: "động từ", meaning: "xoa, vò", han_viet: '' },
+    { hanzi: "迟疑", pinyin: "chíyí", pos: "tính từ", meaning: "chần chừ", han_viet: '' },
+    { hanzi: "拜托", pinyin: "bàituō", pos: "động từ", meaning: "xin nhờ", han_viet: '' },
+    { hanzi: "饱经沧桑", pinyin: "bǎojīng-cāngsāng", pos: "thành ngữ", meaning: "từng trải gió sương", han_viet: '' },
+    { hanzi: "流露", pinyin: "liúlù", pos: "động từ", meaning: "bộc lộ", han_viet: '' },
+    { hanzi: "朴实", pinyin: "pǔshí", pos: "tính từ", meaning: "chất phác", han_viet: '' },
+    { hanzi: "过于", pinyin: "guòyú", pos: "phó từ", meaning: "quá", han_viet: '' },
+    { hanzi: "操劳", pinyin: "cāoláo", pos: "động từ", meaning: "làm lụng vất vả", han_viet: '' },
+    { hanzi: "胡须", pinyin: "húxū", pos: "danh từ", meaning: "râu", han_viet: '' },
+    { hanzi: "起码", pinyin: "qǐmǎ", pos: "tính từ", meaning: "ít nhất", han_viet: '' },
+    { hanzi: "口音", pinyin: "kǒuyīn", pos: "danh từ", meaning: "giọng", han_viet: '' },
+    { hanzi: "乡镇", pinyin: "xiāngzhèn", pos: "danh từ", meaning: "thị trấn nhỏ", han_viet: '' },
+    { hanzi: "原先", pinyin: "yuánxiān", pos: "danh từ", meaning: "ban đầu", han_viet: '' },
+    { hanzi: "裁缝", pinyin: "cáifeng", pos: "danh từ", meaning: "thợ may", han_viet: '' },
+    { hanzi: "港口", pinyin: "gǎngkǒu", pos: "danh từ", meaning: "bến cảng", han_viet: '' },
+    { hanzi: "斯文", pinyin: "sīwen", pos: "tính từ", meaning: "lịch sự, nhã nhặn", han_viet: '' },
+    { hanzi: "心眼儿", pinyin: "xīnyǎnr", pos: "danh từ", meaning: "bụng dạ", han_viet: '' },
+    { hanzi: "信誉", pinyin: "xìnyù", pos: "danh từ", meaning: "uy tín", han_viet: '' },
+    { hanzi: "欺骗", pinyin: "qīpiàn", pos: "động từ", meaning: "lừa gạt", han_viet: '' },
+    { hanzi: "学位", pinyin: "xuéwèi", pos: "danh từ", meaning: "học vị", han_viet: '' },
+    { hanzi: "一流", pinyin: "yīliú", pos: "tính từ", meaning: "hạng nhất", han_viet: '' },
+    { hanzi: "主管", pinyin: "zhǔguǎn", pos: "danh từ", meaning: "người quản lý", han_viet: '' },
+    { hanzi: "助手", pinyin: "zhùshǒu", pos: "danh từ", meaning: "trợ lý", han_viet: '' },
+    { hanzi: "骨干", pinyin: "gǔgàn", pos: "danh từ", meaning: "trụ cột", han_viet: '' },
+    { hanzi: "小心翼翼", pinyin: "xiǎoxīn-yìyì", pos: "thành ngữ", meaning: "thận trọng", han_viet: '' },
+    { hanzi: "喜悦", pinyin: "xǐyuè", pos: "tính từ", meaning: "vui sướng", han_viet: '' },
+    { hanzi: "拨", pinyin: "bō", pos: "động từ", meaning: "gọi (điện thoại)", han_viet: '' },
+    { hanzi: "仍旧", pinyin: "réngjiù", pos: "phó từ", meaning: "vẫn", han_viet: '' },
+    { hanzi: "隐约", pinyin: "yǐnyuē", pos: "tính từ", meaning: "lờ mờ", han_viet: '' },
+    { hanzi: "浑身", pinyin: "húnshēn", pos: "danh từ", meaning: "toàn thân", han_viet: '' },
+    { hanzi: "馅儿", pinyin: "xiànr", pos: "danh từ", meaning: "nhân (bánh)", han_viet: '' },
+    { hanzi: "灿烂", pinyin: "càn làn", pos: "tính từ", meaning: "rực rỡ", han_viet: '' },
+    { hanzi: "惦记", pinyin: "diànjì", pos: "động từ", meaning: "nhớ đến", han_viet: '' },
+    { hanzi: "丢人", pinyin: "diū rén", pos: "động từ", meaning: "mất mặt", han_viet: '' },
+    { hanzi: "炫耀", pinyin: "xuànyào", pos: "động từ", meaning: "khoe khoang", han_viet: '' },
+    { hanzi: "面子", pinyin: "miànzi", pos: "danh từ", meaning: "thể diện", han_viet: '' },
+    { hanzi: "辜负", pinyin: "gūfù", pos: "động từ", meaning: "phụ lòng", han_viet: '' },
+    { hanzi: "期望", pinyin: "qīwàng", pos: "động từ", meaning: "kỳ vọng", han_viet: '' },
+  ],
+
+  sections: [
+    { kind: 'examples', label: "番", title: "番 (lượt, hồi)", intro: "番: lượng từ. ① dùng cho động tác tốn thời gian/sức, nghĩa \"lượt, hồi\"; ② dùng cho tâm tư, lời nói, quá trình (số từ chỉ 一、几); ③ sau 翻 nghĩa \"gấp đôi\".", groups: [{ label: 'Ví dụ', items: [["他打量了我一番，到嘴边的话又不说了。", "Tā dǎliangle wǒ yì fān, dào zuǐbiān de huà yòu bù shuō le.", "Ông ngắm tôi một lượt, lời đến miệng lại thôi."], ["和五年前比，多数人的工资已经翻番了。", "Hé wǔ nián qián bǐ, duōshù rén de gōngzī yǐjīng fān fān le.", "So với 5 năm trước, lương đa số người đã tăng gấp đôi."]] }] },
+    { kind: 'examples', label: "过于", title: "过于 (quá)", intro: "过于: phó từ, vượt quá giới hạn nhất định, thường dùng 过于 + tính từ / động từ.", groups: [{ label: 'Ví dụ', items: [["他出来得过于匆忙，居然忘了带手机。", "Tā chūlái de guòyú cōngmáng, jūrán wàngle dài shǒujī.", "Anh ra ngoài quá vội vàng, thế mà quên mang điện thoại."], ["这回轮到我打量他了：饱经沧桑的脸上流露出朴实；一双过于操劳的大手。", "Zhè huí lúndào wǒ dǎliang tā le: bǎojīng cāngsāng de liǎn shang liúlù chū pǔshí; yì shuāng guòyú cāoláo de dà shǒu.", "Lần này đến lượt tôi quan sát ông: gương mặt từng trải chất phác; đôi bàn tay quá vất vả."]] }] },
+    { kind: 'examples', label: "着呢", title: "着呢 (…lắm đấy)", intro: "着呢: trợ từ, biểu thị mức độ sâu, giọng khoa trương, dùng trong khẩu ngữ.", groups: [{ label: 'Ví dụ', items: [["别看我已经过七旬，我身体好着呢。", "Bié kàn wǒ yǐjīng guò qī xún, wǒ shēntǐ hǎo zhene.", "Đừng thấy tôi đã ngoài bảy mươi, sức khỏe tôi tốt lắm đấy."], ["她要面子着呢，从来没有辜负过我的期望。", "Tā yào miànzi zhene, cónglái méiyǒu gūfùguo wǒ de qīwàng.", "Nó sĩ diện lắm, chưa bao giờ phụ lòng mong đợi của tôi."]] }] },
+    { kind: 'examples', label: "起码 – 至少", title: "So sánh 起码 và 至少", intro: "起码: tính từ/phó từ, chỉ mức tối thiểu; có thể làm định ngữ, vị ngữ (最起码的要求). 至少 chỉ dùng như phó từ và không được thêm 最 trước nó. Hai từ thường thay nhau khi làm trạng ngữ.", groups: [{ label: 'Ví dụ', items: [["我们一个星期起码要上16个小时的课。", "Wǒmen yí ge xīngqī qǐmǎ yào shàng shíliù ge xiǎoshí de kè.", "Một tuần chúng tôi ít nhất phải học 16 tiếng."], ["人家帮了这么多忙，你最起码要说声谢谢吧？", "Rénjia bāngle zhème duō máng, nǐ zuì qǐmǎ yào shuō shēng xièxie ba?", "Người ta giúp nhiều thế, bạn tối thiểu cũng phải nói tiếng cảm ơn chứ?"]] }] },
+  ],
+
+  notes: [
+    { title: "番", body: "Lượt, hồi.", say: "他打量了我一番" },
+    { title: "过于", body: "Quá.", say: "一双过于操劳的大手" },
+    { title: "着呢", body: "…lắm đấy.", say: "要面子着呢" },
+  ],
+
+  writeChars: ["裁", "缝", "港", "欺", "骗", "炫", "耀", "辜"],
+
+  drills: [],
+
+  qa: [{ title: 'Hoạt động (运用)', items: [{"q": "你怎么看张师傅的做法？", "hint": "……"}, {"q": "你为父母做过什么？", "hint": "……"}] }],
+
+  sentences: [],
+
+  dictations: [
+    { title: "Giáo trình 练习 2 / 3", hint: 'Gõ chữ Hán theo đáp án sách.', items: [
+      { prompt: "我花了三天时间，把那篇文章从头到尾研究了一（ ）。", answer: "番", gloss: "lượt" },
+      { prompt: "他在北京居住了40多年，（ ）得上是个地道的北京人了。", answer: "算", gloss: "tính là" },
+      { prompt: "晚餐会上，又是中餐，又是西餐，（ ）极了。", answer: "丰盛", gloss: "thịnh soạn" },
+      { prompt: "要学好汉语，（ ）努力（ ）可，除此以外，没有别的好方法。", answer: "非", gloss: "nhất định phải" },
+      { prompt: "别烦我，我忙着呢，让我（ ）一会儿吧。", answer: "安静", gloss: "yên tĩnh" },
+      { prompt: "大学毕业后，我到了一家贸易公司，现在也算得上是公司的（ ）了。", answer: "骨干", gloss: "trụ cột" },
+      { prompt: "我打算给父母送盒（ ）表达心意。", answer: "月饼", gloss: "bánh Trung thu" },
+      { prompt: "父母为我们（ ）了半辈子，现在也该享享福了。", answer: "操劳", gloss: "vất vả" },
+      { prompt: "我努力工作就是为了不（ ）父母对我的期望。", answer: "辜负", gloss: "phụ lòng" },
+      { prompt: "昨天我（ ）打好朋友小王的电话，却一直无人接听。", answer: "拨", gloss: "gọi" },
+      { prompt: "直到今天早上（ ）没有他的音信。", answer: "仍旧", gloss: "vẫn" },
+      { prompt: "我心中（ ）有种不安的感觉。", answer: "隐约", gloss: "lờ mờ" },
+      { prompt: "想（ ）他的同事查看一下小王的情况。", answer: "拜托", gloss: "nhờ" },
+      { prompt: "小王的手机坏了，（ ）要一个星期才能修好。", answer: "起码", gloss: "ít nhất" },
+    ] },
+  ],
+}
