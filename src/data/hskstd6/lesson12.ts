@@ -1,0 +1,113 @@
+import type { Lesson } from '../types'
+
+/** Giáo trình chuẩn HSK 6 (Thượng), Bài 12: 我们都爱白噪音。. Nghĩa từ mới và ngữ pháp theo sách; dịch bài khóa do app thêm. Không có file nghe. Đáp án theo HSK6-BH-T1-DA. */
+
+export const hskStd6Lesson12: Lesson = {
+  id: 12,
+  title: "Chúng ta đều yêu tiếng ồn trắng",
+  hanzi: "我们都爱白噪音。",
+  pinyin: "Wǒmen dōu ài báizàoyīn",
+  vi: "Chúng ta đều yêu tiếng ồn trắng",
+  intro: "Vì sao tiếng ồn trắng khiến ta yên tâm. Học 不妨, 务必, 鉴于 và so sánh 不得已 – 不得不.",
+
+  dialogue: [
+    { who: 'A', name: '课文', hanzi: "你有过这样的经验吗？会还没开始，屋子里一片嘈杂，突然房间里莫名其妙地一片寂静，有人说了句“好安静啊”，马上大家又聊了起来。这是什么现象？其实这是千万年自然选择的结果，没有学会在白噪音减退时闭嘴的人，在自然界早已被淘汰掉了。", pinyin: "", vi: "Bạn từng có trải nghiệm này chưa? Họp chưa bắt đầu, phòng ồn ào, bỗng dưng cả phòng lặng ngắt khó hiểu, có người nói \"yên tĩnh quá\", lập tức mọi người lại nói chuyện. Hiện tượng gì đây? Thật ra đây là kết quả chọn lọc tự nhiên hàng nghìn vạn năm, ai không học được cách im miệng khi tiếng ồn trắng giảm thì trong tự nhiên đã sớm bị đào thải.", scene: "Hiện tượng lạ" },
+    { who: 'A', name: '课文', hanzi: "什么是白噪音？我们不妨形象地描绘一下：白噪音听上去像下雨的声音，或者像波浪拍打岩石的声音，或者像微风抚摸树叶时发出的沙沙声。", pinyin: "", vi: "Tiếng ồn trắng là gì? Ta thử miêu tả hình tượng: tiếng ồn trắng nghe như tiếng mưa rơi, hoặc như tiếng sóng vỗ vào đá, hoặc như tiếng xào xạc khi gió nhẹ vuốt lá cây.", scene: "Tiếng ồn trắng" },
+    { who: 'A', name: '课文', hanzi: "在森林里，鸟的叫声就是白噪音，也是天然的警报器。鸟在叫，说明没有危险，鸟叫停止，意味着有了险情，务必要提高警惕了，这时，所有动物都会静下来，只有当鸟重新开始时，警报才会解除。", pinyin: "", vi: "Trong rừng, tiếng chim hót là tiếng ồn trắng, cũng là còi báo động tự nhiên. Chim kêu, nghĩa là không nguy hiểm, chim ngừng kêu, nghĩa là có hiểm tình, nhất thiết phải cảnh giác, lúc này mọi động vật đều im lặng, chỉ khi chim bắt đầu lại, báo động mới được gỡ.", scene: "Còi báo động" },
+    { who: 'A', name: '课文', hanzi: "其实不论是鸟叫，还是虫叫，都是寻求异性时，不得已而采取的危险举动，因为叫声暴露了自己，很容易惹祸。倘若不叫，雌雄两性谁也发现不了对方，“婚事”就更谈不上了，那么，祖先遗留下的DNA怎么送给异性嘛。既要延续后代，又要保护自己，那就只有用最大的声音，拼命呼唤，同时竖起耳朵，提高警惕，有危险马上闭嘴。", pinyin: "", vi: "Thật ra dù tiếng chim hay tiếng côn trùng, đều là hành động nguy hiểm bất đắc dĩ khi tìm bạn khác giới, vì tiếng kêu để lộ mình, dễ rước họa. Nếu không kêu, đực cái không ai thấy ai, \"hôn sự\" càng khỏi nói, vậy DNA tổ tiên để lại làm sao trao cho khác giới đây. Vừa phải nối dõi vừa bảo vệ mình, thì chỉ có dùng giọng lớn nhất, hết sức kêu gọi, đồng thời dựng tai, cảnh giác, có nguy hiểm là im ngay.", scene: "Tiếng kêu tìm bạn" },
+    { who: 'A', name: '课文', hanzi: "原始社会之前，我们的祖先还没有进化成人类，他们最喜欢的事情，可能就是在鸟叫声中无忧无虑地睡大觉。最焦虑的事情就是周围一片寂静，因为那说明危险正在靠拢。我们喜欢听鸟的叫声，因为那都会让紧张的神经放松下来。经过数千万年的自然选择，对白噪音减弱越敏感的生物，存活和找到配偶的可能性越大，这种意识在DNA中保留下来，并且世代相传。", pinyin: "", vi: "Trước xã hội nguyên thủy, tổ tiên ta chưa tiến hóa thành người, việc họ thích nhất có lẽ là ngủ say vô tư trong tiếng chim. Việc lo lắng nhất là xung quanh lặng ngắt, vì nó nghĩa là nguy hiểm đang đến gần. Ta thích nghe tiếng chim vì nó luôn làm thần kinh căng thẳng thả lỏng. Qua hàng chục triệu năm chọn lọc tự nhiên, sinh vật càng nhạy khi tiếng ồn trắng giảm thì khả năng sống sót và tìm bạn đời càng lớn, ý thức này được giữ trong DNA và truyền đời đời.", scene: "Chọn lọc tự nhiên" },
+    { who: 'A', name: '课文', hanzi: "会议室里的嘈杂声就是白噪音，大量的白噪音暗示着安全。当嘈杂声减弱时，提示大家要警惕，然后闭嘴、观察，这是人类大脑深处的预警意识。当有人说“好安静啊”时，大家发现没有危险，于是，报警解除。", pinyin: "", vi: "Tiếng ồn trong phòng họp chính là tiếng ồn trắng, lượng lớn tiếng ồn trắng ám chỉ an toàn. Khi tiếng ồn giảm, nhắc mọi người cảnh giác, rồi im miệng, quan sát, đây là ý thức cảnh báo sớm sâu trong não người. Khi có người nói \"yên tĩnh quá\", mọi người thấy không nguy hiểm, báo động được gỡ.", scene: "Phòng họp" },
+    { who: 'A', name: '课文', hanzi: "白噪音会让我们有安全感，从而放松身心。鉴于白噪音有这样的功效，它理所当然地成了医生的好帮手：人们利用它对神经系统疾病患者进行辅助性治疗，成功地减轻了病人的症状；用它治愈了一些多动症患儿的精神集中能力障碍；受到环境噪音污染的人群，也可用白噪音帮助恢复工作效率……", pinyin: "", vi: "Tiếng ồn trắng cho ta cảm giác an toàn, từ đó thả lỏng thân tâm. Xét thấy tiếng ồn trắng có công dụng này, nó đương nhiên thành trợ thủ của bác sĩ: người ta dùng nó hỗ trợ điều trị bệnh nhân thần kinh, giảm thành công triệu chứng; dùng nó chữa khỏi chướng ngại tập trung ở một số trẻ tăng động; người bị ô nhiễm tiếng ồn môi trường cũng dùng tiếng ồn trắng để khôi phục hiệu suất làm việc……", scene: "Công dụng" },
+    { who: 'A', name: '课文', hanzi: "白噪音实际上是大自然给予我们的声音暗示，它清晰地对我们说：“嘿，你可以放松精神，不必焦虑啦。”", pinyin: "", vi: "Tiếng ồn trắng thực ra là lời ám thị bằng âm thanh mà thiên nhiên dành cho ta, nó nói rõ với ta: \"Này, bạn có thể thả lỏng tinh thần, không cần lo lắng nữa.\"", scene: "Lời thiên nhiên" },
+  ],
+  dialogueTip: "<b>不妨</b>. <b>务必</b>. <b>鉴于</b>. <b>不得已</b>/<b>不得不</b>.",
+  slowSay: "我们都爱白噪音",
+
+  vocab: [
+    { hanzi: "白噪音", pinyin: "báizàoyīn", pos: "danh từ", meaning: "tiếng ồn trắng", han_viet: '' },
+    { hanzi: "嘈杂", pinyin: "cáozá", pos: "tính từ", meaning: "ồn ào", han_viet: '' },
+    { hanzi: "莫名其妙", pinyin: "mòmíngqímiào", pos: "thành ngữ", meaning: "khó hiểu", han_viet: '' },
+    { hanzi: "淘汰", pinyin: "táotài", pos: "động từ", meaning: "đào thải", han_viet: '' },
+    { hanzi: "不妨", pinyin: "bùfáng", pos: "phó từ", meaning: "có thể làm", han_viet: '' },
+    { hanzi: "描绘", pinyin: "miáohuì", pos: "động từ", meaning: "miêu tả", han_viet: '' },
+    { hanzi: "波浪", pinyin: "bōlàng", pos: "danh từ", meaning: "sóng", han_viet: '' },
+    { hanzi: "岩石", pinyin: "yánshí", pos: "danh từ", meaning: "nham thạch", han_viet: '' },
+    { hanzi: "抚摸", pinyin: "fǔmō", pos: "động từ", meaning: "vuốt ve", han_viet: '' },
+    { hanzi: "务必", pinyin: "wùbì", pos: "phó từ", meaning: "nhất thiết", han_viet: '' },
+    { hanzi: "警惕", pinyin: "jǐngtì", pos: "động từ", meaning: "cảnh giác", han_viet: '' },
+    { hanzi: "解除", pinyin: "jiěchú", pos: "động từ", meaning: "hủy bỏ", han_viet: '' },
+    { hanzi: "不得已", pinyin: "bùdéyǐ", pos: "tính từ", meaning: "bất đắc dĩ", han_viet: '' },
+    { hanzi: "暴露", pinyin: "bàolù", pos: "động từ", meaning: "bộc lộ", han_viet: '' },
+    { hanzi: "惹祸", pinyin: "rě huò", pos: "động từ", meaning: "gây tai họa", han_viet: '' },
+    { hanzi: "雌雄", pinyin: "cíxióng", pos: "danh từ", meaning: "đực cái", han_viet: '' },
+    { hanzi: "祖先", pinyin: "zǔxiān", pos: "danh từ", meaning: "tổ tiên", han_viet: '' },
+    { hanzi: "遗留", pinyin: "yíliú", pos: "động từ", meaning: "để lại", han_viet: '' },
+    { hanzi: "嘛", pinyin: "ma", pos: "trợ từ", meaning: "mà", han_viet: '' },
+    { hanzi: "延续", pinyin: "yánxù", pos: "động từ", meaning: "tiếp tục", han_viet: '' },
+    { hanzi: "后代", pinyin: "hòudài", pos: "danh từ", meaning: "đời sau", han_viet: '' },
+    { hanzi: "呼唤", pinyin: "hūhuàn", pos: "động từ", meaning: "kêu gọi", han_viet: '' },
+    { hanzi: "竖", pinyin: "shù", pos: "động từ", meaning: "dựng thẳng", han_viet: '' },
+    { hanzi: "原始", pinyin: "yuánshǐ", pos: "tính từ", meaning: "nguyên thủy", han_viet: '' },
+    { hanzi: "进化", pinyin: "jìnhuà", pos: "động từ", meaning: "tiến hóa", han_viet: '' },
+    { hanzi: "靠拢", pinyin: "kàolǒng", pos: "động từ", meaning: "đến gần", han_viet: '' },
+    { hanzi: "神经", pinyin: "shénjīng", pos: "danh từ", meaning: "thần kinh", han_viet: '' },
+    { hanzi: "生物", pinyin: "shēngwù", pos: "danh từ", meaning: "sinh vật", han_viet: '' },
+    { hanzi: "配偶", pinyin: "pèi'ǒu", pos: "danh từ", meaning: "bạn đời", han_viet: '' },
+    { hanzi: "世代", pinyin: "shìdài", pos: "danh từ", meaning: "nhiều đời", han_viet: '' },
+    { hanzi: "暗示", pinyin: "ànshì", pos: "động từ", meaning: "ám thị", han_viet: '' },
+    { hanzi: "提示", pinyin: "tíshì", pos: "động từ", meaning: "nhắc nhở", han_viet: '' },
+    { hanzi: "鉴于", pinyin: "jiànyú", pos: "liên từ", meaning: "xét thấy", han_viet: '' },
+    { hanzi: "功效", pinyin: "gōngxiào", pos: "danh từ", meaning: "công hiệu", han_viet: '' },
+    { hanzi: "理所当然", pinyin: "lǐsuǒdāngrán", pos: "thành ngữ", meaning: "đương nhiên", han_viet: '' },
+    { hanzi: "疾病", pinyin: "jíbìng", pos: "danh từ", meaning: "bệnh tật", han_viet: '' },
+    { hanzi: "患者", pinyin: "huànzhě", pos: "danh từ", meaning: "người bệnh", han_viet: '' },
+    { hanzi: "辅助", pinyin: "fǔzhù", pos: "tính từ", meaning: "phụ trợ", han_viet: '' },
+    { hanzi: "症状", pinyin: "zhèngzhuàng", pos: "danh từ", meaning: "triệu chứng", han_viet: '' },
+    { hanzi: "愈", pinyin: "yù", pos: "tính từ", meaning: "khỏi bệnh", han_viet: '' },
+    { hanzi: "障碍", pinyin: "zhàng'ài", pos: "danh từ", meaning: "chướng ngại", han_viet: '' },
+    { hanzi: "噪音", pinyin: "zàoyīn", pos: "danh từ", meaning: "tiếng ồn", han_viet: '' },
+    { hanzi: "给予", pinyin: "jǐyǔ", pos: "động từ", meaning: "cho, dành cho", han_viet: '' },
+    { hanzi: "嘿", pinyin: "hēi", pos: "thán từ", meaning: "này", han_viet: '' },
+  ],
+
+  sections: [
+    { kind: 'examples', label: "不妨", title: "不妨 (có thể làm)", intro: "不妨: phó từ, \"có thể làm thế, không gì cản trở\", hàm ý người nói thấy làm vậy tốt hơn, dùng khi khích lệ, đề nghị.", groups: [{ label: 'Ví dụ', items: [["有什么意见，你不妨直说。", "Yǒu shénme yìjiàn, nǐ bùfáng zhí shuō.", "Có ý kiến gì, bạn cứ nói thẳng."], ["改变人们的传统观念可能不容易，但我们不妨试一试。", "Gǎibiàn rénmen de chuántǒng guānniàn kěnéng bù róngyì, dàn wǒmen bùfáng shì yi shì.", "Đổi quan niệm truyền thống có thể không dễ, nhưng ta cứ thử xem."]] }] },
+    { kind: 'examples', label: "务必", title: "务必 (nhất thiết)", intro: "务必: phó từ, thái độ kiên quyết, bắt buộc, nhất định; thường bổ nghĩa cho động từ, cụm động từ.", groups: [{ label: 'Ví dụ', items: [["鸟叫停止，意味着有了险情，务必要提高警惕了。", "Niǎo jiào tíngzhǐ, yìwèizhe yǒule xiǎnqíng, wùbì yào tígāo jǐngtì le.", "Chim ngừng kêu, nghĩa là có hiểm tình, nhất thiết phải cảnh giác."], ["50岁以上的人容易骨折，因此进行跳跃或其他剧烈活动时务必注意了。", "Wǔshí suì yǐshàng de rén róngyì gǔzhé, yīncǐ jìnxíng tiàoyuè huò qítā jùliè huódòng shí wùbì zhùyì le.", "Người trên 50 tuổi dễ gãy xương, nên khi nhảy hay vận động mạnh nhất thiết lưu ý."]] }] },
+    { kind: 'examples', label: "鉴于", title: "鉴于 (xét thấy)", intro: "鉴于: giới từ \"nhận thấy, xét đến\"; cũng là liên từ, đứng đầu vế trước trong câu nhân quả, nêu căn cứ, lý do của hành vi vế sau; dùng văn viết.", groups: [{ label: 'Ví dụ', items: [["鉴于农村教师严重缺乏，他决定大学毕业以后，到农村去当老师。", "Jiànyú nóngcūn jiàoshī yánzhòng quēfá, tā juédìng dàxué bìyè yǐhòu, dào nóngcūn qù dāng lǎoshī.", "Xét thấy giáo viên nông thôn thiếu nghiêm trọng, anh quyết định sau tốt nghiệp về quê dạy học."], ["鉴于白噪音有这样的功效，它理所当然地成了医生的好帮手。", "Jiànyú báizàoyīn yǒu zhèyàng de gōngxiào, tā lǐsuǒdāngrán de chéngle yīshēng de hǎo bāngshǒu.", "Xét tiếng ồn trắng có công dụng này, nó đương nhiên thành trợ thủ của bác sĩ."]] }] },
+    { kind: 'examples', label: "不得已 – 不得不", title: "So sánh 不得已 và 不得不", intro: "不得已: tính từ, hết cách, bất đắc dĩ, làm vị ngữ/định ngữ, phó từ \"不得已而…\"; 不得不: phó từ \"buộc phải\", chỉ làm trạng ngữ.", groups: [{ label: 'Ví dụ', items: [["这是不得已的措施，请大家谅解。", "Zhè shì bùdéyǐ de cuòshī, qǐng dàjiā liàngjiě.", "Đây là biện pháp bất đắc dĩ, xin mọi người thông cảm."], ["父亲去世以后，他不得已/不得不放弃学业，出去打工。", "Fùqin qùshì yǐhòu, tā bùdéyǐ/bùdébù fàngqì xuéyè, chūqù dǎ gōng.", "Sau khi cha mất, anh buộc phải bỏ học đi làm."]] }] },
+  ],
+
+  notes: [
+    { title: "不妨", body: "Có thể làm.", say: "我们不妨形象地描绘一下" },
+    { title: "务必", body: "Nhất thiết.", say: "务必要提高警惕" },
+    { title: "鉴于", body: "Xét thấy.", say: "鉴于白噪音有这样的功效" },
+  ],
+
+  writeChars: ["噪", "淘", "汰", "抚", "摸", "警", "惕", "障"],
+
+  drills: [],
+
+  qa: [{ title: 'Hoạt động (运用)', items: [{"q": "你喜欢听什么声音放松？", "hint": "……"}, {"q": "你有没有被安静吓到过？", "hint": "……"}] }],
+
+  sentences: [],
+
+  dictations: [
+    { title: "Giáo trình 做一做 / 练习 2 / 3", hint: 'Gõ chữ Hán theo đáp án sách.', items: [
+      { prompt: "实在是（ ），我把房子卖了。", answer: "不得已", gloss: "bất đắc dĩ" },
+      { prompt: "有什么意见，你（ ）当面提出来，不要在背后议论。", answer: "不妨", gloss: "cứ" },
+      { prompt: "明天的会非常重要，大家（ ）要参加。", answer: "务必", gloss: "nhất thiết" },
+      { prompt: "（ ）他出色的表现，公司决定让他担任部门经理。", answer: "鉴于", gloss: "xét thấy" },
+      { prompt: "他的病彻底（ ）了，全家都非常高兴。", answer: "治愈", gloss: "chữa khỏi" },
+      { prompt: "孩子孝顺父母是（ ）的事情。", answer: "理所当然", gloss: "đương nhiên" },
+      { prompt: "人们喜欢在海边听（ ）拍打（ ）的声音。", answer: "波浪", gloss: "sóng" },
+      { prompt: "拍打（ ）的声音。", answer: "岩石", gloss: "nham thạch" },
+      { prompt: "听微风（ ）树叶发出的沙沙声。", answer: "抚摸", gloss: "vuốt ve" },
+      { prompt: "这些声音可以让紧张的（ ）放松下来。", answer: "神经", gloss: "thần kinh" },
+      { prompt: "这些声音是大自然（ ）人们的宝贵礼物。", answer: "给予", gloss: "dành cho" },
+      { prompt: "对于有睡眠（ ）的人来说。", answer: "障碍", gloss: "chướng ngại" },
+      { prompt: "一些（ ）性治疗方法的（ ）也很不错。", answer: "辅助", gloss: "phụ trợ" },
+      { prompt: "一些辅助性治疗方法的（ ）也很不错。", answer: "功效", gloss: "công hiệu" },
+      { prompt: "可以减轻（ ）的症状。", answer: "患者", gloss: "người bệnh" },
+    ] },
+  ],
+}

@@ -1,0 +1,113 @@
+import type { Lesson } from '../types'
+
+/** Giáo trình chuẩn HSK 6 (Thượng), Bài 15: 山脉上的雕刻. Nghĩa từ mới và ngữ pháp theo sách; dịch bài khóa do app thêm. Không có file nghe. Đáp án theo HSK6-BH-T1-DA. */
+
+export const hskStd6Lesson15: Lesson = {
+  id: 15,
+  title: "Điêu khắc trên dãy núi",
+  hanzi: "山脉上的雕刻",
+  pinyin: "Shānmài shàng de diāokè",
+  vi: "Điêu khắc trên dãy núi",
+  intro: "Ruộng bậc thang Ai Lao Sơn của người Hà Nhì ở Vân Nam. Học 时而, 不禁, 无不 và so sánh 拥有 – 具有.",
+
+  dialogue: [
+    { who: 'A', name: '课文', hanzi: "2010年中国西南遭遇百年不遇的干旱，耕地上，庄稼枯萎而死，农作物大面积绝收。就在各地旱情严重、人和牲畜饮水都难的时候，滇南红河哀牢山南部的一片片梯田壮丽依旧，它们依山形而流转，一片片、一层层由半山腰延伸至峡谷，像一张张亮丽的油画，铺天盖地，席卷而至。蔚蓝的天空，漂浮的白云，摇摆的树影，更衬托出梯田的壮美。", pinyin: "", vi: "Năm 2010 Tây Nam Trung Quốc gặp hạn trăm năm có một, trên đất canh tác hoa màu héo chết, nông sản mất mùa diện rộng. Đúng lúc các nơi hạn nghiêm trọng, người và súc vật khó có nước uống, những thửa ruộng bậc thang phía nam núi Ai Lao bên sông Hồng, Vân Nam nam vẫn tráng lệ như cũ, chúng chảy theo hình núi, từng mảnh từng tầng kéo từ lưng chừng núi đến khe sâu, như từng bức tranh sơn dầu lộng lẫy, ngập trời phủ đất, cuộn tới. Bầu trời xanh biếc, mây trắng trôi, bóng cây đung đưa, càng tôn vẻ hùng tráng của ruộng bậc thang.", scene: "Hạn hán và ruộng bậc thang" },
+    { who: 'A', name: '课文', hanzi: "我们的车在大山里沿着公路盘旋而行，时而行驶在深深的谷底，时而爬升到海拔一千多米高的山腰。遥望山顶，是大片的森林，峡谷间闪闪发光的是小溪、泉水和瀑布，半山腰是村子，村子下是如山如海、纵横万里、汹涌而来的梯田。", pinyin: "", vi: "Xe chúng tôi đi vòng trong núi lớn dọc đường, lúc chạy dưới đáy thung sâu, lúc leo lên lưng núi cao hơn nghìn mét. Nhìn xa đỉnh núi là rừng rộng, giữa khe lấp lánh là suối, mạch nước và thác, lưng núi là làng, dưới làng là ruộng bậc thang như núi như biển, ngang dọc vạn dặm, cuộn trào đến.", scene: "Đường núi" },
+    { who: 'A', name: '课文', hanzi: "尽管已目睹这奇迹无数次，但我每次身临其境，都会为哈尼族山民们在这重重叠叠的山脉上雕塑出的美丽画卷而震惊。这是以大地为背景，用生命和毅力雕刻出的杰出作品，它比万里长城更让我震撼，它比历史悠久的宫殿更让我感动。我不禁问自己，这里的人为什么选择了梯田？后来，我在当地听到了一首古老的曲子，歌词的意思是，祖先们只靠打猎过不了日子，光靠采集树果也过不了日子，于是学会了翻地，学会了种植。他们发现种子和水最亲近，喝过水的种子就是金闪闪的稻谷，从此他们再也离不开梯田和水。经过数十代人的锲而不舍，他们终于将一座座大山，雕塑成了梯田。而面对大山，山民们没有对抗，而是选择了服从——他们服从自然规律，选择开辟梯田这种农耕方式，最终与大自然和谐相处。", pinyin: "", vi: "Dù đã chứng kiến kỳ tích này vô số lần, nhưng mỗi lần thân ở trong cảnh, tôi vẫn kinh ngạc trước bức tranh đẹp mà dân núi tộc Hà Nhì điêu khắc trên dãy núi trùng điệp. Đó là tác phẩm xuất sắc khắc bằng sinh mệnh và nghị lực, lấy đại địa làm nền, khiến tôi chấn động hơn Vạn Lý Trường Thành, cảm động hơn cung điện lịch sử lâu đời. Tôi không khỏi tự hỏi, người ở đây sao chọn ruộng bậc thang? Sau, tôi nghe một khúc ca cổ ở địa phương, ý lời là tổ tiên chỉ dựa săn bắn không sống nổi, chỉ dựa hái quả cây cũng không sống nổi, nên học lật đất, học trồng trọt. Họ phát hiện hạt giống và nước gần gũi nhất, hạt giống đã uống nước chính là lúa vàng lấp lánh, từ đó họ không rời được ruộng bậc thang và nước. Qua hàng chục đời kiên trì, họ cuối cùng điêu khắc từng ngọn núi thành ruộng bậc thang. Đối diện núi lớn, dân núi không đối kháng mà chọn phục tùng — họ phục theo quy luật tự nhiên, chọn cách canh tác khai ruộng bậc thang, cuối cùng chung sống hài hòa với thiên nhiên.", scene: "Điêu khắc của đất" },
+    { who: 'A', name: '课文', hanzi: "1300多年，山民们用汗水，用心血，用日复一日的辛勤劳动完成了山脉上的雕刻，任何困难也阻拦不了他们。这幅画卷以其宝贵的生态、文化和审美价值，展示着它的罕见和珍稀。", pinyin: "", vi: "Hơn 1300 năm, dân núi dùng mồ hôi, tâm huyết, lao động cần cù ngày này qua ngày khác hoàn thành điêu khắc trên dãy núi, mọi khó khăn không ngăn được họ. Bức họa này bằng giá trị sinh thái, văn hóa và thẩm mỹ quý báu, bày ra sự hiếm có và quý hiếm của nó.", scene: "1300 năm" },
+    { who: 'A', name: '课文', hanzi: "有人说：“哈尼梯田的美景让人陶醉，这里的一切无不体现着当地百姓与自然和谐相处的智慧，体现着民众对自身文化和自然环境的尊重。它所蕴含的人与自然高度和谐发展的古老文化特征，正是21世纪人类所追求的一种精神。”", pinyin: "", vi: "Có người nói: \"Cảnh đẹp ruộng bậc thang Hà Nhì khiến người say đắm, mọi thứ ở đây đều thể hiện trí tuệ dân địa phương chung sống hài hòa với thiên nhiên, thể hiện sự tôn trọng của dân chúng với văn hóa mình và môi trường tự nhiên. Đặc trưng văn hóa cổ về con người và thiên nhiên phát triển hài hòa cao độ mà nó chứa đựng chính là tinh thần nhân loại thế kỷ 21 theo đuổi.\"", scene: "Một lời bình" },
+    { who: 'A', name: '课文', hanzi: "也有人说，哈尼梯田“是人类的宝贵遗产，它向我们证明人类拥有惊人的创造精神”！", pinyin: "", vi: "Cũng có người nói, ruộng bậc thang Hà Nhì \"là di sản quý của nhân loại, nó chứng minh cho ta thấy con người có tinh thần sáng tạo kinh người\"!", scene: "Di sản" },
+  ],
+  dialogueTip: "<b>时而</b>. <b>不禁</b>. <b>无不</b>. <b>拥有</b>/<b>具有</b>.",
+  slowSay: "山脉上的雕刻",
+
+  vocab: [
+    { hanzi: "山脉", pinyin: "shānmài", pos: "danh từ", meaning: "dãy núi", han_viet: '' },
+    { hanzi: "雕刻", pinyin: "diāokè", pos: "động từ", meaning: "chạm trổ", han_viet: '' },
+    { hanzi: "干旱", pinyin: "gānhàn", pos: "tính từ", meaning: "khô hạn", han_viet: '' },
+    { hanzi: "耕地", pinyin: "gēngdì", pos: "danh từ", meaning: "đất canh tác", han_viet: '' },
+    { hanzi: "庄稼", pinyin: "zhuāngjia", pos: "danh từ", meaning: "hoa màu", han_viet: '' },
+    { hanzi: "枯萎", pinyin: "kūwěi", pos: "tính từ", meaning: "khô héo", han_viet: '' },
+    { hanzi: "牲畜", pinyin: "shēngchù", pos: "danh từ", meaning: "súc vật", han_viet: '' },
+    { hanzi: "梯田", pinyin: "tītián", pos: "danh từ", meaning: "ruộng bậc thang", han_viet: '' },
+    { hanzi: "壮丽", pinyin: "zhuànglì", pos: "tính từ", meaning: "tráng lệ", han_viet: '' },
+    { hanzi: "依旧", pinyin: "yījiù", pos: "động từ", meaning: "như cũ", han_viet: '' },
+    { hanzi: "峡谷", pinyin: "xiágǔ", pos: "danh từ", meaning: "khe sâu", han_viet: '' },
+    { hanzi: "铺", pinyin: "pū", pos: "động từ", meaning: "trải, rải", han_viet: '' },
+    { hanzi: "卷", pinyin: "juǎn", pos: "động từ", meaning: "cuốn", han_viet: '' },
+    { hanzi: "蔚蓝", pinyin: "wèilán", pos: "tính từ", meaning: "xanh biếc", han_viet: '' },
+    { hanzi: "漂浮", pinyin: "piāofú", pos: "động từ", meaning: "trôi", han_viet: '' },
+    { hanzi: "摇摆", pinyin: "yáobǎi", pos: "động từ", meaning: "đung đưa", han_viet: '' },
+    { hanzi: "衬托", pinyin: "chèntuō", pos: "động từ", meaning: "tôn lên", han_viet: '' },
+    { hanzi: "盘旋", pinyin: "pánxuán", pos: "động từ", meaning: "lượn vòng", han_viet: '' },
+    { hanzi: "时而", pinyin: "shí'ér", pos: "phó từ", meaning: "đôi lúc", han_viet: '' },
+    { hanzi: "海拔", pinyin: "hǎibá", pos: "danh từ", meaning: "độ cao", han_viet: '' },
+    { hanzi: "瀑布", pinyin: "pùbù", pos: "danh từ", meaning: "thác nước", han_viet: '' },
+    { hanzi: "纵横", pinyin: "zònghéng", pos: "tính từ", meaning: "ngang dọc", han_viet: '' },
+    { hanzi: "汹涌", pinyin: "xiōngyǒng", pos: "động từ", meaning: "cuộn trào", han_viet: '' },
+    { hanzi: "目睹", pinyin: "mùdǔ", pos: "động từ", meaning: "chứng kiến", han_viet: '' },
+    { hanzi: "重叠", pinyin: "chóngdié", pos: "động từ", meaning: "trùng điệp", han_viet: '' },
+    { hanzi: "雕塑", pinyin: "diāosù", pos: "động từ", meaning: "điêu khắc", han_viet: '' },
+    { hanzi: "毅力", pinyin: "yìlì", pos: "danh từ", meaning: "nghị lực", han_viet: '' },
+    { hanzi: "杰出", pinyin: "jiéchū", pos: "tính từ", meaning: "xuất sắc", han_viet: '' },
+    { hanzi: "震撼", pinyin: "zhènhàn", pos: "động từ", meaning: "chấn động", han_viet: '' },
+    { hanzi: "宫殿", pinyin: "gōngdiàn", pos: "danh từ", meaning: "cung điện", han_viet: '' },
+    { hanzi: "不禁", pinyin: "bùjīn", pos: "phó từ", meaning: "không nhịn được", han_viet: '' },
+    { hanzi: "曲子", pinyin: "qǔzi", pos: "danh từ", meaning: "ca khúc", han_viet: '' },
+    { hanzi: "采集", pinyin: "cǎijí", pos: "động từ", meaning: "thu thập", han_viet: '' },
+    { hanzi: "种子", pinyin: "zhǒngzi", pos: "danh từ", meaning: "hạt giống", han_viet: '' },
+    { hanzi: "稻谷", pinyin: "dàogǔ", pos: "danh từ", meaning: "hạt lúa", han_viet: '' },
+    { hanzi: "锲而不舍", pinyin: "qiè'érbùshě", pos: "thành ngữ", meaning: "kiên nhẫn", han_viet: '' },
+    { hanzi: "开辟", pinyin: "kāipì", pos: "động từ", meaning: "khai thác", han_viet: '' },
+    { hanzi: "心血", pinyin: "xīnxuè", pos: "danh từ", meaning: "tâm huyết", han_viet: '' },
+    { hanzi: "辛勤", pinyin: "xīnqín", pos: "tính từ", meaning: "siêng năng", han_viet: '' },
+    { hanzi: "阻拦", pinyin: "zǔlán", pos: "động từ", meaning: "ngăn cản", han_viet: '' },
+    { hanzi: "生态", pinyin: "shēngtài", pos: "danh từ", meaning: "sinh thái", han_viet: '' },
+    { hanzi: "审美", pinyin: "shěnměi", pos: "động từ", meaning: "thẩm mỹ", han_viet: '' },
+    { hanzi: "罕见", pinyin: "hǎnjiàn", pos: "tính từ", meaning: "hiếm thấy", han_viet: '' },
+    { hanzi: "珍稀", pinyin: "zhēnxī", pos: "tính từ", meaning: "quý hiếm", han_viet: '' },
+    { hanzi: "陶醉", pinyin: "táozuì", pos: "động từ", meaning: "say sưa", han_viet: '' },
+    { hanzi: "遗产", pinyin: "yíchǎn", pos: "danh từ", meaning: "di sản", han_viet: '' },
+    { hanzi: "拥有", pinyin: "yōngyǒu", pos: "động từ", meaning: "sở hữu", han_viet: '' },
+  ],
+
+  sections: [
+    { kind: 'examples', label: "时而", title: "时而 (đôi lúc)", intro: "时而: phó từ, dùng văn viết. ① Hai hoặc nhiều 时而 liền nhau, chỉ nhiều tình huống thay phiên xảy ra; ② dùng một mình, chỉ hành vi lặp lại không định kỳ.", groups: [{ label: 'Ví dụ', items: [["我们的车在大山里沿着公路盘旋而行，时而行驶在深深的谷底，时而爬升到海拔一千多米高的山腰。", "Wǒmen de chē zài dàshān lǐ yánzhe gōnglù pánxuán ér xíng, shí'ér xíngshǐ zài shēnshēn de gǔdǐ, shí'ér páshēng dào hǎibá yì qiān duō mǐ gāo de shānyāo.", "Xe ta lượn dọc đường trong núi lớn, lúc chạy dưới đáy thung sâu, lúc leo lên lưng núi cao hơn nghìn mét."], ["女儿第一天上幼儿园回来特别高兴，时而掏出老师奖励的小红花，看后又小心地珍藏起来。", "Nǚ'ér dì yī tiān shàng yòu'éryuán huílái tèbié gāoxìng, shí'ér tāochū lǎoshī jiǎnglì de xiǎo hónghuā, kàn hòu yòu xiǎoxīn de zhēncáng qǐlái.", "Con gái ngày đầu mẫu giáo về rất vui, thỉnh thoảng lấy bông hoa đỏ cô thưởng ra xem rồi lại cẩn thận cất đi."]] }] },
+    { kind: 'examples', label: "不禁", title: "不禁 (không nhịn được)", intro: "不禁: phó từ, \"không tự chủ được, không kiềm chế được\"; sau có thể là cụm động từ, cụm chủ vị, tính từ.", groups: [{ label: 'Ví dụ', items: [["我不禁问自己，这里的人为什么选择了梯田？", "Wǒ bùjīn wèn zìjǐ, zhèlǐ de rén wèishénme xuǎnzéle tītián?", "Tôi không khỏi tự hỏi, người ở đây sao chọn ruộng bậc thang?"], ["听到这个消息，大家不禁兴奋起来。", "Tīngdào zhège xiāoxi, dàjiā bùjīn xīngfèn qǐlái.", "Nghe tin này, mọi người không khỏi phấn khích."]] }] },
+    { kind: 'examples', label: "无不", title: "无不 (không ai không)", intro: "无不: phó từ, \"没有一个不, 全都\", thường dùng trước động từ, cụm động từ; dùng văn viết.", groups: [{ label: 'Ví dụ', items: [["坏人受到了应有的惩罚，百姓无不拍手称快。", "Huàirén shòudàole yīngyǒu de chéngfá, bǎixìng wúbù pāi shǒu chēng kuài.", "Kẻ xấu bị trừng phạt đáng đời, dân chúng ai nấy vỗ tay hả hê."], ["这里的一切无不体现着当地百姓与自然和谐相处的智慧。", "Zhèlǐ de yíqiè wúbù tǐxiànzhe dāngdì bǎixìng yǔ zìrán héxié xiāngchǔ de zhìhuì.", "Mọi thứ ở đây đều thể hiện trí tuệ dân địa phương chung sống hài hòa với thiên nhiên."]] }] },
+    { kind: 'examples', label: "拥有 – 具有", title: "So sánh 拥有 và 具有", intro: "拥有: động từ, có (quy mô lớn: đất đai, tài sản, nhân khẩu, quyền lợi); 具有: động từ, có (trừu tượng: ý nghĩa, tác dụng, đặc điểm, trình độ).", groups: [{ label: 'Ví dụ', items: [["柴达木盆地拥有22万平方公里的面积。", "Cháidámù péndì yōngyǒu èrshí'èr wàn píngfāng gōnglǐ de miànjī.", "Bồn địa Sài Đạt Mộc có diện tích 220 nghìn km vuông."], ["这次改革具有划时代的伟大意义。", "Zhè cì gǎigé jùyǒu huàshídài de wěidà yìyì.", "Cuộc cải cách này có ý nghĩa vĩ đại mang tính thời đại."]] }] },
+  ],
+
+  notes: [
+    { title: "时而", body: "Đôi lúc.", say: "时而行驶在深深的谷底" },
+    { title: "不禁", body: "Không nhịn được.", say: "我不禁问自己" },
+    { title: "无不", body: "Không ai không.", say: "无不体现着……的智慧" },
+  ],
+
+  writeChars: ["雕", "梯", "壮", "震", "撼", "锲", "陶", "醉"],
+
+  drills: [],
+
+  qa: [{ title: 'Hoạt động (运用)', items: [{"q": "你见过梯田吗？", "hint": "……"}, {"q": "你怎么看人与自然的关系？", "hint": "……"}] }],
+
+  sentences: [],
+
+  dictations: [
+    { title: "Giáo trình 做一做 / 练习 2 / 3", hint: 'Gõ chữ Hán theo đáp án sách.', items: [
+      { prompt: "柴达木盆地（ ）22万平方公里的面积。", answer: "拥有", gloss: "có" },
+      { prompt: "这次改革（ ）划时代的伟大意义。", answer: "具有", gloss: "có" },
+      { prompt: "几十年过去了，这个地方（ ）贫穷落后。", answer: "依旧", gloss: "như cũ" },
+      { prompt: "他们玩儿得兴高采烈，（ ）唱歌，（ ）跳舞。", answer: "时而", gloss: "lúc" },
+      { prompt: "她（ ）了自己的家被大火烧掉了。", answer: "目睹", gloss: "chứng kiến" },
+      { prompt: "由于小王做事（ ），所以最后取得了成功。", answer: "锲而不舍", gloss: "kiên nhẫn" },
+      { prompt: "连续几个月没下雨，我国西部地区遭遇了几十年不遇的（ ）。", answer: "干旱", gloss: "hạn hán" },
+      { prompt: "庄稼大面积（ ），人和（ ）饮水困难。", answer: "枯萎", gloss: "khô héo" },
+      { prompt: "人和（ ）饮水困难。", answer: "牲畜", gloss: "súc vật" },
+      { prompt: "从各地运水来浇灌（ ），使得农作物没有大面积绝收。", answer: "耕地", gloss: "đất canh tác" },
+      { prompt: "它像一幅美丽画卷展示在人们面前，令人（ ）。", answer: "陶醉", gloss: "say đắm" },
+      { prompt: "（ ）环境良好，它获得了“世界自然遗产”的称号。", answer: "生态", gloss: "sinh thái" },
+      { prompt: "除了具有很高的（ ）价值，九寨沟还蕴藏着丰富、珍稀的动植物资源。", answer: "审美", gloss: "thẩm mỹ" },
+      { prompt: "听他说得（ ），大家不禁连连点头。", answer: "有道理", gloss: "có lý" },
+    ] },
+  ],
+}

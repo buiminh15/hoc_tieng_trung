@@ -1,0 +1,112 @@
+import type { Lesson } from '../types'
+
+/** Giáo trình chuẩn HSK 6 (Thượng), Bài 4: 完美的胜利. Nghĩa từ mới và ngữ pháp theo sách; dịch bài khóa do app thêm. Không có file nghe. Đáp án theo HSK6-BH-T1-DA. */
+
+export const hskStd6Lesson4: Lesson = {
+  id: 4,
+  title: "Chiến thắng hoàn hảo",
+  hanzi: "完美的胜利",
+  pinyin: "Wánměi de shènglì",
+  vi: "Chiến thắng hoàn hảo",
+  intro: "Chuyện chuột và voi: hóa địch thành bạn. Học 乘机, 不料, 未免 và so sánh 恰巧 – 正好.",
+
+  dialogue: [
+    { who: 'A', name: '课文', hanzi: "老鼠是山神的宠物，它厌倦了宠物的生活，也很厌恶宠物这个角色，于是向山神请假，要求到动物世界走一回，心想一定要找机会证明一下自己的实力。山神说：“动物世界中，大象是最强大的，倘若你还想回来，必须战胜大象，否则，你就永远留在动物世界吧。”老鼠答应了山神的条件，并暗自把挑战目标定为了大象。", pinyin: "", vi: "Chuột là thú cưng của sơn thần, nó chán cuộc sống thú cưng, cũng rất ghét vai trò thú cưng, bèn xin sơn thần nghỉ, đòi đến thế giới động vật đi một chuyến, thầm nghĩ nhất định tìm cơ hội chứng minh thực lực. Sơn thần nói: \"Trong thế giới động vật, voi mạnh nhất, nếu ngươi còn muốn trở về, phải thắng voi, nếu không ngươi mãi ở lại thế giới động vật.\" Chuột nhận điều kiện của sơn thần và thầm đặt mục tiêu thách thức là con voi.", scene: "Chuột xin đi" },
+    { who: 'A', name: '课文', hanzi: "老鼠一来到动物界，便发觉它对山神的承诺是多么草率，它是那么弱小，丝毫没有对抗大象的力量，但老鼠还是决定尝试一下。它想，我太小了，不可以盲目行动，但我可以乘大象不注意，进到大象鼻子里去，大象不能喘气了，就得请求我饶恕，我就可以强迫它认输。", pinyin: "", vi: "Chuột vừa đến thế giới động vật liền nhận ra lời hứa với sơn thần cẩu thả biết bao, nó nhỏ yếu, hoàn toàn không có sức chống voi, nhưng vẫn quyết thử. Nó nghĩ, mình quá nhỏ, không được hành động mù quáng, nhưng có thể nhân lúc voi không để ý chui vào mũi voi, voi không thở được phải xin tôi tha, tôi có thể ép nó nhận thua.", scene: "Kế hoạch" },
+    { who: 'A', name: '课文', hanzi: "这天，大象正在吃树叶，老鼠乘机跑进大象的鼻子中，准备实施它的计划。不料，刚进去，大象痒得难受，猛烈地打起了喷嚏，老鼠像子弹一样被射了出来。大象用蔑视的眼光盯着它，愤怒地说：“你这个愚蠢的家伙，太可恶了，下次再耍流氓，我一定踩扁了你。”从此老鼠再也不敢挑战大象了。", pinyin: "", vi: "Hôm ấy, voi đang ăn lá, chuột nhân cơ hội chạy vào mũi voi, chuẩn bị thực hiện kế hoạch. Không ngờ vừa vào, voi ngứa khó chịu, hắt xì dữ dội, chuột bị bắn ra như viên đạn. Voi nhìn chằm chằm nó bằng ánh mắt khinh miệt, giận dữ: \"Tên ngu xuẩn kia, đáng ghét quá, lần sau còn giở trò lưu manh, ta nhất định dẫm bẹp ngươi.\" Từ đó chuột không dám thách voi nữa.", scene: "Hắt xì" },
+    { who: 'A', name: '课文', hanzi: "那是一个夕阳将落的傍晚，大象不留神落入了打猎者设下的巨网中。它不顾一切地用力挣扎，往外乱窜，想摆脱巨网，可是，它的一切努力都没用。大象又悲伤又害怕，它觉得死亡越来越近了。恰巧，老鼠看到了这一切，它想，大象现在毫无抵抗能力，只要我在它身体的重要部位咬几个洞，它就没命了，我不就战胜大象了吗？然而，看到大象悲惨的样子，老鼠不忍下手，它觉得那样未免太过残忍，良心告诉它，应该救大象，于是，它开始用锋利的牙齿咬缠绕着大象的网和绳子。不知过了多久，老鼠几乎耗费了全部力气，绳子终于被咬断了，巨网出现了一个大缺口，大象猛地一用力，脱离了巨网。", pinyin: "", vi: "Một buổi chiều hoàng hôn sắp tắt, voi không để ý rơi vào tấm lưới lớn thợ săn giăng. Nó bất chấp tất cả dùng sức vùng vẫy, chạy loạn ra ngoài định thoát lưới, nhưng mọi nỗ lực đều vô ích. Voi vừa buồn vừa sợ, thấy cái chết ngày một gần. Đúng lúc, chuột thấy tất cả, nó nghĩ, voi giờ hoàn toàn không sức kháng cự, chỉ cần tôi cắn vài lỗ ở bộ phận quan trọng, nó sẽ chết, chẳng phải tôi thắng voi sao? Nhưng thấy voi thảm hại, chuột không nỡ ra tay, thấy làm vậy có phần quá tàn nhẫn, lương tâm bảo nó nên cứu voi, nên nó bắt đầu dùng răng sắc cắn lưới và dây quấn quanh voi. Không biết bao lâu, chuột gần như tiêu hết sức, dây cuối cùng bị cắn đứt, lưới xuất hiện một lỗ hổng lớn, voi gồng mạnh một cái, thoát khỏi lưới.", scene: "Cứu voi" },
+    { who: 'A', name: '课文', hanzi: "从此，老鼠和大象成了好朋友。", pinyin: "", vi: "Từ đó, chuột và voi trở thành bạn tốt.", scene: "Bạn bè" },
+    { who: 'A', name: '课文', hanzi: "不久，山神找到了老鼠，要它回到自己身边。老鼠说：“这大概不可能了，我无法战胜大象。”山神说：“你化敌为友，创造了举世瞩目的成就，世界上还有比这更完美的胜利吗？”", pinyin: "", vi: "Không lâu sau, sơn thần tìm thấy chuột, bảo nó về bên mình. Chuột nói: \"Chắc không thể được, tôi không thể thắng voi.\" Sơn thần nói: \"Ngươi hóa địch thành bạn, tạo thành tựu thế giới chú ý, trên đời còn có chiến thắng nào hoàn hảo hơn không?\"", scene: "Chiến thắng hoàn hảo" },
+  ],
+  dialogueTip: "<b>乘机</b>. <b>不料</b>. <b>未免</b>. <b>恰巧</b>/<b>正好</b>.",
+  slowSay: "完美的胜利",
+
+  vocab: [
+    { hanzi: "厌倦", pinyin: "yànjuàn", pos: "động từ", meaning: "chán ngán", han_viet: '' },
+    { hanzi: "厌恶", pinyin: "yànwù", pos: "động từ", meaning: "chán ghét", han_viet: '' },
+    { hanzi: "倘若", pinyin: "tǎngruò", pos: "liên từ", meaning: "nếu như", han_viet: '' },
+    { hanzi: "发觉", pinyin: "fājué", pos: "động từ", meaning: "phát hiện", han_viet: '' },
+    { hanzi: "承诺", pinyin: "chéngnuò", pos: "động từ", meaning: "hứa, đồng ý", han_viet: '' },
+    { hanzi: "草率", pinyin: "cǎoshuài", pos: "tính từ", meaning: "qua loa", han_viet: '' },
+    { hanzi: "对抗", pinyin: "duìkàng", pos: "động từ", meaning: "đối chọi", han_viet: '' },
+    { hanzi: "尝试", pinyin: "chángshì", pos: "động từ", meaning: "thử", han_viet: '' },
+    { hanzi: "盲目", pinyin: "mángmù", pos: "tính từ", meaning: "mù quáng", han_viet: '' },
+    { hanzi: "乘", pinyin: "chéng", pos: "giới từ", meaning: "nhân (dịp)", han_viet: '' },
+    { hanzi: "喘气", pinyin: "chuǎn qì", pos: "động từ", meaning: "thở", han_viet: '' },
+    { hanzi: "饶恕", pinyin: "ráoshù", pos: "động từ", meaning: "tha thứ", han_viet: '' },
+    { hanzi: "强迫", pinyin: "qiǎngpò", pos: "động từ", meaning: "bắt buộc", han_viet: '' },
+    { hanzi: "实施", pinyin: "shíshī", pos: "động từ", meaning: "thực hiện", han_viet: '' },
+    { hanzi: "不料", pinyin: "búliào", pos: "liên từ", meaning: "không ngờ", han_viet: '' },
+    { hanzi: "猛烈", pinyin: "měngliè", pos: "tính từ", meaning: "mãnh liệt", han_viet: '' },
+    { hanzi: "子弹", pinyin: "zǐdàn", pos: "danh từ", meaning: "đạn", han_viet: '' },
+    { hanzi: "蔑视", pinyin: "mièshì", pos: "động từ", meaning: "miệt thị", han_viet: '' },
+    { hanzi: "眼光", pinyin: "yǎnguāng", pos: "danh từ", meaning: "ánh mắt", han_viet: '' },
+    { hanzi: "盯", pinyin: "dīng", pos: "động từ", meaning: "nhìn chằm chằm", han_viet: '' },
+    { hanzi: "愤怒", pinyin: "fènnù", pos: "tính từ", meaning: "phẫn nộ", han_viet: '' },
+    { hanzi: "愚蠢", pinyin: "yúchǔn", pos: "tính từ", meaning: "ngu xuẩn", han_viet: '' },
+    { hanzi: "家伙", pinyin: "jiāhuo", pos: "danh từ", meaning: "thằng, gã", han_viet: '' },
+    { hanzi: "可恶", pinyin: "kěwù", pos: "tính từ", meaning: "đáng ghét", han_viet: '' },
+    { hanzi: "耍", pinyin: "shuǎ", pos: "động từ", meaning: "giở trò", han_viet: '' },
+    { hanzi: "流氓", pinyin: "liúmáng", pos: "danh từ", meaning: "lưu manh", han_viet: '' },
+    { hanzi: "扁", pinyin: "biǎn", pos: "tính từ", meaning: "dẹp, bẹp", han_viet: '' },
+    { hanzi: "夕阳", pinyin: "xīyáng", pos: "danh từ", meaning: "mặt trời chiều", han_viet: '' },
+    { hanzi: "留神", pinyin: "liú shén", pos: "động từ", meaning: "chú ý", han_viet: '' },
+    { hanzi: "打猎", pinyin: "dǎ liè", pos: "động từ", meaning: "đi săn", han_viet: '' },
+    { hanzi: "不顾", pinyin: "búgù", pos: "động từ", meaning: "bất chấp", han_viet: '' },
+    { hanzi: "挣扎", pinyin: "zhēngzhá", pos: "động từ", meaning: "vùng vẫy", han_viet: '' },
+    { hanzi: "窜", pinyin: "cuàn", pos: "động từ", meaning: "tháo chạy", han_viet: '' },
+    { hanzi: "摆脱", pinyin: "bǎituō", pos: "động từ", meaning: "thoát khỏi", han_viet: '' },
+    { hanzi: "死亡", pinyin: "sǐwáng", pos: "động từ", meaning: "chết", han_viet: '' },
+    { hanzi: "恰巧", pinyin: "qiàqiǎo", pos: "phó từ", meaning: "đúng lúc", han_viet: '' },
+    { hanzi: "毫无", pinyin: "háo wú", pos: "động từ", meaning: "không một chút", han_viet: '' },
+    { hanzi: "抵抗", pinyin: "dǐkàng", pos: "động từ", meaning: "chống cự", han_viet: '' },
+    { hanzi: "部位", pinyin: "bùwèi", pos: "danh từ", meaning: "bộ phận cơ thể", han_viet: '' },
+    { hanzi: "悲惨", pinyin: "bēicǎn", pos: "tính từ", meaning: "bi thảm", han_viet: '' },
+    { hanzi: "未免", pinyin: "wèimiǎn", pos: "phó từ", meaning: "có hơi", han_viet: '' },
+    { hanzi: "残忍", pinyin: "cánrěn", pos: "tính từ", meaning: "tàn nhẫn", han_viet: '' },
+    { hanzi: "良心", pinyin: "liángxīn", pos: "danh từ", meaning: "lương tâm", han_viet: '' },
+    { hanzi: "锋利", pinyin: "fēnglì", pos: "tính từ", meaning: "sắc bén", han_viet: '' },
+    { hanzi: "缠绕", pinyin: "chánrào", pos: "động từ", meaning: "quấn quanh", han_viet: '' },
+    { hanzi: "耗费", pinyin: "hàofèi", pos: "động từ", meaning: "hao tốn", han_viet: '' },
+    { hanzi: "缺口", pinyin: "quēkǒu", pos: "danh từ", meaning: "lỗ hổng", han_viet: '' },
+    { hanzi: "举世瞩目", pinyin: "jǔshì zhǔmù", pos: "thành ngữ", meaning: "thu hút sự chú ý cả thế giới", han_viet: '' },
+  ],
+
+  sections: [
+    { kind: 'examples', label: "乘机", title: "乘机 (nhân cơ hội)", intro: "乘机: phó từ, nghĩa \"lợi dụng cơ hội\".", groups: [{ label: 'Ví dụ', items: [["这次出差去北京，我们可以乘机游览一下长城。", "Zhè cì chūchāi qù Běijīng, wǒmen kěyǐ chéngjī yóulǎn yíxià Chángchéng.", "Chuyến công tác Bắc Kinh này, ta có thể nhân cơ hội đi thăm Trường Thành."], ["老鼠乘机跑进大象的鼻子中，准备实施它的计划。", "Lǎoshǔ chéngjī pǎo jìn dàxiàng de bízi zhōng, zhǔnbèi shíshī tā de jìhuà.", "Chuột nhân cơ hội chạy vào mũi voi, chuẩn bị thực hiện kế hoạch."]] }] },
+    { kind: 'examples', label: "不料", title: "不料 (không ngờ)", intro: "不料: liên từ, nghĩa \"没想到\"; vế trước nêu điều dự tính, vế sau dùng 不料 nêu điều bất ngờ, thường đi với 却, 竟, 竟然, 倒, 还.", groups: [{ label: 'Ví dụ', items: [["我只想和她开个玩笑，不料她却生气了。", "Wǒ zhǐ xiǎng hé tā kāi ge wánxiào, búliào tā què shēngqì le.", "Tôi chỉ muốn đùa với cô ấy, không ngờ cô lại giận."], ["我们做好了一切准备，下个星期就去旅行，不料他竟病倒了。", "Wǒmen zuòhǎole yíqiè zhǔnbèi, xià ge xīngqī jiù qù lǚxíng, búliào tā jìng bìngdǎo le.", "Chúng tôi chuẩn bị xong, tuần sau đi du lịch, không ngờ anh ấy lại ngã bệnh."]] }] },
+    { kind: 'examples', label: "未免", title: "未免 (có hơi, quả là)", intro: "未免: phó từ, biểu thị không đồng tình, chỉ có thể nói là…; thường đi với 太, 过于, 有些, 不大 và 一点儿, 一些; thường bổ nghĩa cho tính từ chỉ nghĩa tiêu cực.", groups: [{ label: 'Ví dụ', items: [["他这个人也未免太不会关心人了。", "Tā zhège rén yě wèimiǎn tài bú huì guānxīn rén le.", "Người này cũng quả là quá không biết quan tâm người khác."], ["看到大象悲惨的样子，老鼠不忍下手，它觉得那样未免太过残忍。", "Kàndào dàxiàng bēicǎn de yàngzi, lǎoshǔ bù rěn xiàshǒu, tā juéde nàyàng wèimiǎn tàiguò cánrěn.", "Thấy voi thảm hại, chuột không nỡ ra tay, thấy thế quả là quá tàn nhẫn."]] }] },
+    { kind: 'examples', label: "恰巧 – 正好", title: "So sánh 恰巧 và 正好", intro: "Cả hai chỉ thời gian, điều kiện vừa khớp. 恰巧: phó từ, thiên về trùng hợp ngẫu nhiên (thời gian, điều kiện), không đứng riêng làm vị ngữ; 正好: phó từ, còn chỉ không gian, thể tích, số lượng vừa vặn, cũng là tính từ, dùng riêng được.", groups: [{ label: 'Ví dụ', items: [["我离开北京那一天，恰巧/正好是他到达北京的日子。", "Wǒ líkāi Běijīng nà yì tiān, qiàqiǎo/zhènghǎo shì tā dàodá Běijīng de rìzi.", "Ngày tôi rời Bắc Kinh lại đúng là ngày anh ấy đến Bắc Kinh."], ["两个人一间，我们十个人，正好是五个房间。", "Liǎng ge rén yì jiān, wǒmen shí ge rén, zhènghǎo shì wǔ ge fángjiān.", "Hai người một phòng, chúng tôi mười người, vừa đúng năm phòng."]] }] },
+  ],
+
+  notes: [
+    { title: "乘机", body: "Nhân cơ hội.", say: "老鼠乘机跑进大象的鼻子中" },
+    { title: "不料", body: "Không ngờ.", say: "不料，刚进去，大象痒得难受" },
+    { title: "未免", body: "Có hơi, quả là.", say: "未免太过残忍" },
+  ],
+
+  writeChars: ["厌", "倦", "蔑", "愚", "蠢", "挣", "扎", "缠"],
+
+  drills: [],
+
+  qa: [{ title: 'Hoạt động (运用)', items: [{"q": "你怎么看老鼠的选择？", "hint": "……"}, {"q": "化敌为友给你什么启发？", "hint": "……"}] }],
+
+  sentences: [],
+
+  dictations: [
+    { title: "Giáo trình 练习 3", hint: 'Gõ chữ Hán theo đáp án sách.', items: [
+      { prompt: "《猫和老鼠》讲了一只聪明的老鼠跟猫（ ）的故事。", answer: "对抗", gloss: "đối chọi" },
+      { prompt: "每次小老鼠都能（ ）猫的追赶。", answer: "摆脱", gloss: "thoát khỏi" },
+      { prompt: "一不（ ），猫还会上老鼠的当。", answer: "留神", gloss: "chú ý" },
+      { prompt: "猫虽然很（ ），却也没有办法。", answer: "愤怒", gloss: "phẫn nộ" },
+      { prompt: "小老鼠用自己的智慧战胜了（ ）的猫。", answer: "愚蠢", gloss: "ngu xuẩn" },
+      { prompt: "（ ）你对一件事毫无兴趣，那么有人强迫你做时，你会觉得痛苦。", answer: "倘若", gloss: "nếu như" },
+      { prompt: "你对一件事（ ）兴趣。", answer: "毫无", gloss: "không chút" },
+      { prompt: "有人（ ）你做时，你会觉得痛苦和厌恶。", answer: "强迫", gloss: "ép buộc" },
+      { prompt: "你会觉得痛苦和（ ）。", answer: "厌恶", gloss: "chán ghét" },
+      { prompt: "无论（ ）多少时间和精力，心里也都是快乐的。", answer: "耗费", gloss: "hao tốn" },
+      { prompt: "这块布正好够做一件衬衫，一点儿都不浪费。(正好/恰巧)", answer: "正好", gloss: "vừa đúng" },
+      { prompt: "朋友来北京看我，可我（ ）没空儿，真遗憾。", answer: "恰巧", gloss: "đúng lúc" },
+    ] },
+  ],
+}

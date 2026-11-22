@@ -1,0 +1,113 @@
+import type { Lesson } from '../types'
+
+/** Giáo trình chuẩn HSK 6 (Thượng), Bài 6: 当好职场插班生. Nghĩa từ mới và ngữ pháp theo sách; dịch bài khóa do app thêm. Không có file nghe. Đáp án theo HSK6-BH-T1-DA. */
+
+export const hskStd6Lesson6: Lesson = {
+  id: 6,
+  title: "Hãy là học sinh giỏi tại nơi làm việc",
+  hanzi: "当好职场插班生",
+  pinyin: "Dānghǎo zhíchǎng chābānshēng",
+  vi: "Hãy là học sinh giỏi tại nơi làm việc",
+  intro: "Ngày đầu đi làm bị \"cho ra rìa\" và cách vượt qua. Học 唯独, 明明, 大不了 và so sánh 创立 – 创办.",
+
+  dialogue: [
+    { who: 'A', name: '课文', hanzi: "这天是我到这家公司上任的第一天，我的职位是咨询师。早就听说这里老手多、新手少，不少资深员工在公司创立之初就开始在这里工作了。", pinyin: "", vi: "Hôm ấy là ngày đầu tôi nhậm chức ở công ty này, vị trí của tôi là tư vấn viên. Từ lâu nghe nói ở đây nhiều người cũ, ít người mới, không ít nhân viên lâu năm làm việc từ khi công ty mới thành lập.", scene: "Ngày đầu" },
+    { who: 'A', name: '课文', hanzi: "清早上班，和新同事一一认识后，我以为一天的工作就此开始，没想到赵姐工作的第一件事是忙着沏茶和咖啡，给张哥端一碗，给孙姐送一杯……我想这单位风气真好，明天这事我来做。正想着，赵姐已经坐在那儿开始自己享受，唯独剩下我和我的搭档——与我同一天就职的小林。顿时小林的脸色变了，我也有被边缘化的感觉，不过我还是向小林使了个眼色。屋子里鸦雀无声，第一天就这样开始了。", pinyin: "", vi: "Sáng sớm đi làm, sau khi làm quen từng đồng nghiệp mới, tôi tưởng công việc ngày hôm nay bắt đầu, không ngờ việc đầu tiên chị Triệu làm là bận pha trà và cà phê, bưng một bát cho anh Trương, đưa một ly cho chị Tôn…… Tôi nghĩ nơi này không khí thật tốt, mai tôi làm việc này. Đang nghĩ, chị Triệu đã ngồi đó bắt đầu tự thưởng thức, chỉ còn lại tôi và đồng nghiệp — Tiểu Lâm vào làm cùng ngày. Sắc mặt Tiểu Lâm chợt đổi, tôi cũng có cảm giác bị gạt ra rìa, nhưng vẫn nháy mắt với Tiểu Lâm. Phòng im phăng phắc, ngày đầu bắt đầu như vậy.", scene: "Pha trà" },
+    { who: 'A', name: '课文', hanzi: "我和小林的业务很难做，件件都让人头痛，有时候还完不成指标，可别人的工作很快就完了，几乎成天聊天儿、上网、吹牛，还有人溜出去逛街。我和小林虽然是新来的，可我们之前在别的公司也是好手呀。", pinyin: "", vi: "Nghiệp vụ của tôi và Tiểu Lâm rất khó làm, việc nào cũng đau đầu, có lúc còn không đạt chỉ tiêu, còn công việc của người khác xong rất nhanh, gần như suốt ngày tán gẫu, lên mạng, khoác lác, có người còn chuồn đi dạo phố. Tôi và Tiểu Lâm tuy mới đến nhưng trước đây ở công ty khác cũng là người giỏi.", scene: "Công việc khó" },
+    { who: 'A', name: '课文', hanzi: "后来我发现，领导分配业务时，总是让资深员工先挑，他们挑剩下的才是我和小林的。我们的工作从难度上讲，和他们根本就不是一个等级。小林要去找领导讨公道：“哼，太不像话了，明明是在欺负人，大不了辞职。”我也觉得不像话，可静下来，也觉得没什么不好，应该说这反而是我们可以展示自己才干的好机会。", pinyin: "", vi: "Sau tôi phát hiện, khi lãnh đạo giao việc luôn để nhân viên lâu năm chọn trước, họ chọn thừa mới đến phần tôi và Tiểu Lâm. Độ khó công việc của chúng tôi hoàn toàn không cùng cấp với họ. Tiểu Lâm muốn đi tìm lãnh đạo đòi công bằng: \"Hừ, quá vô lý, rõ ràng bắt nạt người, cùng lắm từ chức.\" Tôi cũng thấy vô lý, nhưng bình tâm lại, thấy cũng chẳng có gì không tốt, đúng ra đây lại là cơ hội tốt để chúng tôi thể hiện tài năng.", scene: "Công bằng" },
+    { who: 'A', name: '课文', hanzi: "我和小林决定不和他们计较，全力以赴投入工作，不怠慢、不敷衍每一位客户，想方设法做好每一单业务，多忙都不凑合。", pinyin: "", vi: "Tôi và Tiểu Lâm quyết định không so đo với họ, dốc toàn lực vào việc, không thờ ơ, không qua loa với từng khách hàng, tìm mọi cách làm tốt từng hợp đồng, bận mấy cũng không làm cho xong chuyện.", scene: "Quyết tâm" },
+    { who: 'A', name: '课文', hanzi: "忙碌中，时光过得飞快，我们的业务能力得到了飞跃式的提高，点名找我们的客户越来越多。有时领导会说，服务对象对张哥不满意，活儿你们接手吧；客户投诉赵姐了，你们处理一下吧。我们每天都充满激情地工作，享受着工作的快乐。年度考核，我和小林的敬业精神、兢兢业业的工作态度受到了表扬，经济上也得到了丰厚的回报。当初对我们不友好的资深前辈们也变得热情起来。再后来，公司来了新人，领导让我带他们，我把工作经验和技巧传授给他们，毫无保留。", pinyin: "", vi: "Trong bận rộn, thời gian trôi nhanh, năng lực nghiệp vụ của chúng tôi tiến bộ vượt bậc, khách chỉ đích danh tìm chúng tôi ngày càng nhiều. Có lúc lãnh đạo nói, đối tượng phục vụ không hài lòng anh Trương, các em nhận việc đi; khách khiếu nại chị Triệu, các em xử lý chút. Mỗi ngày chúng tôi làm việc đầy nhiệt huyết, tận hưởng niềm vui công việc. Đánh giá cuối năm, tinh thần cống hiến, thái độ cần mẫn của tôi và Tiểu Lâm được khen, về kinh tế cũng nhận đền đáp hậu hĩnh. Các tiền bối lâu năm lúc đầu không thân thiện cũng trở nên nhiệt tình. Sau đó công ty có người mới, lãnh đạo bảo tôi dẫn dắt, tôi truyền kinh nghiệm và kỹ năng cho họ không giữ lại chút nào.", scene: "Được công nhận" },
+    { who: 'A', name: '课文', hanzi: "其实，进入新单位，作为一个职场插班生，这个过程，正是展示你人格魅力的时候，遇到困难，也是你施展才能的时机。", pinyin: "", vi: "Thật ra, vào đơn vị mới, là một \"học sinh xen ngang\" nơi làm việc, quá trình này chính là lúc thể hiện sức hút nhân cách, gặp khó khăn cũng là thời cơ để bạn thi thố tài năng.", scene: "Kết luận" },
+  ],
+  dialogueTip: "<b>唯独</b>. <b>明明</b>. <b>大不了</b>. <b>创立</b>/<b>创办</b>.",
+  slowSay: "当好职场插班生",
+
+  vocab: [
+    { hanzi: "上任", pinyin: "shàng rèn", pos: "động từ", meaning: "nhậm chức", han_viet: '' },
+    { hanzi: "职位", pinyin: "zhíwèi", pos: "danh từ", meaning: "chức vụ", han_viet: '' },
+    { hanzi: "资深", pinyin: "zīshēn", pos: "tính từ", meaning: "thâm niên", han_viet: '' },
+    { hanzi: "创立", pinyin: "chuànglì", pos: "động từ", meaning: "sáng lập", han_viet: '' },
+    { hanzi: "沏", pinyin: "qī", pos: "động từ", meaning: "pha (trà, cà phê)", han_viet: '' },
+    { hanzi: "风气", pinyin: "fēngqì", pos: "danh từ", meaning: "bầu không khí", han_viet: '' },
+    { hanzi: "唯独", pinyin: "wéidú", pos: "phó từ", meaning: "chỉ có", han_viet: '' },
+    { hanzi: "搭档", pinyin: "dādàng", pos: "danh từ", meaning: "cộng sự", han_viet: '' },
+    { hanzi: "就职", pinyin: "jiù zhí", pos: "động từ", meaning: "nhận chức", han_viet: '' },
+    { hanzi: "边缘", pinyin: "biānyuán", pos: "danh từ", meaning: "rìa", han_viet: '' },
+    { hanzi: "眼色", pinyin: "yǎnsè", pos: "danh từ", meaning: "cái nháy mắt", han_viet: '' },
+    { hanzi: "指标", pinyin: "zhǐbiāo", pos: "danh từ", meaning: "chỉ tiêu", han_viet: '' },
+    { hanzi: "成天", pinyin: "chéngtiān", pos: "phó từ", meaning: "suốt ngày", han_viet: '' },
+    { hanzi: "吹牛", pinyin: "chuī niú", pos: "động từ", meaning: "ba hoa", han_viet: '' },
+    { hanzi: "溜", pinyin: "liū", pos: "động từ", meaning: "chuồn mất", han_viet: '' },
+    { hanzi: "等级", pinyin: "děngjí", pos: "danh từ", meaning: "đẳng cấp", han_viet: '' },
+    { hanzi: "公道", pinyin: "gōngdao", pos: "danh từ", meaning: "sự công bằng", han_viet: '' },
+    { hanzi: "哼", pinyin: "hng", pos: "thán từ", meaning: "hừ", han_viet: '' },
+    { hanzi: "不像话", pinyin: "búxiànghuà", pos: "tính từ", meaning: "vô lý", han_viet: '' },
+    { hanzi: "明明", pinyin: "míngmíng", pos: "phó từ", meaning: "rõ ràng", han_viet: '' },
+    { hanzi: "欺负", pinyin: "qīfu", pos: "động từ", meaning: "bắt nạt", han_viet: '' },
+    { hanzi: "大不了", pinyin: "dàbuliǎo", pos: "phó từ", meaning: "cùng lắm", han_viet: '' },
+    { hanzi: "展示", pinyin: "zhǎnshì", pos: "động từ", meaning: "thể hiện", han_viet: '' },
+    { hanzi: "才干", pinyin: "cáigàn", pos: "danh từ", meaning: "tài năng", han_viet: '' },
+    { hanzi: "计较", pinyin: "jìjiào", pos: "động từ", meaning: "tính toán", han_viet: '' },
+    { hanzi: "全力以赴", pinyin: "quánlìyǐfù", pos: "thành ngữ", meaning: "dốc toàn lực", han_viet: '' },
+    { hanzi: "怠慢", pinyin: "dàimàn", pos: "động từ", meaning: "lạnh nhạt", han_viet: '' },
+    { hanzi: "敷衍", pinyin: "fūyǎn", pos: "động từ", meaning: "làm qua loa", han_viet: '' },
+    { hanzi: "想方设法", pinyin: "xiǎngfāng-shèfǎ", pos: "thành ngữ", meaning: "nghĩ đủ mọi cách", han_viet: '' },
+    { hanzi: "凑合", pinyin: "còuhe", pos: "động từ", meaning: "làm miễn cưỡng", han_viet: '' },
+    { hanzi: "忙碌", pinyin: "mánglù", pos: "tính từ", meaning: "bận rộn", han_viet: '' },
+    { hanzi: "时光", pinyin: "shíguāng", pos: "danh từ", meaning: "thời gian", han_viet: '' },
+    { hanzi: "飞跃", pinyin: "fēiyuè", pos: "động từ", meaning: "vượt bậc", han_viet: '' },
+    { hanzi: "投诉", pinyin: "tóusù", pos: "động từ", meaning: "khiếu nại", han_viet: '' },
+    { hanzi: "激情", pinyin: "jīqíng", pos: "danh từ", meaning: "nhiệt huyết", han_viet: '' },
+    { hanzi: "年度", pinyin: "niándù", pos: "danh từ", meaning: "hằng năm", han_viet: '' },
+    { hanzi: "考核", pinyin: "kǎohé", pos: "động từ", meaning: "đánh giá", han_viet: '' },
+    { hanzi: "敬业", pinyin: "jìngyè", pos: "động từ", meaning: "cống hiến cho công việc", han_viet: '' },
+    { hanzi: "兢兢业业", pinyin: "jīngjīngyèyè", pos: "thành ngữ", meaning: "thận trọng tỉ mỉ", han_viet: '' },
+    { hanzi: "回报", pinyin: "huíbào", pos: "động từ", meaning: "đền đáp", han_viet: '' },
+    { hanzi: "当初", pinyin: "dāngchū", pos: "danh từ", meaning: "lúc đầu", han_viet: '' },
+    { hanzi: "技巧", pinyin: "jìqiǎo", pos: "danh từ", meaning: "kỹ xảo", han_viet: '' },
+    { hanzi: "传授", pinyin: "chuánshòu", pos: "động từ", meaning: "truyền dạy", han_viet: '' },
+    { hanzi: "人格", pinyin: "réngé", pos: "danh từ", meaning: "nhân cách", han_viet: '' },
+    { hanzi: "施展", pinyin: "shīzhǎn", pos: "động từ", meaning: "thi thố", han_viet: '' },
+    { hanzi: "时机", pinyin: "shíjī", pos: "danh từ", meaning: "thời cơ", han_viet: '' },
+  ],
+
+  sections: [
+    { kind: 'examples', label: "唯独", title: "唯独 (chỉ riêng)", intro: "唯独: phó từ, nghĩa \"只、单单\"; văn cảnh trước thường có nội dung đối lập.", groups: [{ label: 'Ví dụ', items: [["那次旅行大家都去了，唯独你没有去成。", "Nà cì lǚxíng dàjiā dōu qù le, wéidú nǐ méiyǒu qù chéng.", "Chuyến du lịch ấy mọi người đều đi, riêng bạn không đi được."], ["赵姐已经坐在那儿开始自己享受，唯独剩下我和我的搭档。", "Zhào jiě yǐjīng zuò zài nàr kāishǐ zìjǐ xiǎngshòu, wéidú shèngxià wǒ hé wǒ de dādàng.", "Chị Triệu đã ngồi đó tự thưởng thức, chỉ còn lại tôi và đồng nghiệp."]] }] },
+    { kind: 'examples', label: "明明", title: "明明 (rõ ràng)", intro: "明明: phó từ, biểu thị rất rõ ràng, sự thật là vậy; trước hoặc sau thường có câu hỏi ngược hoặc chuyển ý; dùng nhiều trong khẩu ngữ.", groups: [{ label: 'Ví dụ', items: [["明明是你把书弄丢了，还说不知道，真不像话！", "Míngmíng shì nǐ bǎ shū nòng diū le, hái shuō bù zhīdào, zhēn búxiànghuà!", "Rõ ràng là bạn làm mất sách, còn nói không biết, thật vô lý!"], ["哼，太不像话了，明明是在欺负人。", "Hng, tài búxiànghuà le, míngmíng shì zài qīfu rén.", "Hừ, quá vô lý, rõ ràng là bắt nạt người."]] }] },
+    { kind: 'examples', label: "大不了", title: "大不了 (cùng lắm)", intro: "大不了: phó từ, nghĩa \"最坏也不过\", dù gặp khó khăn nhưng cuối cùng vẫn giải quyết được; dùng trong khẩu ngữ.", groups: [{ label: 'Ví dụ', items: [["失败了不要紧，大不了从头再来。", "Shībài le bú yàojǐn, dàbuliǎo cóngtóu zài lái.", "Thất bại không sao, cùng lắm làm lại từ đầu."], ["别难过了，不就是衣服丢了吗，大不了再买一件。", "Bié nánguò le, bú jiùshì yīfu diū le ma, dàbuliǎo zài mǎi yí jiàn.", "Đừng buồn, chẳng phải chỉ mất cái áo sao, cùng lắm mua cái khác."]] }] },
+    { kind: 'examples', label: "创立 – 创办", title: "So sánh 创立 và 创办", intro: "Cả hai đều là động từ chỉ bắt đầu làm. 创立: thiên về \"khai sáng, thành lập\", dùng được cho đảng phái, quốc gia, học thuyết, lý luận; 创办: thiên về \"lập ra và kinh doanh\", không dùng cho đảng phái, học thuyết.", groups: [{ label: 'Ví dụ', items: [["这个组织创立于1942年。", "Zhège zǔzhī chuànglì yú yī jiǔ sì èr nián.", "Tổ chức này thành lập năm 1942."], ["他们几个人一起创办了一家民营企业。", "Tāmen jǐ ge rén yìqǐ chuàngbànle yì jiā mínyíng qǐyè.", "Mấy người họ cùng lập một doanh nghiệp tư nhân."]] }] },
+  ],
+
+  notes: [
+    { title: "唯独", body: "Chỉ riêng.", say: "唯独剩下我和我的搭档" },
+    { title: "明明", body: "Rõ ràng.", say: "明明是在欺负人" },
+    { title: "大不了", body: "Cùng lắm.", say: "大不了辞职" },
+  ],
+
+  writeChars: ["创", "搭", "档", "边", "缘", "敷", "衍", "兢"],
+
+  drills: [],
+
+  qa: [{ title: 'Hoạt động (运用)', items: [{"q": "新人怎样才能融入团队？", "hint": "……"}, {"q": "你遇到不公平的事会怎么做？", "hint": "……"}] }],
+
+  sentences: [],
+
+  dictations: [
+    { title: "Giáo trình 做一做 / 练习 3", hint: 'Gõ chữ Hán theo đáp án sách.', items: [
+      { prompt: "他们夫妻俩一手（ ）起这家汽车修理厂。", answer: "创办", gloss: "sáng lập (kinh doanh)" },
+      { prompt: "这个学说（ ）于18世纪中期，开始时遭到许多质疑。", answer: "创立", gloss: "sáng lập" },
+      { prompt: "近年来，一些地方相继（ ）了各种以营利为目的的服务中心。", answer: "创办", gloss: "lập ra" },
+      { prompt: "新理论（ ）初期，遇到很多困难和挑战。", answer: "创立", gloss: "thành lập" },
+      { prompt: "跟球队的（ ）们一一认识之后，我的训练生活就此开始。", answer: "搭档", gloss: "cộng sự" },
+      { prompt: "张教练在球队（ ）之初就在这儿了。", answer: "创立", gloss: "thành lập" },
+      { prompt: "他是一位富有经验的（ ）篮球教练。", answer: "资深", gloss: "thâm niên" },
+      { prompt: "我们球队的（ ）非常好，大家互相帮助。", answer: "风气", gloss: "bầu không khí" },
+      { prompt: "训练中受点儿伤也都不（ ）。", answer: "计较", gloss: "tính toán" },
+      { prompt: "他对待工作充满（ ），总是想方设法出色完成每一项任务。", answer: "激情", gloss: "nhiệt huyết" },
+      { prompt: "总是（ ）出色完成每一项任务，从来不凑合。", answer: "想方设法", gloss: "nghĩ đủ mọi cách" },
+      { prompt: "从来不（ ）。", answer: "凑合", gloss: "làm cho xong chuyện" },
+      { prompt: "小张带领他们部门的员工（ ）投入工作。", answer: "全力以赴", gloss: "dốc toàn lực" },
+      { prompt: "虽然很（ ），却享受到了工作的快乐。", answer: "忙碌", gloss: "bận rộn" },
+    ] },
+  ],
+}

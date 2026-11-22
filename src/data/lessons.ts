@@ -131,6 +131,28 @@ import { hskStd5Lesson30 } from './hskstd5/lesson30'
 import { hskStd6Lesson1 } from './hskstd6/lesson1'
 import { hskStd6Lesson2 } from './hskstd6/lesson2'
 import { hskStd6Lesson3 } from './hskstd6/lesson3'
+import { hskStd6Lesson4 } from './hskstd6/lesson4'
+import { hskStd6Lesson5 } from './hskstd6/lesson5'
+import { hskStd6Lesson6 } from './hskstd6/lesson6'
+import { hskStd6Lesson7 } from './hskstd6/lesson7'
+import { hskStd6Lesson8 } from './hskstd6/lesson8'
+import { hskStd6Lesson9 } from './hskstd6/lesson9'
+import { hskStd6Lesson10 } from './hskstd6/lesson10'
+import { hskStd6Lesson11 } from './hskstd6/lesson11'
+import { hskStd6Lesson12 } from './hskstd6/lesson12'
+import { hskStd6Lesson13 } from './hskstd6/lesson13'
+import { hskStd6Lesson14 } from './hskstd6/lesson14'
+import { hskStd6Lesson15 } from './hskstd6/lesson15'
+import { hskStd6Lesson16 } from './hskstd6/lesson16'
+import { hskStd6Lesson17 } from './hskstd6/lesson17'
+import { hskStd6Lesson18 } from './hskstd6/lesson18'
+import { hskStd6Lesson19 } from './hskstd6/lesson19'
+import { hskStd6Lesson20 } from './hskstd6/lesson20'
+import { hskStd6Lesson21 } from './hskstd6/lesson21'
+import { hskStd6Lesson22 } from './hskstd6/lesson22'
+import { hskStd6Lesson23 } from './hskstd6/lesson23'
+import { hskStd6Lesson24 } from './hskstd6/lesson24'
+import { hskStd6Lesson25 } from './hskstd6/lesson25'
 import { HSK_STD_ID, HSK_STD2_ID, HSK_STD3_ID, HSK_STD4_ID, HSK_STD5_ID, HSK_STD6_ID } from './books'
 import type { Lesson } from './types'
 
@@ -225,7 +247,7 @@ export const bookLessons: Record<number, Lesson[]> = {
   [HSK_STD3_ID]: [hskStd3Lesson1, hskStd3Lesson2, hskStd3Lesson3, hskStd3Lesson4, hskStd3Lesson5, hskStd3Lesson6, hskStd3Lesson7, hskStd3Lesson8, hskStd3Lesson9, hskStd3Lesson10, hskStd3Lesson11, hskStd3Lesson12, hskStd3Lesson13, hskStd3Lesson14, hskStd3Lesson15, hskStd3Lesson16, hskStd3Lesson17, hskStd3Lesson18, hskStd3Lesson19, hskStd3Lesson20],
   [HSK_STD4_ID]: [hskStd4Lesson1, hskStd4Lesson2, hskStd4Lesson3, hskStd4Lesson4, hskStd4Lesson5, hskStd4Lesson6, hskStd4Lesson7, hskStd4Lesson8, hskStd4Lesson9, hskStd4Lesson10, hskStd4Lesson11, hskStd4Lesson12, hskStd4Lesson13, hskStd4Lesson14, hskStd4Lesson15, hskStd4Lesson16, hskStd4Lesson17, hskStd4Lesson18, hskStd4Lesson19, hskStd4Lesson20],
   [HSK_STD5_ID]: [hskStd5Lesson1, hskStd5Lesson2, hskStd5Lesson3, hskStd5Lesson4, hskStd5Lesson5, hskStd5Lesson6, hskStd5Lesson7, hskStd5Lesson8, hskStd5Lesson9, hskStd5Lesson10, hskStd5Lesson11, hskStd5Lesson12, hskStd5Lesson13, hskStd5Lesson14, hskStd5Lesson15, hskStd5Lesson16, hskStd5Lesson17, hskStd5Lesson18, hskStd5Lesson19, hskStd5Lesson20, hskStd5Lesson21, hskStd5Lesson22, hskStd5Lesson23, hskStd5Lesson24, hskStd5Lesson25, hskStd5Lesson26, hskStd5Lesson27, hskStd5Lesson28, hskStd5Lesson29, hskStd5Lesson30],
-  [HSK_STD6_ID]: [hskStd6Lesson1, hskStd6Lesson2, hskStd6Lesson3],
+  [HSK_STD6_ID]: [hskStd6Lesson1, hskStd6Lesson2, hskStd6Lesson3, hskStd6Lesson4, hskStd6Lesson5, hskStd6Lesson6, hskStd6Lesson7, hskStd6Lesson8, hskStd6Lesson9, hskStd6Lesson10, hskStd6Lesson11, hskStd6Lesson12, hskStd6Lesson13, hskStd6Lesson14, hskStd6Lesson15, hskStd6Lesson16, hskStd6Lesson17, hskStd6Lesson18, hskStd6Lesson19, hskStd6Lesson20, hskStd6Lesson21, hskStd6Lesson22, hskStd6Lesson23, hskStd6Lesson24, hskStd6Lesson25],
   [HSK_STD2_ID]: [hskStd2Lesson1, hskStd2Lesson2, hskStd2Lesson3, hskStd2Lesson4, hskStd2Lesson5, hskStd2Lesson6, hskStd2Lesson7, hskStd2Lesson8, hskStd2Lesson9, hskStd2Lesson10, hskStd2Lesson11, hskStd2Lesson12, hskStd2Lesson13, hskStd2Lesson14, hskStd2Lesson15],
   2: [lesson16, lesson17, lesson18, lesson19, lesson20, lesson21, lesson22, lesson23, lesson24, lesson25, lesson26, lesson27, lesson28, lesson29, lesson30],
 }

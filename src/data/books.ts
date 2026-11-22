@@ -138,11 +138,33 @@ const hskStd4: LessonStub[] = [
 ]
 
 // Giáo trình chuẩn HSK 5 (Thượng): bài 1–30 (không có file nghe).
-// Giáo trình chuẩn HSK 6 (Thượng): bài 1–3 (không có file nghe).
+// Giáo trình chuẩn HSK 6 (Thượng bài 1–20, Hạ bài 21–25 trở đi) (không có file nghe).
 const hskStd6: LessonStub[] = [
   { id: 1, hanzi: '孩子给我们的启示', pinyin: 'Háizi gěi wǒmen de qǐshì', vi: 'Điều con trẻ gợi ý cho chúng ta' },
   { id: 2, hanzi: '父母之爱', pinyin: 'Fùmǔ zhī ài', vi: 'Tình yêu của cha mẹ' },
   { id: 3, hanzi: '一盒月饼', pinyin: 'Yì hé yuèbǐng', vi: 'Một hộp bánh Trung thu' },
+  { id: 4, hanzi: '完美的胜利', pinyin: 'Wánměi de shènglì', vi: 'Chiến thắng hoàn hảo' },
+  { id: 5, hanzi: '学一门外语需要理由吗？', pinyin: 'Xué yì mén wàiyǔ xūyào lǐyóu ma?', vi: 'Học ngoại ngữ có cần lý do không?' },
+  { id: 6, hanzi: '当好职场插班生', pinyin: 'Dānghǎo zhíchǎng chābānshēng', vi: 'Hãy là học sinh giỏi tại nơi làm việc' },
+  { id: 7, hanzi: '我的人生我做主。', pinyin: 'Wǒ de rénshēng wǒ zuò zhǔ', vi: 'Cuộc đời tôi do tôi làm chủ' },
+  { id: 8, hanzi: '遇见原来的我', pinyin: 'Yùjiàn yuánlái de wǒ', vi: 'Gặp lại con người nguyên bản của tôi' },
+  { id: 9, hanzi: '不用手机的日子', pinyin: 'Bú yòng shǒujī de rìzi', vi: 'Một ngày không dùng điện thoại' },
+  { id: 10, hanzi: '全球化视野中的中国饮食', pinyin: 'Quánqiúhuà shìyě zhōng de Zhōngguó yǐnshí', vi: 'Thức ăn Trung Quốc trong xu thế toàn cầu hóa' },
+  { id: 11, hanzi: '我不在时，猫在干什么？', pinyin: 'Wǒ bú zài shí, māo zài gàn shénme?', vi: 'Khi tôi vắng nhà, mèo làm gì?' },
+  { id: 12, hanzi: '我们都爱白噪音。', pinyin: 'Wǒmen dōu ài báizàoyīn', vi: 'Chúng ta đều yêu tiếng ồn trắng' },
+  { id: 13, hanzi: '从旅游指南看世事变迁', pinyin: 'Cóng lǚyóu zhǐnán kàn shìshì biànqiān', vi: 'Nhìn thế sự đổi thay qua sách hướng dẫn du lịch' },
+  { id: 14, hanzi: '背着电饭锅拍北极', pinyin: 'Bēizhe diànfànguō pāi Běijí', vi: 'Mang nồi cơm điện đi chụp Bắc Cực' },
+  { id: 15, hanzi: '山脉上的雕刻', pinyin: 'Shānmài shàng de diāokè', vi: 'Điêu khắc trên dãy núi' },
+  { id: 16, hanzi: '徐健和他的野生动物摄影师们', pinyin: 'Xú Jiàn hé tā de yěshēng dòngwù shèyǐngshīmen', vi: 'Từ Kiện và các nhiếp ảnh gia động vật hoang dã' },
+  { id: 17, hanzi: '小动物眼中的慢世界', pinyin: 'Xiǎo dòngwù yǎn zhōng de màn shìjiè', vi: 'Thế giới chậm trong mắt động vật nhỏ' },
+  { id: 18, hanzi: '神奇的丝瓜', pinyin: 'Shénqí de sīguā', vi: 'Cây mướp thần kỳ' },
+  { id: 19, hanzi: '无阳光的深海世界', pinyin: 'Wú yángguāng de shēnhǎi shìjiè', vi: 'Thế giới biển sâu không ánh nắng' },
+  { id: 20, hanzi: '金鸡窝', pinyin: 'Jīn jī wō', vi: 'Tổ gà vàng' },
+  { id: 21, hanzi: '未来商店', pinyin: 'Wèilái shāngdiàn', vi: 'Cửa hàng tương lai' },
+  { id: 22, hanzi: '2050年的汽车什么样？', pinyin: 'Èr líng wǔ líng nián de qìchē shénme yàng?', vi: 'Xe hơi năm 2050 sẽ thế nào?' },
+  { id: 23, hanzi: '大数据时代', pinyin: 'Dà shùjù shídài', vi: 'Thời đại dữ liệu lớn' },
+  { id: 24, hanzi: '体育明星们的离奇遭遇', pinyin: 'Tǐyù míngxīngmen de líqí zāoyù', vi: 'Những tai nạn kỳ quặc của các ngôi sao thể thao' },
+  { id: 25, hanzi: '草船借箭', pinyin: 'Cǎo chuán jiè jiàn', vi: 'Thuyền cỏ mượn tên' },
 ]
 
 // Giáo trình chuẩn HSK 5 (Thượng): bài 1–30 (không có file nghe).

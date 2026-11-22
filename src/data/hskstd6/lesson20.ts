@@ -1,0 +1,112 @@
+import type { Lesson } from '../types'
+
+/** Giáo trình chuẩn HSK 6 (Thượng), Bài 20: 金鸡窝. Nghĩa từ mới và ngữ pháp theo sách; dịch bài khóa do app thêm. Không có file nghe. Đáp án theo HSK6-BH-T1-DA. */
+
+export const hskStd6Lesson20: Lesson = {
+  id: 20,
+  title: "Tổ gà vàng",
+  hanzi: "金鸡窝",
+  pinyin: "Jīn jī wō",
+  vi: "Tổ gà vàng",
+  intro: "Truyền thuyết về tảng đá \"tổ gà vàng\" bên ao làng và bài học chớ tham lam. Học 况且, 大, 倒不如 và so sánh 将近 – 将要.",
+
+  dialogue: [
+    { who: 'A', name: '课文', hanzi: "姥姥住的村东池塘畔有一块椭圆形的大石头。那石头中间凹陷，像个鸡窝，村里人叫它金鸡窝。金鸡窝外表有些古怪，红色的石头，上面镶嵌着些不同色彩、不同形状、或坚硬或不十分坚硬的小石头，像件工艺品，很是美观别致。", pinyin: "", vi: "Bên ao đầu đông làng bà ngoại ở có một tảng đá lớn hình bầu dục. Giữa đá trũng xuống như cái ổ gà, người làng gọi là \"tổ gà vàng\". Bề ngoài tổ gà vàng hơi lạ, đá đỏ, khảm những viên đá nhỏ khác màu, khác hình, hoặc cứng hoặc không quá cứng, như một món đồ thủ công mỹ nghệ, rất đẹp và độc đáo.", scene: "Tổ gà vàng" },
+    { who: 'A', name: '课文', hanzi: "我们小时候都喜欢坐在石头上，把脚浸泡在水里。老人们见了，就会责怪：“嗨，坐在金鸡窝上，想干吗呀！”我被说得糊涂，就去问姥姥，这才得知那个久远的传说。", pinyin: "", vi: "Hồi nhỏ chúng tôi đều thích ngồi trên đá, ngâm chân xuống nước. Người già thấy là mắng: \"Này, ngồi lên tổ gà vàng, định làm gì đấy!\" Tôi bị nói đến hồ đồ, bèn hỏi bà ngoại, lúc đó mới biết truyền thuyết xa xưa ấy.", scene: "Truyền thuyết" },
+    { who: 'A', name: '课文', hanzi: "姥爷祖父的祖父宋家有几兄弟，大家起早贪黑，废寝忘食，勤劳加勤俭，日子过得还算富裕。农历年将近，宋家三祖爷早早下了地，突然看到了一窝小鸡。那小鸡仿佛刚出窝没几天，况且是乌黑乌黑的身子，可爱极了，跟随着母鸡，四处寻觅，像是在找食。", pinyin: "", vi: "Cụ tổ của ông của ông ngoại, nhà họ Tống có mấy anh em, ai cũng dậy sớm thức khuya, quên ăn quên ngủ, cần cù lại cần kiệm, cuộc sống khá giả. Sắp đến Tết âm lịch, cụ ba nhà họ Tống sớm ra đồng, bỗng thấy một ổ gà con. Gà con như vừa ra ổ vài ngày, lại thân đen nhánh, đáng yêu vô cùng, theo gà mẹ khắp nơi tìm kiếm như đang kiếm ăn.", scene: "Ổ gà con" },
+    { who: 'A', name: '课文', hanzi: "三祖爷颇感诧异，大冬天的，这里离村子又远，分明不该有这么小的鸡仔呀！三祖爷去捉小鸡，小鸡想隐蔽自己，跑着往干草丛里扎。三祖爷顺手捡起一块砖撇过去，一下砸中了一只小鸡。小鸡就地打了个滚，瞬间变成了一块金子。这时候，老母鸡急了，跳起来在三祖爷膝盖下边就是一口，三祖爷疼得要命，哼哼着，路也走不动了，只好捡个树枝当拐杖拄着，一瘸一拐地回了家。", pinyin: "", vi: "Cụ ba khá ngạc nhiên: giữa mùa đông, chỗ này lại xa làng, rõ ràng không nên có gà con nhỏ thế! Cụ đi bắt gà con, gà con muốn nấp, chạy chui vào đám cỏ khô. Cụ tiện tay nhặt viên gạch ném, trúng một con. Gà con lăn một vòng tại chỗ, chớp mắt biến thành một cục vàng. Lúc đó gà mẹ nóng ruột, nhảy lên mổ một phát dưới đầu gối cụ, cụ đau muốn chết, rên rỉ, đi không nổi, đành nhặt cành cây làm gậy chống, khập khiễng về nhà.", scene: "Gà con hóa vàng" },
+    { who: 'A', name: '课文', hanzi: "回到家，三祖爷把事情跟家里人一说，大家赶到地里，可怎么也找不着那窝鸡。大家开始在附近挖掘，挖了个大坑，结果还是没有看到鸡，只是挖出了那块像鸡窝一样的大石头。他们把那石头抬回村里，因为形状不规则，派不上什么用场，最后就扔在了池塘边。", pinyin: "", vi: "Về nhà, cụ kể chuyện với người nhà, mọi người chạy ra đồng nhưng không sao tìm thấy ổ gà. Mọi người bắt đầu đào gần đó, đào một hố lớn, kết quả vẫn không thấy gà, chỉ đào ra tảng đá lớn giống ổ gà. Họ khiêng đá về làng, vì hình dạng không đều, chẳng dùng được việc gì nên cuối cùng vứt ở bên ao.", scene: "Đào tìm" },
+    { who: 'A', name: '课文', hanzi: "三祖爷受伤的腿一直发炎，疼得下不了床。一个身强力壮的小伙子，咋能光躺在床上呢？三祖爷只好用那金子换了钱去看病。还算侥幸，金子换来的钱用完了，三祖爷的腿也好了。三祖爷尝到了久病不愈的滋味，后来逢人就说，真是得不偿失，早知道这样，宁肯当初不搭理那窝小鸡。", pinyin: "", vi: "Chân bị thương của cụ ba cứ viêm, đau đến không xuống giường nổi. Một chàng trai khỏe mạnh sao có thể chỉ nằm trên giường? Cụ đành dùng cục vàng đổi tiền đi chữa bệnh. May mắn thay, tiền đổi từ vàng vừa hết thì chân cụ cũng khỏi. Cụ nếm mùi bệnh lâu không khỏi, sau này gặp ai cũng nói, thật là được không bù mất, biết thế thà ngày ấy đừng đoái hoài ổ gà con kia.", scene: "Được không bù mất" },
+    { who: 'A', name: '课文', hanzi: "三祖爷的故事告诫后人，做人不要欲望太多，不要贪婪。东西不是你的就不要去争夺，就是争来，也守不住。倒不如付出一分努力，得到一分收获，过平稳和顺的日子。后来，三祖爷的故事传了一代又一代，宋家的子孙也有做了官的，但没有人敢贪污、贿赂、不择手段，因为他们心里都有一个“金鸡窝”。", pinyin: "", vi: "Câu chuyện của cụ ba răn dạy hậu thế: làm người đừng nhiều dục vọng, đừng tham lam. Thứ không phải của mình thì đừng tranh giành, dù giành được cũng không giữ nổi. Chi bằng bỏ ra một phần sức, nhận một phần thu hoạch, sống cuộc đời yên ổn êm đềm. Về sau chuyện cụ ba truyền đời này sang đời khác, con cháu họ Tống có người làm quan nhưng không ai dám tham ô, đút lót, bất chấp thủ đoạn, vì trong lòng họ đều có một \"tổ gà vàng\".", scene: "Lời răn" },
+  ],
+  dialogueTip: "<b>况且</b>. <b>大</b>. <b>倒不如</b>. <b>将近</b>/<b>将要</b>.",
+  slowSay: "金鸡窝",
+
+  vocab: [
+    { hanzi: "窝", pinyin: "wō", pos: "danh từ", meaning: "ổ, tổ", han_viet: '' },
+    { hanzi: "畔", pinyin: "pàn", pos: "danh từ", meaning: "bờ, bên", han_viet: '' },
+    { hanzi: "椭圆", pinyin: "tuǒyuán", pos: "danh từ", meaning: "hình bầu dục", han_viet: '' },
+    { hanzi: "外表", pinyin: "wàibiǎo", pos: "danh từ", meaning: "bề ngoài", han_viet: '' },
+    { hanzi: "镶嵌", pinyin: "xiāngqiàn", pos: "động từ", meaning: "khảm", han_viet: '' },
+    { hanzi: "坚硬", pinyin: "jiānyìng", pos: "tính từ", meaning: "cứng", han_viet: '' },
+    { hanzi: "工艺品", pinyin: "gōngyìpǐn", pos: "danh từ", meaning: "hàng mỹ nghệ", han_viet: '' },
+    { hanzi: "美观", pinyin: "měiguān", pos: "tính từ", meaning: "đẹp", han_viet: '' },
+    { hanzi: "别致", pinyin: "biézhì", pos: "tính từ", meaning: "độc đáo", han_viet: '' },
+    { hanzi: "浸泡", pinyin: "jìnpào", pos: "động từ", meaning: "ngâm", han_viet: '' },
+    { hanzi: "责怪", pinyin: "zéguài", pos: "động từ", meaning: "trách móc", han_viet: '' },
+    { hanzi: "祖父", pinyin: "zǔfù", pos: "danh từ", meaning: "ông nội", han_viet: '' },
+    { hanzi: "废寝忘食", pinyin: "fèiqǐn-wàngshí", pos: "thành ngữ", meaning: "quên ăn quên ngủ", han_viet: '' },
+    { hanzi: "勤俭", pinyin: "qínjiǎn", pos: "tính từ", meaning: "cần kiệm", han_viet: '' },
+    { hanzi: "富裕", pinyin: "fùyù", pos: "tính từ", meaning: "giàu có", han_viet: '' },
+    { hanzi: "将近", pinyin: "jiāngjìn", pos: "phó từ", meaning: "sắp tới, gần tới", han_viet: '' },
+    { hanzi: "况且", pinyin: "kuàngqiě", pos: "liên từ", meaning: "hơn nữa", han_viet: '' },
+    { hanzi: "乌黑", pinyin: "wūhēi", pos: "tính từ", meaning: "đen thui", han_viet: '' },
+    { hanzi: "跟随", pinyin: "gēnsuí", pos: "động từ", meaning: "đi theo", han_viet: '' },
+    { hanzi: "颇", pinyin: "pō", pos: "phó từ", meaning: "khá", han_viet: '' },
+    { hanzi: "分明", pinyin: "fēnmíng", pos: "phó từ", meaning: "rõ ràng là", han_viet: '' },
+    { hanzi: "隐蔽", pinyin: "yǐnbì", pos: "động từ", meaning: "ẩn nấp", han_viet: '' },
+    { hanzi: "扎", pinyin: "zhā", pos: "động từ", meaning: "chui vào", han_viet: '' },
+    { hanzi: "砸", pinyin: "zá", pos: "động từ", meaning: "đập", han_viet: '' },
+    { hanzi: "膝盖", pinyin: "xīgài", pos: "danh từ", meaning: "đầu gối", han_viet: '' },
+    { hanzi: "拐杖", pinyin: "guǎizhàng", pos: "danh từ", meaning: "gậy chống", han_viet: '' },
+    { hanzi: "瘸", pinyin: "qué", pos: "động từ", meaning: "đi khập khiễng", han_viet: '' },
+    { hanzi: "坑", pinyin: "kēng", pos: "danh từ", meaning: "hố", han_viet: '' },
+    { hanzi: "发炎", pinyin: "fāyán", pos: "động từ", meaning: "viêm", han_viet: '' },
+    { hanzi: "侥幸", pinyin: "jiǎoxìng", pos: "tính từ", meaning: "may mắn", han_viet: '' },
+    { hanzi: "得不偿失", pinyin: "débùchángshī", pos: "thành ngữ", meaning: "được không bù mất", han_viet: '' },
+    { hanzi: "宁肯", pinyin: "nìngkěn", pos: "phó từ", meaning: "thà", han_viet: '' },
+    { hanzi: "告诫", pinyin: "gàojiè", pos: "động từ", meaning: "khuyên bảo", han_viet: '' },
+    { hanzi: "贪婪", pinyin: "tānlán", pos: "tính từ", meaning: "tham lam", han_viet: '' },
+    { hanzi: "争夺", pinyin: "zhēngduó", pos: "động từ", meaning: "giành giật", han_viet: '' },
+    { hanzi: "贪污", pinyin: "tānwū", pos: "động từ", meaning: "tham ô", han_viet: '' },
+    { hanzi: "贿赂", pinyin: "huìlù", pos: "động từ", meaning: "hối lộ", han_viet: '' },
+    { hanzi: "不择手段", pinyin: "bùzé-shǒuduàn", pos: "thành ngữ", meaning: "bất chấp thủ đoạn", han_viet: '' },
+  ],
+
+  sections: [
+    { kind: 'examples', label: "况且", title: "况且 (hơn nữa)", intro: "况且: liên từ, đặt đầu vế sau, bổ sung thêm lý do ngoài lý do đã có.", groups: [{ label: 'Ví dụ', items: [["那小鸡仿佛刚出窝没几天，况且是乌黑乌黑的身子，可爱极了。", "Nà xiǎojī fǎngfú gāng chū wō méi jǐ tiān, kuàngqiě shì wūhēi-wūhēi de shēnzi, kě’ài jí le.", "Gà con như vừa ra ổ vài ngày, hơn nữa thân đen nhánh, đáng yêu vô cùng."], ["这套房子交通方便，附近有书店，况且房租又不贵，真是再合适不过了。", "Zhè tào fángzi jiāotōng fāngbiàn, fùjìn yǒu shūdiàn, kuàngqiě fángzū yòu bú guì, zhēn shì zài héshì bú guò le.", "Căn nhà này giao thông thuận tiện, gần có hiệu sách, lại tiền thuê không đắt, thật không gì hợp hơn."]] }] },
+    { kind: 'examples', label: "大", title: "大 (nhấn mạnh thời điểm)", intro: "大: tính từ, đặt trước thời tiết, thời gian, ngày lễ để nhấn mạnh.", groups: [{ label: 'Ví dụ', items: [["三祖爷颇感诧异，大冬天的，这里离村子又远。", "Sān zǔyé pō gǎn chàyì, dà dōngtiān de, zhèlǐ lí cūnzi yòu yuǎn.", "Cụ ba khá ngạc nhiên, giữa mùa đông, chỗ này lại xa làng."], ["大周末的，让人家多睡会吧。", "Dà zhōumò de, ràng rénjia duō shuì huì ba.", "Cuối tuần mà, cho người ta ngủ thêm chút đi."]] }] },
+    { kind: 'examples', label: "倒不如", title: "倒不如 (chi bằng)", intro: "倒不如: sau khi so sánh nhiều mặt, chọn một; thường đi với 与其.", groups: [{ label: 'Ví dụ', items: [["与其天天为钱财奔忙，倒不如过平稳和顺的日子。", "Yǔqí tiāntiān wèi qiáncái bēnmáng, dào bùrú guò píngwěn héshùn de rìzi.", "Thay vì ngày ngày bôn ba vì tiền, chi bằng sống cuộc đời yên ổn êm đềm."], ["假期景点人山人海，倒不如在家清清静静看看书。", "Jiàqī jǐngdiǎn rénshān-rénhǎi, dào bùrú zài jiā qīngqīng-jìngjìng kànkan shū.", "Kỳ nghỉ điểm du lịch đông nghẹt, chi bằng ở nhà yên tĩnh đọc sách."]] }] },
+    { kind: 'examples', label: "将近 – 将要", title: "So sánh 将近 và 将要", intro: "Giống: phó từ, chỉ sắp đến một thời điểm. 将近: + từ chỉ thời gian/động từ/tính từ, chỉ gần tới mốc; + số lượng từ, chỉ số lượng gần đạt. 将要: + động từ/cụm động từ, chỉ không lâu nữa sẽ xảy ra việc nào đó; không dùng với số lượng.", groups: [{ label: 'Ví dụ', items: [["这本书将近十万字，不过我一天就看完了。", "Zhè běn shū jiāngjìn shí wàn zì, búguò wǒ yì tiān jiù kànwán le.", "Cuốn sách này gần 100 nghìn chữ, nhưng tôi đọc xong trong một ngày."], ["下月三号学校将要举办毕业典礼。", "Xiàyuè sān hào xuéxiào jiāngyào jǔbàn bìyè diǎnlǐ.", "Mồng ba tháng sau trường sẽ tổ chức lễ tốt nghiệp."]] }] },
+  ],
+
+  notes: [
+    { title: "况且", body: "Hơn nữa.", say: "况且是乌黑乌黑的身子" },
+    { title: "大", body: "Nhấn mạnh thời điểm.", say: "大冬天的" },
+    { title: "倒不如", body: "Chi bằng.", say: "倒不如付出一分努力" },
+    { title: "将近 – 将要", body: "Gần / sắp.", say: "将近四千年 / 将要面临失业" },
+  ],
+
+  writeChars: ["鸡", "窝", "贪", "婪", "争", "夺", "侥", "幸"],
+
+  drills: [],
+
+  qa: [{ title: 'Hoạt động (运用)', items: [{"q": "你听过类似“金鸡窝”的故事吗？", "hint": "……"}, {"q": "你认为做人为什么不能太贪心？", "hint": "……"}] }],
+
+  sentences: [],
+
+  dictations: [
+    { title: "Giáo trình 做一做 / 练习 2 / 3 / 4", hint: 'Gõ chữ Hán theo đáp án sách.', items: [
+      { prompt: "想到今后（ ）在这所名牌大学学习，我心中激动极了。", answer: "将要", gloss: "sắp" },
+      { prompt: "中国有（ ）四千年的有文字记载的历史。", answer: "将近", gloss: "gần" },
+      { prompt: "他每天都学习到（ ）半夜，真令人佩服。", answer: "将近", gloss: "gần" },
+      { prompt: "如果经济状况不改善，不少工人（ ）面临失业。", answer: "将要", gloss: "sắp" },
+      { prompt: "他们夫妻（ ）40岁才有了这个孩子，所以特别疼爱。", answer: "将近", gloss: "gần" },
+      { prompt: "上海那么大，（ ）你又不知道地址，怎么能找到他呢？", answer: "况且", gloss: "hơn nữa" },
+      { prompt: "他对中国京剧（ ）感兴趣，所以参加了一个京剧培训班。", answer: "颇", gloss: "khá" },
+      { prompt: "他（ ）是喜欢你的，你怎么感觉不到呢？", answer: "分明", gloss: "rõ ràng" },
+      { prompt: "为了安全，我（ ）绕远儿走大路。", answer: "宁肯", gloss: "thà" },
+      { prompt: "（ ）晴天，你出门时干吗要带把雨伞呢？", answer: "大", gloss: "nhấn mạnh" },
+      { prompt: "与其一个人生气，（ ）不如找个朋友说出来更好。", answer: "倒", gloss: "chi bằng" },
+      { prompt: "父亲年龄大了，（ ）身体也不好，我不放心他一个人去旅行。", answer: "况且", gloss: "hơn nữa" },
+      { prompt: "我的祖父在（ ）三十岁时才找到第一份工作。", answer: "将近", gloss: "gần" },
+      { prompt: "每天废寝忘食地工作，加上祖母很（ ），家里的日子渐渐富裕起来。", answer: "勤俭", gloss: "cần kiệm" },
+      { prompt: "家里的日子渐渐（ ）起来。", answer: "富裕", gloss: "giàu lên" },
+      { prompt: "不小心掉进了一个大（ ）。", answer: "坑", gloss: "hố" },
+      { prompt: "（ ）摔破了，手也被扎破了。", answer: "膝盖", gloss: "đầu gối" },
+      { prompt: "手也被（ ）破了，鲜血直流。", answer: "扎", gloss: "đâm" },
+      { prompt: "还算（ ），骨头没事。", answer: "侥幸", gloss: "may" },
+      { prompt: "我只好推着自行车一（ ）一拐地走回了家。", answer: "瘸", gloss: "khập khiễng" },
+    ] },
+  ],
+}
