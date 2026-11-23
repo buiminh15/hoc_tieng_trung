@@ -1,0 +1,112 @@
+import type { Lesson } from '../types'
+
+/** Giáo trình chuẩn HSK 6 (Hạ), Bài 26: 奇异的灯光. Nghĩa từ mới và ngữ pháp theo sách; dịch bài khóa do app thêm. Không có file nghe. Đáp án theo HSK6-BH-T2-DA. */
+
+export const hskStd6Lesson26: Lesson = {
+  id: 26,
+  title: "Ánh đèn kỳ lạ",
+  hanzi: "奇异的灯光",
+  pinyin: "Qíyì de dēngguāng",
+  vi: "Ánh đèn kỳ lạ",
+  intro: "Chàng thư sinh nghèo không có dầu đèn, dùng đom đóm làm đèn đọc sách. Học 别说, lặp AABB và so sánh 挨 – 受.",
+
+  dialogue: [
+    { who: 'A', name: '课文', hanzi: "传说古代有个爱书如命的读书人，每当他捧起书本就像是走进了知识的海洋，天文地理、儒家经典、传记散文、历代诗词，都会使他着迷。历史文化的长期熏陶，使他思维敏捷，胸怀宽广。冬季使人不堪忍受的严寒以及炎热夏天蚊子的骚扰都没有影响他读书的热情，唯独让他发愁的是家境贫乏，日子过得艰难，晚上看书别说蜡烛了，就是灯油也要节省着用。", pinyin: "", vi: "Truyền thuyết xưa có một người đọc sách yêu sách như mạng, mỗi khi bưng sách lên như bước vào biển tri thức; thiên văn địa lý, kinh điển Nho gia, truyện ký tản văn, thơ từ các triều đại đều khiến anh mê mẩn. Sự hun đúc văn hóa lịch sử lâu dài khiến tư duy anh nhanh nhạy, lòng dạ rộng rãi. Cái rét không chịu nổi mùa đông và muỗi quấy rầy mùa hè nóng bức đều không ảnh hưởng nhiệt tình đọc sách, chỉ riêng việc nhà nghèo, đời sống khó khăn khiến anh lo: buổi tối đọc sách đừng nói nến, đến dầu đèn cũng phải dùng tiết kiệm.", scene: "Chàng thư sinh" },
+    { who: 'A', name: '课文', hanzi: "又是一个闷热的夏夜，窗外阵阵热浪袭来，汗珠顺着脸往下流，脸上痒痒的，像有蚂蚁在爬，他用手擦了擦汗，依然沉醉在书本里。由于坐得太久，他的颈椎有些麻木，屁股酸痛，他晃了晃头，用手揉了揉麻木的脖子，挪了挪屁股，换个姿势，顿时麻木的部位恢复了知觉，他依旧沉浸在读书的快乐中。是啊，只要有书读，挨饿受冻他都不怕；只要有书陪伴，他就感觉幸福、美满，像是生活在天堂。", pinyin: "", vi: "Lại một đêm hè oi bức, ngoài cửa sổ từng đợt nóng ập tới, mồ hôi chảy dọc mặt, mặt ngứa ngáy như có kiến bò; anh lấy tay lau mồ hôi rồi vẫn say sưa trong sách. Vì ngồi quá lâu, đốt sống cổ anh hơi tê, mông ê ẩm; anh lắc đầu, xoa cái cổ tê, nhích mông, đổi tư thế, phần tê lập tức có lại cảm giác, anh vẫn đắm trong niềm vui đọc sách. Phải, chỉ cần có sách đọc, đói rét anh đều không sợ; chỉ cần có sách bầu bạn, anh thấy hạnh phúc, mỹ mãn như sống trên thiên đường.", scene: "Đêm hè" },
+    { who: 'A', name: '课文', hanzi: "忽然，油灯无力地跳了两下，无声地熄灭了，眼前顿时陷入了黑暗。糟了，一定是灯油没有了，他有些泄气。黑暗中他眯起双眼，极力使自己尽快适应眼前的黑暗。他拿起油灯在耳边摇了摇，灯油瓶空了。他放下灯，绝望地凝视着眼前的茫茫黑暗，不知道怎样打发这个漫漫长夜。", pinyin: "", vi: "Bỗng ngọn đèn dầu nhảy yếu ớt hai cái, tắt lặng lẽ, trước mắt lập tức chìm vào bóng tối. Hỏng rồi, chắc hết dầu, anh hơi nản. Trong bóng tối anh nheo mắt, cố làm mình mau quen. Anh cầm đèn lắc bên tai, bình dầu đã cạn. Anh đặt đèn xuống, tuyệt vọng nhìn chằm chằm bóng tối mênh mông, không biết làm sao qua đêm dài dằng dặc này.", scene: "Đèn tắt" },
+    { who: 'A', name: '课文', hanzi: "屋子里闷热的空气像是凝固了，烦躁在他身体中蔓延开来，他努力克制着自己的情绪，默默地背诵着刚刚读过的古诗，在头脑中编织着诗中描绘的动人画面，可这种强制的办法没有效果，于是，他打开房门走入了沉沉夜色。", pinyin: "", vi: "Không khí oi bức trong nhà như đông đặc lại, bực bội lan khắp cơ thể; anh cố kiềm chế cảm xúc, lặng lẽ đọc thuộc bài thơ cổ vừa đọc, trong đầu dệt nên bức tranh cảm động bài thơ vẽ, nhưng cách cưỡng ép này vô hiệu, nên anh mở cửa bước vào màn đêm sâu thẳm.", scene: "Bước ra đêm" },
+    { who: 'A', name: '课文', hanzi: "夏日的夜十分美丽，一闪一闪的星星镶嵌在夜空中，偶尔还会吹来一阵凉风。他漫步在田野中，欣赏着美丽的夜景，忽然他被眼前的情形吸引住了，只见一大群萤火虫在低空盘旋飞舞，来来回回地飞。萤火虫的尾巴都有亮光在闪烁，成为黑暗中唯一耀眼的光芒。", pinyin: "", vi: "Đêm hè rất đẹp, những ngôi sao lấp lánh khảm trên bầu trời đêm, thỉnh thoảng lại có làn gió mát. Anh tản bộ giữa đồng ruộng, thưởng thức cảnh đêm đẹp, bỗng bị cảnh trước mắt thu hút: một đàn đom đóm lớn lượn múa ở tầm thấp, bay qua bay lại. Đuôi đom đóm đều có ánh sáng nhấp nháy, thành tia sáng chói mắt duy nhất trong bóng tối.", scene: "Đàn đom đóm" },
+    { who: 'A', name: '课文', hanzi: "他跟在萤火虫后面。忽然一只萤火虫飞到了眼前，他伸手一捞，把它握在了手心，摊开手掌，哇，萤火虫还老老实实地待在那里，尾部依旧闪着亮光，也许那亮光只能用毫米计算，可却还算明亮。瞬间，他头脑中迸发出一个想法：“如果将许多萤火虫集中在一起，不就成灯了吗？”他决定试一试。他找了个薄布做的布兜，抓了一些萤火虫放在里面，然后将袋口扎住，把口袋吊起来，一个“灯笼”就做成啦，虽然没有油灯亮，看书还是勉强可以的，从此，萤火虫做成的“灯”就夜夜陪伴着他。", pinyin: "", vi: "Anh đi theo sau đom đóm. Bỗng một con bay đến trước mắt, anh đưa tay vớt, nắm trong lòng bàn tay, xòe ra, chà, đom đóm vẫn ngoan ngoãn ở đó, đuôi vẫn lóe sáng, có lẽ ánh sáng chỉ tính bằng milimét nhưng cũng khá sáng. Chợt trong đầu anh nảy ra ý nghĩ: \"Nếu gom nhiều đom đóm lại một chỗ, chẳng phải thành đèn sao?\" Anh quyết thử. Anh tìm một cái túi vải mỏng, bắt vài con đom đóm bỏ vào, buộc miệng túi, treo túi lên, thế là làm xong một \"đèn lồng\"; tuy không sáng bằng đèn dầu nhưng đọc sách vẫn tạm được; từ đó \"đèn\" làm bằng đom đóm đêm đêm bầu bạn với anh.", scene: "Đèn đom đóm" },
+    { who: 'A', name: '课文', hanzi: "他虽然不是天才，没有过人的天赋，但是日复一日的努力，使他的学识与日俱增，最后终于成为知名学者。生活贫困并不可怕，可怕的是思想贫困、精神贫困、智慧贫困。贫困的经历在有些人那儿可以成为财富，成为奋斗拼搏的动力和源泉。", pinyin: "", vi: "Anh tuy không phải thiên tài, không có năng khiếu hơn người, nhưng nỗ lực ngày này qua ngày khác khiến học vấn tăng từng ngày, cuối cùng thành học giả nổi tiếng. Nghèo về đời sống không đáng sợ, đáng sợ là nghèo tư tưởng, nghèo tinh thần, nghèo trí tuệ. Trải nghiệm nghèo khó ở một số người có thể thành tài sản, thành động lực và nguồn mạch phấn đấu.", scene: "Bài học" },
+  ],
+  dialogueTip: "<b>别说</b>. <b>AABB</b>. <b>挨</b>/<b>受</b>.",
+  slowSay: "奇异的灯光",
+
+  vocab: [
+    { hanzi: "捧", pinyin: "pěng", pos: "động từ", meaning: "nâng hai tay", han_viet: '' },
+    { hanzi: "天文", pinyin: "tiānwén", pos: "danh từ", meaning: "thiên văn", han_viet: '' },
+    { hanzi: "儒家", pinyin: "Rújiā", pos: "danh từ", meaning: "Nho gia", han_viet: '' },
+    { hanzi: "传记", pinyin: "zhuànjì", pos: "danh từ", meaning: "truyện ký", han_viet: '' },
+    { hanzi: "散文", pinyin: "sǎnwén", pos: "danh từ", meaning: "tản văn", han_viet: '' },
+    { hanzi: "历代", pinyin: "lìdài", pos: "danh từ", meaning: "các triều đại", han_viet: '' },
+    { hanzi: "着迷", pinyin: "zháo mí", pos: "động từ", meaning: "say mê", han_viet: '' },
+    { hanzi: "熏陶", pinyin: "xūntáo", pos: "động từ", meaning: "hun đúc", han_viet: '' },
+    { hanzi: "胸怀", pinyin: "xiōnghuái", pos: "danh từ", meaning: "lòng dạ", han_viet: '' },
+    { hanzi: "不堪", pinyin: "bùkān", pos: "động từ", meaning: "không chịu nổi", han_viet: '' },
+    { hanzi: "炎热", pinyin: "yánrè", pos: "tính từ", meaning: "nóng bức", han_viet: '' },
+    { hanzi: "骚扰", pinyin: "sāorǎo", pos: "động từ", meaning: "quấy rối", han_viet: '' },
+    { hanzi: "贫乏", pinyin: "pínfá", pos: "tính từ", meaning: "nghèo túng", han_viet: '' },
+    { hanzi: "艰难", pinyin: "jiānnán", pos: "tính từ", meaning: "gian khổ", han_viet: '' },
+    { hanzi: "蜡烛", pinyin: "làzhú", pos: "danh từ", meaning: "nến", han_viet: '' },
+    { hanzi: "颈椎", pinyin: "jǐngzhuī", pos: "danh từ", meaning: "đốt sống cổ", han_viet: '' },
+    { hanzi: "揉", pinyin: "róu", pos: "động từ", meaning: "xoa bóp", han_viet: '' },
+    { hanzi: "挪", pinyin: "nuó", pos: "động từ", meaning: "xê dịch", han_viet: '' },
+    { hanzi: "知觉", pinyin: "zhījué", pos: "danh từ", meaning: "cảm giác", han_viet: '' },
+    { hanzi: "挨", pinyin: "ái", pos: "động từ", meaning: "chịu, bị", han_viet: '' },
+    { hanzi: "美满", pinyin: "měimǎn", pos: "tính từ", meaning: "mỹ mãn", han_viet: '' },
+    { hanzi: "熄灭", pinyin: "xīmiè", pos: "động từ", meaning: "tắt", han_viet: '' },
+    { hanzi: "泄气", pinyin: "xiè qì", pos: "động từ", meaning: "nản lòng", han_viet: '' },
+    { hanzi: "眯", pinyin: "mī", pos: "động từ", meaning: "nheo mắt", han_viet: '' },
+    { hanzi: "绝望", pinyin: "juéwàng", pos: "động từ", meaning: "tuyệt vọng", han_viet: '' },
+    { hanzi: "凝固", pinyin: "nínggù", pos: "động từ", meaning: "đông đặc", han_viet: '' },
+    { hanzi: "蔓延", pinyin: "mànyán", pos: "động từ", meaning: "lan tràn", han_viet: '' },
+    { hanzi: "克制", pinyin: "kèzhì", pos: "động từ", meaning: "kiềm chế", han_viet: '' },
+    { hanzi: "默默", pinyin: "mòmò", pos: "phó từ", meaning: "lặng lẽ", han_viet: '' },
+    { hanzi: "背诵", pinyin: "bèisòng", pos: "động từ", meaning: "đọc thuộc lòng", han_viet: '' },
+    { hanzi: "编织", pinyin: "biānzhī", pos: "động từ", meaning: "đan, dệt", han_viet: '' },
+    { hanzi: "强制", pinyin: "qiángzhì", pos: "động từ", meaning: "cưỡng chế", han_viet: '' },
+    { hanzi: "田野", pinyin: "tiányě", pos: "danh từ", meaning: "đồng ruộng", han_viet: '' },
+    { hanzi: "耀眼", pinyin: "yàoyǎn", pos: "tính từ", meaning: "chói mắt", han_viet: '' },
+    { hanzi: "光芒", pinyin: "guāngmáng", pos: "danh từ", meaning: "hào quang", han_viet: '' },
+    { hanzi: "捞", pinyin: "lāo", pos: "động từ", meaning: "vớt", han_viet: '' },
+    { hanzi: "迸发", pinyin: "bèngfā", pos: "động từ", meaning: "tóe ra", han_viet: '' },
+    { hanzi: "灯笼", pinyin: "dēnglong", pos: "danh từ", meaning: "đèn lồng", han_viet: '' },
+    { hanzi: "天赋", pinyin: "tiānfù", pos: "danh từ", meaning: "năng khiếu", han_viet: '' },
+    { hanzi: "财富", pinyin: "cáifù", pos: "danh từ", meaning: "của cải", han_viet: '' },
+    { hanzi: "源泉", pinyin: "yuánquán", pos: "danh từ", meaning: "nguồn mạch", han_viet: '' },
+  ],
+
+  sections: [
+    { kind: 'examples', label: "别说", title: "别说 (chưa nói … đến …)", intro: "别说: liên từ, dùng trong câu nhượng bộ lặp; hạ thấp tầm quan trọng của một việc để nhấn mạnh việc khác. Thường đi với 连……, 就是/即使……; khẩu ngữ.", groups: [{ label: 'Ví dụ', items: [["晚上看书别说蜡烛了，就是灯油也要节省着用。", "Wǎnshang kàn shū biéshuō làzhú le, jiùshì dēngyóu yě yào jiéshěng zhe yòng.", "Buổi tối đọc sách đừng nói nến, đến dầu đèn cũng phải dùng tiết kiệm."], ["我认识的那点儿字，别说写小说了，看小说都看不下去。", "Wǒ rènshi de nà diǎnr zì, biéshuō xiě xiǎoshuō le, kàn xiǎoshuō dōu kàn bú xiàqù.", "Chữ tôi biết ít ỏi thế, chưa nói viết tiểu thuyết, đọc tiểu thuyết cũng không nổi."]] }] },
+    { kind: 'examples', label: "AABB lặp", title: "Lặp AABB, ABAB (拖拖拉拉, 吵吵嚷嚷)", intro: "Một số động từ, tính từ song âm tiết đặt thành dạng AABB, biểu thị trạng thái liên tục, thường mang sắc thái miêu tả, nhấn mạnh.", groups: [{ label: 'Ví dụ', items: [["他这个人办事就是拖拖拉拉的，让人着急。", "Tā zhège rén bànshì jiùshì tuōtuo-lālā de, ràng rén zháojí.", "Người này làm việc cứ dây dưa, khiến người ta sốt ruột."], ["大伙天天说说笑笑、打打闹闹地，快活极了。", "Dàhuǒ tiāntiān shuōshuo-xiàoxiào, dǎdǎ-nàonào de, kuàihuo jí le.", "Cả bọn ngày ngày nói cười đùa giỡn, vui cực kỳ."]] }] },
+    { kind: 'examples', label: "挨 – 受", title: "So sánh 挨 và 受", intro: "Giống: động từ, chịu, bị. 挨: khẩu ngữ, dùng với việc xấu, nghĩa cụ thể (挨打, 挨骂, 挨饿); 受: dùng rộng, văn viết lẫn khẩu ngữ, cả nghĩa trừu tượng (受欢迎, 受影响, 受损失).", groups: [{ label: 'Ví dụ', items: [["记得儿时去野外玩儿常常挨蚊子咬。", "Jìde érshí qù yěwài wánr chángcháng ái wénzi yǎo.", "Nhớ hồi nhỏ ra đồng chơi hay bị muỗi cắn."], ["这次地震中，人民的生命财产受到很大损失。", "Zhè cì dìzhèn zhōng, rénmín de shēngmìng cáichǎn shòudào hěn dà sǔnshī.", "Trong trận động đất lần này, tính mạng tài sản nhân dân chịu tổn thất lớn."]] }] },
+  ],
+
+  notes: [
+    { title: "别说", body: "Chưa nói đến.", say: "别说蜡烛了" },
+    { title: "AABB", body: "Lặp đôi.", say: "拖拖拉拉" },
+    { title: "挨 – 受", body: "Bị.", say: "挨蚊子咬 / 受到损失" },
+  ],
+
+  writeChars: ["捧", "颈", "椎", "熄", "泄", "蔓", "耀", "迸"],
+
+  drills: [],
+
+  qa: [{ title: 'Hoạt động (运用)', items: [{"q": "你有没有为学习而克服过什么困难？", "hint": "……"}, {"q": "你怎么看“贫困可以成为动力”？", "hint": "……"}] }],
+
+  sentences: [],
+
+  dictations: [
+    { title: "Giáo trình 练一练 / 练习 2 / 3", hint: 'Gõ chữ Hán theo đáp án sách.', items: [
+      { prompt: "那个动画片那么好看，连大人都爱看，（ ）。", answer: "别说小孩子了", gloss: "chưa nói trẻ con" },
+      { prompt: "那么破的自行车，（ ），白给也未必有人要。", answer: "别说卖出去", gloss: "đừng nói bán" },
+      { prompt: "（ ），就是在，他也不会见你。", answer: "别说他不在", gloss: "đừng nói không có" },
+      { prompt: "他这个人办事就是（ ）的，让人着急。", answer: "拖拖拉拉", gloss: "dây dưa" },
+      { prompt: "在饭馆，吃完饭（ ）争着付钱的准是中国人。", answer: "吵吵嚷嚷", gloss: "ồn ào" },
+      { prompt: "大伙天天说说笑笑、（ ）地，快活极了。", answer: "打打闹闹", gloss: "đùa giỡn" },
+      { prompt: "这次地震中，人民的生命财产（ ）到很大损失。", answer: "受", gloss: "chịu" },
+      { prompt: "记得儿时去野外玩儿常常（ ）蚊子咬。", answer: "挨", gloss: "bị" },
+      { prompt: "因为撒谎，他（ ）了父亲一顿打。", answer: "挨", gloss: "bị" },
+      { prompt: "他们（ ）北京房价过高的困扰，搬到别的城市居住了。", answer: "不堪", gloss: "không chịu nổi" },
+      { prompt: "他连蛇都不怕，（ ）。", answer: "别说这种小虫子了", gloss: "chưa nói sâu bọ" },
+      { prompt: "为了不影响工作，他努力（ ）自己的情绪。", answer: "克制", gloss: "kiềm chế" },
+      { prompt: "我爱读书，尤其是名人（ ），每当我（ ）起书。", answer: "传记 / 捧", gloss: "tiểu sử / nâng" },
+      { prompt: "他们的人生经历告诉我在（ ）中也不要放弃。", answer: "绝望", gloss: "tuyệt vọng" },
+      { prompt: "这成为我生命中一笔宝贵的精神（ ）。", answer: "财富", gloss: "của cải" },
+      { prompt: "夏夜，漫步在（ ）中，远处村子的灯光都（ ）了。", answer: "田野 / 熄灭", gloss: "đồng / tắt" },
+      { prompt: "只剩下星星那微弱的（ ）。", answer: "光芒", gloss: "ánh sáng" },
+      { prompt: "丝丝凉意在身体中（ ）开来。", answer: "蔓延", gloss: "lan" },
+      { prompt: "调动全身的（ ）去感受吧。", answer: "知觉", gloss: "cảm giác" },
+    ] },
+  ],
+}

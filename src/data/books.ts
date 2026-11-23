@@ -138,7 +138,7 @@ const hskStd4: LessonStub[] = [
 ]
 
 // Giáo trình chuẩn HSK 5 (Thượng): bài 1–30 (không có file nghe).
-// Giáo trình chuẩn HSK 6 (Thượng bài 1–20, Hạ bài 21–25 trở đi) (không có file nghe).
+// Giáo trình chuẩn HSK 6 (Thượng bài 1–20, Hạ bài 21–40) (không có file nghe).
 const hskStd6: LessonStub[] = [
   { id: 1, hanzi: '孩子给我们的启示', pinyin: 'Háizi gěi wǒmen de qǐshì', vi: 'Điều con trẻ gợi ý cho chúng ta' },
   { id: 2, hanzi: '父母之爱', pinyin: 'Fùmǔ zhī ài', vi: 'Tình yêu của cha mẹ' },
@@ -165,6 +165,21 @@ const hskStd6: LessonStub[] = [
   { id: 23, hanzi: '大数据时代', pinyin: 'Dà shùjù shídài', vi: 'Thời đại dữ liệu lớn' },
   { id: 24, hanzi: '体育明星们的离奇遭遇', pinyin: 'Tǐyù míngxīngmen de líqí zāoyù', vi: 'Những tai nạn kỳ quặc của các ngôi sao thể thao' },
   { id: 25, hanzi: '草船借箭', pinyin: 'Cǎo chuán jiè jiàn', vi: 'Thuyền cỏ mượn tên' },
+  { id: 26, hanzi: '奇异的灯光', pinyin: 'Qíyì de dēngguāng', vi: 'Ánh đèn kỳ lạ' },
+  { id: 27, hanzi: '完璧归赵', pinyin: 'Wán bì guī Zhào', vi: 'Ngọc bích về nước Triệu' },
+  { id: 28, hanzi: '高山流水遇知音', pinyin: 'Gāoshān liúshuǐ yù zhīyīn', vi: 'Cao sơn lưu thủy gặp tri âm' },
+  { id: 29, hanzi: '“笑”的备忘录', pinyin: '“Xiào” de bèiwànglù', vi: 'Ghi nhớ về tiếng cười' },
+  { id: 30, hanzi: '你睡好了吗？', pinyin: 'Nǐ shuì hǎo le ma?', vi: 'Bạn ngủ ngon chưa?' },
+  { id: 31, hanzi: '运动的学问', pinyin: 'Yùndòng de xuéwen', vi: 'Kiến thức tập thể dục' },
+  { id: 32, hanzi: '有时，不妨悲伤', pinyin: 'Yǒushí, bùfáng bēishāng', vi: 'Đôi lúc cũng nên buồn' },
+  { id: 33, hanzi: '怀念慢生活', pinyin: 'Huáiniàn màn shēnghuó', vi: 'Nhớ cuộc sống chậm' },
+  { id: 34, hanzi: '为文物而生的人', pinyin: 'Wèi wénwù ér shēng de rén', vi: 'Một người dành cả đời cho di vật văn hóa' },
+  { id: 35, hanzi: '走进木版年画', pinyin: 'Zǒujìn mùbǎn niánhuà', vi: 'Đến với tranh Tết mộc bản' },
+  { id: 36, hanzi: '中国古代书院', pinyin: 'Zhōngguó gǔdài shūyuàn', vi: 'Thư viện cổ đại Trung Quốc' },
+  { id: 37, hanzi: '警察的故事', pinyin: 'Jǐngchá de gùshi', vi: 'Chuyện của cảnh sát' },
+  { id: 38, hanzi: '慧眼捕捉商机', pinyin: 'Huìyǎn bǔzhuō shāngjī', vi: 'Con mắt tinh tường nắm bắt thương cơ' },
+  { id: 39, hanzi: '互联网时代的生活', pinyin: 'Hùliánwǎng shídài de shēnghuó', vi: 'Cuộc sống thời Internet' },
+  { id: 40, hanzi: '人类超能力会改变世界纪录吗？', pinyin: 'Rénlèi chāonénglì huì gǎibiàn shìjiè jìlù ma?', vi: 'Siêu năng lực con người có thay đổi kỷ lục thế giới không?' },
 ]
 
 // Giáo trình chuẩn HSK 5 (Thượng): bài 1–30 (không có file nghe).

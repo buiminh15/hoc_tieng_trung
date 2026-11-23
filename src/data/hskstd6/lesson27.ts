@@ -1,0 +1,113 @@
+import type { Lesson } from '../types'
+
+/** Giáo trình chuẩn HSK 6 (Hạ), Bài 27: 完璧归赵. Nghĩa từ mới và ngữ pháp theo sách; dịch bài khóa do app thêm. Không có file nghe. Đáp án theo HSK6-BH-T2-DA. */
+
+export const hskStd6Lesson27: Lesson = {
+  id: 27,
+  title: "Ngọc bích về nước Triệu",
+  hanzi: "完璧归赵",
+  pinyin: "Wán bì guī Zhào",
+  vi: "Ngọc bích về nước Triệu",
+  intro: "Lận Tương Như mang ngọc Hòa Thị đến Tần rồi trả về Triệu nguyên vẹn. Học 左……右……, 难道……不成 và so sánh 一贯 – 一直.",
+
+  dialogue: [
+    { who: 'A', name: '课文', hanzi: "战国后期，秦国最强。秦王得知赵王得到一块叫“和氏璧”的宝玉，传话给赵王，说愿用十五座城换和氏璧。赵王左右为难，不知如何答复秦王：答应吧，怕上当受骗——给了和氏璧，拿不到城；不答应吧，又怕得罪秦国。于是，赶忙召集大臣商议对策。", pinyin: "", vi: "Cuối thời Chiến Quốc, nước Tần mạnh nhất. Tần vương biết vua Triệu có một viên ngọc quý tên \"Hòa Thị bích\", nhắn vua Triệu nói nguyện đổi mười lăm thành lấy ngọc. Vua Triệu tiến thoái lưỡng nan, không biết trả lời Tần vương thế nào: nhận lời thì sợ bị lừa — đưa ngọc mà không lấy được thành; không nhận thì sợ đắc tội nước Tần. Thế là vội triệu tập đại thần bàn đối sách.", scene: "Tần đòi ngọc" },
+    { who: 'A', name: '课文', hanzi: "大臣们也没有好办法。有人提议，蔺相如见多识广，有勇有谋，可以听听他怎么说。赵王请来了蔺相如，并亲自向他请教。蔺相如说：“秦强赵弱，凭实力，我们不答应不行；秦以十五座城换一块玉，也算慷慨，并未亏待赵国，若不答应，过错在赵；若将和氏璧送去，秦不交出城来，那么错就在秦了，因此我们只有送和氏璧。”赵王说：“那就请先生即刻动身前去磋商。”蔺相如说：“大王派我去，是我的荣幸。此去秦国，秦若是交了城，我便把壁留下；不交城，我一定完璧归赵。”", pinyin: "", vi: "Các đại thần cũng không có cách hay. Có người đề nghị, Lận Tương Như học rộng hiểu nhiều, có dũng có mưu, có thể nghe ông nói. Vua Triệu mời Lận Tương Như đến, đích thân thỉnh giáo. Lận Tương Như nói: \"Tần mạnh Triệu yếu, xét thực lực ta không nhận lời không được; Tần dùng mười lăm thành đổi một viên ngọc cũng kể là hào phóng, chưa đối xử tệ với Triệu; nếu không nhận lời, lỗi ở Triệu; nếu đưa ngọc mà Tần không giao thành, thì lỗi ở Tần, nên ta chỉ có cách đưa ngọc.\" Vua Triệu nói: \"Vậy mời tiên sinh lên đường ngay đi bàn bạc.\" Lận Tương Như nói: \"Đại vương cử thần đi là vinh hạnh của thần. Đi Tần lần này, nếu Tần giao thành thì thần để ngọc lại; không giao thành, thần nhất định mang ngọc nguyên vẹn về Triệu.\"", scene: "Lận Tương Như nhận lệnh" },
+    { who: 'A', name: '课文', hanzi: "蔺相如带着和氏璧到了秦国，转达了赵王的问候，把玉献给了秦王。秦王对着和氏璧左看右看，爱不释手。蔺相如等了半天不见秦王提换城之事，心想果然是个圈套，可璧在秦王手里，怎么把壁拿回来呢？左思右想之后，他对秦王说：“这壁有点儿小毛病，请大王把壁归还于我，我指给大王看。”秦王把壁递给蔺相如。蔺相如从容地站在殿中央，手抱和氏璧说：“大王派人到赵国，说用十五座城换赵国的璧。赵王派我将壁送来。可大王您好像并没有兑现的诚意。如今壁在我手里，想不交城拿走壁，那是妄想。”蔺相如发誓，如若逼他，就将自己的头和壁一起撞碎在柱子上，秦王看到的将是他的尸体和破碎的玉。秦王连忙说：“别误会，我怎么会撒谎呢？”忙命大臣拿出地图，把十五座城指给蔺相如看。", pinyin: "", vi: "Lận Tương Như mang ngọc đến Tần, chuyển lời hỏi thăm của vua Triệu, dâng ngọc cho Tần vương. Tần vương nhìn ngọc xem trái xem phải, yêu thích không rời tay. Lận Tương Như đợi mãi không thấy Tần vương nhắc đổi thành, nghĩ quả là cái bẫy, nhưng ngọc nằm trong tay Tần vương, làm sao lấy lại? Nghĩ đi nghĩ lại, ông nói với Tần vương: \"Viên ngọc này có chút tì vết nhỏ, xin đại vương trả cho thần, thần chỉ cho đại vương xem.\" Tần vương đưa ngọc cho ông. Lận Tương Như ung dung đứng giữa điện, ôm ngọc nói: \"Đại vương sai người đến Triệu, nói đổi mười lăm thành lấy ngọc Triệu. Vua Triệu sai thần mang ngọc tới. Nhưng đại vương dường như không có thành ý thực hiện. Nay ngọc trong tay thần, muốn không giao thành mà lấy ngọc là mơ tưởng.\" Ông thề, nếu bức thần, sẽ đâm vỡ đầu cùng ngọc vào cột, Tần vương sẽ thấy thi thể và ngọc vỡ. Tần vương vội nói: \"Đừng hiểu lầm, ta sao nói dối?\" Vội sai đại thần lấy bản đồ chỉ mười lăm thành cho Lận Tương Như xem.", scene: "Giữa điện Tần" },
+    { who: 'A', name: '课文', hanzi: "蔺相如还是不敢相信秦王，说：“赵王送璧之前，举行了隆重的仪式：沐浴更衣，戒掉荤腥，只吃素食，以示庄严。我并非无理取闹，也不是冒犯大王。大王如真心换壁，亦请举行同样的仪式，我才敢把壁献给您。”秦王想，壁都到了我这儿，我还怕他跑了不成？就说：“好，就依你。”蔺相如回到住处，立刻派人打扮成商人的模样，偷偷越过边境，把壁送回了赵国，并嘱咐身边的人，不可泄露秘密。五天后，秦王率领众臣，准备接收和氏璧。蔺相如镇静地对秦王说：“秦国仗着国力雄厚，一贯霸道，不讲信用，声誉不好，事情我就不一一列举了，今天，我怕大王您不履行承诺，已经把壁送回了赵国。”秦王听后大怒，说：“我堂堂秦王，还会骗你不成？你这不是歪曲我的意思吗？”", pinyin: "", vi: "Lận Tương Như vẫn không dám tin Tần vương, nói: \"Trước khi vua Triệu đưa ngọc đã cử hành nghi lễ long trọng: tắm gội thay y phục, kiêng thịt tanh, chỉ ăn chay, để tỏ trang nghiêm. Thần không phải gây sự vô cớ, cũng không xúc phạm đại vương. Nếu đại vương thật lòng đổi ngọc, cũng xin cử hành nghi lễ như thế, thần mới dám dâng ngọc.\" Tần vương nghĩ: ngọc đã đến chỗ ta, lẽ nào ta sợ hắn chạy mất? Bèn nói: \"Được, theo ông.\" Lận Tương Như về chỗ ở, lập tức sai người cải trang thành thương nhân, lén vượt biên giới, đưa ngọc về Triệu, dặn người bên cạnh không được tiết lộ bí mật. Năm ngày sau, Tần vương dẫn quần thần chuẩn bị nhận ngọc. Lận Tương Như bình tĩnh nói với Tần vương: \"Nước Tần ỷ vào quốc lực hùng hậu, từ trước đến nay độc đoán, không giữ chữ tín, danh tiếng không tốt, chuyện thần không kể từng việc; hôm nay thần sợ đại vương không thực hiện lời hứa nên đã đưa ngọc về Triệu.\" Tần vương nghe xong nổi giận: \"Ta là Tần vương đường đường, lẽ nào lừa ngươi? Ngươi làm thế không phải xuyên tạc ý ta sao?\"", scene: "Đưa ngọc về Triệu" },
+    { who: 'A', name: '课文', hanzi: "蔺相如理直气壮地说：“众所周知，秦强赵弱。天下只可能强国欺负弱国，不可能弱国压迫强国。大王真要那块壁的话，不要光口头说，请先把十五座城割让给赵国，赵得到十五座城，绝不敢不把壁交出来。”秦王听蔺相如说得在理，只得装出一副高姿态说：“不就是一块玉嘛，秦赵两国总不能为这点儿小事闹出隔阂，再起争端。”蔺相如归赵以后，秦国再也没有提过以城换玉的事情。", pinyin: "", vi: "Lận Tương Như đường hoàng nói: \"Ai cũng biết Tần mạnh Triệu yếu. Thiên hạ chỉ có nước mạnh ức hiếp nước yếu, không có chuyện nước yếu áp bức nước mạnh. Đại vương thật muốn viên ngọc thì đừng chỉ nói miệng, xin cắt trước mười lăm thành cho Triệu, Triệu có mười lăm thành tuyệt không dám không giao ngọc.\" Tần vương nghe Lận Tương Như nói có lý, đành làm ra vẻ cao thượng: \"Chẳng phải chỉ một viên ngọc thôi sao, hai nước Tần Triệu không thể vì chuyện nhỏ này mà sinh hiềm khích, lại gây tranh chấp.\" Sau khi Lận Tương Như về Triệu, nước Tần không còn nhắc chuyện đổi thành lấy ngọc.", scene: "Ngọc về nguyên vẹn" },
+  ],
+  dialogueTip: "<b>左……右……</b>. <b>难道……不成</b>. <b>一贯</b>/<b>一直</b>.",
+  slowSay: "完璧归赵",
+
+  vocab: [
+    { hanzi: "玉", pinyin: "yù", pos: "danh từ", meaning: "ngọc", han_viet: '' },
+    { hanzi: "答复", pinyin: "dáfù", pos: "động từ", meaning: "trả lời", han_viet: '' },
+    { hanzi: "得罪", pinyin: "dézuì", pos: "động từ", meaning: "đắc tội", han_viet: '' },
+    { hanzi: "大臣", pinyin: "dàchén", pos: "danh từ", meaning: "đại thần", han_viet: '' },
+    { hanzi: "对策", pinyin: "duìcè", pos: "danh từ", meaning: "đối sách", han_viet: '' },
+    { hanzi: "提议", pinyin: "tíyì", pos: "động từ", meaning: "đề nghị", han_viet: '' },
+    { hanzi: "请教", pinyin: "qǐngjiào", pos: "động từ", meaning: "thỉnh giáo", han_viet: '' },
+    { hanzi: "实力", pinyin: "shílì", pos: "danh từ", meaning: "thực lực", han_viet: '' },
+    { hanzi: "慷慨", pinyin: "kāngkǎi", pos: "tính từ", meaning: "hào phóng", han_viet: '' },
+    { hanzi: "亏待", pinyin: "kuīdài", pos: "động từ", meaning: "đối xử tệ", han_viet: '' },
+    { hanzi: "动身", pinyin: "dòng shēn", pos: "động từ", meaning: "khởi hành", han_viet: '' },
+    { hanzi: "磋商", pinyin: "cuōshāng", pos: "động từ", meaning: "bàn bạc", han_viet: '' },
+    { hanzi: "荣幸", pinyin: "róngxìng", pos: "tính từ", meaning: "vinh dự", han_viet: '' },
+    { hanzi: "转达", pinyin: "zhuǎndá", pos: "động từ", meaning: "chuyển lời", han_viet: '' },
+    { hanzi: "爱不释手", pinyin: "àibùshìshǒu", pos: "thành ngữ", meaning: "yêu thích không rời", han_viet: '' },
+    { hanzi: "圈套", pinyin: "quāntào", pos: "danh từ", meaning: "cái bẫy", han_viet: '' },
+    { hanzi: "归还", pinyin: "guīhuán", pos: "động từ", meaning: "trả lại", han_viet: '' },
+    { hanzi: "从容", pinyin: "cóngróng", pos: "tính từ", meaning: "ung dung", han_viet: '' },
+    { hanzi: "兑现", pinyin: "duìxiàn", pos: "động từ", meaning: "thực hiện", han_viet: '' },
+    { hanzi: "妄想", pinyin: "wàngxiǎng", pos: "động từ", meaning: "mơ tưởng", han_viet: '' },
+    { hanzi: "发誓", pinyin: "fā shì", pos: "động từ", meaning: "thề", han_viet: '' },
+    { hanzi: "尸体", pinyin: "shītǐ", pos: "danh từ", meaning: "thi thể", han_viet: '' },
+    { hanzi: "撒谎", pinyin: "sā huǎng", pos: "động từ", meaning: "nói dối", han_viet: '' },
+    { hanzi: "隆重", pinyin: "lóngzhòng", pos: "tính từ", meaning: "long trọng", han_viet: '' },
+    { hanzi: "仪式", pinyin: "yíshì", pos: "danh từ", meaning: "nghi lễ", han_viet: '' },
+    { hanzi: "庄严", pinyin: "zhuāngyán", pos: "tính từ", meaning: "trang nghiêm", han_viet: '' },
+    { hanzi: "无理取闹", pinyin: "wúlǐ-qǔnào", pos: "thành ngữ", meaning: "cố tình gây sự", han_viet: '' },
+    { hanzi: "冒犯", pinyin: "màofàn", pos: "động từ", meaning: "xúc phạm", han_viet: '' },
+    { hanzi: "边境", pinyin: "biānjìng", pos: "danh từ", meaning: "biên giới", han_viet: '' },
+    { hanzi: "泄露", pinyin: "xièlòu", pos: "động từ", meaning: "tiết lộ", han_viet: '' },
+    { hanzi: "率领", pinyin: "shuàilǐng", pos: "động từ", meaning: "dẫn đầu", han_viet: '' },
+    { hanzi: "镇静", pinyin: "zhènjìng", pos: "tính từ", meaning: "bình tĩnh", han_viet: '' },
+    { hanzi: "雄厚", pinyin: "xiónghòu", pos: "tính từ", meaning: "hùng hậu", han_viet: '' },
+    { hanzi: "一贯", pinyin: "yíguàn", pos: "phó từ", meaning: "trước sau như một", han_viet: '' },
+    { hanzi: "霸道", pinyin: "bàdào", pos: "tính từ", meaning: "độc đoán", han_viet: '' },
+    { hanzi: "声誉", pinyin: "shēngyù", pos: "danh từ", meaning: "danh tiếng", han_viet: '' },
+    { hanzi: "列举", pinyin: "lièjǔ", pos: "động từ", meaning: "liệt kê", han_viet: '' },
+    { hanzi: "履行", pinyin: "lǚxíng", pos: "động từ", meaning: "thực hiện", han_viet: '' },
+    { hanzi: "歪曲", pinyin: "wāiqū", pos: "động từ", meaning: "xuyên tạc", han_viet: '' },
+    { hanzi: "理直气壮", pinyin: "lǐzhí-qìzhuàng", pos: "thành ngữ", meaning: "đường hoàng", han_viet: '' },
+    { hanzi: "压迫", pinyin: "yāpò", pos: "động từ", meaning: "áp bức", han_viet: '' },
+    { hanzi: "口头", pinyin: "kǒutóu", pos: "danh từ", meaning: "bằng lời", han_viet: '' },
+    { hanzi: "姿态", pinyin: "zītài", pos: "danh từ", meaning: "thái độ", han_viet: '' },
+    { hanzi: "隔阂", pinyin: "géhé", pos: "danh từ", meaning: "hiềm khích", han_viet: '' },
+    { hanzi: "争端", pinyin: "zhēngduān", pos: "danh từ", meaning: "tranh chấp", han_viet: '' },
+  ],
+
+  sections: [
+    { kind: 'examples', label: "左……右……", title: "左……右…… (lặp nhiều lần)", intro: "左……右……: nhấn mạnh hành động cùng loại lặp nhiều lần; ① 左动₁右动₂ (động từ giống/gần nghĩa); ② 左一A右一A.", groups: [{ label: 'Ví dụ', items: [["秦王对着和氏璧左看右看，爱不释手。", "Qín Wáng duìzhe Héshìbì zuǒ kàn yòu kàn, àibùshìshǒu.", "Tần vương nhìn ngọc xem trái xem phải, yêu thích không rời."], ["大家左一句右一句，总算把她说通了。", "Dàjiā zuǒ yí jù yòu yí jù, zǒngsuàn bǎ tā shuōtōng le.", "Mọi người người một câu kẻ một câu, cuối cùng thuyết phục được cô."]] }] },
+    { kind: 'examples', label: "难道……不成", title: "难道……不成 (lẽ nào … sao)", intro: "难道……不成: câu hỏi tu từ, nhấn mạnh sự phản vấn; 不成 cuối câu tăng ngữ khí; khẩu ngữ.", groups: [{ label: 'Ví dụ', items: [["我堂堂秦王，还会骗你不成？", "Wǒ tángtáng Qín Wáng, hái huì piàn nǐ bùchéng?", "Ta là Tần vương đường đường, lẽ nào lừa ngươi?"], ["咱们多少年的朋友了，我会害你不成？", "Zánmen duōshao nián de péngyou le, wǒ huì hài nǐ bùchéng?", "Bạn bè bao năm, lẽ nào tôi hại bạn?"]] }] },
+    { kind: 'examples', label: "一贯 – 一直", title: "So sánh 一贯 và 一直", intro: "Giống: phó từ, chỉ liên tục. 一贯: từ trước đến nay luôn như thế, chỉ tính cách, tác phong, chủ trương; 一直: chỉ trạng thái, hành vi liên tục không đổi trong một thời gian, còn chỉ phương hướng thẳng.", groups: [{ label: 'Ví dụ', items: [["说实话，欺上瞒下是他一贯的手段。", "Shuō shíhuà, qī shàng mán xià shì tā yíguàn de shǒuduàn.", "Nói thật, lừa trên gạt dưới là thủ đoạn trước sau như một của hắn."], ["自从昨天晚上听到这个不幸的消息，她就一直在哭。", "Zìcóng zuótiān wǎnshang tīngdào zhège búxìng de xiāoxi, tā jiù yìzhí zài kū.", "Từ tối qua nghe tin không may này, cô cứ khóc mãi."]] }] },
+  ],
+
+  notes: [
+    { title: "左……右……", body: "Trái … phải … (lặp).", say: "左看右看" },
+    { title: "难道……不成", body: "Lẽ nào … sao.", say: "还会骗你不成" },
+    { title: "一贯 – 一直", body: "Luôn / liên tục.", say: "一贯霸道" },
+  ],
+
+  writeChars: ["璧", "赵", "慷", "慨", "撒", "谎", "荣", "幸"],
+
+  drills: [],
+
+  qa: [{ title: 'Hoạt động (运用)', items: [{"q": "你怎么评价蔺相如？", "hint": "……"}, {"q": "你知道“完璧归赵”这个成语现在比喻什么吗？", "hint": "……"}] }],
+
+  sentences: [],
+
+  dictations: [
+    { title: "Giáo trình 练一练 / 练习 2 / 3", hint: 'Gõ chữ Hán theo đáp án sách.', items: [
+      { prompt: "我（ ）地去了你家五六趟了，你怎么老不在家呀！", answer: "左一趟右一趟", gloss: "hết lần này đến lần khác" },
+      { prompt: "妈妈拿着女儿买的礼物，（ ），越看越喜欢。", answer: "左看看右看看", gloss: "xem đi xem lại" },
+      { prompt: "到现在你都不说出实情，（ ）是想一直这样骗下去不成？", answer: "难道", gloss: "lẽ nào" },
+      { prompt: "你们大家都不说话，难道事情就这么算了（ ）？", answer: "不成", gloss: "sao" },
+      { prompt: "自从昨天晚上听到这个不幸的消息，她就（ ）在哭。", answer: "一直", gloss: "cứ" },
+      { prompt: "欺上瞒下是他（ ）的手段。", answer: "一贯", gloss: "vốn" },
+      { prompt: "爷爷（ ）为人谦虚热情，是个公认的好人。", answer: "一贯", gloss: "luôn" },
+      { prompt: "多希望能（ ）陪他走下去啊！", answer: "一直", gloss: "mãi" },
+      { prompt: "我的手机铃声不断响起，（ ），让我有点儿烦。", answer: "左一遍右一遍", gloss: "hết lượt này đến lượt khác" },
+      { prompt: "你对他诚挚的问候，我一定（ ）给他。", answer: "转达", gloss: "chuyển" },
+      { prompt: "我终于（ ）了若干年前对你的承诺。", answer: "兑现", gloss: "thực hiện" },
+      { prompt: "你刚答应我的事，转眼就改变主意，你想（ ）不成？", answer: "反悔", gloss: "hối hận" },
+      { prompt: "我没有立即（ ）他们，决定慎重地考虑考虑再说。", answer: "答复", gloss: "trả lời" },
+      { prompt: "我们老板很（ ），一定不会（ ）你。", answer: "慷慨 / 亏待", gloss: "hào phóng / đối xử tệ" },
+      { prompt: "班里有个很（ ）的学生，大家都讨厌他。", answer: "霸道", gloss: "ngang ngược" },
+      { prompt: "他仗着家里资金（ ），常常无理取闹。", answer: "雄厚", gloss: "hùng hậu" },
+      { prompt: "还（ ）老师、撒谎、不讲信用。", answer: "冒犯", gloss: "xúc phạm" },
+      { prompt: "劣迹太多，无法一一（ ）了。", answer: "列举", gloss: "liệt kê" },
+    ] },
+  ],
+}

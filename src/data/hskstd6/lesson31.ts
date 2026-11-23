@@ -1,0 +1,112 @@
+import type { Lesson } from '../types'
+
+/** Giáo trình chuẩn HSK 6 (Hạ), Bài 31: 运动的学问. Nghĩa từ mới và ngữ pháp theo sách; dịch bài khóa do app thêm. Không có file nghe. Đáp án theo HSK6-BH-T2-DA. */
+
+export const hskStd6Lesson31: Lesson = {
+  id: 31,
+  title: "Kiến thức tập thể dục",
+  hanzi: "运动的学问",
+  pinyin: "Yùndòng de xuéwen",
+  vi: "Kiến thức tập thể dục",
+  intro: "Phóng viên phỏng vấn thầy Vương về sức khỏe, vận động và cách tập cho đúng. Học 逐, 不愧 và so sánh 胡乱 – 随便.",
+
+  dialogue: [
+    { who: 'A', name: '课文', hanzi: "记者：王老师，欢迎您到我们节目来做客。今天来的都是您的忠实观众，大家特别愿意和您这样的大专家进行交流。\n王老师：“专家”不敢当，有这样的机会，我也很高兴。\n记者：那天采访您，在公园走廊那儿，您和您徒弟是练气功还是练太极剑呢？\n王老师：哦，不是徒弟，是气功协会的气功爱好者。\n记者：你们的气功不是那种力量一爆发，能瞬间把好几块砖就给劈开的啊？\n王老师：那只是气功的一种。气功还是中国独特的健身方法之一，可以增强体质，促进慢性病康复，还可以辅助治疗某些疾病。", pinyin: "", vi: "Phóng viên: Thầy Vương, hoan nghênh thầy đến chương trình. Hôm nay đến đều là khán giả trung thành của thầy, mọi người đặc biệt muốn trao đổi với chuyên gia lớn như thầy.\nThầy Vương: \"Chuyên gia\" thì không dám, có cơ hội này tôi cũng rất vui.\nPhóng viên: Hôm phỏng vấn thầy ở hành lang công viên, thầy và đồ đệ luyện khí công hay kiếm Thái cực?\nThầy Vương: Ồ, không phải đồ đệ, là người yêu thích khí công của hội khí công.\nPhóng viên: Khí công của các thầy không phải loại sức mạnh bùng nổ, trong khoảnh khắc chẻ vỡ mấy viên gạch đấy chứ?\nThầy Vương: Đó chỉ là một loại khí công. Khí công còn là phương pháp rèn luyện độc đáo của Trung Quốc, có thể tăng thể chất, thúc đẩy phục hồi bệnh mãn tính, còn hỗ trợ chữa một số bệnh.", scene: "Khí công" },
+    { who: 'A', name: '课文', hanzi: "记者：看来我是误解气功了。最近有个调查，广大群众的健身意识在逐年提升。对于健康，您能对我们说点儿什么吗？\n王老师：健康的新概念不仅是不生病，还包括心理健康和社会交往方面的能力，甚至有人提出健康五要素，包括身体、情绪、智力、精神和社交，这五个方面共同构成健康的完美状态。有句名言：生命在于运动，其实健康也在于运动。当然要达到预期效果，怎样运动很重要。\n记者：那您就着重跟我们谈谈运动的学问吧。", pinyin: "", vi: "Phóng viên: Xem ra tôi hiểu lầm khí công rồi. Gần đây có cuộc điều tra, ý thức rèn luyện sức khỏe của quần chúng đang nâng lên theo từng năm. Về sức khỏe, thầy có thể nói với chúng tôi đôi điều không?\nThầy Vương: Khái niệm mới về sức khỏe không chỉ là không bệnh mà còn gồm sức khỏe tâm lý và năng lực giao tiếp xã hội, thậm chí có người đề ra năm yếu tố sức khỏe gồm cơ thể, cảm xúc, trí tuệ, tinh thần và xã giao; năm mặt này cùng cấu thành trạng thái hoàn hảo của sức khỏe. Có câu danh ngôn: sự sống ở vận động, thật ra sức khỏe cũng ở vận động. Tất nhiên muốn đạt hiệu quả mong đợi thì vận động thế nào rất quan trọng.\nPhóng viên: Vậy thầy hãy nhấn mạnh nói về kiến thức vận động nhé.", scene: "Sức khỏe" },
+    { who: 'A', name: '课文', hanzi: "王老师：要健康，首要问题是勤于运用大脑，人的大脑不用也会生锈。大家知道，人脑左半球主管抽象思维，右半球主管形象思维，二者有分工有联系。左右脑交替使用，思维常可以放射出新的火花。著名科学家钱学森的夫人是音乐家，钱学森的很多重要科学理论不是端端正正地坐在桌子前面想出来的，而是听过音乐之后冒出来的。科学运用左右脑，工作的高效和防止脑衰就成为了可能。大脑潜力巨大，它是人体衰退最慢的器官。一些养生著作中指出，人用脑越勤，大脑各神经细胞之间的联系越多，形成的条件反射也越多。\n记者：大脑就像我们身体的指挥中心，大脑不健康，人就谈不上健康。", pinyin: "", vi: "Thầy Vương: Muốn khỏe mạnh, vấn đề hàng đầu là chăm dùng não, não không dùng cũng sẽ gỉ. Mọi người biết, bán cầu trái não quản tư duy trừu tượng, bán cầu phải quản tư duy hình tượng, hai bên có phân công có liên hệ. Dùng luân phiên não trái phải, tư duy thường có thể phát ra tia lửa mới. Phu nhân nhà khoa học nổi tiếng Tiền Học Sâm là nhạc sĩ, nhiều lý thuyết khoa học quan trọng của ông không phải ngồi nghiêm chỉnh trước bàn mà nghĩ ra, mà nảy ra sau khi nghe nhạc. Dùng khoa học não trái phải, làm việc hiệu quả và phòng suy não thành có thể. Não có tiềm lực lớn, là cơ quan suy thoái chậm nhất của cơ thể. Một số sách dưỡng sinh chỉ ra, người dùng não càng chăm, liên hệ giữa các tế bào thần kinh não càng nhiều, phản xạ có điều kiện hình thành cũng càng nhiều.\nPhóng viên: Não như trung tâm chỉ huy của cơ thể, não không khỏe thì người chẳng nói tới khỏe.", scene: "Chăm dùng não" },
+    { who: 'A', name: '课文', hanzi: "王老师：对。其次呢，运动贵在坚持。懒惰是人天生的弱点，所以不要迁就自己，要以坚定的意志，坚韧的精神克服惰性，下狠心咬牙坚持，绝不能半途而废。\n记者：王老师，您怎么好像在说我呢？我就不想虐待自己，所以很难坚持。\n王老师：怎么会是虐待呢？你以后联系我，我带你锻炼。咱们有计划，有落实。运动健身归根到底是自己的事，胡乱对付其实是在骗自己，坚持运动也是培养人的意志力、完善人格的过程。\n记者：看来运动真不是小事，还间接体现着我们的品行呢。", pinyin: "", vi: "Thầy Vương: Đúng. Thứ hai, vận động quý ở kiên trì. Lười là điểm yếu bẩm sinh của người, nên đừng nhân nhượng bản thân, phải dùng ý chí kiên định, tinh thần bền bỉ khắc phục tính lười, quyết tâm nghiến răng kiên trì, tuyệt không bỏ dở nửa chừng.\nPhóng viên: Thầy Vương, sao thầy như đang nói tôi vậy? Tôi chỉ không muốn hành hạ bản thân nên khó kiên trì.\nThầy Vương: Sao lại là hành hạ? Sau này bạn liên lạc tôi, tôi dẫn bạn tập. Ta có kế hoạch, có thực hiện. Rèn luyện sức khỏe xét cho cùng là việc của mình, qua loa đối phó thật ra là lừa mình; kiên trì vận động cũng là quá trình nuôi ý chí, hoàn thiện nhân cách.\nPhóng viên: Xem ra vận động thật không phải chuyện nhỏ, còn gián tiếp thể hiện phẩm hạnh của ta.", scene: "Kiên trì" },
+    { who: 'A', name: '课文', hanzi: "王老师：另外，冬季健身好处很多，可以提高人的御寒能力；冬天阳光中的紫外线对人体有消毒作用，还能促进对钙的吸收；冬天空气中二氧化碳浓度比夏天低，所以冬天运动对身体更为有利；运动还可以使人心情舒畅。许多保健食品都宣扬能够促进健康，其实运动才是维护健康最好的方法。\n记者：运动对皮肤是不是也有好处？\n王老师：运动能令全身排汗，毛孔内的垃圾及多余油脂会被排走，皮肤自然会更好。\n记者：运动是不是也要讲究科学？\n王老师：当然。运动健身要循序渐进，不要急于求成；不适合自己身体状况的剧烈运动或大幅度动作尽量别勉强。\n记者：运动之后，我们常常觉得又渴又饿，运动和饮食之间有什么讲究吗？\n王老师：锻炼后是肌肉细胞的“进食时间”，它们渴望得到足够的蛋白质、水和维生素。运动后的两小时，是补充营养的最佳时机。\n记者：王老师，您真不愧是这方面的专家，以后要是能定期和您做些交流就好了。\n王老师：这是我的联系方式，以后我们可以多联络。希望大家回去以后坚持锻炼，多多保重。", pinyin: "", vi: "Thầy Vương: Ngoài ra, mùa đông tập có nhiều lợi: nâng khả năng chịu lạnh; tia cực tím trong nắng đông có tác dụng khử trùng, còn thúc đẩy hấp thụ canxi; nồng độ CO₂ trong không khí mùa đông thấp hơn mùa hè nên vận động mùa đông có lợi hơn cho cơ thể; vận động còn khiến tâm trạng khoan khoái. Nhiều thực phẩm chức năng quảng cáo thúc đẩy sức khỏe, thật ra vận động mới là cách duy trì sức khỏe tốt nhất.\nPhóng viên: Vận động có tốt cho da không?\nThầy Vương: Vận động khiến toàn thân ra mồ hôi, rác và dầu thừa trong lỗ chân lông bị đẩy ra, da tự nhiên tốt hơn.\nPhóng viên: Vận động có cần khoa học không?\nThầy Vương: Tất nhiên. Rèn luyện phải tuần tự tiến dần, đừng nóng lòng thành công; vận động mạnh hoặc động tác biên độ lớn không hợp tình trạng cơ thể đừng gắng gượng.\nPhóng viên: Sau vận động ta thường thấy khát và đói, giữa vận động và ăn uống có điều gì cần chú ý?\nThầy Vương: Sau tập là \"giờ ăn\" của tế bào cơ, chúng khao khát nhận đủ protein, nước và vitamin. Hai giờ sau vận động là thời điểm tốt nhất bổ sung dinh dưỡng.\nPhóng viên: Thầy Vương, thầy đúng là chuyên gia xứng đáng lĩnh vực này, sau này nếu định kỳ trao đổi với thầy thì tốt quá.\nThầy Vương: Đây là cách liên lạc của tôi, sau này ta có thể liên lạc nhiều. Mong mọi người về nhà kiên trì rèn luyện, giữ gìn sức khỏe.", scene: "Mẹo vận động" },
+  ],
+  dialogueTip: "<b>逐</b>. <b>不愧</b>. <b>胡乱</b>/<b>随便</b>.",
+  slowSay: "运动的学问",
+
+  vocab: [
+    { hanzi: "忠实", pinyin: "zhōngshí", pos: "tính từ", meaning: "trung thành", han_viet: '' },
+    { hanzi: "不敢当", pinyin: "bùgǎndāng", pos: "động từ", meaning: "không dám nhận", han_viet: '' },
+    { hanzi: "走廊", pinyin: "zǒuláng", pos: "danh từ", meaning: "hành lang", han_viet: '' },
+    { hanzi: "徒弟", pinyin: "túdì", pos: "danh từ", meaning: "đồ đệ", han_viet: '' },
+    { hanzi: "气功", pinyin: "qìgōng", pos: "danh từ", meaning: "khí công", han_viet: '' },
+    { hanzi: "剑", pinyin: "jiàn", pos: "danh từ", meaning: "kiếm", han_viet: '' },
+    { hanzi: "协会", pinyin: "xiéhuì", pos: "danh từ", meaning: "hội", han_viet: '' },
+    { hanzi: "爆发", pinyin: "bàofā", pos: "động từ", meaning: "bùng nổ", han_viet: '' },
+    { hanzi: "劈", pinyin: "pī", pos: "động từ", meaning: "bổ, chẻ", han_viet: '' },
+    { hanzi: "误解", pinyin: "wùjiě", pos: "động từ", meaning: "hiểu lầm", han_viet: '' },
+    { hanzi: "群众", pinyin: "qúnzhòng", pos: "danh từ", meaning: "quần chúng", han_viet: '' },
+    { hanzi: "逐年", pinyin: "zhúnián", pos: "phó từ", meaning: "hằng năm", han_viet: '' },
+    { hanzi: "要素", pinyin: "yàosù", pos: "danh từ", meaning: "yếu tố", han_viet: '' },
+    { hanzi: "智力", pinyin: "zhìlì", pos: "danh từ", meaning: "trí lực", han_viet: '' },
+    { hanzi: "预期", pinyin: "yùqī", pos: "động từ", meaning: "mong đợi", han_viet: '' },
+    { hanzi: "首要", pinyin: "shǒuyào", pos: "tính từ", meaning: "hàng đầu", han_viet: '' },
+    { hanzi: "生锈", pinyin: "shēng xiù", pos: "động từ", meaning: "gỉ", han_viet: '' },
+    { hanzi: "放射", pinyin: "fàngshè", pos: "động từ", meaning: "phóng ra", han_viet: '' },
+    { hanzi: "端正", pinyin: "duānzhèng", pos: "tính từ", meaning: "ngay ngắn", han_viet: '' },
+    { hanzi: "潜力", pinyin: "qiánlì", pos: "danh từ", meaning: "tiềm lực", han_viet: '' },
+    { hanzi: "衰退", pinyin: "shuāituì", pos: "động từ", meaning: "suy thoái", han_viet: '' },
+    { hanzi: "反射", pinyin: "fǎnshè", pos: "động từ", meaning: "phản xạ", han_viet: '' },
+    { hanzi: "迁就", pinyin: "qiānjiù", pos: "động từ", meaning: "nhân nhượng", han_viet: '' },
+    { hanzi: "坚定", pinyin: "jiāndìng", pos: "tính từ", meaning: "kiên định", han_viet: '' },
+    { hanzi: "坚韧", pinyin: "jiānrèn", pos: "tính từ", meaning: "dẻo dai, bền bỉ", han_viet: '' },
+    { hanzi: "狠心", pinyin: "hěnxīn", pos: "danh từ", meaning: "quyết tâm lớn", han_viet: '' },
+    { hanzi: "半途而废", pinyin: "bàntú’érfèi", pos: "thành ngữ", meaning: "bỏ dở nửa chừng", han_viet: '' },
+    { hanzi: "虐待", pinyin: "nüèdài", pos: "động từ", meaning: "ngược đãi", han_viet: '' },
+    { hanzi: "落实", pinyin: "luòshí", pos: "động từ", meaning: "thực hiện đầy đủ", han_viet: '' },
+    { hanzi: "归根到底", pinyin: "guīgēn-dàodǐ", pos: "thành ngữ", meaning: "xét cho cùng", han_viet: '' },
+    { hanzi: "胡乱", pinyin: "húluàn", pos: "phó từ", meaning: "qua quýt, tùy tiện", han_viet: '' },
+    { hanzi: "间接", pinyin: "jiànjiē", pos: "tính từ", meaning: "gián tiếp", han_viet: '' },
+    { hanzi: "品行", pinyin: "pǐnxíng", pos: "danh từ", meaning: "phẩm hạnh", han_viet: '' },
+    { hanzi: "紫外线", pinyin: "zǐwàixiàn", pos: "danh từ", meaning: "tia cực tím", han_viet: '' },
+    { hanzi: "消毒", pinyin: "xiāo dú", pos: "động từ", meaning: "khử trùng", han_viet: '' },
+    { hanzi: "钙", pinyin: "gài", pos: "danh từ", meaning: "canxi", han_viet: '' },
+    { hanzi: "二氧化碳", pinyin: "èryǎnghuàtàn", pos: "danh từ", meaning: "CO₂", han_viet: '' },
+    { hanzi: "舒畅", pinyin: "shūchàng", pos: "tính từ", meaning: "khoan khoái", han_viet: '' },
+    { hanzi: "宣扬", pinyin: "xuānyáng", pos: "động từ", meaning: "tuyên truyền", han_viet: '' },
+    { hanzi: "孔", pinyin: "kǒng", pos: "danh từ", meaning: "lỗ", han_viet: '' },
+    { hanzi: "循序渐进", pinyin: "xúnxù-jiànjìn", pos: "thành ngữ", meaning: "tuần tự tiến dần", han_viet: '' },
+    { hanzi: "急于求成", pinyin: "jíyúqiúchéng", pos: "thành ngữ", meaning: "nóng lòng thành công", han_viet: '' },
+    { hanzi: "剧烈", pinyin: "jùliè", pos: "tính từ", meaning: "dữ dội", han_viet: '' },
+    { hanzi: "幅度", pinyin: "fúdù", pos: "danh từ", meaning: "biên độ", han_viet: '' },
+    { hanzi: "蛋白质", pinyin: "dànbáizhì", pos: "danh từ", meaning: "protein", han_viet: '' },
+    { hanzi: "维生素", pinyin: "wéishēngsù", pos: "danh từ", meaning: "vitamin", han_viet: '' },
+    { hanzi: "不愧", pinyin: "búkuì", pos: "phó từ", meaning: "xứng đáng", han_viet: '' },
+    { hanzi: "定期", pinyin: "dìngqī", pos: "tính từ", meaning: "định kỳ", han_viet: '' },
+    { hanzi: "联络", pinyin: "liánluò", pos: "động từ", meaning: "liên lạc", han_viet: '' },
+    { hanzi: "保重", pinyin: "bǎozhòng", pos: "động từ", meaning: "giữ gìn sức khỏe", han_viet: '' },
+  ],
+
+  sections: [
+    { kind: 'examples', label: "逐", title: "逐 (từng cái một, theo thứ tự)", intro: "逐: giới từ, nghĩa \"theo thứ tự, lần lượt\". Hay đi với 年, 月, 步, 渐, 一.", groups: [{ label: 'Ví dụ', items: [["广大群众的健身意识在逐年提升。", "Guǎngdà qúnzhòng de jiànshēn yìshí zài zhúnián tíshēng.", "Ý thức rèn luyện sức khỏe của quần chúng nâng lên theo từng năm."], ["雨季快到了，对大大小小的水库，要逐个检查。", "Yǔjì kuài dào le, duì dàdà-xiǎoxiǎo de shuǐkù, yào zhúgè jiǎnchá.", "Mùa mưa sắp tới, các hồ chứa lớn nhỏ phải kiểm tra từng cái một."]] }] },
+    { kind: 'examples', label: "不愧", title: "不愧 (xứng đáng với)", intro: "不愧: phó từ, \"xứng đáng, không hổ danh\"; thường đi với 是, 为, 称为; chỉ phẩm chất, danh xưng.", groups: [{ label: 'Ví dụ', items: [["王老师，您真不愧是这方面的专家。", "Wáng lǎoshī, nín zhēn búkuì shì zhè fāngmiàn de zhuānjiā.", "Thầy Vương, thầy đúng là chuyên gia xứng đáng lĩnh vực này."], ["他在这个专业成就非凡，不愧是行业楷模。", "Tā zài zhège zhuānyè chéngjiù fēifán, búkuì shì hángyè kǎimó.", "Anh có thành tựu phi phàm ở ngành này, xứng đáng là tấm gương ngành."]] }] },
+    { kind: 'examples', label: "胡乱 – 随便", title: "So sánh 胡乱 và 随便", intro: "Giống: chỉ làm tùy ý, không cẩn thận. 胡乱: phó từ, nghĩa xấu, làm cẩu thả, không theo quy tắc; chỉ làm trạng ngữ. 随便: tính từ/ động từ/ liên từ, nghĩa rộng hơn: tùy ý, không câu nệ (cả nghĩa trung tính), có thể làm vị ngữ, đáp lại.", groups: [{ label: 'Ví dụ', items: [["胡乱对付其实是在骗自己。", "Húluàn duìfu qíshí shì zài piàn zìjǐ.", "Qua loa đối phó thật ra là lừa chính mình."], ["我当时只是随便答应的，没想到他认真了。", "Wǒ dāngshí zhǐshì suíbiàn dāying de, méi xiǎngdào tā rènzhēn le.", "Lúc đó tôi chỉ nhận lời tùy tiện, không ngờ anh ấy nghiêm túc."]] }] },
+  ],
+
+  notes: [
+    { title: "逐", body: "Theo thứ tự.", say: "逐年提升" },
+    { title: "不愧", body: "Xứng đáng.", say: "不愧是专家" },
+    { title: "胡乱 – 随便", body: "Qua loa / tùy ý.", say: "胡乱对付" },
+  ],
+
+  writeChars: ["劈", "协", "爆", "锈", "迁", "虐", "循", "幅"],
+
+  drills: [],
+
+  qa: [{ title: 'Hoạt động (运用)', items: [{"q": "你平时怎么锻炼身体？", "hint": "……"}, {"q": "你为什么觉得运动要“坚持”？", "hint": "……"}] }],
+
+  sentences: [],
+
+  dictations: [
+    { title: "Giáo trình 做一做 / 练习 2 / 3", hint: 'Gõ chữ Hán theo đáp án sách.', items: [
+      { prompt: "我当时只是（ ）答应的，没想到他认真了。", answer: "随便", gloss: "tùy tiện" },
+      { prompt: "无数事实告诉我们，没有人可以（ ）成功。", answer: "随随便便", gloss: "dễ dàng" },
+      { prompt: "A：你对中国了解得如此深入，真是个中国通。B：（ ）。", answer: "不敢当", gloss: "không dám" },
+      { prompt: "产品的销量（ ）。", answer: "逐年增加", gloss: "tăng hằng năm" },
+      { prompt: "对孩子的坏习惯（ ）。", answer: "不能一味迁就", gloss: "không thể mãi nhân nhượng" },
+      { prompt: "无论做什么事情（ ）。", answer: "都不能半途而废", gloss: "không được bỏ dở" },
+      { prompt: "他在这个专业成就非凡，（ ）。", answer: "不愧是行业楷模", gloss: "xứng đáng là tấm gương" },
+      { prompt: "我是武术（ ）的成员，有时练习（ ），有时练习太极（ ）。", answer: "协会 / 气功 / 剑", gloss: "hội / khí công / kiếm" },
+      { prompt: "现在广大（ ）的健身意识都增强了，我还收了好几个（ ）呢。", answer: "群众 / 徒弟", gloss: "quần chúng / đồ đệ" },
+      { prompt: "最近的一次体检结果显示，我有点儿缺（ ）。", answer: "钙", gloss: "canxi" },
+      { prompt: "大夫让我多晒晒太阳，多补充（ ），然后（ ）到医院检查。", answer: "蛋白质 / 定期", gloss: "protein / định kỳ" },
+      { prompt: "但是补钙也不能（ ），只要每天坚持，就能达到（ ）的效果。", answer: "急于求成 / 预期", gloss: "nóng vội / mong đợi" },
+    ] },
+  ],
+}

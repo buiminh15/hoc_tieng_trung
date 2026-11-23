@@ -1,0 +1,113 @@
+import type { Lesson } from '../types'
+
+/** Giáo trình chuẩn HSK 6 (Hạ), Bài 39: 互联网时代的生活. Nghĩa từ mới và ngữ pháp theo sách; dịch bài khóa do app thêm. Không có file nghe. Đáp án theo HSK6-BH-T2-DA. */
+
+export const hskStd6Lesson39: Lesson = {
+  id: 39,
+  title: "Cuộc sống thời Internet",
+  hanzi: "互联网时代的生活",
+  pinyin: "Hùliánwǎng shídài de shēnghuó",
+  vi: "Cuộc sống thời Internet",
+  intro: "Internet đổi thay cuộc sống: mua nhà góp vốn, gọi vốn cộng đồng, rủi ro mạng. Học 任意, 尚未 và so sánh 乐趣 – 兴趣.",
+
+  dialogue: [
+    { who: 'A', name: '课文', hanzi: "互联网走进我们的生活没有多久，却让我们实实在在地感受到生活正发生着日新月异的变化：它能让我们自如地通话、视频、传递消息，哪怕你在天涯海角；它使我们的生活不再单调沉闷，每一天都变得浪漫、丰富和充实；它将异地购物、交易变为了可能——我们足不出户就能任意挑选欧洲、美洲的商品；我们可以在网上学习，自由而不失乐趣；我们可以在网上找工作，简单又高效；我们能设立个人网站，既能扩大你的朋友圈，又能让你小小的虚荣心得到满足，如果愿意，还可以设立你亲友的网站，作为赠送给他们的珍贵礼物。最近又有人通过网络，和朋友、朋友的朋友合伙筹备资金买房，人们视这一创举为互联网金融下的新成员。", pinyin: "", vi: "Internet bước vào cuộc sống ta chưa lâu, mà đã khiến ta thực sự cảm nhận cuộc sống đang đổi thay ngày một mới: nó khiến ta tự nhiên gọi điện, video, truyền tin dù bạn ở chân trời góc biển; nó khiến cuộc sống không còn đơn điệu nặng nề, mỗi ngày trở nên lãng mạn, phong phú, đầy đặn; nó biến mua sắm, giao dịch từ xa thành có thể — ta không ra khỏi cửa mà tùy ý chọn hàng châu Âu, châu Mỹ; ta có thể học trên mạng, tự do mà không mất thú vị; ta có thể tìm việc trên mạng, đơn giản hiệu quả; ta có thể lập trang web cá nhân, vừa mở rộng vòng bạn bè vừa thỏa chút hư vinh nhỏ, nếu muốn còn lập trang web cho người thân bạn bè, làm món quà quý tặng họ. Gần đây lại có người qua mạng cùng bạn bè, bạn của bạn góp vốn mua nhà, mọi người coi việc đầu tiên này là thành viên mới của tài chính Internet.", scene: "Internet đổi thay" },
+    { who: 'A', name: '课文', hanzi: "据集资买房项目发起人介绍，此次众筹买房，初步打算召集200人，筹备建立众筹家园小区。众筹购房的好处在于价格上拥有明显优势，比市场价至少便宜30%，无论是投资还是自住，都很合算。项目沟通中，微信是主要渠道，申请人递交申请表、通过审查后，缴纳100元订金就可以进入购房微信群，项目的设计、户型、价格等，全部由大家商议决定。大家深知买房对每个家庭都不是小事，众筹买房也还处于摸索阶段，因此必须慎重。众筹的参与者，都是发起人的朋友，或者朋友的朋友。他们层次较高，都有一定的经济基础，对新生事物有强烈好奇心，基本属于同一阶层。用发起人的话说，众筹不是在筹房子，而是在凝聚人心。房子怎么设计、对国家的政策怎么理解、失败了怎么办？大家每天在微信群你来我往，忙碌而欢乐，除了严肃的房价，这种共商大事的感觉也很让人上瘾。", pinyin: "", vi: "Theo người khởi xướng dự án góp vốn mua nhà, lần \"crowdfunding\" mua nhà này, bước đầu dự định triệu tập 200 người, chuẩn bị lập khu dân cư gia viên crowdfunding. Lợi ích mua nhà góp vốn ở chỗ giá có ưu thế rõ, rẻ hơn giá thị trường ít nhất 30%, dù đầu tư hay ở đều hời. Trong trao đổi dự án, WeChat là kênh chính, người đăng ký nộp đơn, qua xét duyệt, nộp 100 tệ tiền cọc là vào nhóm WeChat mua nhà, thiết kế, kiểu căn hộ, giá cả… đều do mọi người bàn quyết. Mọi người biết rõ mua nhà với mỗi gia đình không phải chuyện nhỏ, crowdfunding mua nhà cũng còn ở giai đoạn dò dẫm nên phải thận trọng. Người tham gia crowdfunding đều là bạn người khởi xướng hoặc bạn của bạn. Họ tầng lớp khá cao, đều có nền tảng kinh tế nhất định, rất tò mò với cái mới, về cơ bản cùng một tầng lớp. Theo lời người khởi xướng, crowdfunding không phải gom nhà mà là kết nhân tâm. Nhà thiết kế thế nào, hiểu chính sách nhà nước ra sao, thất bại làm sao? Mỗi ngày mọi người trong nhóm WeChat qua lại, bận rộn mà vui, ngoài giá nhà nghiêm túc, cảm giác cùng bàn việc lớn này cũng khiến người ta nghiện.", scene: "Mua nhà crowdfunding" },
+    { who: 'A', name: '课文', hanzi: "什么是“众筹”？说白了，就是大家筹钱干一件事，上文所说的“众筹”更像是“集资建房”，广义的“众筹”则是互联网金融的产物，指创业者通过网络，向众多素不相识的人争取资金支持。世界上第一个让初创公司梦想成真的众筹网站是美国的Kickstarter。2011年5月，中国国内首家众筹网站——点名时间，将Kickstarter的模式搬进了中国，之后众筹平台越来越多。如今，从慈善到图书出版，从电影制作到创业项目，众筹几乎跨越了所有的领域。", pinyin: "", vi: "\"Crowdfunding\" là gì? Nói trắng ra là mọi người góp tiền làm một việc; \"crowdfunding\" nói ở trên giống \"góp vốn xây nhà\" hơn; \"crowdfunding\" nghĩa rộng là sản phẩm tài chính Internet, chỉ người khởi nghiệp qua mạng giành sự hỗ trợ vốn từ rất nhiều người không quen biết. Trang crowdfunding đầu tiên thế giới biến giấc mơ công ty khởi nghiệp thành thật là Kickstarter của Mỹ. Tháng 5/2011, trang crowdfunding đầu tiên trong nước Trung Quốc — Điểm Danh Thời Gian — đưa mô hình Kickstarter vào Trung Quốc, sau đó nền tảng crowdfunding ngày càng nhiều. Nay từ từ thiện đến xuất bản sách, từ làm phim đến dự án khởi nghiệp, crowdfunding gần như vượt mọi lĩnh vực.", scene: "Crowdfunding" },
+    { who: 'A', name: '课文', hanzi: "美微传媒CEO朱江做梦也没想到，他成了传说中的“中国众筹第一人”。那年，朱江开始在淘宝网出售美微会员卡，购买会员卡就是购买公司的原始股票，每股1.2元，最低认购100股，也就是说，花120元就可以成为持有美微股份的股东。朱江回忆起当时钞票源源不断流进来的感觉，真的有种苦尽甘来的味道。时至今日，众筹项目有成功的，也有处境尴尬的，而国内第一家众筹网站“点名时间”三年以后却抛弃了“众筹”，改营其他。坦白地说，国内用户与国外有很大区别，比如，Kickstarter上聚集着一群理想主义者，他们心中充满向往，购买时感性因素超越了理性。国内用户则希望尽快得到回报，甚至有些急功近利，而用户的心态很大程度上决定了项目成功的可能性。再比如，国内用户对收获时间和产品质量要求较高，如果认为产品不符合预期，或是项目进展比计划的慢，就会发牢骚，有怨气。另外，大部分投资者对众筹还是持观望态度。因此，迄今为止众筹在国内还是一个看起来很美、做起来吃力的事情。", pinyin: "", vi: "CEO Mỹ Vi Truyền Thông Chu Giang nằm mơ cũng không ngờ, ông thành \"người crowdfunding đầu tiên Trung Quốc\" trong truyền thuyết. Năm đó, Chu Giang bắt đầu bán thẻ hội viên Mỹ Vi trên Taobao, mua thẻ hội viên là mua cổ phiếu gốc công ty, mỗi cổ 1.2 tệ, tối thiểu 100 cổ, tức bỏ 120 tệ có thể thành cổ đông giữ cổ phần Mỹ Vi. Chu Giang hồi tưởng cảm giác tiền đổ vào không dứt lúc đó, thật có hương vị khổ tận cam lai. Đến nay dự án crowdfunding có cái thành công, cũng có cái khó xử, còn trang crowdfunding đầu tiên trong nước \"Điểm Danh Thời Gian\" ba năm sau lại bỏ \"crowdfunding\", chuyển kinh doanh khác. Nói thẳng, người dùng trong nước khác nhiều so với nước ngoài, ví dụ trên Kickstarter tụ một nhóm người theo chủ nghĩa lý tưởng, lòng đầy hướng về, khi mua nhân tố cảm tính vượt lý tính. Người dùng trong nước thì mong sớm có hồi báo, thậm chí hơi cầu lợi trước mắt, mà tâm thái người dùng quyết định rất lớn khả năng thành công của dự án. Lại ví dụ, người dùng trong nước yêu cầu cao về thời gian thu hoạch và chất lượng sản phẩm, nếu thấy sản phẩm không đúng mong đợi, hoặc dự án tiến chậm hơn kế hoạch sẽ than phiền, ấm ức. Ngoài ra đa số nhà đầu tư với crowdfunding vẫn giữ thái độ quan sát. Vì vậy đến nay crowdfunding trong nước vẫn là việc nhìn thì đẹp, làm thì vất vả.", scene: "Người đầu tiên" },
+    { who: 'A', name: '课文', hanzi: "是啊，在互联网变得家喻户晓，给我们的生活带来许许多多的方便和乐趣的同时，也给我们增添了无穷无尽的烦恼，众筹平台有，其他领域也有。据官方报道，尚未查明身份的罪犯盗窃了1800万个电子邮件账户及其密码；仅有两三个人的皮包公司公然冒充国家部门开设了一家假网站，大肆进行诈骗，如今已被警方依法刑事拘留；还有时时活跃着的网络黑客。每次类似这些败坏互联网名誉的事件一经曝光，就会使我们有触目惊心之感。这就是互联网时代，在我们对它爱不释手的同时，也不免对它心存担忧。", pinyin: "", vi: "Phải, khi Internet trở nên ai cũng biết, mang lại cho cuộc sống ta rất nhiều tiện lợi và thú vị, cũng thêm cho ta phiền não vô tận; nền tảng crowdfunding có, lĩnh vực khác cũng có. Theo báo cáo chính thức, tội phạm chưa rõ danh tính trộm 18 triệu tài khoản email và mật khẩu; một công ty vỏ bọc chỉ hai ba người ngang nhiên mạo danh cơ quan nhà nước mở một trang web giả, lừa đảo trắng trợn, nay đã bị cảnh sát tạm giam hình sự theo luật; còn có hacker mạng luôn hoạt động. Mỗi lần các vụ việc làm hỏng danh tiếng Internet như vậy bị phơi bày, ta đều có cảm giác kinh tâm động phách. Đó là thời đại Internet, trong lúc ta yêu thích không rời, cũng khó tránh lo lắng.", scene: "Mặt trái" },
+  ],
+  dialogueTip: "<b>任意</b>. <b>尚未</b>. <b>乐趣</b>/<b>兴趣</b>.",
+  slowSay: "互联网时代的生活",
+
+  vocab: [
+    { hanzi: "日新月异", pinyin: "rìxīn-yuèyì", pos: "thành ngữ", meaning: "thay đổi từng ngày", han_viet: '' },
+    { hanzi: "沉闷", pinyin: "chénmèn", pos: "tính từ", meaning: "chán ngắt", han_viet: '' },
+    { hanzi: "充实", pinyin: "chōngshí", pos: "tính từ", meaning: "đầy đặn", han_viet: '' },
+    { hanzi: "交易", pinyin: "jiāoyì", pos: "động từ", meaning: "giao dịch", han_viet: '' },
+    { hanzi: "任意", pinyin: "rènyì", pos: "phó từ", meaning: "tùy ý", han_viet: '' },
+    { hanzi: "乐趣", pinyin: "lèqù", pos: "danh từ", meaning: "niềm vui", han_viet: '' },
+    { hanzi: "设立", pinyin: "shèlì", pos: "động từ", meaning: "thành lập", han_viet: '' },
+    { hanzi: "虚荣", pinyin: "xūróng", pos: "tính từ", meaning: "hư vinh", han_viet: '' },
+    { hanzi: "珍贵", pinyin: "zhēnguì", pos: "tính từ", meaning: "quý giá", han_viet: '' },
+    { hanzi: "合伙", pinyin: "héhuǒ", pos: "động từ", meaning: "hùn vốn", han_viet: '' },
+    { hanzi: "筹备", pinyin: "chóubèi", pos: "động từ", meaning: "chuẩn bị", han_viet: '' },
+    { hanzi: "成员", pinyin: "chéngyuán", pos: "danh từ", meaning: "thành viên", han_viet: '' },
+    { hanzi: "初步", pinyin: "chūbù", pos: "tính từ", meaning: "sơ bộ", han_viet: '' },
+    { hanzi: "合算", pinyin: "hésuàn", pos: "tính từ", meaning: "đáng giá", han_viet: '' },
+    { hanzi: "渠道", pinyin: "qúdào", pos: "danh từ", meaning: "kênh", han_viet: '' },
+    { hanzi: "审查", pinyin: "shěnchá", pos: "động từ", meaning: "xét duyệt", han_viet: '' },
+    { hanzi: "缴纳", pinyin: "jiǎonà", pos: "động từ", meaning: "nộp", han_viet: '' },
+    { hanzi: "摸索", pinyin: "mōsuǒ", pos: "động từ", meaning: "dò dẫm", han_viet: '' },
+    { hanzi: "层次", pinyin: "céngcì", pos: "danh từ", meaning: "cấp bậc", han_viet: '' },
+    { hanzi: "阶层", pinyin: "jiēcéng", pos: "danh từ", meaning: "tầng lớp", han_viet: '' },
+    { hanzi: "政策", pinyin: "zhèngcè", pos: "danh từ", meaning: "chính sách", han_viet: '' },
+    { hanzi: "欢乐", pinyin: "huānlè", pos: "tính từ", meaning: "vui vẻ", han_viet: '' },
+    { hanzi: "上瘾", pinyin: "shàng yǐn", pos: "động từ", meaning: "nghiện", han_viet: '' },
+    { hanzi: "慈善", pinyin: "císhàn", pos: "tính từ", meaning: "từ thiện", han_viet: '' },
+    { hanzi: "股份", pinyin: "gǔfèn", pos: "danh từ", meaning: "cổ phần", han_viet: '' },
+    { hanzi: "股东", pinyin: "gǔdōng", pos: "danh từ", meaning: "cổ đông", han_viet: '' },
+    { hanzi: "钞票", pinyin: "chāopiào", pos: "danh từ", meaning: "tiền giấy", han_viet: '' },
+    { hanzi: "苦尽甘来", pinyin: "kǔjìn-gānlái", pos: "thành ngữ", meaning: "khổ tận cam lai", han_viet: '' },
+    { hanzi: "尴尬", pinyin: "gāngà", pos: "tính từ", meaning: "lúng túng", han_viet: '' },
+    { hanzi: "抛弃", pinyin: "pāoqì", pos: "động từ", meaning: "vứt bỏ", han_viet: '' },
+    { hanzi: "坦白", pinyin: "tǎnbái", pos: "tính từ", meaning: "thẳng thắn", han_viet: '' },
+    { hanzi: "急功近利", pinyin: "jígōng-jìnlì", pos: "thành ngữ", meaning: "cầu lợi trước mắt", han_viet: '' },
+    { hanzi: "进展", pinyin: "jìnzhǎn", pos: "động từ", meaning: "tiến triển", han_viet: '' },
+    { hanzi: "牢骚", pinyin: "láosāo", pos: "danh từ", meaning: "sự phàn nàn", han_viet: '' },
+    { hanzi: "迄今为止", pinyin: "qìjīn wéizhǐ", pos: "thành ngữ", meaning: "cho đến nay", han_viet: '' },
+    { hanzi: "吃力", pinyin: "chīlì", pos: "tính từ", meaning: "vất vả", han_viet: '' },
+    { hanzi: "家喻户晓", pinyin: "jiāyù-hùxiǎo", pos: "thành ngữ", meaning: "nhà nhà đều biết", han_viet: '' },
+    { hanzi: "无穷无尽", pinyin: "wúqióng-wújìn", pos: "thành ngữ", meaning: "vô tận", han_viet: '' },
+    { hanzi: "罪犯", pinyin: "zuìfàn", pos: "danh từ", meaning: "tội phạm", han_viet: '' },
+    { hanzi: "盗窃", pinyin: "dàoqiè", pos: "động từ", meaning: "trộm cắp", han_viet: '' },
+    { hanzi: "公然", pinyin: "gōngrán", pos: "phó từ", meaning: "ngang nhiên", han_viet: '' },
+    { hanzi: "冒充", pinyin: "màochōng", pos: "động từ", meaning: "giả mạo", han_viet: '' },
+    { hanzi: "大肆", pinyin: "dàsì", pos: "phó từ", meaning: "trắng trợn", han_viet: '' },
+    { hanzi: "诈骗", pinyin: "zhàpiàn", pos: "động từ", meaning: "lừa đảo", han_viet: '' },
+    { hanzi: "拘留", pinyin: "jūliú", pos: "động từ", meaning: "tạm giam", han_viet: '' },
+    { hanzi: "败坏", pinyin: "bàihuài", pos: "động từ", meaning: "làm hư hỏng", han_viet: '' },
+    { hanzi: "名誉", pinyin: "míngyù", pos: "danh từ", meaning: "danh dự", han_viet: '' },
+    { hanzi: "曝光", pinyin: "bào guāng", pos: "động từ", meaning: "phơi bày", han_viet: '' },
+  ],
+
+  sections: [
+    { kind: 'examples', label: "任意", title: "任意 (tùy ý)", intro: "任意: phó từ, muốn làm sao thì làm vậy, không bị ràng buộc, không bị hạn chế.", groups: [{ label: 'Ví dụ', items: [["我们足不出户就能任意挑选欧洲、美洲的商品。", "Wǒmen zúbùchūhù jiù néng rènyì tiāoxuǎn Ōuzhōu, Měizhōu de shāngpǐn.", "Ta không ra khỏi cửa mà tùy ý chọn hàng châu Âu, châu Mỹ."], ["六种语言同等有效，联大代表们发言时可以任意选用。", "Liù zhǒng yǔyán tóngděng yǒuxiào, Liándà dàibiǎomen fāyán shí kěyǐ rènyì xuǎnyòng.", "Sáu ngôn ngữ có hiệu lực ngang nhau, đại biểu Đại hội đồng khi phát biểu có thể tùy ý chọn."]] }] },
+    { kind: 'examples', label: "尚未", title: "尚未 (vẫn chưa)", intro: "尚未: \"还没有\", dùng văn viết, sau là động từ hoặc cụm động từ.", groups: [{ label: 'Ví dụ', items: [["据官方报道，尚未查明身份的罪犯盗窃了1800万个电子邮件账户及其密码。", "Jù guānfāng bàodào, shàngwèi chámíng shēnfèn de zuìfàn dàoqièle yìqiān bābǎi wàn gè diànzǐ yóujiàn zhànghù jí qí mìmǎ.", "Theo báo cáo chính thức, tội phạm chưa rõ danh tính trộm 18 triệu tài khoản email và mật khẩu."], ["在一些贫穷落后的偏远山区，网络尚未普及。", "Zài yìxiē pínqióng luòhòu de piānyuǎn shānqū, wǎngluò shàngwèi pǔjí.", "Ở một số vùng núi xa xôi nghèo nàn, mạng vẫn chưa phổ biến."]] }] },
+    { kind: 'examples', label: "乐趣 – 兴趣", title: "So sánh 乐趣 và 兴趣", intro: "乐趣: danh từ, niềm vui, điều khiến người ta vui (享受乐趣); 兴趣: danh từ, sự ham thích, hứng thú với việc, có thể bồi dưỡng (培养兴趣, 对……有兴趣).", groups: [{ label: 'Ví dụ', items: [["只有乐观的人才能随时享受生活中的乐趣。", "Zhǐyǒu lèguān de rén cái néng suíshí xiǎngshòu shēnghuó zhōng de lèqù.", "Chỉ người lạc quan mới luôn hưởng được niềm vui trong cuộc sống."], ["兴趣是可以培养的，多接触接触就喜欢了。", "Xìngqù shì kěyǐ péiyǎng de, duō jiēchù jiēchù jiù xǐhuan le.", "Hứng thú có thể bồi dưỡng, tiếp xúc nhiều sẽ thích."]] }] },
+  ],
+
+  notes: [
+    { title: "任意", body: "Tùy ý.", say: "任意挑选" },
+    { title: "尚未", body: "Vẫn chưa.", say: "尚未查明" },
+    { title: "乐趣 – 兴趣", body: "Niềm vui / hứng thú.", say: "享受乐趣 / 培养兴趣" },
+  ],
+
+  writeChars: ["互", "联", "筹", "缴", "诈", "骗", "冒", "拘"],
+
+  drills: [],
+
+  qa: [{ title: 'Hoạt động (运用)', items: [{"q": "你在网上做过什么“新鲜事”？", "hint": "……"}, {"q": "你认为互联网有哪些风险？", "hint": "……"}] }],
+
+  sentences: [],
+
+  dictations: [
+    { title: "Giáo trình 做一做 / 练习 2 / 3", hint: 'Gõ chữ Hán theo đáp án sách.', items: [
+      { prompt: "他那么喜欢下围棋，可我却感觉不到其中的（ ）。", answer: "乐趣", gloss: "niềm vui" },
+      { prompt: "（ ）是可以培养的，多接触接触就喜欢了。", answer: "兴趣", gloss: "hứng thú" },
+      { prompt: "只有乐观的人才能随时享受生活中的（ ）。", answer: "乐趣", gloss: "niềm vui" },
+      { prompt: "听说这本书极受年轻人的推崇，这引起了我的（ ）。", answer: "兴趣", gloss: "hứng thú" },
+      { prompt: "屋子里坐满了人，谁也不发表意见，（ ）。", answer: "气氛十分沉闷", gloss: "không khí ngột ngạt" },
+      { prompt: "她每天忙个不停，（ ）。", answer: "生活得很充实", gloss: "sống đầy đặn" },
+      { prompt: "那个魔术师太神奇了，你（ ），他都能猜出来。", answer: "任意抽一张纸牌", gloss: "tùy ý rút một lá bài" },
+      { prompt: "我跟合伙人一起（ ）。", answer: "筹备这个重大项目", gloss: "chuẩn bị dự án" },
+      { prompt: "在一些贫穷落后的偏远山区，（ ）。", answer: "网络尚未普及", gloss: "mạng chưa phổ biến" },
+      { prompt: "他们这伙人（ ），引起了公愤。", answer: "大肆捕杀野生动物", gloss: "tàn sát trắng trợn" },
+      { prompt: "旅游一改我们以往（ ）的生活，使它变得浪漫而（ ）。", answer: "沉闷 / 充实", gloss: "ngột ngạt / đầy đặn" },
+      { prompt: "旅行中的见闻还可以带给我们（ ）的快乐。", answer: "无穷无尽", gloss: "vô tận" },
+      { prompt: "（ ），中国手机用户大约为12.4亿户。", answer: "迄今为止", gloss: "cho đến nay" },
+      { prompt: "网上（ ）各种费用、用手机随时随地进行股票（ ）。", answer: "缴纳 / 交易", gloss: "nộp / giao dịch" },
+      { prompt: "手机为人们交友、聊天开辟了新的（ ），（ ）地说，我们已经离不开手机了。", answer: "渠道 / 坦白", gloss: "kênh / thẳng thắn" },
+    ] },
+  ],
+}
