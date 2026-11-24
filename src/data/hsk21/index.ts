@@ -7,6 +7,15 @@ import { day5 } from './day5'
 import { day6 } from './day6'
 import { day7 } from './day7'
 import { day8 } from './day8'
+import { day9 } from './day9'
+import { day10 } from './day10'
+import { day11 } from './day11'
+import { day12 } from './day12'
+import { day13 } from './day13'
+import { day14 } from './day14'
+import { day15 } from './day15'
+import { weekend1 } from './weekend1'
+import { weekend2 } from './weekend2'
 
 export * from './types'
 
@@ -30,6 +39,8 @@ export const DAYS: DayMeta[] = [
   { day: 13, week: 3, weekday: 'Thứ Tư', hanzi: '复句（一）', title: 'Câu phức (1)', topics: ['Đẳng lập', 'Tăng tiến', 'Nối tiếp', 'Lựa chọn', 'Chuyển ngoặt'], pages: '225–245' },
   { day: 14, week: 3, weekday: 'Thứ Năm', hanzi: '复句（二）', title: 'Câu phức (2)', topics: ['Nhân quả', 'Mục đích', 'Điều kiện', 'Giả thiết', 'Nhượng bộ', 'Ý hợp'], pages: '246–264' },
   { day: 15, week: 3, weekday: 'Thứ Sáu', hanzi: '句子成分残缺 并列缺省 搭配不当', title: 'Thiếu thành phần câu · thiếu vế đẳng lập · kết hợp sai', topics: ['Thiếu thành phần', 'Thiếu vế đẳng lập', 'Kết hợp từ sai'], pages: '265–279' },
+  { day: 16, week: 1, weekday: 'Ôn cuối tuần 1', hanzi: '周末总结训练（一）', title: 'Ôn tập cuối tuần 1: đề tự kiểm tra và luyện củng cố', topics: ['Đề mô phỏng 20 câu', 'Chọn phần sai', 'Điền từ', 'Sắp xếp câu', 'Điền chữ'], pages: '75–93' },
+  { day: 17, week: 2, weekday: 'Ôn cuối tuần 2', hanzi: '周末总结训练（二）', title: 'Ôn tập cuối tuần 2: đề tự kiểm tra và luyện củng cố', topics: ['Đề mô phỏng 20 câu', 'Chọn phần sai', 'Điền từ', 'Sắp xếp câu', 'Điền chữ'], pages: '173–191' },
 ]
 
 export const WEEKENDS = [
@@ -39,7 +50,7 @@ export const WEEKENDS = [
 ]
 
 /** Nội dung đã số hoá. Ngày chưa có trong map thì hiện "Sắp có". */
-export const CONTENT: Record<number, DayContent> = { 1: day1, 2: day2, 3: day3, 4: day4, 5: day5, 6: day6, 7: day7, 8: day8 }
+export const CONTENT: Record<number, DayContent> = { 1: day1, 2: day2, 3: day3, 4: day4, 5: day5, 6: day6, 7: day7, 8: day8, 9: day9, 10: day10, 11: day11, 12: day12, 13: day13, 14: day14, 15: day15, 16: weekend1, 17: weekend2 }
 
 export const getDay = (day: number) => DAYS.find(d => d.day === day)
 export const hasContent = (day: number) => day in CONTENT

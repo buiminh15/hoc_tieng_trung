@@ -490,7 +490,7 @@ export default function Hsk21Day() {
         <Link to="/hsk21" className="text-sm font-semibold text-slate-500 hover:text-slate-900">← 21 ngày</Link>
         <div className="mt-1 flex flex-wrap items-end justify-between gap-3">
           <div>
-            <div className="text-sm font-semibold text-slate-500">Tuần {meta.week} · {meta.weekday} · Ngày {meta.day}/15 · tr. {meta.pages}</div>
+            <div className="text-sm font-semibold text-slate-500">Tuần {meta.week} · {meta.weekday} · {meta.day > 15 ? meta.weekday : `Ngày ${meta.day}/15`} · tr. {meta.pages}</div>
             <h1 className="hz mt-0.5 text-3xl font-black leading-tight tracking-tight sm:text-4xl">{meta.hanzi}</h1>
             <p className="text-lg text-slate-500">{meta.title}</p>
           </div>
