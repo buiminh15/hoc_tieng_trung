@@ -16,6 +16,7 @@ import { day14 } from './day14'
 import { day15 } from './day15'
 import { weekend1 } from './weekend1'
 import { weekend2 } from './weekend2'
+import { weekend3 } from './weekend3'
 
 export * from './types'
 
@@ -41,6 +42,7 @@ export const DAYS: DayMeta[] = [
   { day: 15, week: 3, weekday: 'Thứ Sáu', hanzi: '句子成分残缺 并列缺省 搭配不当', title: 'Thiếu thành phần câu · thiếu vế đẳng lập · kết hợp sai', topics: ['Thiếu thành phần', 'Thiếu vế đẳng lập', 'Kết hợp từ sai'], pages: '265–279' },
   { day: 16, week: 1, weekday: 'Ôn cuối tuần 1', hanzi: '周末总结训练（一）', title: 'Ôn tập cuối tuần 1: đề tự kiểm tra và luyện củng cố', topics: ['Đề mô phỏng 20 câu', 'Chọn phần sai', 'Điền từ', 'Sắp xếp câu', 'Điền chữ'], pages: '75–93' },
   { day: 17, week: 2, weekday: 'Ôn cuối tuần 2', hanzi: '周末总结训练（二）', title: 'Ôn tập cuối tuần 2: đề tự kiểm tra và luyện củng cố', topics: ['Đề mô phỏng 20 câu', 'Chọn phần sai', 'Điền từ', 'Sắp xếp câu', 'Điền chữ'], pages: '173–191' },
+  { day: 18, week: 3, weekday: 'Ôn cuối tuần 3', hanzi: '周末总结训练（三）', title: 'Ôn tập cuối tuần 3: đề tự kiểm tra và luyện củng cố', topics: ['Đề mô phỏng 20 câu', 'Chọn phần sai', 'Điền từ', 'Sắp xếp câu', 'Điền chữ'], pages: '280–297' },
 ]
 
 export const WEEKENDS = [
@@ -50,7 +52,7 @@ export const WEEKENDS = [
 ]
 
 /** Nội dung đã số hoá. Ngày chưa có trong map thì hiện "Sắp có". */
-export const CONTENT: Record<number, DayContent> = { 1: day1, 2: day2, 3: day3, 4: day4, 5: day5, 6: day6, 7: day7, 8: day8, 9: day9, 10: day10, 11: day11, 12: day12, 13: day13, 14: day14, 15: day15, 16: weekend1, 17: weekend2 }
+export const CONTENT: Record<number, DayContent> = { 1: day1, 2: day2, 3: day3, 4: day4, 5: day5, 6: day6, 7: day7, 8: day8, 9: day9, 10: day10, 11: day11, 12: day12, 13: day13, 14: day14, 15: day15, 16: weekend1, 17: weekend2, 18: weekend3 }
 
 export const getDay = (day: number) => DAYS.find(d => d.day === day)
 export const hasContent = (day: number) => day in CONTENT
