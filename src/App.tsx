@@ -12,6 +12,7 @@ import Lesson from './pages/Lesson'
 import PinyinPage from './pages/PinyinPage'
 import Practice from './pages/Practice'
 import Exam from './pages/Exam'
+import Exercises from './pages/exercises'
 import HskList from './pages/HskList'
 import { GrammarList, GrammarTopicPage } from './pages/Grammar'
 import HskExam from './pages/HskExam'
@@ -39,6 +40,7 @@ export default function App() {
     ['/grammar', 'Ngữ pháp', pathname.startsWith('/grammar')],
     ['/hsk21', '21 ngày', pathname.startsWith('/hsk21')],
     ['/practice', 'Luyện tập', pathname.startsWith('/practice')],
+    ['/exercises', 'Bài tập', pathname.startsWith('/exercises')],
     ['/exam', 'Thi thử', pathname.startsWith('/exam')],
     ['/hsk', 'Đề HSK', pathname.startsWith('/hsk')],
     ['/pinyin', 'Pinyin', pathname.startsWith('/pinyin')],
@@ -72,6 +74,7 @@ export default function App() {
         <Route path="/books/:bookId" element={<Book />} />
         <Route path="/books/:bookId/lessons/:id" element={<Lesson />} />
         <Route path="/practice" element={<Practice />} />
+        <Route path="/exercises/:kind?" element={<Exercises />} />
         <Route path="/exam" element={<Exam />} />
         <Route path="/grammar" element={<GrammarList />} />
         <Route path="/grammar/:id" element={<GrammarTopicPage />} />

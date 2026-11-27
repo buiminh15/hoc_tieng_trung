@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { allLessons } from '../data/lessons'
-import { bookLabel } from '../data/books'
+import ScopePicker from '../components/ScopePicker'
+import { keysOf } from '../lib/scope'
 import { MODES, MODE_INFO, availableModes, isCorrect, makeQuestions, promptClass, scopeFor, type Mode } from '../lib/questions'
 import OrderInput from '../components/OrderInput'
 import Choices from '../components/Choices'
@@ -10,59 +10,6 @@ import ConfirmDialog from '../components/ConfirmDialog'
 import { speak } from '../lib/tts'
 
 const GLYPH: Record<Mode, string> = { listen: '听', meaning: '义', reverse: '字', tone: '调', type: '拼', order: '句', dialog: '话', sentence: '耳' }
-
-/**
- * Phạm vi luyện tập: "" = tất cả, "b7" = cả quyển 7, "7-3" = một bài.
- * Trả về danh sách khoá bài cho scopeFor.
- */
-function keysOf(scope: string | null): string[] {
-  if (!scope) return []
-  if (scope.startsWith('b')) {
-    const b = Number(scope.slice(1))
-    return allLessons.filter(x => x.book === b).map(x => `${x.book}-${x.lesson.id}`)
-  }
-  return [scope]
-}
-
-const BOOK_IDS = [...new Set(allLessons.map(x => x.book))]
-
-function ScopePicker({ scope, onChange }: { scope: string; onChange: (s: string) => void }) {
-  const curBook = scope.startsWith('b') ? Number(scope.slice(1)) : scope ? Number(scope.split('-')[0]) : null
-  const lessonsOf = (b: number) => allLessons.filter(x => x.book === b)
-  const seg = (on: boolean) => `whitespace-nowrap rounded-md px-3 py-1.5 font-semibold transition-colors ${on ? 'bg-accent text-white shadow' : 'text-slate-500 hover:bg-surface hover:text-slate-900'}`
-  return (
-    <div className="space-y-3 rounded-lg border bg-surface p-3">
-      <div className="flex items-center gap-3">
-        <span className="w-12 shrink-0 text-xs font-bold uppercase tracking-wide text-slate-500">Quyển</span>
-        <div className="flex gap-1 overflow-x-auto rounded-lg bg-slate-50 p-1 text-sm">
-          <button className={seg(curBook === null)} onClick={() => onChange('')}>Tất cả</button>
-          {BOOK_IDS.map(b => (
-            <button key={b} className={seg(curBook === b)} onClick={() => onChange(`b${b}`)}>{bookLabel(b).replace('Giáo trình chuẩn ', '')}</button>
-          ))}
-        </div>
-      </div>
-      {curBook !== null && (
-        <div className="flex items-start gap-3">
-          <span className="w-12 shrink-0 pt-1.5 text-xs font-bold uppercase tracking-wide text-slate-500">Bài</span>
-          <div className="flex flex-wrap gap-1.5 text-sm">
-            <button onClick={() => onChange(`b${curBook}`)} className={`h-8 rounded-md border px-3 font-semibold ${scope === `b${curBook}` ? 'border-accent bg-accent text-white' : 'bg-surface hover:bg-accent-soft'}`}>Cả quyển</button>
-            {lessonsOf(curBook).map(x => {
-              const k = `${x.book}-${x.lesson.id}`
-              return (
-                <button key={k} title={`${x.lesson.hanzi} · ${x.lesson.title}`} onClick={() => onChange(k)}
-                  className={`h-8 min-w-8 rounded-md border px-2 font-bold tabular-nums ${scope === k ? 'border-accent bg-accent text-white' : 'bg-surface hover:bg-accent-soft'}`}>{x.lesson.id}</button>
-              )
-            })}
-          </div>
-        </div>
-      )}
-      {scope && !scope.startsWith('b') && (() => {
-        const x = allLessons.find(l => `${l.book}-${l.lesson.id}` === scope)
-        return x && <p className="pl-[3.75rem] text-sm text-slate-500"><span className="hz font-bold text-slate-900">{x.lesson.hanzi}</span> · {x.lesson.title}</p>
-      })()}
-    </div>
-  )
-}
 
 export default function Practice() {
   const [params, setParams] = useSearchParams()
